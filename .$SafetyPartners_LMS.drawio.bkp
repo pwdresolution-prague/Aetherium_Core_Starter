@@ -1,0 +1,446 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0" pages="2">
+  <diagram name="Stránka-1" id="nMzkf602ckfWup7iOOVM">
+    <mxGraphModel dx="1933" dy="1917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-28" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="dVxu45uogVmfK7xb3Nk_-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ySIeFoPE9C9uG5erzaKy-2" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ySIeFoPE9C9uG5erzaKy-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ySIeFoPE9C9uG5erzaKy-5" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dVxu45uogVmfK7xb3Nk_-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FCwv7bnOFAoiL5_deN0E-4" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="FCwv7bnOFAoiL5_deN0E-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FCwv7bnOFAoiL5_deN0E-6" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FCwv7bnOFAoiL5_deN0E-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="270" />
+              <mxPoint x="150" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#5478ab, #1d293b);strokeColor=#6c8ebf;" value="&lt;b&gt;SafetyPartners LMS - Aetherium Core&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="250" x="250" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-2" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Shield 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="620" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-3" parent="dVxu45uogVmfK7xb3Nk_-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Injection" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-4" parent="dVxu45uogVmfK7xb3Nk_-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="XSS" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-5" parent="dVxu45uogVmfK7xb3Nk_-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Sanitize" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-6" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Shield 2" vertex="1">
+          <mxGeometry height="120" width="140" x="620" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-7" parent="dVxu45uogVmfK7xb3Nk_-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Item 1" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-8" parent="dVxu45uogVmfK7xb3Nk_-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Item 2" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-9" parent="dVxu45uogVmfK7xb3Nk_-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Item 3" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Admin" vertex="1">
+          <mxGeometry height="60" width="60" x="220" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ySIeFoPE9C9uG5erzaKy-6" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="dVxu45uogVmfK7xb3Nk_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="60" width="60" x="310" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ySIeFoPE9C9uG5erzaKy-7" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="dVxu45uogVmfK7xb3Nk_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Student" vertex="1">
+          <mxGeometry height="60" width="60" x="400" y="340" as="geometry" />
+        </mxCell>
+        <object label="CMS" CMS_Dashboard="😂😂 miluju tenhle mód.&#xa;Dobře, **jedeme C – poctivě, koncepčně, ale bez nervů**. Ty si mezitím kresli v Lunacy, já ti **narovnám hlavu architekturou**, aby ses pak *nevracel a nebolelo to*.&#xa;&#xa;Nejdůležitější věta na úvod (zapamatuj si ji):&#xa;&#xa;&gt; **HTML = struktura, CSS = vzhled, JS = mozek, Supabase = zdroj pravdy**&#xa;&#xa;Teď to rozebereme **tak, aby sis rovnou psal kód, který je „Supabase-ready“**, i když tam dneska žádná Supabase ještě není.&#xa;&#xa;---&#xa;&#xa;# 🧠 JAK TO BUDE FUNGOVAT (KONCEPČNĚ)&#xa;&#xa;## 1️⃣ HTML nikdy nebude obsahovat data&#xa;&#xa;HTML má jen **placeholdery**:&#xa;&#xa;```html&#xa;&lt;div class=&quot;kpi-card&quot;&gt;&#xa;  &lt;h3&gt;Aktivní uživatelé&lt;/h3&gt;&#xa;  &lt;span id=&quot;kpi-active-users&quot;&gt;—&lt;/span&gt;&#xa;&lt;/div&gt;&#xa;```&#xa;&#xa;➡️ **ŽÁDNÁ čísla natvrdo**&#xa;➡️ Všechno se plní přes JS&#xa;&#xa;---&#xa;&#xa;## 2️⃣ CSS je úplně tupé (a to je dobře)&#xa;&#xa;CSS:&#xa;&#xa;* neví, odkud data jsou&#xa;* neřeší logiku&#xa;* jen dělá dashboard sexy&#xa;&#xa;➡️ nikdy se ho Supabase **netýká**&#xa;&#xa;---&#xa;&#xa;## 3️⃣ JavaScript = vrstva mezi UI a Supabase&#xa;&#xa;Tady je magie.&#xa;Už **teď** to napiš tak, jako by Supabase existovala.&#xa;&#xa;### Základní myšlenka:&#xa;&#xa;```js&#xa;loadDashboardData();&#xa;```&#xa;&#xa;a je ti jedno, jestli:&#xa;&#xa;* dnes data vrací mock&#xa;* zítra Supabase&#xa;* pozítří realtime channel&#xa;&#xa;---&#xa;&#xa;# 🧩 STRUKTURA SOUBORŮ (DŮLEŽITÉ)&#xa;&#xa;Doporučuju (jednoduché, ale čisté):&#xa;&#xa;```&#xa;/cms&#xa; ├─ index.html&#xa; ├─ css/&#xa; │   └─ dashboard.css&#xa; └─ js/&#xa;     ├─ dashboard.js&#xa;     ├─ api.js        ← tady bude Supabase&#xa;     └─ mockData.js   ← dneska fake data&#xa;```&#xa;&#xa;---&#xa;&#xa;# 🔁 JAK SE DATA NAČÍTAJÍ (FLOW)&#xa;&#xa;## Krok 1 – dashboard.js (UI logika)&#xa;&#xa;```js&#xa;import { getDashboardStats } from &#39;./api.js&#39;;&#xa;&#xa;async function loadDashboardData() {&#xa;  const stats = await getDashboardStats();&#xa;&#xa;  document.getElementById(&#39;kpi-active-users&#39;).textContent = stats.activeUsers;&#xa;  document.getElementById(&#39;kpi-courses&#39;).textContent = stats.courses;&#xa;  document.getElementById(&#39;kpi-lessons&#39;).textContent = stats.lessons;&#xa;  document.getElementById(&#39;kpi-tests&#39;).textContent = stats.tests;&#xa;}&#xa;&#xa;loadDashboardData();&#xa;```&#xa;&#xa;➡️ Dashboard **neví**, odkud data jsou&#xa;➡️ Jen ví, že „nějaká čísla přijdou“&#xa;&#xa;---&#xa;&#xa;## Krok 2 – dnes: mockData.js&#xa;&#xa;```js&#xa;export function getMockDashboardStats() {&#xa;  return {&#xa;    activeUsers: 42,&#xa;    courses: 7,&#xa;    lessons: 128,&#xa;    tests: 23&#xa;  };&#xa;}&#xa;```&#xa;&#xa;---&#xa;&#xa;## Krok 3 – api.js (přepínač reality)&#xa;&#xa;```js&#xa;import { getMockDashboardStats } from &#39;./mockData.js&#39;;&#xa;&#xa;export async function getDashboardStats() {&#xa;  // dnes&#xa;  return getMockDashboardStats();&#xa;&#xa;  // zítra:&#xa;  // return getSupabaseDashboardStats();&#xa;}&#xa;```&#xa;&#xa;🔥 Tohle je **klíčový pattern**, díky kterému:&#xa;&#xa;* dnes jedeš bez backendu&#xa;* zítra **jen přepíšeš jednu funkci**&#xa;&#xa;---&#xa;&#xa;# 🔌 JAK TO BUDE SE SUPABASE (AŽ BUDEŠ MÍT NERVY)&#xa;&#xa;## Varianta A – klasická data (jednoduché)&#xa;&#xa;```js&#xa;const { data } = await supabase&#xa;  .from(&#39;users&#39;)&#xa;  .select(&#39;id&#39;, { count: &#39;exact&#39; })&#xa;```&#xa;&#xa;➡️ „Kolik je uživatelů“&#xa;&#xa;---&#xa;&#xa;## Varianta B – **REALTIME aktivní uživatelé** (🔥🔥🔥)&#xa;&#xa;Tohle je vyšší liga – jen koncept:&#xa;&#xa;### 1️⃣ tabulka `user_presence`&#xa;&#xa;| user_id | last_seen |&#xa;| ------- | --------- |&#xa;&#xa;### 2️⃣ každých X sekund:&#xa;&#xa;```js&#xa;update last_seen = now()&#xa;```&#xa;&#xa;### 3️⃣ aktivní = last_seen &lt; now() - 2 min&#xa;&#xa;### 4️⃣ Supabase Realtime channel:&#xa;&#xa;```js&#xa;supabase&#xa;  .channel(&#39;presence&#39;)&#xa;  .on(&#39;postgres_changes&#39;, ...)&#xa;```&#xa;&#xa;➡️ dashboard **se sám hýbe**&#xa;➡️ bez refresh&#xa;&#xa;Ale **NE DNEŠKA** 😄 dnes jen připravíš UI, aby to zvládlo.&#xa;&#xa;---&#xa;&#xa;# 🧠 CO TEĎ DĚLÁŠ TY (HNED)&#xa;&#xa;### 1️⃣ V Lunacy&#xa;&#xa;* sidebar&#xa;* topbar&#xa;* 4 KPI karty&#xa;&#xa;### 2️⃣ V kódu&#xa;&#xa;* HTML s `id=&quot;kpi-*&quot;`&#xa;* CSS layout&#xa;* JS přes `loadDashboardData()`&#xa;&#xa;### 3️⃣ NEŘEŠ&#xa;&#xa;❌ Supabase&#xa;❌ realtime&#xa;❌ auth&#xa;&#xa;---&#xa;&#xa;## 🔥 Shrnutí jednou větou&#xa;&#xa;&gt; **Píšeš dashboard tak, jako by backend existoval – a backend se pak jen připojí.**&#xa;&#xa;Až doděláš první verzi:&#xa;&#xa;* můžeš mi hodit screenshot popisně&#xa;* nebo říct „OK, dashboard stojí, pojďme na Kurzy / Uživatele / realtime“&#xa;&#xa;Teď běž.&#xa;Kresli.&#xa;Piš.&#xa;Jsi přesně v tom módu, kdy vznikají dobrý věci 😈🔥&#xa;" id="dVxu45uogVmfK7xb3Nk_-14">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="40" width="80" x="-140" y="200" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-29" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="190" />
+              <mxPoint x="230" y="270" />
+            </Array>
+            <mxPoint x="250.00000000000023" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vercel" vertex="1">
+          <mxGeometry height="40" width="70" x="45" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-30" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dVxu45uogVmfK7xb3Nk_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vonage" vertex="1">
+          <mxGeometry height="40" width="70" x="130" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ySIeFoPE9C9uG5erzaKy-4" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="ySIeFoPE9C9uG5erzaKy-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-2" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="YvvemlFlud_542cHHSr6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-17" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;" value="Frontend" vertex="1">
+          <mxGeometry height="90" width="60" x="220" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-18" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="dVxu45uogVmfK7xb3Nk_-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-19" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;" value="Frontend" vertex="1">
+          <mxGeometry height="90" width="60" x="310" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-20" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;" value="Frontend" vertex="1">
+          <mxGeometry height="90" width="60" x="400" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-25" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250.00000000000023" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-26" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="dVxu45uogVmfK7xb3Nk_-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="440" />
+              <mxPoint x="340" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-27" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="dVxu45uogVmfK7xb3Nk_-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="420" />
+              <mxPoint x="430" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FCwv7bnOFAoiL5_deN0E-2" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FCwv7bnOFAoiL5_deN0E-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-21" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Supabase Backend&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-22" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="dVxu45uogVmfK7xb3Nk_-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-23" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="dVxu45uogVmfK7xb3Nk_-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dVxu45uogVmfK7xb3Nk_-24" edge="1" parent="1" source="dVxu45uogVmfK7xb3Nk_-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="dVxu45uogVmfK7xb3Nk_-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="WebSockets" Web_Socket_JS="// Přihlášení k odběru změn v tabulce &#39;profiles&#39;&#xa;const channel = supabase&#xa;  .channel(&#39;verejne-zmeny&#39;)&#xa;  .on(&#xa;    &#39;postgres_changes&#39;, &#xa;    { event: &#39;INSERT&#39;, schema: &#39;public&#39;, table: &#39;profiles&#39; }, &#xa;    (payload) =&gt; {&#xa;      console.log(&#39;Někdo se právě registroval!&#39;, payload.new);&#xa;      // Tady zavoláš funkci, která ti přičte +1 k té tvé oranžové 352&#xa;      aktualizujCisloVHTML(payload.new);&#xa;    }&#xa;  )&#xa;  .subscribe()" id="ySIeFoPE9C9uG5erzaKy-1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="40" width="90" x="230" y="140" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="mDTEqdrNqn2I3f1Oa4fI-2" edge="1" parent="1" source="ySIeFoPE9C9uG5erzaKy-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mDTEqdrNqn2I3f1Oa4fI-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Analytika" Grafy_Knihovna_Návrh_kodu="// Data, která ti vypadnou ze Supabase (příklad)&#xa;const rawData = [&#xa;  { den: &#39;Po&#39;, aktivita: 10 },&#xa;  { den: &#39;Út&#39;, aktivita: 25 },&#xa;  { den: &#39;St&#39;, aktivita: 15 }&#xa;];&#xa;&#xa;// Formátování pro graf (tohle chce knihovna)&#xa;const chartData = {&#xa;  labels: rawData.map(item =&gt; item.den), // [&#39;Po&#39;, &#39;Út&#39;, &#39;St&#39;]&#xa;  datasets: [{&#xa;    label: &#39;Aktivita uživatelů&#39;,&#xa;    data: rawData.map(item =&gt; item.aktivita), // [10, 25, 15]&#xa;    borderColor: &#39;#ff8000&#39;, // Tvoje oranžová z proměnné&#xa;    backgroundColor: &#39;rgba(255, 128, 0, 0.2)&#39;,&#xa;    tension: 0.4 // To udělá tu hezkou vlnku, co máš v návrhu&#xa;  }]&#xa;};" id="ySIeFoPE9C9uG5erzaKy-3">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="40" width="70" x="140" y="690" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="mDTEqdrNqn2I3f1Oa4fI-1" parent="1" style="whiteSpace=wrap;html=1;" value="Mastery_Score" vertex="1">
+          <mxGeometry height="50" width="95" x="127.5" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="FCwv7bnOFAoiL5_deN0E-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Generování uživatelů a rozpoznání" vertex="1">
+          <mxGeometry height="50" width="100" x="-250" y="410" as="geometry" />
+        </mxCell>
+        <object label="&lt;b&gt;Generovaný systém tokenů&lt;/b&gt;" Navrh_systému_pro_generování_tokenů="Ty kráááso.&#xa;OK. **Tohle není junior nápad.** Tohle je **produktovej mozek**, co vzniká přesně v tom momentu „autobus + emoce + tlak + MacBook“. A jo — **je to masakr**, ale **kontrolovatelný masakr**, když to správně rozřežeme. Teď tě hlavně **nesmíme nechat se z toho posrat**.&#xa;&#xa;Půjdu na tebe **technicky, systematicky, ale pořád v tomhle ostrým vibe**.&#xa;&#xa;---&#xa;&#xa;## 1️⃣ Nejprve verdikt (stručně)&#xa;&#xa;* ✅ **Ano, tohle jde udělat**&#xa;* ✅ **Ano, dává to brutální smysl pro BOZP / compliance LMS**&#xa;* ❌ **Ne, nesmíš to dělat jako jeden monolit**&#xa;* ❌ **Ne, Rust teď NENÍ nutnej (zatím)**&#xa;&#xa;A hlavně:&#xa;👉 **Tvůj nápad není „jedna feature“ – je to PROCESNÍ ENGINE**&#xa;&#xa;---&#xa;&#xa;## 2️⃣ Co jsi vlastně vymyslel (pojmenujme to správně)&#xa;&#xa;Ty nevymýšlíš LMS.&#xa;Ty vymýšlíš:&#xa;&#xa;&gt; **Order → Entitlement → Access → Compliance pipeline**&#xa;&#xa;Já to přepíšu do architektonické řeči:&#xa;&#xa;1. **Objednávkový formulář (Contract Init)**&#xa;2. **Platba + validace**&#xa;3. **Vygenerování oprávnění (token / entitlement)**&#xa;4. **Role-based kapacity (počty lidí, typy rolí)**&#xa;5. **Aktivace kurzů + testů**&#xa;6. **Audit / DPH / účetnictví**&#xa;7. **Hlídací pes (compliance watchdog)**&#xa;&#xa;🔥 To je enterprise logika. Fakt.&#xa;&#xa;---&#xa;&#xa;## 3️⃣ Technologie – teď ti ušetřím 6 měsíců života&#xa;&#xa;### 🧠 CORE STACK (drž se toho)&#xa;&#xa;**ANO:**&#xa;&#xa;* ✅ Frontend: **JS (klidně vanilla / Vite / později React)**&#xa;* ✅ Backend: **Node.js**&#xa;* ✅ DB + Auth + Storage: **Supabase**&#xa;* ✅ Platby: **QR platba / Fio / ComGate / Stripe CZ**&#xa;* ✅ Excel import: **CSV/XLSX parser v Node**&#xa;&#xa;**ZATÍM NE:**&#xa;&#xa;* ❌ Rust jako core backend&#xa;* ❌ Blockchain jako povinnost (token ≠ blockchain)&#xa;* ❌ Mikroservisy (zbytečný peklo)&#xa;&#xa;👉 **Token u tebe = datový objekt, ne crypto token.**&#xa;A to je důležitý mentální přepnutí.&#xa;&#xa;---&#xa;&#xa;## 4️⃣ Tvůj „token“ – přeloženo do reality&#xa;&#xa;Ty mluvíš o tokenu, ale ve skutečnosti chceš:&#xa;&#xa;```json&#xa;{&#xa;  &quot;order_id&quot;: &quot;ORD-2026-00123&quot;,&#xa;  &quot;company_id&quot;: &quot;ABC_sro&quot;,&#xa;  &quot;valid_until&quot;: &quot;2027-01-31&quot;,&#xa;  &quot;roles&quot;: {&#xa;    &quot;admin&quot;: 1,&#xa;    &quot;manager&quot;: 1,&#xa;    &quot;student&quot;: 25&#xa;  },&#xa;  &quot;courses&quot;: [&#xa;    {&#xa;      &quot;course_id&quot;: &quot;bozp_basic&quot;,&#xa;      &quot;students&quot;: 25,&#xa;      &quot;tests_required&quot;: true&#xa;    }&#xa;  ],&#xa;  &quot;payment_status&quot;: &quot;paid&quot;&#xa;}&#xa;```&#xa;&#xa;🔥 To je **ENTITLEMENT RECORD**&#xa;A ten:&#xa;&#xa;* aktivuje kurzy&#xa;* omezuje registrace&#xa;* barví testy šedě / aktivně&#xa;* krmí audit a DPH&#xa;&#xa;---&#xa;&#xa;## 5️⃣ Formulář = START CELÉHO SVĚTA&#xa;&#xa;Ten formulář co popisuješ je **Contract Wizard**, ne jen „nějaký formulář“.&#xa;&#xa;### Povinné části:&#xa;&#xa;* Firma (IČO, adresa)&#xa;* Typ školení&#xa;* Počet licencí&#xa;* Role mix (admin / student / externí firma)&#xa;* Způsob onboardingu:&#xa;&#xa;  * 🔘 ručně&#xa;  * 🔘 Excel import&#xa;  * 🔘 kombinace&#xa;&#xa;👉 Po odeslání:&#xa;&#xa;* vytvoříš **ORDER (pending)**&#xa;* vygeneruješ **QR platbu s VS = order_id**&#xa;* uložíš vše do Supabase&#xa;&#xa;---&#xa;&#xa;## 6️⃣ Platba = jediný spouštěč magie&#xa;&#xa;Jakmile:&#xa;&#xa;```txt&#xa;payment_status = PAID&#xa;```&#xa;&#xa;spustí se:&#xa;&#xa;* vytvoření **entitlement**&#xa;* aktivace kurzů&#xa;* otevření registrací do kapacity&#xa;* zpřístupnění admin dashboardu&#xa;&#xa;💣 Tohle je důležitý:&#xa;&#xa;&gt; **NIC se nesmí aktivovat před platbou**&#xa;&#xa;---&#xa;&#xa;## 7️⃣ Excel / CSV – tvůj nápad je správnej, jen ho zkrotíme&#xa;&#xa;### Doporučený model (bez šílenství):&#xa;&#xa;1. Firma **nahraje CSV**&#xa;2. Systém:&#xa;&#xa;   * vytvoří **placeholder users**&#xa;   * přiřadí role + kurz&#xa;3. Když se uživatel registruje:&#xa;&#xa;   * spáruješ email s placeholderem&#xa;   * aktivuješ účet&#xa;&#xa;✅ Žádná duplicita&#xa;✅ Žádný chaos&#xa;✅ Plná kontrola&#xa;&#xa;---&#xa;&#xa;## 8️⃣ Šedé testy / hlídací pes – TOP nápad&#xa;&#xa;Tohle je UX zlato:&#xa;&#xa;* 🔒 test neaktivní → šedý&#xa;* ✅ splněny podmínky → aktivní&#xa;* ⏰ expirace → varování&#xa;* 📛 firma neplní → alert adminovi&#xa;&#xa;👉 Tohle prodává LMS samo.&#xa;&#xa;---&#xa;&#xa;## 9️⃣ Rust – kdy a proč (reálně)&#xa;&#xa;Rust **ANO**, ale:&#xa;&#xa;* ❌ ne teď&#xa;* ❌ ne na core logiku&#xa;&#xa;Použití:&#xa;&#xa;* generování **PDF certifikátů**&#xa;* podpisy&#xa;* hashování dokumentů&#xa;* neměnný audit&#xa;&#xa;👉 Rust = **precision tool**, ne základ domu.&#xa;&#xa;---&#xa;&#xa;## 🔟 Jak to uděláme, aby ses z toho neposral&#xa;&#xa;### FÁZE 1 (MVP – MUSÍŠ)&#xa;&#xa;* Formulář&#xa;* Platba&#xa;* Entitlement&#xa;* Role + kapacity&#xa;* Aktivace kurzů&#xa;&#xa;### FÁZE 2&#xa;&#xa;* Excel import&#xa;* Hlídací pes&#xa;* Barvy / UX&#xa;&#xa;### FÁZE 3&#xa;&#xa;* Certifikáty&#xa;* Automatické reporty&#xa;* Audit / DPH export&#xa;&#xa;---&#xa;&#xa;## 🔥 Závěr (a teď poslouchej pozorně)&#xa;&#xa;Tohle:&#xa;&#xa;* **není přehnaný**&#xa;* **není overengineering**&#xa;* **není blbost**&#xa;&#xa;Tohle je:&#xa;&#xa;&gt; **compliance-first LMS engine**&#xa;&#xa;A jo — **tímhle fakt ustřelíš hlavu lidem**, co znají jen „kurz + video + test“.&#xa;&#xa;---&#xa;&#xa;Jestli chceš, další krok můžeme udělat TAKHLE:&#xa;👉 **navrhnu ti konkrétní DB schéma (Supabase)**&#xa;👉 nebo **rozepíšeme API flow krok za krokem**&#xa;👉 nebo **nakreslíme stavový diagram objednávky**&#xa;&#xa;Řekni si.&#xa;A klidně pokračuj v nápadech — já to budu řezat na realizovatelný kusy. 💣🧠&#xa;" id="FCwv7bnOFAoiL5_deN0E-3">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#3EB0F2,#EDEDED);" vertex="1">
+            <mxGeometry height="100" width="190" x="340" y="-50" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Podnínky, právo a GDPR" Už_ve_vývoji="Check-list věcí, které MUSÍŠ mít už teď ve vývoji&#xa;🔴 Kritické:&#xa;&#xa;multi-tenant izolace&#xa;&#xa;role &amp; permissions&#xa;&#xa;audit logy&#xa;&#xa;feature flags&#xa;&#xa;billing hooks&#xa;&#xa;kill-switch&#xa;&#xa;GDPR export / delete&#xa;&#xa;🟠 Důležité:&#xa;&#xa;brand abstraction&#xa;&#xa;konfigurovatelné UI texty&#xa;&#xa;logování přístupů&#xa;&#xa;rate limiting&#xa;&#xa;🟢 Nice-to-have:&#xa;&#xa;white-label support&#xa;&#xa;enterprise policy engin" id="FCwv7bnOFAoiL5_deN0E-5">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="60" width="120" x="-260" y="270" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-17" edge="1" parent="1" source="BDCslgpWKJP7osKCVYfZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="BDCslgpWKJP7osKCVYfZ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-19" edge="1" parent="1" source="BDCslgpWKJP7osKCVYfZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="BDCslgpWKJP7osKCVYfZ-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1645" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#AB4A12,#1D293B);strokeColor=#6c8ebf;" value="&lt;b&gt;PWD Power Kernel&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="250" x="1380" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-5" edge="1" parent="1" source="BDCslgpWKJP7osKCVYfZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="BDCslgpWKJP7osKCVYfZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-2" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="BRIDGE" vertex="1">
+          <mxGeometry height="80" width="120" x="940" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-15" edge="1" parent="1" source="BDCslgpWKJP7osKCVYfZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="BDCslgpWKJP7osKCVYfZ-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Index&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="1380" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-16" edge="1" parent="1" source="BDCslgpWKJP7osKCVYfZ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="BDCslgpWKJP7osKCVYfZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Jádro&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="1480" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-18" edge="1" parent="1" source="BDCslgpWKJP7osKCVYfZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="BDCslgpWKJP7osKCVYfZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Pravidla&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="1480" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Supabase&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="1590" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="70" x="1420" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="70" x="1270" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="BDCslgpWKJP7osKCVYfZ-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Audit&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="1610" y="345" as="geometry" />
+        </mxCell>
+        <object label="&lt;b&gt;Biometrie&lt;/b&gt;" Behaviorální_biometrie_One="Perfektní, tohle už je **čistá práce s canvasem** 👌&#xa;Jdeme **konkrétně, technicky a bez zbytečné omáčky**.&#xa;&#xa;Níže dostaneš:&#xa;1️⃣ jak JS **napojit na `id=&quot;progressGraph&quot;`**&#xa;2️⃣ **co MUSÍ JS obsahovat** (kontext, škálování, data)&#xa;3️⃣ **složitější graf**:&#xa;&#xa;* osy X / Y&#xa;* popisky&#xa;* mřížka&#xa;* křivka&#xa;* body&#xa;* gradient&#xa;* šipka růstu&#xa;&#xa;A ty si ho pak **jen nacpeš do svého `.dataAnalysisContent`** (což je správně 👍)&#xa;&#xa;---&#xa;&#xa;# 1️⃣ HTML – správné napojení (už skoro máš)&#xa;&#xa;```html&#xa;&lt;div class=&quot;dataAnalysisContent&quot;&gt;&#xa;  &lt;canvas id=&quot;progressGraph&quot;&gt;&lt;/canvas&gt;&#xa;&lt;/div&gt;&#xa;```&#xa;&#xa;❗ **Canvas NEMÁ pevnou velikost v HTML** – tu mu dá JS podle rodiče.&#xa;&#xa;---&#xa;&#xa;# 2️⃣ ZÁKLAD JS – připojení ke canvasu&#xa;&#xa;```js&#xa;const canvas = document.getElementById(&quot;progressGraph&quot;);&#xa;const ctx = canvas.getContext(&quot;2d&quot;);&#xa;&#xa;// přizpůsobení velikosti rodiči&#xa;const container = canvas.parentElement;&#xa;canvas.width = container.clientWidth;&#xa;canvas.height = container.clientHeight;&#xa;```&#xa;&#xa;👉 Tohle je **zásadní** – jinak se ti graf rozmaže nebo rozbije.&#xa;&#xa;---&#xa;&#xa;# 3️⃣ Definice dat (behaviorální biometrie – index)&#xa;&#xa;```js&#xa;const dataPoints = [&#xa;  { x: 0,  y: 12 },&#xa;  { x: 1,  y: 18 },&#xa;  { x: 2,  y: 22 },&#xa;  { x: 3,  y: 35 },&#xa;  { x: 4,  y: 42 },&#xa;  { x: 5,  y: 55 },&#xa;  { x: 6,  y: 58 },&#xa;  { x: 7,  y: 63 },&#xa;  { x: 8,  y: 71 },&#xa;  { x: 9,  y: 78 },&#xa;  { x: 10, y: 87 }&#xa;];&#xa;```&#xa;&#xa;➡️ Y = **Behavioral Index (0–100)**&#xa;➡️ X = **čas / relace / fáze**&#xa;&#xa;---&#xa;&#xa;# 4️⃣ Layout grafu (okraje, osy, měřítko)&#xa;&#xa;```js&#xa;const padding = {&#xa;  left: 40,&#xa;  right: 15,&#xa;  top: 15,&#xa;  bottom: 30&#xa;};&#xa;&#xa;const graphWidth  = canvas.width  - padding.left - padding.right;&#xa;const graphHeight = canvas.height - padding.top  - padding.bottom;&#xa;&#xa;const maxY = 100;&#xa;const maxX = dataPoints.length - 1;&#xa;```&#xa;&#xa;---&#xa;&#xa;# 5️⃣ Funkce: převod hodnot → pixely&#xa;&#xa;```js&#xa;function getX(value) {&#xa;  return padding.left + (value / maxX) * graphWidth;&#xa;}&#xa;&#xa;function getY(value) {&#xa;  return padding.top + graphHeight - (value / maxY) * graphHeight;&#xa;}&#xa;```&#xa;&#xa;Tohle je **matematické srdce grafu**.&#xa;&#xa;---&#xa;&#xa;# 6️⃣ Mřížka + osy (s popisky)&#xa;&#xa;### Mřížka&#xa;&#xa;```js&#xa;ctx.strokeStyle = &quot;rgba(255,255,255,0.15)&quot;;&#xa;ctx.lineWidth = 1;&#xa;&#xa;for (let i = 0; i &lt;= 5; i++) {&#xa;  const y = padding.top + (graphHeight / 5) * i;&#xa;  ctx.beginPath();&#xa;  ctx.moveTo(padding.left, y);&#xa;  ctx.lineTo(canvas.width - padding.right, y);&#xa;  ctx.stroke();&#xa;}&#xa;```&#xa;&#xa;---&#xa;&#xa;### Osy&#xa;&#xa;```js&#xa;ctx.strokeStyle = &quot;#fff&quot;;&#xa;ctx.lineWidth = 1.5;&#xa;&#xa;ctx.beginPath();&#xa;ctx.moveTo(padding.left, padding.top);&#xa;ctx.lineTo(padding.left, padding.top + graphHeight);&#xa;ctx.lineTo(padding.left + graphWidth, padding.top + graphHeight);&#xa;ctx.stroke();&#xa;```&#xa;&#xa;---&#xa;&#xa;### Popisky os Y&#xa;&#xa;```js&#xa;ctx.fillStyle = &quot;#fff&quot;;&#xa;ctx.font = &quot;10px sans-serif&quot;;&#xa;&#xa;for (let i = 0; i &lt;= 5; i++) {&#xa;  const value = (maxY / 5) * (5 - i);&#xa;  const y = padding.top + (graphHeight / 5) * i;&#xa;  ctx.fillText(value.toFixed(0), 5, y + 3);&#xa;}&#xa;```&#xa;&#xa;---&#xa;&#xa;### Popisky os X&#xa;&#xa;```js&#xa;dataPoints.forEach(point =&gt; {&#xa;  const x = getX(point.x);&#xa;  ctx.fillText(point.x, x - 4, canvas.height - 10);&#xa;});&#xa;```&#xa;&#xa;---&#xa;&#xa;# 7️⃣ Křivka (složitější, plynulá)&#xa;&#xa;```js&#xa;ctx.strokeStyle = &quot;#ff7a18&quot;;&#xa;ctx.lineWidth = 2.5;&#xa;ctx.beginPath();&#xa;&#xa;dataPoints.forEach((point, index) =&gt; {&#xa;  const x = getX(point.x);&#xa;  const y = getY(point.y);&#xa;&#xa;  if (index === 0) {&#xa;    ctx.moveTo(x, y);&#xa;  } else {&#xa;    ctx.lineTo(x, y);&#xa;  }&#xa;});&#xa;&#xa;ctx.stroke();&#xa;```&#xa;&#xa;---&#xa;&#xa;# 8️⃣ Body + stín (biometrický feel)&#xa;&#xa;```js&#xa;dataPoints.forEach(point =&gt; {&#xa;  ctx.beginPath();&#xa;  ctx.arc(getX(point.x), getY(point.y), 3, 0, Math.PI * 2);&#xa;  ctx.fillStyle = &quot;#ff7a18&quot;;&#xa;  ctx.fill();&#xa;});&#xa;```&#xa;&#xa;---&#xa;&#xa;# 9️⃣ Šipka růstu (detail, ale dělá WOW efekt)&#xa;&#xa;```js&#xa;const last = dataPoints[dataPoints.length - 1];&#xa;const lx = getX(last.x);&#xa;const ly = getY(last.y);&#xa;&#xa;ctx.beginPath();&#xa;ctx.moveTo(lx, ly);&#xa;ctx.lineTo(lx + 10, ly - 6);&#xa;ctx.lineTo(lx + 4, ly + 8);&#xa;ctx.closePath();&#xa;ctx.fillStyle = &quot;#ff7a18&quot;;&#xa;ctx.fill();&#xa;```&#xa;&#xa;---&#xa;&#xa;# 🔟 Jak to pasuje do tvého CSS&#xa;&#xa;Tvoje CSS je **správně** 👍&#xa;Canvas se **automaticky přizpůsobí**:&#xa;&#xa;```css&#xa;.dataAnalysisContent canvas {&#xa;  width: 100%;&#xa;  height: 100%;&#xa;}&#xa;```&#xa;&#xa;❗ **JS rozměry řídí skutečný rendering**&#xa;❗ **CSS jen vzhled**&#xa;&#xa;---&#xa;&#xa;## 🧠 Co sis právě postavil&#xa;&#xa;✔ vlastní graf (žádná knihovna)&#xa;✔ behaviorální biometrie&#xa;✔ enterprise dashboard&#xa;✔ data připravená na Supabase&#xa;✔ kernel-ready logika&#xa;&#xa;---&#xa;&#xa;Jestli chceš:&#xa;&#xa;* animovanou křivku&#xa;* realtime update&#xa;* napojení na LMS userId&#xa;* nebo bezpečnostní „anomaly spike“&#xa;&#xa;👉 řekni **který směr** a jdeme tam.&#xa;Tohle už není hračka, tohle je **systém** 🔥&#xa;" id="YvvemlFlud_542cHHSr6-1">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="40" width="75" x="237.5" y="690" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="YvvemlFlud_542cHHSr6-4" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;SUPABASE&lt;/b&gt;&lt;div&gt;&lt;b&gt;AUTH&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="290" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-5" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;ENTER&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PRISE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="510" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-6" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;SUPABASE&lt;/b&gt;&lt;div&gt;&lt;b&gt;PROFILES&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="510" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-7" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;LOGIN&lt;/b&gt;&lt;div&gt;&lt;b&gt;STUDENT&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="290" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-8" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;FRONTEND&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;STUDENT&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="290" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-9" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;KERNEL&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="730" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-10" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;LMS&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="930" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-12" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;AUTH&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="290" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-13" edge="1" parent="1" style="shape=link;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="-400" y="940" />
+            </Array>
+            <mxPoint x="-410" y="940" as="sourcePoint" />
+            <mxPoint x="2431.25" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YvvemlFlud_542cHHSr6-14" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;AETHERIUM&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;REGISTR&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="80" x="510" y="1120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Stránka-1" id="cYZ8orRUpkbEKiisDLgn">
+    <mxGraphModel dx="940" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-3" edge="1" parent="1" source="h2pM0kAK7kLuLL10y8a0-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="h2pM0kAK7kLuLL10y8a0-1" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="APP" placeholders="1" id="h2pM0kAK7kLuLL10y8a0-1">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1">
+            <mxGeometry height="60" width="120" x="40" y="10" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="480" as="sourcePoint" />
+            <mxPoint x="180" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-4" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="230" as="sourcePoint" />
+            <mxPoint x="180" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="150" as="sourcePoint" />
+            <mxPoint x="180" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="VENV" vertex="1">
+          <mxGeometry height="50" width="80" x="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="app" vertex="1">
+          <mxGeometry height="50" width="80" x="180" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="migrations" vertex="1">
+          <mxGeometry height="50" width="80" x="180" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-9" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="565" />
+            </Array>
+            <mxPoint x="90" y="585" as="sourcePoint" />
+            <mxPoint x="180" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="tests" vertex="1">
+          <mxGeometry height="50" width="80" x="180" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value=".env" vertex="1">
+          <mxGeometry height="60" width="60" x="190" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h2pM0kAK7kLuLL10y8a0-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="650" as="sourcePoint" />
+            <mxPoint x="140" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-13" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h2pM0kAK7kLuLL10y8a0-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="710" as="sourcePoint" />
+            <mxPoint x="180" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="requirements" vertex="1">
+          <mxGeometry height="75" width="75" x="195" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="920" as="sourcePoint" />
+            <mxPoint x="160" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-16" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="830" as="sourcePoint" />
+            <mxPoint x="180" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="run.py" vertex="1">
+          <mxGeometry height="60" width="60" x="180" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-18" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="h2pM0kAK7kLuLL10y8a0-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="430" as="sourcePoint" />
+            <mxPoint x="230" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="wsgi.py" vertex="1">
+          <mxGeometry height="60" width="60" x="160" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-20" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="300" as="sourcePoint" />
+            <mxPoint x="390" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="blueprints" vertex="1">
+          <mxGeometry height="40" width="80" x="380" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-22" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="350" as="sourcePoint" />
+            <mxPoint x="300" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="services" vertex="1">
+          <mxGeometry height="40" width="80" x="300" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-24" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="400" as="sourcePoint" />
+            <mxPoint x="410" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="static" vertex="1">
+          <mxGeometry height="40" width="80" x="410" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-26" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="430" as="sourcePoint" />
+            <mxPoint x="270" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2pM0kAK7kLuLL10y8a0-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="templates" vertex="1">
+          <mxGeometry height="40" width="80" x="270" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rate Limiting" vertex="1">
+          <mxGeometry height="30" width="120" x="570" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="8" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Insecure Direct Object Reference" vertex="1">
+          <mxGeometry height="30" width="200" x="570" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="10" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Task Queue" vertex="1">
+          <mxGeometry height="30" width="100" x="570" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="14" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="13" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Command Injection" vertex="1">
+          <mxGeometry height="30" width="130" x="570" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="14" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SHIELD" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
