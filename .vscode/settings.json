@@ -1,3 +1,5 @@
 {
-    "snyk.advanced.autoSelectOrganization": true
+    "snyk.advanced.autoSelectOrganization": true,
+    "todohighlight.isEnable": true
 }
+

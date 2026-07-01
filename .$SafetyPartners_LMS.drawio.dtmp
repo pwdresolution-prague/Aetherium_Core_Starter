@@ -721,9 +721,11 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="HujNy5bPWnfzkoRk-Lok-1" value="Datová_struktura" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="270" width="140" height="120" as="geometry" />
-        </mxCell>
+        <object label="Datová_struktura" ReCompliance="RAG (Retrieval-Augmented Generation): Tvůj chatbot nebude jen odpovídat, on bude mít díky Kernelu přístup k celé historii kurzů, legislativě a CMS. Stane se z něj expert, který zná kontext každé firmy.&#xa;Prediktivní Compliance: Díky lineární algebře a datům o certifikacích nebudeš jen hlídat datumy, ale predikovat rizika (např. „Firma X nestihne proškolit 20 % lidí do termínu“).&#xa;Personalizovaná trajektorie: AI model v Kernelu analyzuje progres studenta a chatbot mu v reálném čase navrhne obsah, který mu chybí k úspěšnému testu." id="HujNy5bPWnfzkoRk-Lok-1">
+          <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="40" y="270" width="140" height="120" as="geometry" />
+          </mxCell>
+        </object>
         <mxCell id="HujNy5bPWnfzkoRk-Lok-2" value="LMS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="HujNy5bPWnfzkoRk-Lok-1">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
