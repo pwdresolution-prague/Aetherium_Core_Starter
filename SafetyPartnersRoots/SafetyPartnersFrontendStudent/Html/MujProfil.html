@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Safety Partners - E-learning managment system">
+<meta property="og:title" content="Absolvujte kurz, Kompletujte test, Certifikát platný">
+<meta property="og:description" content="Certifikáty Generované AI v PDF">
+<meta property="og:image" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:url" content=""><!--TODO: DOplnit adresu webu-->
+<meta property="og:type" content="website">
+<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+  <link rel="icon" type="image/x-icon" href="../../SPL.png">
+  <link rel="stylesheet" href="../Css/Style.css">
+  <link rel="stylesheet" href="../Css/ChatBotStyle.css">
+  <link rel="stylesheet" href="../Css/MyProfileStyle.css">
+  <title>Safety Partners - Hlavní stránka</title>
+</head>
+<body>
+<div class="Main_menu">
+  <h2>AETHERIUM CORE</h2>
+  <div class="Logo-Row">
+  <img src="../Logo.png" alt="Logo" class="Logo">
+  <h4>E-Learning Management</h4>
+  </div>
+
+    <!--TODO: Vertikální menu-->
+  <ul class="Vertical_Menu">
+    <li><a href="../Html/Kurzy.html">
+      <img src="../Kurzy.png" alt="Kurzy" class="Menu-Icon">Kurzy</a></li>
+    <li><a href="../Html/Testy.html">
+      <img src="../Testy.png" alt="Testy" class="Menu-Icon">Testy</a></li>
+    <li><a href="../Html/Uzivatele.html">
+      <img src="../Uživatel.png" alt="Uživatel" class="Menu-Icon">Uživatelé</a></li>
+    <li><a href="../Html/Reporty.html">
+      <img src="../Reporty.png" alt="Reporty" class="Menu-Icon">Reporty</a></li>
+    <li><a href="../Html/Dokumentace.html">
+      <img src="../Dokumentace.png" alt="Dokumentace" class="Menu-Icon">Dokumentace</a></li>
+    <li><a href="../Html/Nastaveni.html">
+      <img src="../Nastavení.png" alt="Nastavení" class="Menu-Icon">Nastavení</a></li>
+  </ul>
+  </div>
+
+<!--TODO: CHATBOT FORMULÁŘE............................................................................................-->
+
+<!--TODO: ChatBot Button-->
+<div class="ButtonChatBot">
+  <img src="../Button.png" alt="Button" class="Button" id="ChatBotOpen">
+</div>
+
+<!--TODO: ChatBotModal-->
+<div id="ChatBotModal" class="chatbot-modal">
+  <div class="chatbot-modal-content">
+    <span class="chatbot-close">&times;</span>
+<h3 class="h3ChatBot">Aetherium asistent</h3>
+
+<!--TODO: Historie chatu-->
+<div class="chatbot-history" id="chathistory">
+<p><em>"Jak se zapsat do kurzu", "Kdy mohu udělat test?", "Kde najdu certifikát?", "Kdy musím dělat znovu test?"</em></p>
+</div>
+<!--TODO: Tělo Chatbota-->
+<div class="chatbot-body">
+  <p>Zde se zeptejte ChatBota</p>
+  <p class="chatBotThinking" id="chatBotThinkingId" hidden>Aetherium_Core_Assistant
+  <span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></p>
+  <textarea id="userInput" placeholder="Napiš svůj dotaz..."></textarea>
+  <button id="SendMessage" type="button">Odeslat</button>
+  </div>
+ </div>
+</div>
+
+
+
+
+
+<!--TODO: Horní menu-->
+  <div class="Container1">
+      <div class="Content">
+<div class="Up_Menu">
+  <ul class="TopMenu">
+<li><a href="../Html/Index.html">Hlavní stránka</a></li>
+<li><a href="../Html/MujProfil.html">Můj profil</a></li>
+<li><a href="../Html/Certifikaty.html">Certifikáty</a></li>
+<li><a href="../Html/Podpora.html">Podpora</a></li>
+</ul>
+<!--TODO: Divy k UpMenu-->
+</div>
+</div>
+
+
+<!--TODO: Dashboard ============================================================================================================================= -->
+<!--FRONTEND: ============================================================================================================================================= -->
+
+<main id="dashboardMain">
+    <section class="DashboardStructure">
+        <article class="DashboardStructureGlass">
+            <!--FRONTEND: COMMENT: Avatar - kruh s iniciálou/DiceBrear avatarem + edit tlačítko uvnitř -->
+            
+            <figure class="profileAvatar" id="profilAvatarId" aria-label="Profilový avatar">
+                <span class="profileAvatarInitials" id="profileAvatarInitialsId"></span>
+                    <button type="button" class="profileAvatarEditButton" id="openAvatarPickerId" aria-label="Upravit avatar">
+                        <img src="../Edit.png" alt="EditIcon" class="editIconPng">
+                    </button>           
+                </figure>
+            <!--COMMENT: Dialog s výběrem avatara - 12 DiceBear + možnost barevných iniciál-->
+            <dialog id="avatarPickerModal">
+                <article>
+                    <header>
+                        <hgroup>
+                            <h2 class="ChooseAvatar">Vyber si avatar</h2>
+                            <p class="ChooseAvatarP">Vyberte si barevnou postavu nebo zvolte barevné iniciály</p>
+                        </hgroup>
+                    </header>
+                </article>
+                <section class="avatarGrid" id="avatarGridId" aria-label="Nabídka avatarů">                            
+                    <!--FRONTEND: Sem vloží Javascript 12 avatarů + 1 volbu iniciály-->
+                </section>
+                <footer>
+                    <button type="button" class="dialogButton" id="cancelAvatarPickerId">zrušit</button>
+                </footer>
+            </dialog>
+
+            <!--FRONTEND: Formulář pro změnu dat Studenta -->
+            <form class="MyProfileEdit" id="MyProfileEditId">
+                <section class="EditProfile">
+                    <p class="editProfileText" role="button" tabindex="0">Úprava profilých dat</p>
+                    <img src="../EditWhite.png" alt="editIconProfile" class="eIProfile">
+                    <dialog class="editProfileModal" id="editProfileModalId">
+                    
+                    <article class="editProfileArticle">
+                        <div class="FormulářComplete">
+                            <!--TODO: Obsah editačního okna-->
+                            <div class="FormulářEdit">
+                                <!--COMMENT: Zavírání modalového okna-->
+                                <span class="close-modal" id="closeModal">&times;</span>
+
+                            <select class="GenderSelector" id=""GenderSelectorId>
+                                <option class="GenderSelector" value="" >Vyberte oslovení</option>
+                                <option class="MaleGender" value="MaleValue">Pan</option>
+                                <option class="FemaleGender" value="FemaleValue" name="">Paní</option>
+                                <option class="SilentGender" value="SilentGender" name="">Nechci uvádět</option>
+                            </select>
+                            <!--TODO Obsah editačního okna-->
+                            
+                            <label class="labelName">Jméno</label>
+                                <input type="text" class="Name" placeholder="Zadejte jméno" name="" id="">
+                            <label class="labelSurName">Příjmení</label>
+                                <input type="text" class="SurName" placeholder="Zadejte příjmení" name="" id="">
+                            <label class="labelEmail">Email</label>
+                                <input type="email" class="Email" placeholder="Zadejte email" name="" id="">
+                            <label class="labelPhone">Telefonní číslo</label>
+                            <input type="tel" class="Phone" placeholder="Zadejte telefonní číslo" name="" id="">
+                            <label class="labelWorkplace">Pracoviště</label>
+                                <input type="text" class="WorkPlace" placeholder="Zadejte název pracoviště" name="" id="">                                    
+                                    <button type="submit" class="ConfirmButton" id="ConfirmButtonId" disabled>Potvrdit</button>
+                                        </div>
+                                    </div>
+                    </article>
+                    </dialog>
+
+
+
+
+
+
+
+
+
+                    <!--TODO: Password ======================================================================
+                    COMMENT Struktura pro Změnu hesla ==============================================================-->
+                    <div class="PasswordDiv">
+                    <p class="editPasswordText" id="editProfilePasswordId" role="button" tabindex="0">Úprava hesla</p>
+                    <img src="../EditWhite.png" alt="editIconPassword" class="eIPassword">
+                    <dialog class="editPasswordModal" id="editPasswordModalId"> 
+                        <span class="close-modal" id="closeModalPassword">&times;</span>
+                        
+                         
+                    
+                    <article class="EditProfilePassword">
+                            <!--TODO: Obsah editačního okna -->
+                            <div class="PasswordFieldGroup">
+
+                                <label class="ChangePasswordLabel"></label>
+                                <div class="PasswordInputWrapper">
+                                    <input type="password" class="ChangePassword" placeholder="Nové heslo" required id="PasswordInputChange" autocomplete="new-password">
+                                <button type="button" class="TogglePasswordVisibility" id="TogglePasswordVisibilityId" aria-label="zobrazit heslo">
+                                    <img src="../Eye.png" alt="Oko" class="EyeIcon">
+                                </button>
+                                </div>
+                                <button type="button" class="GeneratePasswordBtn" id="GeneratePasswordBtnId">
+                                    Navrhnout silné heslo
+                                </button>
+                                 <!--COMMENT: Vizuální indikátor síly hesla -->
+                            <div class="PasswordStrengthMeter" aria-hidden="false">
+                                <div class="StrengthBarTrack">
+                                    <div class="StrengthBarFill" id="StrengthBarFillId"></div>        
+                                        </div>
+                                <p class="StrengthLabel" id="StrengthLabelId" role="status" aria-live="polite">
+                                        
+                                    </p>
+                            </div>
+                                    <label class="ChangePasswordLabelConfirm"></label>
+                                    <input type="password" class="ChangePasswordConfirm" placeholder="Potvrzení nového hesla" required id="PasswordAgainInputChange" autocomplete="current-password">
+                                        <p class="PasswordMatchLabel" id="PasswordMatchLabelId" role="status" aria-live="polite"></p>
+                                </div>
+                           
+                                    <button type="button" class="PasswordConfirmButton" id="PasswordConfirmButtonId">Změnit heslo</button>
+
+                    </article>
+                    </dialog>
+                    </div>
+                    
+
+                   
+                </section>
+            </form>
+
+
+
+            </article>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="FooterMyProfile">
+<!--TODO: Patička-->
+  <div class="Container2">
+    <h3 class="Patička">Aetherium core 2026 Blue Shade Theme</h3>
+    </div>
+
+</div>
+
+
+</div>
+
+</section>
+    
+
+
+
+
+
+<script type="module" src="../JS/Modal/ChatBotManager.js"></script>
+<script type="module" src="../../utils/security.client.js"></script>
+<script type="module" src="../JS/src_My_Profile/ColorHash.js"></script>
+<script type="module" src="../JS/src_My_Profile/AvatarLibrary.js"></script>
+<script type="module" src="../JS/src_My_Profile/AvatarProfiile.js"></script>
+<script type="module" src="../JS/src_My_Profile/EditForm.js"></script>
+<script type="module" src="../JS/src_My_Profile/StrongPassword.js"></script>
+<script type="module" src="../JS/src_My_Profile/StrengthPassword.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

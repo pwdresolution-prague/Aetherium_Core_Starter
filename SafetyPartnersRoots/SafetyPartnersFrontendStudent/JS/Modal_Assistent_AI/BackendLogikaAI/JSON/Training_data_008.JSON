@@ -1,0 +1,182 @@
+[
+  {
+    "etapa": 161,
+    "tema": "Umístění certifikátů",
+    "data": [
+      { "question": "Kde najdu svůj certifikát?", "answer": "Certifikát je uložen v sekci 'Crtifikáty'. [1]" },
+      { "question": "Kam se ukládají mé získané diplomy?", "answer": "Své certifikáty naleznete v sekci 'Moje certifikáty'. [1]" },
+      { "question": "Kde si mohlo prohlédnout svá osvědčení?", "answer": "Všechny vaše certifikáty jsou uloženy v sekci 'Moje certifikáty'. [1]" }
+    ]
+  },
+  {
+    "etapa": 162,
+    "tema": "Stažení certifikátu",
+    "data": [
+      { "question": "Jak si stáhnu certifikát?", "answer": "Klikněte na 'Stáhnout certifikát' v sekci Certifikáty, s názvem příslušného kurzu. [1]" },
+      { "question": "Cesta ke stažení PDF s mým osvědčením?", "answer": "V sekci certifikátů zvolte možnost 'Stáhnout certifikát' s názvem daného kurzu. [1]" },
+      { "question": "Jak získám soubor se svým certifikátem?", "answer": "Stačí u názvu konkrétního kurzu kliknout na tlačítko 'Stáhnout certifikát'. [1]" }
+    ]
+  },
+  {
+    "etapa": 163,
+    "tema": "Mezinárodní uznávání",
+    "data": [
+      { "question": "Jsou certifikáty platné mezinárodně?", "answer": "Záleží na typu kurzu, většina certifikátů je uznávána i v zahraničí. [2]" },
+      { "question": "Bude můj certifikát platit i v cizině?", "answer": "Většina našich certifikátů má mezinárodní platnost, závisí to však na konkrétním kurzu. [2]" },
+      { "question": "Uznávají tyto diplomy i zahraniční instituce?", "answer": "Ano, většina certifikátů je uznávána mezinárodně, detaily se liší dle typu školení. [2]" }
+    ]
+  },
+  {
+    "etapa": 164,
+    "tema": "Platnost certifikátu",
+    "data": [
+      { "question": "Jak dlouho platí certifikát?", "answer": "Platnost se liší, obvykle 2 roky. Informace najdete na samotném certifikátu. [2]" },
+      { "question": "Kdy mi vyprší platnost mého osvědčení?", "answer": "Certifikáty platí standardně 2 roky, přesný údaj je uveden přímo na dokumentu. [2]" },
+      { "question": "Má certifikát nějaké datum expirace?", "answer": "Ano, obvykle je to 2 roky, konkrétní informaci najdete na certifikátu. [2]" }
+    ]
+  },
+  {
+    "etapa": 165,
+    "tema": "Export výsledků",
+    "data": [
+      { "question": "Jak exportuji své výsledky do PDF?", "answer": "Klikněte na 'Exportovat do PDF' v sekci Certifikáty. [3]" },
+      { "question": "Lze získat přehled mých výsledků v PDF souboru?", "answer": "Ano, v sekci Certifikáty zvolte možnost 'Exportovat do PDF'. [3]" },
+      { "question": "Kde stáhnu dokument se svými výsledky?", "answer": "Využijte tlačítko 'Exportovat do PDF', které najdete v sekci Certifikáty. [3]" }
+    ]
+  },
+  {
+    "etapa": 166,
+    "tema": "Dostupnost materiálů",
+    "data": [
+      { "question": "Jak získám materiály ke kurzu?", "answer": "Materiály jsou dostupné po přihlášení do kurzu v sekci 'Moje kurzy'. [4]" },
+      { "question": "Kde si stáhnu studijní podklady?", "answer": "V sekci 'Moje kurzy' najdete po přihlášení ke kurzu všechny materiály. [4]" },
+      { "question": "Kde najdu soubory k lekcím?", "answer": "Veškeré materiály jsou přístupné v sekci 'Moje kurzy' u daného školení. [4]" }
+    ]
+  },
+  {
+    "etapa": 167,
+    "tema": "Harmonogram lekcí",
+    "data": [
+      { "question": "Kde najdu harmonogram lekcí?", "answer": "Harmonogram je součástí detailu každého kurzu. [4]" },
+      { "question": "Uvidím někde časový plán školení?", "answer": "Ano, harmonogram najdete přímo v detailu konkrétního kurzu. [4]" },
+      { "question": "Jak zjistím rozvrh svého kurzu?", "answer": "Podívejte se do detailu kurzu, kde je harmonogram lekcí uveden. [4]" }
+    ]
+  },
+  {
+    "etapa": 168,
+    "tema": "Zápis do více kurzů",
+    "data": [
+      { "question": "Můžu se přihlásit do více kurzů najednou?", "answer": "Ano můžete, záleží který z kurzů je nyní mimo expiraci nebo ještě nebyl splněn. [5]" },
+      { "question": "Je možné studovat několik školení současně?", "answer": "Ano, pokud nejsou po expiraci nebo již splněné, můžete být v několika kurzech najednou. [5]" },
+      { "question": "Lze mít aktivních více registrací ke studiu?", "answer": "Ano, můžete mít více kurzů současně v závislosti na jejich stavu a platnosti. [5]" }
+    ]
+  },
+  {
+    "etapa": 169,
+    "tema": "Zrušení registrace",
+    "data": [
+      { "question": "Jak zruším registraci do kurzu?", "answer": "V detailu kurzu klikněte na možnost 'Odhlásit se z kurzu'. [5]" },
+      { "question": "Kde se můžu odhlásit ze školení?", "answer": "Registraci zrušíte v detailu kurzu volbou 'Odhlásit se z kurzu'. [5]" },
+      { "question": "Jak stornuji svou účast v kurzu?", "answer": "Stačí v detailu kurzu vybrat možnost 'Odhlásit se z kurzu'. [5]" }
+    ]
+  },
+  {
+    "etapa": 170,
+    "tema": "Zapomenuté heslo",
+    "data": [
+      { "question": "Zapomněl jsem heslo, co dělat?", "answer": "Klikněte na 'Zapomenuté heslo' na přihlašovací stránce. [6]" },
+      { "question": "Nepamatuji si své heslo k účtu.", "answer": "Využijte odkaz 'Zapomenuté heslo', který najdete na stránce pro přihlášení. [6]" },
+      { "question": "Jak obnovím zapomenuté přístupové údaje?", "answer": "Na přihlašovací obrazovce zvolte možnost 'Zapomenuté heslo'. [6]" }
+    ]
+  },
+  {
+    "etapa": 171,
+    "tema": "Úprava profilu",
+    "data": [
+      { "question": "Jak upravím svůj profil?", "answer": "Profil lze upravit v sekci 'Můj profil'. [6]" },
+      { "question": "Kde si můžu změnit své osobní údaje?", "answer": "Své informace můžete aktualizovat v sekci 'Můj profil'. [6]" },
+      { "question": "Jak si nastavím fotku nebo info v profilu?", "answer": "Veškeré úpravy profilu provádějte v sekci 'Můj profil'. [6]" }
+    ]
+  },
+  {
+    "etapa": 172,
+    "tema": "Odhlášení ze systému",
+    "data": [
+      { "question": "Jak se odhlásit z LMS?", "answer": "Klikněte na tlačítko 'Odhlásit se' v horní liště. [7]" },
+      { "question": "Kde najdu tlačítko pro odchod z účtu?", "answer": "Pro odhlášení použijte příslušné tlačítko v horní liště systému. [7]" },
+      { "question": "Jak bezpečně ukončím svou relaci?", "answer": "Klikněte na 'Odhlásit se' v horní části obrazovky. [7]" }
+    ]
+  },
+  {
+    "etapa": 173,
+    "tema": "Aktivace 2FA",
+    "data": [
+      { "question": "Jak aktivovat dvoufaktorové ověření?", "answer": "V sekci 'Bezpečnost' zapněte 2FA a naskenujte QR kód v aplikaci. [7]" },
+      { "question": "Kde si zapnu bezpečnější přihlášení (2FA)?", "answer": "Přejděte do sekce 'Bezpečnost', aktivujte 2FA a použijte QR kód pro mobilní aplikaci. [7]" },
+      { "question": "Postup pro spuštění dvoufázového ověřování?", "answer": "V sekci 'Bezpečnost' zvolte 2FA a naskenujte kód do své autentizační aplikace. [7]" }
+    ]
+  },
+  {
+    "etapa": 174,
+    "tema": "Kontaktování podpory",
+    "data": [
+      { "question": "Kam napsat problém s LMS?", "answer": "Použijte sekci 'Kontakt' nebo napište na podporu support@AetheriumCore.cz. [8]" },
+      { "question": "Kde nahlásím technickou chybu systému?", "answer": "Využijte sekci 'Kontakt' nebo pošlete e-mail na support@AetheriumCorecz. [8]" },
+      { "question": "Jak získám pomoc, když mi něco nefunguje?", "answer": "Kontaktujte nás skrze sekci 'Kontakt' nebo na adrese support@AetheriumCore.cz. [8]" }
+    ]
+  },
+  {
+    "etapa": 175,
+    "tema": "Hlášení problémů s materiály",
+    "data": [
+      { "question": "Jak nahlásit problém s videem nebo materiálem?", "answer": "Použijte tlačítko 'Nahlásit problém' přímo u materiálu. [9]" },
+      { "question": "Co dělat, když video v lekci nefunguje?", "answer": "Klikněte na tlačítko 'Nahlásit problém', které je umístěno přímo u daného materiálu. [9]" },
+      { "question": "Našel jsem chybu v textu kurzu, komu to říct?", "answer": "Využijte funkci 'Nahlásit problém' v sekci Kontakt. [9]" }
+    ]
+  },
+  {
+    "etapa": 176,
+    "tema": "Nenačítání kurzu",
+    "data": [
+      { "question": "Co dělat, když se kurz nenačítá?", "answer": "Zkuste obnovit stránku, případně vyčistit cache prohlížeče. [9]" },
+      { "question": "Stránka s lekcí je zaseknutá nebo prázdná.", "answer": "Doporučujeme stránku obnovit nebo vymazat mezipaměť (cache) vašeho prohlížeče. [9]" },
+      { "question": "Proč mi nejde spustit studijní modul?", "answer": "Zkuste obnovit prohlížeč nebo vyčistit cache, to obvykle technické potíže vyřeší. [9]" }
+    ]
+  },
+  {
+    "etapa": 177,
+    "tema": "Bodové minimum",
+    "data": [
+      { "question": "Jaký je minimální počet bodů k úspěchu?", "answer": "Standardně je potřeba získat alespoň 70 % bodů. [10]" },
+      { "question": "Kolik procent musím mít, abych složil test?", "answer": "Hranice pro úspěšné absolvování testu je běžně nastavena na 70 % bodů. [10]" },
+      { "question": "Stačí mi polovina bodů k získání certifikátu?", "answer": "Ne, pro úspěch v testu je standardně vyžadováno alespoň 70 %. [10]" }
+    ]
+  },
+  {
+    "etapa": 178,
+    "tema": "Prohlížení odpovědí",
+    "data": [
+      { "question": "Můžu se podívat na správné odpovědi?", "answer": "Ano, po ukončení testu uvidíte správná řešení u otázek. [1]" },
+      { "question": "Uvidím po testu, kde jsem udělal chybu?", "answer": "Ano, po dokončení zkoušky vám systém ukáže správná řešení u všech otázek. [1]" },
+      { "question": "Dozvím se správné výsledky po odevzdání?", "answer": "Ano, systém vám po skončení testu zobrazí správné odpovědi. [1]" }
+    ]
+  },
+  {
+    "etapa": 179,
+    "tema": "Aktualizace aplikace",
+    "data": [
+      { "question": "Jak zjistím, zda mám aktuální verzi aplikace?", "answer": "V nastavení mobilní aplikace vidíte číslo verze a dostupné aktualizace. [11]" },
+      { "question": "Kde najdu informaci o tom, že potřebuji update aplikace?", "answer": "Podívejte se do nastavení mobilní aplikace, tam je uvedena verze i info o aktualizacích. [11]" },
+      { "question": "Mám nejnovější verzi AetheriumCore na mobilu?", "answer": "To si můžete ověřit v nastavení aplikace, kde uvidíte číslo verze i dostupné novinky. [11]" }
+    ]
+  },
+  {
+    "etapa": 180,
+    "tema": "Offline režim",
+    "data": [
+      { "question": "Můžu LMS používat offline?", "answer": "Některé materiály lze stáhnout, ale většina funkcí vyžaduje internet. [11]" },
+      { "question": "Funguje systém i bez připojení k síti?", "answer": "Většina funkcí vyžaduje internet; offline jsou dostupné pouze stažené materiály. [11]" },
+      { "question": "Dají se lekce studovat bez Wi-Fi?", "answer": "Některé soubory lze stáhnout pro offline použití, ale plná funkčnost vyžaduje online připojení. [11]" }
+    ]
+  }
+]

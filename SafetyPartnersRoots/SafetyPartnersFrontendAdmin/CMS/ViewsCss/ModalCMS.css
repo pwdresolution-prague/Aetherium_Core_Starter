@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/*TODO: Modal Kurzy */
+
+.Modal-Courses{
+    text-align: center;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tím zarovnáš všechna tlačítka na střed */
+    gap: 0.5vw;
+
+}
+
+.CoursesOffer{
+    color: black;
+    margin-left: 18vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -44vw;
+    align-items: center;
+
+
+
+
+    
+}
+
+/*TODO: Modal Okna*/
+
+.ModalButton-BezpečnostPráce {
+  border: #003366 solid 0.3vw;
+  background: #b5daff;
+  border-radius: 30vw;
+  width: 35vw;
+  height: 4vw;
+  margin-top: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  cursor: pointer;
+  margin-left: 18vw;
+  color: white;
+
+}
+
+/*TODO: Hover */
+.ModalButton-BezpečnostPráce:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-BezpečnostPráceProVedoucíPracovníky{
+    border: #003366 solid 0.3vw;
+    background: #add4fa;
+    border-radius: 30vw;
+    width: 35vw;
+    height: 4vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+}
+/*TODO: Hover */
+.ModalButton-BezpečnostPráceProVedoucíPracovníky:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-PožárníOchrana{
+    border: #003366 solid 0.3vw;
+    background: #a2c9f2;
+    border-radius: 30vw;
+    width: 35vw;
+    height: 4vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+}
+/*TODO: Hover */
+.ModalButton-PožárníOchrana:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-PožárníOchranaProVedoucíPracovníky{
+    border: #003366 solid 0.3vw;
+    border-radius: 30vw;
+    background: #97bfe9;
+    width: 35vw;
+    height: 4vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+}
+
+/*TODO: Hover */
+.ModalButton-PožárníOchranaProVedoucíPracovníky:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-ŘidičiReferenti{
+    border: #003366 solid 0.3vw;
+    background: #8cb5e1;
+    border-radius: 30vw;
+    width: 35vw;
+    height: 4vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+}
+
+.ModalButton-ŘidičiReferenti:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+/*TODO: ModalWindow */
+.ModalWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* tmavé pozadí */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.ModalContent {
+  width: 80vw;
+  height: 80vh;
+  background: #fff; /* nebo stejný styl jako chatbot okno */
+  border-radius: 1vw;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* když obsah přeteče, přidá se scroll */
+}
+
+.ModalContent h3 {
+  margin-top: 0;
+}
+
+.ModalHidden {
+    display: none;
+}
+
+
+.Close {
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
+  font-size: 2vw;
+  cursor: pointer;
+  color: #333;
+}

@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/*TODO: Modal Kurzy */
+
+.Modal-Courses{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tím zarovnáš všechna tlačítka na střed */
+    gap: 0.5vw;
+
+}
+
+.CoursesOffer{
+    color: black;
+    margin-left: 18vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -43vw;
+    align-items: center;
+
+
+
+
+    
+}
+
+/*TODO: Modal Okna*/
+
+.ModalButton-BezpečnostPráce {
+  border: #FF6600 solid 0.14vw;
+background: linear-gradient(to right, #003d80, #005099 );
+  border-radius: 30vw;
+  width: 35vw;
+  height: 3vw;
+  margin-top: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  cursor: pointer;
+  margin-left: 18vw;
+  color: white;
+  box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 5px rgba(93, 93, 93, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+
+}
+
+.ModalButton-BezpečnostPráce:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/*TODO: Hover */
+.ModalButton-BezpečnostPráce:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-BezpečnostPráceProVedoucíPracovníky{
+    border: #FF6600 solid 0.14vw;
+    background: linear-gradient(to right, #003d80, #5f89bc );
+    border-radius: 30vw;
+    width: 35vw;
+    height: 3vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 5px rgba(93, 93, 93, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.ModalButton-BezpečnostPráceProVedoucíPracovníky:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+/*TODO: Hover */
+.ModalButton-BezpečnostPráceProVedoucíPracovníky:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-PožárníOchrana{
+    border: #FF6600 solid 0.14vw;
+    background: linear-gradient(to right, #003d80, #5f89bc);
+    border-radius: 30vw;
+    width: 35vw;
+    height: 3vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 5px rgba(93, 93, 93, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.ModalButton-PožárníOchrana:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+/*TODO: Hover */
+.ModalButton-PožárníOchrana:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-PožárníOchranaProVedoucíPracovníky{
+    border: #FF6600 solid 0.14vw;
+    border-radius: 30vw;
+    background: linear-gradient(to right, #003d80, #5f89bc);
+    width: 35vw;
+    height: 3vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 5px rgba(93, 93, 93, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.ModalButton-PožárníOchranaProVedoucíPracovníky:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/*TODO: Hover */
+.ModalButton-PožárníOchranaProVedoucíPracovníky:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+.ModalButton-ŘidičiReferenti{
+    border: #FF6600 solid 0.14vw;
+    background: linear-gradient(to right, #003d80, #5f89bc );
+    border-radius: 30vw;
+    width: 35vw;
+    height: 3vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 5px rgba(93, 93, 93, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.ModalButton-ŘidičiReferenti:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+.ModalButton-ŘidičiReferenti:hover {
+  background-color: #007acc; /* světlejší modrá */
+}
+
+
+.ModalButton-První-pomoc{
+    border: #FF6600 solid 0.14vw;
+    background: linear-gradient(to right, #003d80, #5f89bc );
+    border-radius: 30vw;
+    width: 35vw;
+    height: 3vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 5px rgba(93, 93, 93, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+
+.ModalButton-První-pomoc:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+.ModalButton-Práce-ve-výškách{
+    border: #FF6600 solid 0.14vw;
+    background: linear-gradient(to right, #003d80, #5f89bc);
+    border-radius: 30vw;
+    width: 35vw;
+    height: 3vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 5px rgba(93, 93, 93, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.ModalButton-Práce-ve-výškách:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TODO: ModalWindow */
+.ModalWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* tmavé pozadí */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.ModalContent {
+  width: 80vw;
+  height: 80vh;
+  background: #fff; /* nebo stejný styl jako chatbot okno */
+  border-radius: 1vw;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* když obsah přeteče, přidá se scroll */
+}
+
+.ModalContent h3 {
+  margin-top: 0;
+}
+
+.ModalHidden {
+    display: none;
+}
+
+
+.Close {
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
+  font-size: 2vw;
+  cursor: pointer;
+  color: #333;
+}

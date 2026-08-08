@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.TextObsah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+
+}
+
+
+
+.Nadpis {
+        color: black;
+        font-weight: 300;
+        font-weight: bold;
+        margin-bottom: 3vw;
+        margin-top: -10vw;
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        max-width: 80vw;
+
+
+                 
+}
+
+.Podnadpis {
+        color: black;
+        font-weight: 300;
+        max-width: 80vw;
+        margin-bottom: 1vw;
+        margin-left: 12vw;
+        font-size: 1.2vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+}
+
+
+
+
+/*TODO: Selektivní část Formuláře=========================================*/
+
+.visitSelector {
+    position: relative;
+    margin-right: 1.5vw;
+
+}
+
+
+.Selector {
+    justify-content: center;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+.visitTypeButton {
+    width: 19vw;
+    height: 4.7vh;
+    border-radius: 1.1vw;
+    padding: 0.5vw;
+    margin-bottom: 2vw;
+    margin-top: -2vw;
+    margin-left: 1.5vw;
+    border: rgb(42, 41, 41) solid 0.12vw;
+    background: linear-gradient(to right, #d8d0ca, #f5dad0);
+    border-color: #757474 solid 0.15vw;
+    justify-content: center;    
+    display: flex;
+    align-items: center;
+    font-size: 0.9vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.25s ease;
+    
+}
+
+.modalOverlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modalOverlay.active .modalWindow {
+    transform: scale(1);
+}
+
+
+
+/*TODO: Modalové okno Návštěvníka ==================================================================================== */
+
+.visit-modal-content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2vw;
+    border-radius: 1vw;
+    width: 75vw;
+    height: 45vh;
+    margin-bottom: 10vh;
+    border: 2px solid #d76f4a;
+    box-shadow: 0px 4px 15px rgba(96, 90, 90, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    gap: 3vw;
+    inset: 0;
+    background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 100%   /* Tmavá námořní */
+
+  );
+  
+
+
+
+
+
+  
+}
+
+
+.optionSelect1 {
+    width: 10vw;
+    height: 5vh;
+    background: linear-gradient(to right, #d8b69f, #d89970);
+    border-radius: 1.1vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    border-radius: 1vw;
+    border-color: white;
+    /* Flex nastavení pro centrování */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centruje horizontálně */
+    justify-content: center;   /* ← TOTO TI CHYBĚLO — centruje vertikálně */
+    text-align: center;
+    margin-top: 2vw;
+    font-size: medium;
+    margin-right: 38vw;
+    margin-top: -14vh;
+
+
+
+
+}
+
+.pruvodniInfo {
+    color: white;
+    margin-right: 38vw;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    
+    
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/*TODO: Modalové styly pro stylování Registrace ================================================================================================= */
+
+.optionSelect2 {
+    width: 10vw;
+    height: 5vh;
+    background: linear-gradient(to right, #d8b69f, #d89970);
+    border-radius: 1.1vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    border-radius: 1vw;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center;  
+    font-size: medium;
+    margin-left: 32vw;
+    margin-top: -28.3vw;
+
+
+}
+
+
+/*TODO: Modalové styly pro stylování vstupního formu ================================================================================================= */
+/* ============================================================================================================================================================= */
+/* TODO: Maximální hodnota ======================================================================================================================================================= */
+
+
+.login-form-active {
+    display: flex;
+    flex-direction: column;
+    width: 26vw;
+    height: 22vh;
+    gap: 2vw;
+    border-radius: 2vw;
+    border: 2px solid rgba(217, 121, 86, 0.3); 
+    align-items: center;
+    margin-top: 3.6vw;
+    padding: 0.8vw;
+    margin-left: 32.25vw;
+    margin-top: -20vw;
+
+    
+
+
+
+
+}
+
+.login-form-active input {
+    
+    background: linear-gradient(to right, #e3deda, #b4a79e);
+    border-radius: 1.1vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    font-size: 1rem;
+    margin-top: 0.3vw;
+    transition: all 0.3s ease;
+    width: 22vw;
+    height: 15vh;
+    border-radius: 1vw;
+    text-align: center;
+    align-items: center;
+
+} 
+
+.login-form-active input:focus {
+    gap: 3vw;
+    border-color: #d77c3a;
+    box-shadow:
+        0 0 10px rgba(255,103,0,0.4),
+        0 0 20px rgba(255,103,0,0.15);
+}
+
+
+.login-form-active button {
+    width: 10vw;
+    height: 6vw;
+    background: linear-gradient(to right, #d9aa8a, #b27660);
+    border-radius: 1.1vw;
+    margin-top: 1.4vw;
+    
+    border: white solid 0.15vw;
+    display: flex;             
+    align-items: center;        
+    justify-content: center;
+    color: white;
+    font-size: 1.2vw;
+    margin-left: 13.5vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    margin-right: 13vw;
+
+} 
+
+.login-form-active button:hover {
+    transform: translateY(-2px);
+    gap: 4vw;
+    box-shadow:
+        0 8px 25px rgba(211, 90, 9, 0.3);
+    filter: brightness(1.1);
+}
+
+.closeButtonSection {
+background: none;
+color:white;
+  border: none;     
+  
+  font-size: 2vw;
+  font-weight: bold;
+  margin-left: 70vw;
+  margin-bottom: 10vh;
+
+
+}
+
+
+
+
+
+

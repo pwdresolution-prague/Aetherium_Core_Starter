@@ -1,0 +1,94 @@
+[{ "Kurzy a registrace": {
+
+   "Jak se zapsat do kurzu?": "Stačí kliknout na sekci 'Kurzy' a vybrat si kurz.",
+   "Kdy začíná nový kurz?": "Začátek každého kurzu vzniká v momentě jeho spuštění",
+   "Jaké kurzy nabízíte tento měsíc?": "Máme stále standartní nabídku kurzů, v případě novinek budete informováni pomocí newsletteru",
+   "Můžu se přihlásit do více kurzů najednou?": "Ano můžete, záleží který z kurzů je nyní mimo expiraci nebo ještě nebyl splněn",
+   "Jak zruším registraci do kurzu?": "V detailu kurzu klikněte na možnost 'Odhlásit se z kurzu",
+   "Jak získám materiály ke kurzu?": "Materiály jsou dostupné po přihlášení do kurzu v sekci 'Moje kurzy",
+   "Kde najdu harmonogram lekcí?": "Harmonogram je součástí detailu každého kurzu.", 
+   "Jak dlouho trvá kurz?": "Informace najdete v detailu kurzu.",
+   "Jsou kurzy online nebo prezenční?": "Většina kurzů probíhá online, některé nabízejí i prezenční variantu.",
+   "Jak změním svůj vybraný kurz?": "Kurz můžete změnit v sekci 'Moje kurzy' – kliknutím na 'Změnit kurz'.",
+   "Je kurz dostupný i po dokončení?": "Ano, většinu kurzů můžete procházet i po jejich dokončení.",
+   "Mohu studovat vlastním tempem?": "Ano, kurzy jsou navrženy jako samostudium, kromě těch s pevně stanoveným termínem.",
+   "Jaké jsou vstupní požadavky na kurz?": "Každý kurz má své požadavky uvedené v detailu.",
+   "Jsou kurzy vhodné i pro začátečníky?": "Ano, nabízíme kurzy od základní až po pokročilou úroveň.",
+   "Dostanu doporučení na další kurz po dokončení?": "Ano, systém vám nabídne doporučené navazující kurzy."
+
+},
+  "Testy a hodnocení": {
+    "Kdy mohu udělat test?": "Test je dostupný po dokončení příslušných lekcí kurzu.", 
+    "Kolikrát mohu opakovat test?": "Test můžete opakovat neomezeně, pokud není uvedeno jinak.",
+    "Jak získám výsledky testu?": "Výsledky testu se zobrazí ihned po jeho dokončení.",
+    "Co dělat, když test neprojde?": "Můžete si látku zopakovat a test složit znovu v povoleném počtu pokusů.",
+    "Kde najdu seznam otázek k procvičení?": "Procvičovací otázky jsou v sekci Moje Kurzy.",
+    "Jsou testy časově omezené?": "Ano, každý test má časový limit uvedený před jeho zahájením.",
+    "Jaký je minimální počet bodů k úspěchu?": "Standardně je potřeba získat alespoň 60 % bodů.",
+    "Mohu si stáhnout certifikát po testu?": "Ano, certifikát se zpřístupní po úspěšném složení testu.",
+    "Jak probíhá online testování?": "Test se spustí přímo v LMS, otázky se zobrazují postupně a výsledky uvidíte na konci.",
+    "Můžu si test rozdělit do více částí?": "Ano, v případě výpadku připojení, navážete v posledním vykonaném kroku",
+    "Je test stejný pro všechny studenty?": "Otázky se mohou generovat náhodně, aby každý student měl jinou variantu.",
+    "Jsou testy hodnoceny automaticky?": "Ano, testy jsou vyhodnocovány automaticky po odevzdání.",
+    "Můžu se podívat na správné odpovědi?": "Ano, po ukončení testu uvidíte správná řešení u otázek.",
+    "Jak LMS zabraňuje podvádění u testů?": "Testy mají časový limit, náhodné pořadí otázek a někdy i kamerové ověření.",
+    "Je možné žádat o přezkoumání výsledků testu?": "Ano, pokud se domníváte, že došlo k chybě, kontaktujte podporu."
+  },
+
+ "Certifikáty a dokumenty": {
+    "Kde najdu svůj certifikát?": "Certifikát je uložen v sekci 'Moje certifikáty'.",
+    "Jak si stáhnu certifikát?": "Klikněte na 'Stáhnout certifikát' vedle příslušného kurzu.",
+    "Můžu získat duplicitní certifikát?": "Ano, v sekci 'Moje certifikáty' můžete stáhnout kopii kdykoli.",
+    "Jsou certifikáty platné mezinárodně?": "Záleží na typu kurzu, většina certifikátů je uznávána i v zahraničí.",
+    "Jak dlouho platí certifikát?": "Platnost se liší, obvykle 2 roky. Informace najdete na samotném certifikátu.",
+    "Jak nahlásit problém s certifikátem?": "Problém nahlaste podpoře přes sekci 'Kontakt'",
+    "Mohu získat potvrzení o účasti místo certifikátu?": "Ano, potvrzení o účasti je dostupné v PDF.",
+    "Jak získám přehled absolvovaných kurzů?": "Přehled najdete v sekci 'Moje kurzy – historie'.",
+    "Kde najdu historii testů?": "Historii testů najdete v detailu každého kurzu.",
+    "Jak exportuji své výsledky do PDF?": "Klikněte na 'Exportovat do PDF' v sekci Certifikáty.",
+    "Jsou certifikáty akreditované ministerstvem?": "U vybraných kurzů ano, vždy je to uvedeno v detailu kurzu.",
+    "Jak si ověřím pravost certifikátu?": "Každý certifikát má unikátní ID, které lze ověřit na našem portálu.",
+    "Můžu sdílet certifikát na LinkedIn?": "Ano, certifikát lze exportovat do formátu pro LinkedIn.",
+    "Dostanu papírovou verzi certifikátu?": "Standardně poskytujeme elektronickou verzi, papírovou na vyžádání.",
+    "Je možné převést certifikát na jinou instituci?": "Ano, pokud spolupracujeme s institucí, která certifikát uznává."
+
+}, 
+ "Uživatelský účet": {
+    "Jak změním své heslo?": "Heslo změníte v sekci 'Nastavení účtu'.",
+    "Jak upravím svůj profil?": "Profil lze upravit v sekci 'Můj profil'.",
+    "Zapomněl jsem heslo, co dělat?": "Klikněte na 'Zapomenuté heslo' na přihlašovací stránce.",
+    "Jak změním e-mailovou adresu?": "E-mail změníte v nastavení účtu, potvrzení přijde na novou adresu.",
+    "Jak odeberu svůj účet?": "Napište žádost administrátorovi přes 'Kontakt'",
+    "Jak propojit účet s firmou?": "Váš účet je automaticky přidělen do správy firmy u níž jste evidován",
+    "Můžu mít více profilů pod jedním emailem?": "Ne, každý e-mail je vázán pouze na jeden účet.",
+    "Jak se odhlásit z LMS?": "Klikněte na tlačítko 'Odhlásit se' v horní liště.",
+    "Co dělat při ztrátě přístupu?": "Kontaktujte podporu přes 'Kontakt'.",
+    "Jak aktivovat dvoufaktorové ověření?": "V sekci 'Bezpečnost' zapněte 2FA a naskenujte QR kód v aplikaci.",
+    "Jak změním jazyk rozhraní?": "V sekci 'Nastavení účtu' můžete zvolit preferovaný jazyk.",
+    "Je možné propojit účet s Google/LinkedIn?": "Ano, nabízíme možnost sociálního přihlášení.",
+    "Jak zjistím, kdo má přístup k mým údajům?": "V sekci GDPR vidíte, jaké údaje uchováváme.",
+    "Mohu využít účet i v mobilní aplikaci?": "Ano, stačí se přihlásit stejnými údaji."
+    
+},
+ "Podpora a technické otázky": {
+    "Kam napsat problém s LMS?": "Použijte sekci 'Kontakt' nebo napište na podporu support@SafetyPartners.cz.",
+    "Jak kontaktovat administrátora?": "Administrátora kontaktujete přes interní zprávy nebo formulář v sekci 'Kontakt'",
+    "Co dělat, když se kurz nenačítá?": "Zkuste obnovit stránku, případně vyčistit cache prohlížeče.",
+    "Jak opravit chybu při odesílání testu?": "Zkontrolujte připojení k internetu a zkuste test odeslat znovu.",
+    "Jak nahlásit problém s videem nebo materiálem?": "Použijte tlačítko 'Nahlásit problém' přímo u materiálu.",
+    "Jak aktualizovat prohlížeč pro LMS?": "Navštivte oficiální web vašeho prohlížeče a stáhněte si poslední verzi.",
+    "Proč se mi nenačítají certifikáty?": "Zkontrolujte, zda máte splněné všechny požadavky kurzu a testy.",
+    "Jak funguje historie aktivit?": "Historie aktivit zaznamenává vaše přihlášení, absolvované lekce a testy.",
+    "Jak synchronizovat LMS s mobilní aplikací?": "Stačí se přihlásit v aplikaci stejnými údaji jako na webu.",
+    "Kde najdu nápovědu pro začátečníky?": "Základní nápovědu získáte při vstupu do systému",
+    "Jaké prohlížeče LMS podporuje?": "Podporujeme Chrome, Firefox, Edge a Safari.",
+    "Funguje LMS i na tabletu?": "Ano, systém je plně responzivní a přizpůsobený pro mobilní zařízení.",
+    "Můžu LMS používat offline?": "Některé materiály lze stáhnout, ale většina funkcí vyžaduje internet.",
+    "Jak zjistím, zda mám aktuální verzi aplikace?": "V nastavení mobilní aplikace vidíte číslo verze a dostupné aktualizace.",
+    "Je dostupný live chat s podporou?": "Ano, v pracovní době můžete využít chat přímo v systému."
+
+  }
+} 
+
+]
+

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/*COMMENT: Okno pro bilance v edukačním systému */
+
+.heroCurrentBalance{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: #848484;
+  border: 0.2rem  solid #ffe1cc;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  width: 20rem;
+  height: 23rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  margin-left: -22vw;
+
+
+
+}
+
+.currentBalanceTitle{
+  color: #ffffff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: medium;
+  margin-bottom: -2vh;
+
+
+}
+
+/*COMMENT: Místo pro diody v bilančním okně */
+
+
+.diodeBalanceRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-left: -0vw;
+  margin-bottom: 26vh;
+
+}
+
+.diodeBalance {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #807d7d;
+  transition: background 1s ease;
+}
+
+.diodeBalance.off {
+  background: #4b0303;
+}
+
+.diodeBalance.on {
+  animation: glow-orange-pulse 1.5s infinite;
+}
+
+/* Základní barva společná pro všechny, když svítí */
+.diodeBalance[data-level="1"].on { background: #f7b733; }
+.diodeBalance[data-level="2"].on { background: #f7943c; }
+.diodeBalance[data-level="3"].on { background: #f75c1f; }
+
+.diodeBalance.on {
+  animation: chase-orange 1.5s linear infinite;
+}
+
+/* Delay zůstává stejný jako doteď */
+.diodeBalance[data-level="1"].on { animation-delay: 0s; }
+.diodeBalance[data-level="2"].on { animation-delay: 0.5s; }
+.diodeBalance[data-level="3"].on { animation-delay: 1s; }
+
+@keyframes chase-orange {
+  0%, 33.33% {
+    opacity: 1;
+    box-shadow: 0 0 6px 2px rgba(175, 84, 51, 0.6);
+  }
+  33.34%, 100% {
+    opacity: 0.3;
+    box-shadow: none;
+  }
+}
+
+/*TODO: COMMENT: Další obsah v rámci kurzů

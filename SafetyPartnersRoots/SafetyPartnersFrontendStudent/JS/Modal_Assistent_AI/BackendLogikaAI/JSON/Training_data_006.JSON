@@ -1,0 +1,182 @@
+[
+  {
+    "etapa": 101,
+    "tema": "Detailní nastavení 2FA",
+    "data": [
+      { "question": "Kde přesně najdu ten QR kód pro dvoufázové ověření?", "answer": "QR kód se vám zobrazí v sekci 'Bezpečnost' po kliknutí na tlačítko pro zapnutí 2FA [2]." },
+      { "question": "Jak propojím autentizační aplikaci se svým účtem?", "answer": "V sekci 'Bezpečnost' zapněte 2FA a naskenujte zobrazený QR kód pomocí vaší aplikace v mobilu [2]." },
+      { "question": "Postup pro aktivaci zvýšeného zabezpečení účtu?", "answer": "Přejděte do sekce 'Bezpečnost', aktivujte 2FA a postupujte podle pokynů pro naskenování kódu [2]." }
+    ]
+  },
+  {
+    "etapa": 102,
+    "tema": "Expirace a platnost přístupu ke kurzům",
+    "data": [
+      { "question": "Jak poznám, že mi u kurzu končí platnost?", "answer": "Informaci o tom, zda je kurz mimo expiraci nebo již byl splněn, najdete přímo v jeho detailu [1]." },
+      { "question": "Můžu se zapsat do kurzu, který už vypršel?", "answer": "Do kurzů, které jsou po expiraci, se již nelze zapsat; v nabídce uvidíte pouze aktuální školení [1]." },
+      { "question": "Kde uvidím datum, do kdy musím kurz stihnout?", "answer": "Status expirace a aktuální stav splnění kurzu jsou uvedeny v sekci 'Kurzy' [1]." }
+    ]
+  },
+  {
+    "etapa": 103,
+    "tema": "Cookies a technické nastavení prohlížeče",
+    "data": [
+      { "question": "Mám povolit cookies pro správné fungování LMS?", "answer": "Ano, pro správné načítání kurzů a ukládání postupu doporučujeme mít v prohlížeči povoleny soubory cookies [4]." },
+      { "question": "Proč se mi po přihlášení stránka stále odhlašuje?", "answer": "Zkuste vyčistit cache prohlížeče a zkontrolovat, zda cookies neblokují přístup k systému [4]." },
+      { "question": "Potřebuje web nějaké speciální povolení v prohlížeči?", "answer": "Pro optimální chod doporučujeme aktuální verzi prohlížeče (Chrome, Firefox, Safari) a povolené cookies [4, 6]." }
+    ]
+  },
+  {
+    "etapa": 104,
+    "tema": "Interní zprávy a komunikace",
+    "data": [
+      { "question": "Kde najdu schránku s odpověďmi od administrátora?", "answer": "Komunikace probíhá přes interní zprávy, které najdete ve svém uživatelském rozhraní [4]." },
+      { "question": "Jak zjistím, jestli mi správce už odpověděl na můj dotaz?", "answer": "Odpovědi od administrátora se zobrazují v sekci interních zpráv nebo vám přijde upozornění [4]." },
+      { "question": "Můžu psát správci přímo z rozhraní kurzu?", "answer": "Ano, využijte interní zprávy nebo kontaktní formulář v sekci 'Kontakt' [4]." }
+    ]
+  },
+  {
+    "etapa": 105,
+    "tema": "Notifikace v mobilní aplikaci", //TODO: Tvorba a implementace notifikací v mobilní aplikaci / Mobilní aplikace Aetherium_Core_Enterprise
+    "data": [
+      { "question": "Budou mi chodit upozornění na nový kurz do mobilu?", "answer": "Ano, pokud máte nainstalovanou naši aplikaci, budete dostávat notifikace o novinkách [1, 5]." },
+      { "question": "Jak vypnu upozornění z LMS na svém telefonu?", "answer": "Nastavení notifikací můžete upravit přímo v mobilní aplikaci v sekci nastavení [5]." },
+      { "question": "Upozorní mě aplikace na blížící se konec platnosti kurzu?", "answer": "Ano, mobilní aplikace vás informuje o důležitých termínech a aktualizacích [5]." }
+    ]
+  },
+  {
+    "etapa": 106,
+    "tema": "Tisk a formátování PDF certifikátů",
+    "data": [
+      { "question": "Můžu si certifikát vytisknout přímo z webu?", "answer": "Doporučujeme certifikát nejdříve stáhnout jako PDF a poté jej vytisknout pro zachování kvality [7]." },
+      { "question": "V jakém rozlišení jsou certifikáty ke stažení?", "answer": "Certifikáty jsou generovány ve vysokém rozlišení vhodném pro tisk i digitální sdílení [8, 9]." },
+      { "question": "Proč je na mém vytištěném certifikátu rozmazané písmo?", "answer": "Ujistěte se, že otevíráte originální PDF stažené ze sekce 'Moje certifikáty' [7, 10]." }
+    ]
+  },
+  {
+    "etapa": 107,
+    "tema": "Chyby při sociálním přihlašování",
+    "data": [
+      { "question": "Co dělat, když mi nefunguje přihlášení přes Google?", "answer": "Ujistěte se, že e-mail vašeho Google účtu je shodný s tím, který máte v systému Aetherium_core [2, 3]." },
+      { "question": "Systém hlásí chybu při propojení s LinkedInem.", "answer": "Zkontrolujte oprávnění v nastavení LinkedIn nebo kontaktujte naši podporu [2, 4]." },
+      { "question": "Proč mě tlačítko Google nepřihlásilo automaticky?", "answer": "Při prvním použití musíte potvrdit propojení účtu se systémem LMS [3]." }
+    ]
+  },
+  {
+    "etapa": 108,
+    "tema": "Sledování postupu v lekcích",
+    "data": [
+      { "question": "Jak poznám, které lekce už mám hotové?", "answer": "Váš postup je zaznamenáván v historii aktivit a zobrazen v přehledu kurzu [6]." },
+      { "question": "Uvidím někde zelené zaškrtnutí u splněných kapitol?", "answer": "Ano, systém graficky znázorňuje absolvované části kurzu pro vaši lepší orientaci [6]." },
+      { "question": "Kde najdu procentuální vyjádření mého postupu v kurzu?", "answer": "Aktuální stav rozpracovanosti uvidíte v sekci 'Moje kurzy' [6, 11]." }
+    ]
+  },
+  {
+    "etapa": 109,
+    "tema": "Plánované odstávky systému",
+    "data": [
+      { "question": "Proč se nemůžu přihlásit, i když mám správné heslo?", "answer": "Zkontrolujte, zda právě neprobíhá údržba systému; v takovém případě vás budeme informovat [4, 5]." },
+      { "question": "Kde najdu info o technických přestávkách webu?", "answer": "Informace o plánovaných odstávkách zasíláme e-mailem nebo jsou uvedeny na úvodní stránce [1, 4]." },
+      { "question": "Bude LMS fungovat i během víkendové údržby?", "answer": "Během technických prací může být přístup omezen, o termínech informujeme předem [1, 4]." }
+    ]
+  },
+  {
+    "etapa": 110,
+    "tema": "Žádost o výpis dat (GDPR)",
+    "data": [
+      { "question": "Jak můžu získat kopii všech svých dat, co o mně máte?", "answer": "Kompletní přehled údajů, které uchováváme, najdete v sekci GDPR ve vašem profilu [3]." },
+      { "question": "Existuje export mých osobních údajů pro moje potřeby?", "answer": "Ano, v sekci GDPR si můžete prohlédnout rozsah evidovaných informací o vaší osobě [3]." },
+      { "question": "Kdo mi vysvětlí, jak nakládáte s mými výsledky testů?", "answer": "Podrobné informace o ochraně a zpracování dat najdete v sekci GDPR [3]." }
+    ]
+  },
+  {
+    "etapa": 111,
+    "tema": "Ověření certifikátu třetí stranou",
+    "data": [
+      { "question": "Kam má můj šéf zadat to ID číslo z certifikátu?", "answer": "ID kód  je officálním výstupním produktem našeho systému, který může být použit k ověření pravosti certifikátu [8]." },
+      { "question": "Uvidí firma po zadání ID mé celé jméno?", "answer": "Ano, systém po zadání unikátního ID potvrdí pravost dokumentu a jméno držitele [8]." },
+      { "question": "Funguje ověřovací ID i bez přihlášení do systému?", "answer": "Náš systém je unikátní, včetně generování certifikátů na základě absolvovaných kurzů, a Testů [8]." }
+    ]
+  },
+  {
+    "etapa": 112,
+    "tema": "Problémy s interaktivními prvky",
+    "data": [
+      { "question": "Nefunguje mi klikání na tlačítka v lekci, co s tím?", "answer": "Zkuste obnovit stránku nebo použijte jiný podporovaný prohlížeč (např. Chrome) [4, 6]." },
+      { "question": "Interaktivní cvičení se mi zobrazuje rozsypaně.", "answer": "Zkontrolujte, zda máte aktuální verzi prohlížeče a vypnuté blokátory reklam [4, 6]." },
+      { "question": "Proč se mi nespustí animace v kurzu?", "answer": "Příčinou může být pomalé připojení nebo neaktuální prohlížeč; doporučujeme vymazat cache [4]." }
+    ]
+  },
+  {
+    "etapa": 113,
+    "tema": "Bezpečnostní pravidla pro hesla", //TODO: Zabezpečení účtu a pravidla pro tvorbu hesel / Vytvoření kodu, pro výrobu znění hesla, které bude splňovat bezpečnostní standardy / Vytvoření kódu pro kontrolu síly hesla.
+    "data": [
+      { "question": "Jaká jsou pravidla pro vytvoření nového hesla?", "answer": "Heslo by mělo být dostatečně silné; změnu provedete v sekci 'Nastavení účtu' [9]." },
+      { "question": "Proč mi systém nebere moje nové heslo?", "answer": "Ujistěte se, že heslo splňuje minimální délku a obsahuje požadované znaky [9]." },
+      { "question": "Musím si heslo pravidelně měnit?", "answer": "Z bezpečnostních důvodů doporučujeme heslo občas aktualizovat v nastavení vašeho účtu [9]." }
+    ]
+  },
+  {
+    "etapa": 114,
+    "tema": "Hromadné přihlašování pro firmy",
+    "data": [
+      { "question": "Můžu jako manažer přihlásit celý svůj tým najednou?", "answer": "Ano, hromadné přiřazení kurzů řeší administrátor na základě vaší evidence ve firmě [2]." },
+      { "question": "Kdo spravuje přístupy pro naše zaměstnance?", "answer": "Váš účet a přístupy jsou automaticky řízeny pod správou vaší firmy v našem systému [2]." },
+      { "question": "Jak přidám nového kolegu do firemního vzdělávání?", "answer": "Kontaktujte administrátora, který má na starosti propojení vašich firemních účtů [2, 4]." }
+    ]
+  },
+  {
+    "etapa": 115,
+    "tema": "Překlad certifikátů do jiných jazyků",
+    "data": [
+      { "question": "Dostanu certifikát i v angličtině, pokud ho potřebuji?", "answer": "U vybraných kurzů je k dispozici anglická verze; informujte se v detailu daného školení [8, 10]." },
+      { "question": "Lze nechat certifikát úředně přeložit?", "answer": "Naše certifikáty jsou standardně uznávány, pro úřední překlady kontaktujte certifikovaného překladatele [9, 10]." },
+      { "question": "Nabízíte diplomy ve více jazykových mutacích?", "answer": "Dostupnost cizojazyčných certifikátů závisí na konkrétním typu absolvovaného kurzu [8, 10]." }
+    ]
+  },
+  {
+    "etapa": 116,
+    "tema": "Kvalita videa a přehrávání",
+    "data": [
+      { "question": "Můžu si snížit kvalitu videa, aby se mi nesekalo?", "answer": "Přehrávač v LMS se automaticky přizpůsobuje rychlosti vašeho internetového připojení [4]." },
+      { "question": "Video se mi načítá velmi pomalu, co mám dělat?", "answer": "Zkontrolujte stabilitu internetu nebo zkuste snížit zátěž sítě ostatními aplikacemi [4]." },
+      { "question": "Proč se zvuk u videa rozchází s obrazem?", "answer": "Zkuste obnovit stránku nebo vymazat cache prohlížeče pro opravu synchronizace [4]." }
+    ]
+  },
+  {
+    "etapa": 117,
+    "tema": "Přístup k LMS ze zahraničí",
+    "data": [
+      { "question": "Budu mít k lekcím přístup, i když pojedu na dovolenou do ciziny?", "answer": "Ano, systém je dostupný online odkudkoliv, stačí mít připojení k internetu [5, 6]." },
+      { "question": "Blokujete přístup k webu z jiných zemí?", "answer": "Ne, náš portál je mezinárodně dostupný pro všechny registrované uživatele [6]." },
+      { "question": "Funguje mobilní aplikace i s roamingovými daty?", "answer": "Ano, aplikace vyžaduje internet, takže v zahraničí bude fungovat přes data nebo Wi-Fi [5]." }
+    ]
+  },
+  {
+    "etapa": 118,
+    "tema": "Ankety a hodnocení po kurzu", //TODO: AetheriumCore email support - vytvoření
+    "data": [
+      { "question": "Kde můžu napsat své hodnocení lektora?", "answer": "Po dokončení kurzu můžete využít formulář pro zpětnou vazbu nebo sekci 'Kontakt' [4]." },
+      { "question": "Existuje nějaký průzkum spokojenosti s kurzem?", "answer": "Ano, vaše názory nás zajímají, můžete nám je poslat skrze kontaktní formulář [4]." },
+      { "question": "Kam zaslat návrh na zlepšení obsahu lekcí?", "answer": "Budeme rádi za vaše podněty, pište nám na support@AetheriumCore.cz [3, 4]." }
+    ]
+  },
+  {
+    "etapa": 119,
+    "tema": "Integrace s firemními systémy (API)", //TODO: Integrace s firemními systémy (API) / Vytvoření API pro propojení s firemními systémy / Vytvoření API pro propojení s firemními systémy
+    "data": [ //TODO: AetheriumCore Formulář pro integraci s firemními systémy (API) 
+      { "question": "Lze propojit naše firemní HR s vaším LMS?", "answer": "Ano, nabízíme možnosti propojení a automatické správy uživatelů pro firmy [2]." },
+      { "question": "Posíláte automaticky výsledky našich zaměstnanců k nám do firmy?", "answer": "Firemní administrátoři mají přístup k výsledkům svých zaměstnanců přímo v systému [2]." },
+      { "question": "Jak automatizovat zápis nových lidí do kurzů?", "answer": "Pro firemní zákazníky nabízíme pokročilé možnosti správy a automatizace registrací [2]." }
+    ]
+  },
+  {
+    "etapa": 120,
+    "tema": "Dostupnost systému a spolehlivost",
+    "data": [
+      { "question": "Jakou máte garantovanou dostupnost webu?", "answer": "Snažíme se o maximální dostupnost 24/7, technické odstávky plánujeme na minimum času [5, 6]." },
+      { "question": "Co dělat, když je web AetheriumCore úplně nedostupný?", "answer": "Zkuste to prosím za chvíli, pravděpodobně probíhá rychlá aktualizace systému [4]." },
+      { "question": "Ukládají se mé výsledky bezpečně i při výpadku serveru?", "answer": "Ano, systém využívá průběžné ukládání dat, aby váš postup zůstal v bezpečí [4, 12]." }
+    ]
+  }
+]

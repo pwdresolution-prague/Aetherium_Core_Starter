@@ -1,0 +1,99 @@
+1. Modul: Požární bezpečnost a manipulace s plyny
+Tato data jsou klíčová pro automatické generování „Příkazů ke svařování“ a kontrolu bezpečnosti na pracovišti.
+{
+  "training_set": "Fire_Safety_Welding",
+  "knowledge_blocks": [
+    {
+      "topic": "Požární dohled",
+      "facts": [
+        { "fact": "Nejkratší doba požárního dohledu po ukončení svařování je 8 hodin.", "source": "[1-3]" },
+        { "fact": "U členitých prostor se doporučuje dohled i po uplynutí 8 hodin.", "source": "[2, 4]" },
+        { "fact": "Dohled v průběhu svařování musí být vykonáván nepřetržitě.", "source": "[3, 5]" }
+      ]
+    },
+    {
+      "topic": "Bezpečné vzdálenosti a vybavení",
+      "facts": [
+        { "fact": "Minimální délka svařovacích hadic bez spojek je 5 metrů.", "source": "[6, 7]" },
+        { "fact": "Vzdálenost tlakových lahví od zdroje otevřeného ohně musí být minimálně 3 metry.", "source": "[6, 8]" },
+        { "fact": "Ochranné pásmo při svařování do výšky 2 m má poloměr 5 metrů.", "source": "[9]" },
+        { "fact": "Při výšce nad 10 m se ochranné pásmo rozšiřuje na 15 metrů.", "source": "[9]" }
+      ]
+    },
+    {
+      "topic": "Manipulace s lahvemi",
+      "facts": [
+        { "fact": "Acetylenová lahev musí být při odběru svisle nebo nakloněna min. 30° od vodorovné polohy.", "source": "[6, 10]" },
+        { "fact": "Po dopravě ležatých acetylenových lahví lze odběr zahájit nejdříve po 1 hodině stání.", "source": "[10]" },
+        { "fact": "Tlakové lahve je přísně zakázáno umisťovat do pracovní jámy.", "source": "[11, 12]" }
+      ]
+    }
+  ]
+}
+2. Modul: Kvalifikace svářečů (ISO 9606-1)
+Tato data slouží pro modul Certificate Tracking, kde chatbot studentům vysvětluje rozsah jejich oprávnění.
+{
+  "training_set": "Welder_Qualification_ISO",
+  "knowledge_blocks": [
+    {
+      "topic": "Platnost a kontinuita",
+      "facts": [
+        { "fact": "Certifikát musí být každých 6 měsíců potvrzen odpovědným pracovníkem pro doložení kontinuity práce.", "source": "[13-15]" },
+        { "fact": "Při přerušení práce v daném procesu na více než 6 měsíců certifikát pozbývá platnosti.", "source": "[13, 16]" },
+        { "fact": "Teoretická zkouška pro prodloužení základního kurzu se provádí každé 2 roky.", "source": "[17, 18]" }
+      ]
+    },
+    {
+      "topic": "Rozsah schválení (Essential Variables)",
+      "facts": [
+        { "fact": "Zkouška na plechu nekryje trubky o průměru pod 500 mm (statické) nebo pod 75 mm (rotující).", "source": "[19]" },
+        { "fact": "Pro tloušťku materiálu t od 3 do 12 mm je rozsah schválení t až 2t.", "source": "[20, 21]" },
+        { "fact": "Svařovací poloha PF (zdola nahoru) kryje polohy PA, PB, PC a PF.", "source": "[22, 23]" }
+      ]
+    }
+  ]
+}
+3. Modul: Hygiena a ochrana zdraví (NV 361/2007 Sb.)
+Klíčové pro chatboty radící v oblasti BOZP na dílnách.
+{
+  "training_set": "Welder_Health_Occupational",
+  "knowledge_blocks": [
+    {
+      "topic": "Tepelná zátěž a tekutiny",
+      "facts": [
+        { "fact": "Maximální přípustná ztráta tekutin potem a dýcháním je 1,25 litru za směnu.", "source": "[24]" },
+        { "fact": "Ochranné nápoje musí být nealkoholické a obsahovat méně než 6,5 % cukru.", "source": "[24]" },
+        { "fact": "V chladném prostředí pod 4 °C musí být zajištěno min. 0,5 l teplého nápoje na směnu.", "source": "[25]" }
+      ]
+    },
+    {
+      "topic": "Zdravotní způsobilost",
+      "facts": [
+        { "fact": "Svářeči nad 50 let musí absolvovat lékařskou prohlídku každé 3 roky.", "source": "[26-28]" },
+        { "fact": "Svářeči do 50 let absolvují lékařskou prohlídku jednou za 5 let.", "source": "[26-28]" }
+      ]
+    }
+  ]
+}
+4. Modul: Bezpečnost při obloukovém svařování (ČSN 05 0630)
+Specifická technická data pro bezpečný provoz elektrických zařízení.
+{
+  "training_set": "Arc_Welding_Electrical_Safety",
+  "knowledge_blocks": [
+    {
+      "topic": "Elektrické limity",
+      "facts": [
+        { "fact": "Za bezpečnou hodnotu střídavého proudu pro člověka se považuje hodnota do 10 mA.", "source": "[29]" },
+        { "fact": "Za bezpečnou hodnotu stejnosměrného proudu se považuje hodnota do 25 mA.", "source": "[29]" },
+        { "fact": "V mokrých nebo těsných prostorech je zakázáno používat střídavý proud (AC).", "source": "[30, 31]" }
+      ]
+    },
+    {
+      "topic": "Provoz zařízení",
+      "facts": [
+        { "fact": "Držáky elektrod se nesmí chladit ponořením do vody.", "source": "[31, 32]" },
+        { "fact": "Po nepřetržitém odstavení z provozu na více než 6 měsíců musí být svářečka znovu přezkoušena elektroúdržbářem.", "source": "[31, 33]" }
+      ]
+    }
+  ]
+}

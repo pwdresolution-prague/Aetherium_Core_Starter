@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Safety Partners - E-learning managment system">
+<meta property="og:title" content="Absolvujte kurz, Kompletujte test, Certifikát platný">
+<meta property="og:description" content="Certifikáty Generované AI v PDF">
+<meta property="og:image" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:url" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:type" content="website">
+<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+
+<link rel="icon" type="image/x-icon" href="/SPL.png">
+<link rel="stylesheet" href="../Css/AetheriumDash.css">
+<link rel="stylesheet" href="../Css/StyleForm.css">
+<link rel="stylesheet" href="../Css/FormStyle.css">
+<title>Safety Partners - AetheriumCore - Enterprise</title>
+</head>
+<body>
+<div class="Main_menu">
+  <h2>Aetherium Core</h2>
+  <div class="Logo-Row">
+  <img src="../../SafetyPartnersFrontendStudent/Logo.png" alt="Logo" class="Logo">
+  <h4>Registration dashboard module</h4>
+  </div>
+    <div class="TextObsah">
+    <h2 class="Nadpis">Vítejte na vstupní stránce systému Aetherium Core</h2>
+    <h4 class="Podnadpis">Na této stránce zahájíte registraci vaší společnosti a konfiguraci klientských zásad. Registrace vás provede čtyřmi kroky:  <br><br> - zadáním firemních údajů, <br><br>  - nastavením kontaktních a uživatelských preferencí, <br><br> - vytvořením datové struktury procesních prvků, <br><br> - odsouhlasením smluvních podmínek včetně zásad ochrany osobních údajů (GDPR).</h4>
+<!--TODO: Section pro výběr typu návštěvy ============================================ -->
+<!--TODO: ============================================================================================================-->
+<div class="visitSelector" id="visitSelector">
+    <select class="visitTypeButton" id="visitTypeButton">
+                        <option class="Selector" value="" disabled selected name="typ-návštěvy">Vyberte typ návštěvy</option>
+                        <option class="FirstVisit" value="FirstVisit" name="">První návštěva</option>
+                        <option class="ReturningVisit" value="ReturningVisit">Registrovaná společnost</option>
+                    </select>
+                </div>
+<!--TODO: Modalové zobrazení ====================================================== -->
+        <div class="modalOverlay">
+            <div class="modalWindow">
+                <div class="visit-modal-content">
+                    <button  class="closeButtonSection" id="closedTermsSection">&times;</button>
+                <button class="optionSelect1" data-value="FirstVisit">První návštěva</button>
+<!--TODO: TEXTOVÉ POLE ======================================-->
+                <p class="pruvodniInfo">Registrace slouží k vytvoření nového klientského profilu <br> a bezpečnému uložení údajů potřebných pro budoucí komunikaci<br> a správu návštěv.<br><br>
+Po dokončení registrace bude vytvořen <br>unikátní záznam klienta a systém automaticky připraví<br>prostor pro správu dalších návštěv, dokumentace a komunikace. <br><br>Pro zajištění spolehlivé komunikace a bezpečnosti<br> využívá systém moderní cloudové služby a integrační technologie.<br><br>
+✓ SMS notifikace<br>
+✓ E-mailová komunikace<br>
+✓ Bezpečné ukládání dat<br>
+✓ Automatizované procesy<br>
+✓ Historie návštěv<br>
+✓ Auditní záznamy</p>
+          <!--TODO: Formulář pro zobrazení registrace -->
+                <!--FRONTEND: Napojení přes soubor FormLogin.js -->
+                    <form class="login-form-active" id="loginFormAetherium">
+                        <input type="email" placeholder="email" required id="emailModalInput">
+                        <input type="password" placeholder="Heslo" required id="loginPasswordInput">
+                            <button type="submit" id="submitModalButton">Přihlásit</button>
+                </form>
+                <button class="optionSelect2"  data-value="ReturningVisit" type="checkbox">Registrovaná společnost</button>
+                </div>
+            </div>
+        </div>
+<!--TODO: Section rozdělující Select a Form ==============================================================================-->
+<!--===============================================================================================================================-->
+<div class="Gap"></div>
+<!-- ============================================================================================================================== -->
+<!--TODO: Section pro Athorization Form -->
+                        <!--==========================================================================-->
+                        <!--==========================================================================-->
+
+    <fieldset class="Formulář">
+        <main class="FormulářNadpis">Formulář pro registraci společnosti do systému Aetherium Core Enterprise</main>
+    <!--TODO: Formulář_Aetherium_Core_Enterprise-->
+    <section class="AetheriumCore-Form">
+        <article class="First-Section">
+            <div class="AetheriumCore-Interprise">
+            </div>
+            </article>
+            </section>
+
+           <!--TODO: Formulář první část-->
+            <form class="AetheriumCoreEnterprise-Form" id="AetheriumCoreEnterpriseForm">
+            <section class="Form-FirstSection">
+                <article class="SectionOne">
+                    <label>IČO</label>
+                        <input type="text" class="ičo" placeholder="Zde napište své ičo" maxlength="8" name="ičo" required id="ičoId" style="font-size: 0.9vw;">
+                    <span id="ares-status" hidden></span>
+                        <label>DIČ </label>
+                        <input type="text" class="dič" placeholder="Zde napište své dič" name="dič"  id="dicId" style="font-size: 0.9vw;">
+                    <label>Název firmy</label>
+                        <input type="text" class="název-firmy" placeholder="Zde napište název firmy" name="název-firmy" required id="název-firmyId" style="font-size: 0.9vw;">
+                    <label>Právní forma</label>
+                        <input type="text" class="právní-forma" placeholder="Zde napište právní formu" name="právní-forma" required id="právní-formaId" style="font-size: 0.9vw;">
+                    <label>Sídlo společnosti</label>
+                        <input type="text" class="sídlo-společnosti" placeholder="Zde napište sídlo společnosti" name="sídlo-společnosti" required id="sídlo-společnostiId" style="font-size: 0.9vw;">
+                    <label>Datum založení</label>
+                        <input type="date" class="datum-založení" placeholder="Zde napište datum založení" name="datum-založení"  id="datum-založeníId" style="font-size: 0.9vw;">
+                    <label>Stav subjektu</label>
+                        <input type="text" class="stav-subjektu" placeholder="Zde napište stav subjektu" name="stav-subjektu" required id="stav-subjektuId" style="font-size: 0.9vw;">
+                    <label>Spisová značka</label>
+                        <input type="text" class="spisová-značka" placeholder="Zde zadejte spisovou značku" name="spisová-značka"  id="spisová-značkaId" style="font-size: 0.9vw;">
+                    <label>Datová schránka</label>
+                        <input type="text" class="datová-schránka" placeholder="Zde napište id schránky" name="datová-schránka"  id="datová-schránkaId" style="font-size: 0.9vw;">
+                </section>
+                <!--TODO: Formulář Druhý část -->
+                <section class="Form-SecondSection">
+                    <article class="SectionTwo">
+                <!--TODO: Zde připravit Modal s registrací příslušné služby pro dvoufázové ověření =================-->
+                    <label>Telefonní číslo</label>
+                        <input type="tel" class="telefonní-číslo" placeholder="Zde napište své telefonní číslo" name="telefonní-číslo" required id="telefonní-číslo" style="font-size: 0.9vw;">
+                    <button type="button" id="sendOtpBtn">Odeslat ověřovací kód</button>
+                    <label>MFA / OTP</label>
+                        <input type="text" class="mfa-otp" placeholder="6místný kód" name="mfa-otp" required id="mfa-otp" style="font-size: 0.9vw;">
+                    <label>Segment trhu</label>
+                        <input type="text" class="Segment-trhu" placeholder="Zde napište obor svého podnikání" name="Obor-podnikání" required id="Obor-podnikání" style="font-size: 0.9vw;">
+                    <label>Email</label>
+                        <input type="email" class="email" placeholder="Zde napište svůj email" name="email" required id="emailId" style="font-size: 0.9vw;">
+                    <label>Adresa provozovny</label>
+                        <input type="text" class="adresa" placeholder="Zde napište svou adresu" name="adresa"  id="adresa" style="font-size: 0.9vw;">
+                    <label>Heslo</label>
+                        <input type="password" class="heslo" placeholder="Zde napište své heslo" name="heslo" required id="hesloId" autocomplete="on" style="font-size: 0.9vw;">
+                    <label>Potvrzení hesla</label>
+                        <input type="password" class="potvrzení-hesla" placeholder="Zde potvrďte své heslo" name="potvrzení-hesla" required id="potvrzení-hesla" autocomplete="on" style="font-size: 0.9vw;">
+                    </article>
+                </section>
+                <!--TODO: Formulář třetí část -->
+                <section class="Form-ThirdSection">
+                    <article class="SectionThree">
+                        <label>Bozp</label>
+                            <input type="number" class="BOZP" name="BOZP" placeholder="0" min="0" max="1000" step="1"  id="BOZPId" style="font-size: 0.9vw;">
+                            <input type="checkbox" class="BozpOk">
+                            <option value="" placeholder="Vyberte počet školení"></option>
+                        <label>BozpVedoucíPracovníci</label>
+                            <input type="number" class="BOZPVP" name="BozpVP" placeholder="0" min="0" max="1000" step="1"  id="BOZPVPId" style="font-size: 0.9vw;">
+                            <input type="checkbox" class="BozpVpOk">
+                            <option value="" placeholder="Vyberte počet školení"></option>
+                        <label>Požární ochrana</label>
+                            <input type="number" class="PožárníOchrana" name="PožárníOchrana" placeholder="0" min="0" max="1000" step="1"  id="POId" style="font-size: 0.9vw;">
+                            <input type="checkbox" class="PoOk">
+                            <option value="" placeholder="Vyberte počet školení"></option>
+                        <label>Požární ochrana Vedoucí pracovníci</label>
+                            <input type="number" class="PožárníOchranaVP" name="PožárníOchranaVP" placeholder="0" min="0" max="1000" step="1"  id="POVPId" style="font-size: 0.9vw;">
+                            <input type="checkbox" class="PoVpOk">
+                            <option value="" placeholder="Vyberte počet školení"></option>
+                        <label>Řidiči referenti</label>
+                            <input type="number" class="ŘidičiReferenti" name="ŘidičiReferenti" placeholder="0" min="0" max="1000" step="1"  id="ŘidičiReferentiId" style="font-size: 0.9vw;">
+                            <input type="checkbox" class="RrOk">
+                            <option value="" placeholder="Vyberte počet školení"></option>
+                        <label>První pomoc</label>
+                            <input type="number" class="PrvníPomoc" name="PrvníPomoc" placeholder="0" min="0" max="1000" step="1"  id="PrvníPomocId" style="font-size: 0.9vw;">
+                            <input type="checkbox" class="PpOk">
+                            <option value="" placeholder="Vyberte počet školení"></option>
+                        <label>Práce ve výškách</label>
+                            <input type="number" class="PráceVeVýškách" name="PráceVeVýškách" placeholder="0" min="0" max="1000" step="1"  id="PráceVeVýškáchId" style="font-size: 0.9vw;">
+                            <input type="checkbox" class="PvvOk">
+                            <option value="" placeholder="Vyberte počet školení"></option>
+                         </article>
+                </section>
+
+
+                        <!--TODO: Section pro Obchodní podmínky a GDPR dokumnet s Modalovým zobrazením-->
+                        <!--==========================================================================-->
+                        <!--==========================================================================-->
+                        <button class="TermsButton" id="openTerms" type="button">Zobrazit obchodní podmínky a GDPR</button>
+                              <!--TODO: Modal Window pro GDPR zobrazení-->
+                                <div class="modal">
+                                    <p class="NadpisGdpr">Gdpr & a obchodní podmínky</p>
+                                    <div class="modal-content">
+                                        <div class="Gdpr-modal-content">
+                                            <button class="close-button" id="closeTerms">&times;</button>
+                                        <p class="Obsah">Zde budou zobrazeny obchodní podmínky a zásady ochrany osobních údajů (GDPR). Uživatelé musí souhlasit s těmito podmínkami, aby mohli pokračovat v registraci a využívání služeb Aetherium Core Enterprise.
+                                        Obchodní podmínky zahrnují informace o tom, jak budou osobní údaje zpracovávány, jaká jsou práva uživatelů ohledně svých údajů, a další důležité informace týkající se používání služby.
+                                        Uživatelé by měli pečlivě přečíst tyto podmínky a ujistit se, že s nimi souhlasí, než budou pokračovat v registraci.</p>
+                                            <!--TODO: GDPR Soubory a Obchoidní podmínky Files-->
+                                            <br>
+                                            <p class="datovýObsah">Před registrací si prosím přečtěte dokumenty</p>
+                                            <br><br>
+                                            <a href="" target="_blank" type="checkbox" rel="noopener noreferrer">Zásady ochrany osobních údajů</a>
+                                            <br>
+                                            <br>
+                                            <a href="" target="_blank" type="checkbox" rel="noopener noreferrer">Obchodní podmínky</a>
+                                            <br>
+                                            <div class="Rulles">
+                                            <input type="checkbox" id="gdprCheckbox" name="gdpr" required >
+                                            <label class="Podmínka" for="GdprCheckbox">Souhlasím se<br>zpracováním</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <button type="submit" class="SubmitButton" id="submitBtn" disabled>Odeslat</button>
+                            </div>
+                        </form>
+                    </fieldset>
+
+<footer class="Patička">
+    <p class="Author">&copy; 2024 PWD.Resolution - Všechna práva vyhrazena.</p>
+
+
+</footer>
+
+
+<!--TODO: SKRIPTY......................................................................................................-->
+<script type="module" src="../JS/ScriptAetherium.js"></script>
+<script type="module" src="../JS/ModalWindow.js"></script>
+<script type="module" src="../JS/Visit.js"></script>
+<script type="module" src="../JS/FormLogin.js"></script>
+<script type="module" src="../JS/Mfa_Otp.js"></script>
+<script type="module" src="../JS/ValidateForm.js" ></script>
+<script type="module" src="../JS/SanitizeForm.js"></script>
+<script type="module" src="../Connect/AresLookup.js"></script>
+<script type="module" src="../Connect/SupabaseConnect.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

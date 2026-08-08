@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2{
+    font-weight: 1vw;
+    color: white;
+    display: flex;
+    padding: 0.8vw;
+    margin-left: 1.5vw;
+    padding-top: 1vw;
+
+}
+.Main_menu {
+  background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #5f89bc 80%,     /* Živější modrá */
+    #001428 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 7vw;
+}
+
+
+.Logo-Row{
+    align-items: center;
+    display: flex;
+    gap: 0.4vw;
+    margin-left: 0.5vw;
+
+}
+
+.Logo{
+    width: 6vw;
+    height: auto;
+    margin-bottom: 13vw;
+    margin-right: 3vw;
+    
+}
+
+h4 {
+  color: white;
+  margin-left: 1vw;   
+  right:  -4vw;
+  transform: translate(-5.8vw, -4.4vw); 
+  margin-bottom: 6.5vw;
+  white-space: nowrap;
+  margin-top: 2vw;
+  
+
+
+}
+
+.Vertical_Menu {
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  margin-left: 5vw;
+  color: white;
+  margin-top: -8vw;
+
+
+
+
+
+
+
+
+}
+
+.Vertical_Menu li a{
+  text-decoration: none;
+  display: flex;
+  color: white;
+  gap: 2vw;
+  padding: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+
+
+
+
+}
+  
+
+.Menu-Icon{
+  width: 2vw;
+  height: 2vw;
+  vertical-align: middle;
+  
+
+
+}
+
+
+
+
+.ButtonChatBot{
+  width: 5vw;
+  height: 5vw;
+  background: linear-gradient(to right, #FF6600, #f77343);
+  border-radius: 1.1vw;
+  margin-top: -8vw;
+  margin-left: 8.3vw;
+  border: white solid 0.15vw;
+  display: flex;             
+  align-items: center;        
+  justify-content: center;
+}
+
+.Button{
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+
+}
+
+
+.Up_Menu{
+  position: absolute;
+  left: 22vw;
+  top: 0;
+  width: calc(100vw - 22vw);
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  border-bottom: 0.3vw solid white;
+  background: linear-gradient(to right, #003366, #0066CC);
+  
+
+
+
+
+}
+
+.TopMenu{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+  padding: 1vw 2vw;
+  margin: 0;
+  margin-left: 35vw;
+  
+
+
+}
+
+.TopMenu li a{
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  transition: background 0.3s;
+
+}
+
+.Top_Menu li a:hover {
+  background: #003366;    
+}
+
+
+/*TODO: FOOTER -->
+
+

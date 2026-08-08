@@ -14,3 +14,7 @@ const eventSchema = {
     is_recertification: true // Zda jde o opakované školení po expiraci [7]
   }
 }
+
+
+//TODO: Sekce dokumenty = Udělat veškeré učební materiály ke stažení v této sekci
+

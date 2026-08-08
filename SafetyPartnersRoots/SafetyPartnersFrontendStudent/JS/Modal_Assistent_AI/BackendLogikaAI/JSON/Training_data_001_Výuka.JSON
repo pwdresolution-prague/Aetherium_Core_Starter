@@ -1,0 +1,379 @@
+[
+  {
+    "Sekce": "Výuka",
+    "etapa": 1,
+    "tema": "Zápis a registrace do kurzu",
+    "data": [
+      { "question": "Jak se můžu přihlásit do nového kurzu?", "answer": "Stačí kliknout na sekci 'Kurzy' a vybrat si konkrétní kurz z nabídky. [1]" },
+      { "question": "Kde najdu tlačítko pro vstup do školení?", "answer": "V levém panelu a v sekci 'Kurzy' si vyberte požadované školení a klikněte na něj. [1]" },
+      { "question": "Cesta k přihlášení do kurzu?", "answer": "Přejděte do sekce 'Kurzy', kde si zvolíte kurz, který vás zajímá. [1]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 2,
+    "tema": "Termíny spuštění kurzů",
+    "data": [
+      { "question": "Kdy přesně startuje můj kurz?", "answer": "Kurz začíná automaticky v momentě jeho spuštění v systému. [1]" },
+      { "question": "Je stanoven pevný čas začátku školení?", "answer": "Začátek každého kurzu vzniká v momentě jeho spuštění. [1]" },
+      { "question": "Kdy se mi zpřístupní lekce?", "answer": "Lekce jsou dostupné ihned po spuštění kurzu v LMS. [1]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 3,
+    "tema": "Studijní materiály",
+    "data": [
+      { "question": "Kde si stáhnu podklady ke studiu?", "answer": "Materiály jsou dostupné po přihlášení do kurzu v sekci 'Dokumentace'. [2]" },
+      { "question": "Mám přístup k prezentacím i offline?", "answer": "Po přihlášení v sekci 'Dokumentace' najdete veškeré materiály ke stažení. [2]" },
+      { "question": "Kde najdu skripta k lekcím?", "answer": "Podívejte se do detailu kurzu v sekci 'Dokumentace', tam jsou materiály k dispozici. [2]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 4,
+    "tema": "Délka a formát studia",
+    "data": [
+      { "question": "Jak dlouho mi zabere dokončení tohoto školení?", "answer": "Detailní informace o časové náročnosti najdete v popisu každého kurzu. [2]" },
+      { "question": "Jsou vaše kurzy formou videohovorů?", "answer": "Většina kurzů probíhá online jako samostudium, některé nabízí i prezenční variantu. [2, 3]" },
+      { "question": "Můžu kurz studovat i v noci?", "answer": "Ano, kurzy jsou navrženy pro samostudium vlastním tempem. [3]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 5,
+    "tema": "Opakování testů a neúspěch",
+    "data": [
+      { "question": "Co se stane, když neudělám test na první pokus?", "answer": "Můžete si látku zopakovat a test složit znovu v povoleném počtu pokusů. [4]" },
+      { "question": "Kolikrát můžu zkusit závěrečný test?", "answer": "Test můžete opakovat neomezeně, pokud není v popisu kurzu uvedeno jinak. [4]" },
+      { "question": "Je počet pokusů u testu limitován?", "answer": "Standardně je počet pokusů neomezený, specifika najdete v detailu testu. [4]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 6,
+    "tema": "Výsledky a hodnocení",
+    "data": [
+      { "question": "Kdy se dozvím, jestli jsem test udělal?", "answer": "Výsledky testu uvidíte okamžitě po jeho dokončení a odevzdání. [4]" },
+      { "question": "Kde najdu své bodové hodnocení?", "answer": "Body a úspěšnost se zobrazí hned po skončení testu v rozhraní LMS. [4]" },
+      { "question": "Kolik bodů musím mít pro splnění?", "answer": "Pro úspěšné absolvování je obvykle potřeba získat alespoň 70 % bodů. [4]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 7,
+    "tema": "Certifikáty - Stažení a umístění",
+    "data": [
+      { "question": "Kde si můžu vygenerovat certifikát?", "answer": "Certifikát najdete po úspěšném testu v sekci 'Certifikáty'. [5]" },
+      { "question": "Jak získám PDF se svým osvědčením?", "answer": "V sekci 'Certifikáty' klikněte na tlačítko 'Stáhnout certifikát'. [5]" },
+      { "question": "Kde je uložen diplom za splnění kurzu?", "answer": "Všechny vaše diplomy jsou v sekci 'Certifikáty'. [5]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 8,
+    "tema": "Platnost a ověření certifikátů",
+    "data": [
+      { "question": "Jak dlouho mi platí toto osvědčení?", "answer": "Platnost je obvykle dle platné legislativy, přesný datum najdete přímo na svém certifikátu. [6]" },
+      { "question": "Uznají mi váš certifikát i v zahraničí?", "answer": "Většina našich certifikátů má mezinárodní platnost, záleží však na konkrétním typu kurzu. [6]" },
+      { "question": "Jak si firma ověří, že je můj certifikát pravý?", "answer": "Pravost lze ověřit na našem portálu pomocí unikátního ID, které je na certifikátu uvedeno. [7]" }
+    ]
+  },
+   {
+    "Sekce": "Výuka",
+    "etapa": 9,
+    "tema": "Podpora a hlášení chyb",
+    "data": [
+      { "question": "Našel jsem chybu v textu kurzu, kam to napsat?", "answer": "Použijte tlačítko 'Nahlásit problém' přímo u daného materiálu. [10]" },
+      {"question": "Pamatuje si systém, kde jsem v kurzu skončil?","answer": "Ano, LMS automaticky ukládá váš průběh studia, takže můžete kdykoliv pokračovat od poslední dokončené lekce. [8]"},
+      {"question": "Musím absolvovat lekce ve správném pořadí?","answer": "Ano, pokud je kurz nastaven jako sekvenční, další lekce se zpřístupní až po dokončení předchozí části. [8]"} 
+    ]
+    },
+    {
+        "Sekce": "Výuka",
+    "etapa": 10,
+    "tema": "Technické potíže - Načítání",
+    "data": [
+      { "question": "Kurz se mi zasekl a nejde dál, co s tím?", "answer": "Zkuste obnovit stránku nebo vyčistit mezipaměť (cache) vašeho prohlížeče. [10]" },
+      { "question": "Video v lekci se nepřehrává.", "answer": "Zkontrolujte připojení k internetu nebo zkuste jiný podporovaný prohlížeč (Chrome, Firefox, Safari). [10, 11]" },
+      { "question": "Stránka hlásí chybu při odesílání testu.", "answer": "Prověřte stabilitu internetu a zkuste test odeslat znovu, systém by měl navázat tam, kde skončil. [10, 12]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 11,
+    "tema": "Změna a odhlášení z kurzu",
+    "data": [
+      { "question": "Chci se odhlásit ze školení, jak to udělám?", "answer": "V detailu kurzu zvolte možnost 'Přerušit kurz'. [1]" },
+      { "question": "Můžu vyměnit jeden kurz za jiný?", "answer": "Ano, kurz můžete změnit v sekci 'Kurzy' pomocí možnosti volba kurzu'. [2]" },
+      { "question": "Udělal jsem chybu v registraci do kurzu, lze ji zrušit?", "answer": "Ano, registraci do kurzu lze snadno změnit v sekci 'volby kurzu'. [1]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 12,
+    "tema": "Vstupní požadavky a úroveň",
+    "data": [
+      { "question": "Potřebuji nějaké předchozí znalosti?", "answer": "Každý kurz má své požadavky uvedené v detailu, nabízíme ale i kurzy pro úplné začátečníky. [3]" },
+      { "question": "Je tento kurz vhodný pro experty?", "answer": "V nabídce máme různé úrovně od základních až po pokročilé, detaily najdete v popisu kurzu. [3]" },
+      { "question": "Musím mít hotový jiný kurz před tímto?", "answer": "Specifické prerekvizity jsou vždy uvedeny u popisu konkrétního kurzu. [3]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 13,
+    "tema": "Predikce Zabezpečení a poctivosti testů",
+    "data": [
+      { "question": "Dostanu stejné otázky jako kolega?", "answer": "Otázky se generují náhodně, takže každý student může mít jinou variantu testu. [12]" },
+      { "question": "Jak hlídáte poctivost u testů?", "answer": "Využíváme časové limity, náhodné pořadí otázek. [5]" },
+      { "question": "Můžu si během testu dohledávat odpovědi?", "answer": "Testy mají nastavený časový limit, který vyžaduje pohotové odpovědi. [5]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 14,
+    "tema": "Export dat a historie",
+    "data": [
+      { "question": "Kde uvidím seznam všech kurzů, co jsem kdy dělal?", "answer": "Kompletní přehled najdete v sekci 'Kurzy', a 'Události'. [7]" },
+      { "question": "Lze si vytisknout historii mých výsledků?", "answer": "Ano, v sekci Certifikáty můžete využít možnost 'Exportovat do PDF'. [7]" },
+      { "question": "Kde najdu záznam o svých minulých testech?", "answer": "Historii testů najdete přímo v detailu každého absolvovaného kurzu. [7]" }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+  "etapa": 15,
+  "tema": "Průběh studia",
+  "data": [
+    {"question": "Můžu pokračovat později tam, kde jsem skončil?","answer": "Ano. Váš postup je průběžně ukládán a můžete kdykoliv navázat na poslední dokončenou část kurzu. [8]"},
+    {"question": "Musím kurz dokončit najednou?","answer": "Ne. Kurz můžete kdykoliv přerušit a později pokračovat od místa, kde jste skončili. [8]"},
+    {"question": "Zůstane mi uložený postup?","answer": "Ano. Veškerý váš studijní postup se ukládá automaticky. [8]"}
+  ]
+},
+{
+    "Sekce": "Výuka",
+  "etapa": 16,
+  "tema": "Dokončení kurzu",
+  "data": [
+    {"question": "Kdy je kurz považován za dokončený?","answer": "Kurz je dokončen po splnění všech povinných lekcí a úspěšném absolvování závěrečného testu. [9]"},
+    {"question": "Proč se mi kurz stále zobrazuje jako nedokončený?","answer": "Zkontrolujte, zda jste dokončili všechny povinné lekce a úspěšně splnili závěrečný test. [9]"},
+    {"question": "Jak poznám, že mám kurz hotový?","answer": "Po splnění všech podmínek se kurz označí jako dokončený a zpřístupní se certifikát. [9]"},
+    {"question": "Co musím splnit pro dokončení kurzu?","answer": "Je potřeba absolvovat všechny povinné části kurzu a úspěšně složit závěrečný test. [9]"}
+  ]
+},
+{
+    "Sekce": "Výuka",
+  "etapa": 17,
+  "tema": "Vystavení certifikátu",
+  "data": [
+    {"question": "Proč se mi nevygeneroval certifikát?","answer": "Certifikát se vytvoří až po splnění všech podmínek kurzu a úspěšném dokončení závěrečného testu. [5]"},
+    {"question": "Kdy se mi zobrazí certifikát?","answer": "Certifikát je dostupný ihned po úspěšném dokončení kurzu. [5]"},
+    {"question": "Musím o certifikát nějak požádat?","answer": "Ne. Certifikát se po splnění podmínek vytvoří automaticky. [5]"},
+    {"question": "Proč zatím nevidím svůj certifikát?","answer": "Pravděpodobně ještě nebyly splněny všechny podmínky kurzu nebo nebyl úspěšně dokončen závěrečný test. [5]"}
+  ]
+},
+{
+    "Sekce": "Výuka",
+  "etapa": 18,
+  "tema": "Průběh testů",
+  "data": [
+    {"question": "Můžu test přerušit a dokončit později?","answer": "To závisí na nastavení konkrétního testu. Některé testy je nutné dokončit během jednoho pokusu. [4]"},
+    {"question": "Co se stane, když během testu ztratím internet?","answer": "Po obnovení připojení se systém pokusí navázat tam, kde byl test přerušen. [10]"},
+    {"question": "Mohu si během testu dělat poznámky?","answer": "Ano, můžete si dělat poznámky, ale systém je neukládá. Doporučujeme si je zapisovat externě. [4]"},
+    {"question": "Je možné test opakovat po jeho dokončení?","answer": "Ano, pokud to není omezeno pravidly kurzu, test lze opakovat. [4]"},
+    {"question": "Co se stane, když během testu ztratím internet?","answer": "Po obnovení připojení se systém pokusí navázat tam, kde byl test přerušen. [10]"},
+    {"question": "Je během testu vidět zbývající čas?","answer": "Ano. Pokud je u testu nastaven časový limit, zbývající čas se zobrazuje přímo během jeho vyplňování. [12]"}
+    
+    ]
+},
+{
+  "Sekce": "Výuka",
+  "etapa": 19,
+  "tema": "Studium",
+  "data": [
+    {"question": "Jak zjistím, kolik času mi zbývá na dokončení testu?","answer": "Pokud je u testu nastaven časový limit, zbývající čas se zobrazuje přímo během jeho vyplňování. [12]"},
+    {"question": "Potřebuji instalovat nějaký program?","answer": "Ne. Pro studium obvykle stačí moderní webový prohlížeč a připojení k internetu."},
+    {"question": "Jaký prohlížeč doporučujete?","answer": "Doporučujeme používat aktuální verzi prohlížečů Chrome, Edge, Firefox nebo Safari."} 
+
+  ]
+},
+  {
+    "Sekce": "Výuka",
+    "etapa": 20,
+    "tema": "Kategorie a typy kurzů",
+    "data": [
+      { "question": "Jaké druhy kurzů systém nabízí?", "answer": "Nabízíme zákonná školení, odborné kurzy, měkké dovednosti i specializované obory podle zaměření vaší organizace." },
+      { "question": "Co znamená, že je kurz 'zákonný'?", "answer": "Zákonný kurz je školení vyžadované platnou legislativou, jeho absolvování je pro danou pracovní pozici povinné." },
+      { "question": "Liší se nějak kurzy pro nové zaměstnance od těch pro stávající?", "answer": "Ano, existují samostatné vstupní kurzy pro nové zaměstnance a periodická opakovací školení pro stávající zaměstnance." },
+      { "question": "Můžu si vybrat i kurz mimo svůj obor?", "answer": "Ano, pokud vaše organizace umožňuje přístup do celého katalogu, volitelné kurzy si můžete vybrat i mimo svou hlavní pracovní náplň." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 21,
+    "tema": "Povinné vs. volitelné kurzy",
+    "data": [
+      { "question": "Jak poznám, jestli je kurz pro mě povinný?", "answer": "Povinné kurzy jsou v přehledu 'Moje kurzy' označeny štítkem 'Povinné' a mají stanovený termín splnění." },
+      { "question": "Co se stane, když nesplním povinný kurz včas?", "answer": "Systém upozorní vás i vašeho nadřízeného na blížící se termín, nesplnění po termínu je evidováno a řeší ho administrátor organizace." },
+      { "question": "Mohou mi kolegové doporučit volitelný kurz?", "answer": "Ano, volitelné kurzy si můžete procházet a vybírat sami podle vlastního zájmu nebo doporučení nadřízeného." },
+      { "question": "Kdo rozhoduje, které kurzy jsou pro mě povinné?", "answer": "O přiřazení povinných kurzů rozhoduje administrátor vaší organizace na základě vaší pracovní pozice a platné legislativy." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 22,
+    "tema": "Lektoři a garanti kurzů",
+    "data": [
+      { "question": "Kdo vytváří obsah kurzů?", "answer": "Obsah kurzů připravují odborní lektoři a garanti se specializací v daném oboru." },
+      { "question": "Můžu lektorovi kurzu položit dotaz přímo?", "answer": "U některých kurzů je možné kontaktovat garanta přes formulář v detailu kurzu, jinak doporučujeme využít AI asistenta nebo podporu." },
+      { "question": "Je u certifikátu uvedeno jméno garanta školení?", "answer": "Ano, u odborných a zákonných školení certifikát obsahuje jméno garanta, který za obsah kurzu odpovídá." },
+      { "question": "Mění se lektor kurzu při aktualizaci obsahu?", "answer": "Garant kurzu zůstává obvykle stejný, případná změna se uvádí v historii verzí kurzu." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 23,
+    "tema": "Hodnocení a zpětná vazba na kurz",
+    "data": [
+      { "question": "Můžu po dokončení kurzu ohodnotit, jak se mi líbil?", "answer": "Ano, po dokončení kurzu se zobrazí krátký formulář, kde můžete kurz ohodnotit a napsat komentář." },
+      { "question": "Je hodnocení kurzu povinné?", "answer": "Ne, hodnocení je dobrovolné, ale pomáhá nám obsah kurzů dále zlepšovat." },
+      { "question": "Uvidí moje hodnocení i ostatní studenti?", "answer": "Souhrnné hodnocení kurzu může být viditelné ostatním uživatelům, konkrétní komentáře jsou zpravidla anonymizované." },
+      { "question": "Kam mám napsat připomínku k obsahu, který mi přišel nesrozumitelný?", "answer": "Konkrétní připomínku k obsahu můžete napsat přímo do hodnocení kurzu nebo použít tlačítko 'Nahlásit problém' u dané lekce." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 24,
+    "tema": "Doporučené a personalizované kurzy",
+    "data": [
+      { "question": "Doporučuje mi systém kurzy podle mé pozice?", "answer": "Ano, systém může doporučovat kurzy na základě vaší pracovní pozice, absolvovaných školení a zájmů." },
+      { "question": "Proč se mi zobrazují jiné kurzy než kolegovi na stejné pozici?", "answer": "Doporučení kurzů se odvíjí i od vaší dosavadní historie a individuálního nastavení administrátorem." },
+      { "question": "Můžu si vypnout doporučování kurzů?", "answer": "Doporučené kurzy jsou pouze informativní a nijak neovlivňují vaše povinná školení, samostatně je vypnout nelze." },
+      { "question": "Jak zjistím, jaký kurz by mi nejvíc pomohl v kariérním rozvoji?", "answer": "Doporučujeme projít nabídku volitelných kurzů v katalogu nebo se poradit s nadřízeným či AI asistentem." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 25,
+    "tema": "Přiřazení kurzu administrátorem",
+    "data": [
+      { "question": "Jak administrátor přiřadí kurz konkrétnímu zaměstnanci?", "answer": "V administraci vybere zaměstnance nebo skupinu a přiřadí jim kurz z katalogu s určením termínu splnění." },
+      { "question": "Dá se přiřazení kurzu naplánovat na budoucí datum?", "answer": "Ano, kurz lze přiřadit s odloženým datem zpřístupnění, například u nástupu nového zaměstnance." },
+      { "question": "Jak zruším přiřazení kurzu, který už zaměstnanec nepotřebuje?", "answer": "V administraci lze přiřazení kurzu jednotlivě odebrat, historie již absolvovaných částí zůstává zachována." },
+      { "question": "Můžu nastavit různý termín splnění pro různé zaměstnance u stejného kurzu?", "answer": "Ano, termín splnění se nastavuje individuálně při přiřazení kurzu konkrétní osobě nebo skupině." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 26,
+    "tema": "Přístup ke kurzům mezi Klientem a Odběratelem",
+    "data": [
+      { "question": "Vidí Odběratel všechny kurzy, které nabízí Klient?", "answer": "Odběratel má přístup pouze ke kurzům, které mu Klient v rámci smluveného rozsahu zpřístupnil." },
+      { "question": "Může si Odběratel objednat další kurzy nad rámec původní smlouvy?", "answer": "Ano, rozšíření nabídky kurzů je možné domluvit s Klientem, který spravuje dostupnost jednotlivých školení." },
+      { "question": "Jak Klient řídí, které kurzy jsou pro daného Odběratele dostupné?", "answer": "Klient spravuje nabídku kurzů pro jednotlivé Odběratele v sekci správy tenantů v administraci." },
+      { "question": "Platí pro kurzy nějaké licenční omezení počtu uživatelů?", "answer": "Rozsah přístupu ke kurzům, včetně počtu uživatelů, se řídí podmínkami smlouvy mezi Klientem a Odběratelem." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 27,
+    "tema": "Specializované a oborové kurzy",
+    "data": [
+      { "question": "Máte kurzy specifické pro konkrétní obory, třeba stavebnictví nebo zdravotnictví?", "answer": "Ano, katalog obsahuje i oborově zaměřené kurzy přizpůsobené specifickým rizikům a legislativě daného odvětví." },
+      { "question": "Kdo rozhoduje, jaký oborový kurz je pro mou pozici relevantní?", "answer": "Přiřazení oborového kurzu obvykle určuje administrátor na základě pracovní pozice a specifik provozu." },
+      { "question": "Můžete pro naši firmu vytvořit kurz na míru?", "answer": "Ano, tvorbu kurzu na míru je možné domluvit individuálně, obraťte se na svého administrátora nebo provozovatele systému." },
+      { "question": "Liší se obsah oborového kurzu podle regionu nebo pobočky?", "answer": "U některých kurzů lze obsah přizpůsobit specifikům konkrétní pobočky nebo pracoviště." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 28,
+    "tema": "Struktura kurzu – moduly a lekce",
+    "data": [
+      { "question": "Z čeho se skládá typický kurz?", "answer": "Kurz je rozdělen do jednotlivých modulů a lekcí, na konci kterých obvykle následuje krátké ověření znalostí a závěrečný test." },
+      { "question": "Musím absolvovat všechny moduly, nebo si mohu vybrat jen některé?", "answer": "U povinných kurzů je nutné absolvovat všechny moduly, u některých volitelných kurzů lze procházet jen vybraná témata." },
+      { "question": "Jsou v kurzu i praktické příklady, nebo jen teorie?", "answer": "Většina kurzů kombinuje teoretický výklad s praktickými příklady, ilustracemi a modelovými situacemi." },
+      { "question": "Jak dlouhá je typicky jedna lekce?", "answer": "Délka lekce se liší podle tématu, obvykle se pohybuje mezi 5 až 20 minutami studijního času." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 29,
+    "tema": "Předpoklady a návaznost kurzů",
+    "data": [
+      { "question": "Musím mít splněný základní kurz, než začnu pokročilý?", "answer": "Pokud kurz vyžaduje prerekvizitu, je to uvedeno přímo v jeho detailu, bez splnění základního kurzu nemusí být pokročilý kurz přístupný." },
+      { "question": "Jak zjistím, na jaký kurz tento navazuje?", "answer": "V detailu kurzu bývá uvedena informace o návaznosti na další doporučené nebo navazující kurzy." },
+      { "question": "Co když už mám podobné znalosti z předchozího zaměstnání?", "answer": "V takovém případě je možné požádat administrátora o individuální posouzení a případné uznání předchozího vzdělání." },
+      { "question": "Blokuje nesplněný povinný kurz přístup k jiným kurzům?", "answer": "U některých návazných školení ano, systém vás na chybějící prerekvizitu upozorní při pokusu o zahájení kurzu." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 30,
+    "tema": "Ukončení a archivace kurzu",
+    "data": [
+      { "question": "Co se stane s kurzem, který byl z nabídky stažen?", "answer": "Stažený kurz zůstává v historii uživatelů, kteří ho absolvovali, ale nový zápis do něj již není možný." },
+      { "question": "Zůstane mi certifikát platný i po archivaci kurzu?", "answer": "Ano, archivace kurzu v katalogu neovlivňuje platnost již vystavených certifikátů." },
+      { "question": "Proč už nevidím starý kurz v katalogu, i když ho mám dokončený?", "answer": "Dokončené kurzy zůstávají viditelné ve vaší historii i po jejich archivaci v hlavním katalogu." },
+      { "question": "Kdo rozhoduje o vyřazení kurzu z nabídky?", "answer": "O archivaci nebo vyřazení kurzu rozhoduje Odběratel a provozovatel systému, obvykle v souvislosti s aktualizací obsahu nebo legislativy." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 31,
+    "tema": "Katalog kurzů a vyhledávání",
+    "data": [
+      { "question": "Kde najdu úplný seznam všech dostupných kurzů?", "answer": "Kompletní katalog kurzů najdete v sekci 'Kurzy' v hlavním menu." },
+      { "question": "Jak si vyfiltruju kurzy podle tématu?", "answer": "V katalogu kurzů použijte filtry v levém panelu, kde lze vybírat podle kategorie, úrovně nebo délky kurzu." },
+      { "question": "Dá se v kurzech vyhledávat podle klíčového slova?", "answer": "Ano, v horní části katalogu je vyhledávací pole, do kterého stačí zadat název nebo klíčové slovo." },
+      { "question": "Jak poznám, které kurzy už mám přiřazené a které si mohu vybrat sám?", "answer": "Přiřazené povinné kurzy se zobrazují v sekci 'Moje kurzy', volitelné kurzy najdete v celkovém katalogu." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 32,
+    "tema": "Detail kurzu – popis a obsah",
+    "data": [
+      { "question": "Co všechno se dozvím v detailu kurzu, než ho začnu?", "answer": "V detailu kurzu najdete popis obsahu, odhadovanou délku, úroveň náročnosti, prerekvizity i informace o závěrečném testu." },
+      { "question": "Je u kurzu uvedeno, co se přesně naučím?", "answer": "Ano, každý kurz obsahuje seznam výukových cílů a klíčových témat, která jsou součástí obsahu." },
+      { "question": "Můžu si prohlédnout obsah kurzu, aniž bych se do něj zapsal?", "answer": "U vybraných kurzů je dostupný náhled první lekce, plný obsah se ale zpřístupní až po zahájení kurzu." },
+      { "question": "Uvádíte u kurzu i jméno lektora nebo garanta?", "answer": "Ano, u odborných a zákonných kurzů je uveden garant, který za obsah kurzu odborně odpovídá." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 33,
+    "tema": "Skupinové a prezenční kurzy",
+    "data": [
+      { "question": "Nabízíte i kurzy s živým lektorem, ne jen online samostudium?", "answer": "Ano, u vybraných témat je k dispozici i prezenční nebo hybridní forma s živým lektorem." },
+      { "question": "Jak se přihlásím na konkrétní termín prezenčního školení?", "answer": "V detailu prezenčního kurzu si vyberete jeden z nabízených termínů a potvrdíte účast." },
+      { "question": "Co když se na přihlášený termín nemůžu dostavit?", "answer": "Účast lze zpravidla zrušit nebo přesunout na jiný termín v detailu kurzu, nejpozději však do stanoveného limitu před konáním." },
+      { "question": "Platí pro skupinové kurzy stejný závěrečný test jako u online verze?", "answer": "Ano, závěrečné ověření znalostí probíhá stejnou formou bez ohledu na to, zda šlo o online nebo prezenční variantu." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 34,
+    "tema": "Aktualizace a verzování obsahu kurzu",
+    "data": [
+      { "question": "Co se stane, když se obsah kurzu po mém absolvování změní?", "answer": "Váš certifikát zůstává platný podle verze kurzu, kterou jste absolvovali v době vystavení certifikátu." },
+      { "question": "Jak poznám, že kurz prošel aktualizací?", "answer": "U aktualizovaného kurzu je v detailu uvedeno datum poslední revize a stručný přehled provedených změn." },
+      { "question": "Musím po aktualizaci kurzu projít celý obsah znovu?", "answer": "To závisí na rozsahu změny, u zásadních úprav obsahu může být vyžadováno opakování kurzu nebo jen doplňujícího testu." },
+      { "question": "Kdo schvaluje změny v obsahu kurzu?", "answer": "Veškeré změny obsahu, zejména v návaznosti na legislativu, procházejí schválením odpovědného administrátora před zveřejněním." }
+    ]
+  },
+  {
+    "Sekce": "Výuka",
+    "etapa": 35,
+    "tema": "Předpoklady a návaznost kurzů",
+    "data": [
+      { "question": "Musím mít splněný základní kurz, než začnu pokročilý?", "answer": "Pokud kurz vyžaduje prerekvizitu, je to uvedeno přímo v jeho detailu, bez splnění základního kurzu nemusí být pokročilý kurz přístupný." },
+      { "question": "Jak zjistím, na jaký kurz tento navazuje?", "answer": "V detailu kurzu bývá uvedena informace o návaznosti na další doporučené nebo navazující kurzy." },
+      { "question": "Co když už mám podobné znalosti z předchozího zaměstnání?", "answer": "V takovém případě je možné požádat administrátora o individuální posouzení a případné uznání předchozího vzdělání." },
+      { "question": "Blokuje nesplněný povinný kurz přístup k jiným kurzům?", "answer": "U některých návazných školení ano, systém vás na chybějící prerekvizitu upozorní při pokusu o zahájení kurzu." }
+    ]
+  }
+]
+
+
+
+

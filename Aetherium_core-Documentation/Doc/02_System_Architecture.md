@@ -28,3 +28,6 @@ Bezpečnost: Veškerá data získaná tímto modulem jsou považována za dočas
 .
 5. Souvislost s databází
 Data doplněná tímto modulem jsou následně připravena pro metodu .insert() do tabulky profiles. Sloupec ico v Supabase slouží jako sekundární identifikátor subjektu v rámci LMS Aetherium-Core
+
+4. MFA/OTP
+    

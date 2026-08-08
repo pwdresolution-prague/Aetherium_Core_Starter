@@ -1,0 +1,7 @@
+Instrukce pro aktualizaci systému
+
+
+
+git add .
+git commit -m "Krátký popis změn"
+git push
