@@ -1,5 +1,5 @@
 //FRONTEND: Kruh avatara  + výběr z 12 DiceBear + fallback iniciály
-// 
+//
 import { hashStringToHue } from '../src_My_Profile/ColorHash.js'
 import  { generateAvatarPresets } from '../src_My_Profile/AvatarLibrary.js'
 
@@ -17,7 +17,7 @@ let selectedAvatarSeed = null //COMMENT: Zde se používají iniciály
 
 
 //FRONTEND: Generování inicíiálů ze jména (maximálně 2 znaky)
-// 
+//
 function getInitials(fullName) {
     return fullName
         .trim()
@@ -107,21 +107,3 @@ cancelAvatarPicker.addEventListener('click', () => {
 
 //COMMENT: Inicializace při načtení stránky
 renderAvatarCircle()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

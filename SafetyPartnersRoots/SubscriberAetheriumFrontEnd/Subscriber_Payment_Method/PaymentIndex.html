@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Safety Partners - Aetherium Core - Shrnutí registrace">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="/SPL.png">
+<link rel="stylesheet" href="../Subscriber_Payment_Method/Stylepayment.css">
+<title> Aetherium Core — Shrnutí registrace</title>
+</head>
+<body>
+
+<div class="Main_menu">
+    <h2>Aetherium Core - Starter</h2>
+    <div class="Logo-Row">
+        <img src="../../AetheriumIcon.svg" alt="Logo" class="Logo">
+        <h4>Subscriber Payment Method</h4>
+    </div>
+</div>
+
+<div class="Gap"></div>
+<!-- COMMENT: Levý panel — progress indikátor kroků registrace -->
+    <aside class="SummarySteps">
+        <div class="StepItem StepDone">
+            <span class="StepIcon">✓</span>
+            <span class="StepLabel">Firemní údaje</span>
+        </div>
+        <div class="StepConnector"></div>
+        <div class="StepItem StepDone">
+            <span class="StepIcon">✓</span>
+            <span class="StepLabel">Ověření telefonu</span>
+        </div>
+        <div class="StepConnector"></div>
+        <div class="StepItem StepActive">
+            <span class="StepIcon">3</span>
+            <span class="StepLabel">Shrnutí</span>
+        </div>
+        <div class="StepConnector"></div>
+        <div class="StepItem StepPending">
+            <span class="StepIcon">4</span>
+            <span class="StepLabel">Platba</span>
+        </div>
+    </aside>
+
+
+<main class="PaymentMain">
+    <!--TODO: Naplnění PaymentSubscriber.js - firemní údaje z formuláře -->
+    <section class="PaymentSection" id="payentSummaryId">
+        <p class="PaymentLoading">Načítám údaje o registraci</p>
+
+    </section>
+
+    <!--TODO: Naplní PaymentSubscriber.js - kalkulace ceny podle počtu importovaných studentů -->
+    <section class="PaymentSection" id="pricingBreakdownId"></section>
+</main>
+
+
+
+
+<div class="GapTwo"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="module" src="./JS/PaymentSubscriber.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="Patička">
+    <p class="Author">&copy; 2026 PWD Resolution — Všechna práva vyhrazena.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- LOGIKA: Pouze FormToPaySubscriber.js — ostatní moduly zde nejsou potřeba -->
+<script type="module" src="../JS/SummaryLogic/SummarySmoothScroll.js"></script>
+<script type="module" src="../Subscriber_Payment_Method/JS/PaymentSubscriber.js"></script>
+
+
+
+
+
+
+</body>
+</html>

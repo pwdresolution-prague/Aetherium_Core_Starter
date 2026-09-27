@@ -1,6 +1,6 @@
 // ============================================================
 // AresLookup.js — Automatické doplnění údajů z ARES
-// Aetherium Core Enterprise | Registrační formulář
+// Aetherium Core Provider | Registrační formulář
 // ============================================================
 
 const ARES_API_BASE = "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty"

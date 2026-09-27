@@ -11,23 +11,27 @@
 <meta property="og:url" content=""><!--TODO: Doplnit adresu webu-->
 <meta property="og:type" content="website">
 <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
 
 <link rel="icon" type="image/x-icon" href="/SPL.png">
 <link rel="stylesheet" href="../Css/AetheriumDash.css">
 <link rel="stylesheet" href="../Css/StyleForm.css">
 <link rel="stylesheet" href="../Css/FormStyle.css">
-<title>Safety Partners - AetheriumCore - Enterprise</title>
+<title>Aetherium core Client - AetheriumCore - Basic</title>
 </head>
 <body>
 <div class="Main_menu">
-  <h2>Aetherium Core</h2>
+  <h2>Aetherium Core - Starter</h2>
   <div class="Logo-Row">
-  <img src="../../SafetyPartnersFrontendStudent/Logo.png" alt="Logo" class="Logo">
-  <h4>Registration dashboard module</h4>
+  <img src="../../AetheriumIcon.svg" alt="Logo" class="Logo">
+  <h4>Client Registration Dashboard Module</h4>
   </div>
     <div class="TextObsah">
-    <h2 class="Nadpis">Vítejte na vstupní stránce systému Aetherium Core</h2>
-    <h4 class="Podnadpis">Na této stránce zahájíte registraci vaší společnosti a konfiguraci klientských zásad. Registrace vás provede čtyřmi kroky:  <br><br> - zadáním firemních údajů, <br><br>  - nastavením kontaktních a uživatelských preferencí, <br><br> - vytvořením datové struktury procesních prvků, <br><br> - odsouhlasením smluvních podmínek včetně zásad ochrany osobních údajů (GDPR).</h4>
+    <h2 class="Nadpis">Vítejte na vstupní stránce systému Aetherium core Client</h2>
+    <h4 class="Podnadpis">Na této stránce zahájíte registraci vaší společnosti a konfiguraci klientských zásad.<br><br> Registrace vás provede čtyřmi kroky:  <br><br> - zadáním firemních údajů, <br><br>  - nastavením kontaktních a uživatelských preferencí, <br><br> - vytvořením datové struktury procesních prvků, <br><br> - odsouhlasením smluvních podmínek včetně zásad ochrany osobních údajů (GDPR).</h4>
 <!--TODO: Section pro výběr typu návštěvy ============================================ -->
 <!--TODO: ============================================================================================================-->
 <div class="visitSelector" id="visitSelector">
@@ -113,7 +117,7 @@ Po dokončení registrace bude vytvořen <br>unikátní záznam klienta a systé
                         <input type="tel" class="telefonní-číslo" placeholder="Zde napište své telefonní číslo" name="telefonní-číslo" required id="telefonní-číslo" style="font-size: 0.9vw;">
                     <button type="button" id="sendOtpBtn">Odeslat ověřovací kód</button>
                     <label>MFA / OTP</label>
-                        <input type="text" class="mfa-otp" placeholder="6místný kód" name="mfa-otp" required id="mfa-otp" style="font-size: 0.9vw;">
+                        <input type="text" class="mfa-otp" placeholder="6místný kód" name="mfa-otp"  id="mfa-otp" style="font-size: 0.9vw;">
                     <label>Segment trhu</label>
                         <input type="text" class="Segment-trhu" placeholder="Zde napište obor svého podnikání" name="Obor-podnikání" required id="Obor-podnikání" style="font-size: 0.9vw;">
                     <label>Email</label>
@@ -212,6 +216,8 @@ Po dokončení registrace bude vytvořen <br>unikátní záznam klienta a systé
 <script type="module" src="../JS/SanitizeForm.js"></script>
 <script type="module" src="../Connect/AresLookup.js"></script>
 <script type="module" src="../Connect/SupabaseConnect.js"></script>
+<script type="module" src="../BackEnd/FormToPay.js"></script>
+<script type="module" src="../JS/SmoothScrollForm.js"></script>
 
 
 

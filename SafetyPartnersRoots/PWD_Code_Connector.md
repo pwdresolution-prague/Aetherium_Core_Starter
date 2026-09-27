@@ -15,7 +15,7 @@
 <!--TODO --> AETHERIUM CORE  ==================================================
 // ============================================================================
 // ============================================================================
-//FRONTEND: 
+//FRONTEND:
 //======================IMPORTANT:
 'FormLogin.js'
 'FormLogin.js'
@@ -23,7 +23,7 @@
 'FormLogin.js'
 'FormLogin.js'
 'FormLogin.js'
-//======================IMPORTANT: 
+//======================IMPORTANT:
 'ModalWindow.js'
 'ModalWindow.js'
 'ModalWindow.js'
@@ -31,7 +31,7 @@
 'ModalWindow.js'
 'ModalWindow.js'
 'ModalWindow.js'
-//======================IMPORTANT: 
+//======================IMPORTANT:
 'SanitizeForm.js'
 'SanitizeForm.js'
 'SanitizeForm.js'
@@ -39,7 +39,7 @@
 'SanitizeForm.js'
 'SanitizeForm.js'
 'SanitizeForm.js'
-//======================IMPORTANT: 
+//======================IMPORTANT:
 'ScriptAetherium.js'
 'ScriptAetherium.js'
 'ScriptAetherium.js'
@@ -48,14 +48,14 @@
 'ScriptAetherium.js'
 'ScriptAetherium.js'
 'ScriptAetherium.js'
-//======================IMPORTANT: 
+//======================IMPORTANT:
 'ValidateForm.js' = FIELD_RULES = '../SafetyPartnersRoots/AetheriumCoreEnterprise/JS/
 'ValidateForm.js'
 'ValidateForm.js'
 'ValidateForm.js'
 'ValidateForm.js'
 'ValidateForm.js'
-//======================IMPORTANT: 
+//======================IMPORTANT:
 'Visit.js'
 'Visit.js'
 'Visit.js'
@@ -118,10 +118,10 @@
 <!--TODO:Safety_Partners_Frontend_Admin/CMS_Dashboard =====================================================
 
 //SUPABASE: '../SafetyPartnersRoots/SafetyPartnersFrontendAdmin/CMS/Components/CMS_Dashboard/InputEditor.js'
-// 
+//
 //SUPABASE: TOOLBAR_COMMANDS proměnná
-// 
-// 
+//
+//
 
 
 
@@ -137,18 +137,17 @@
 
 //BACKEND: Chatbot conektivní napojení do SUPABASE
 // vytváří zabezpečení a kontroluje veškeré data //TODO: Příprava na připojení...
-// 
+
+
+//TODO: "../SafetyPartnersRoots/SafetyPartnersFrontendStudent/JS/Student_Dashboard_Logika/ProgressGraph.js"
 
 
 
 
-
-
-
-//FRONTEND: Připojení Proměnné do BACKEND: SUPABASE: 
+//FRONTEND: Připojení Proměnné do BACKEND: SUPABASE:
 
 currentUserName //TODO: Připojení na změnu iniciálů podle jména uživatele
-''../SafetyPartnersRoots/SafetyPartnersFrontendStudent/JS/src_My_Profile/AvatarProfiile.js
+''../Safe                                                                                                                                                                                                                                                                                          tyPartnersRoots/SafetyPartnersFrontendStudent/JS/src_My_Profile/AvatarProfiile.js
 
 
 
@@ -187,23 +186,3 @@ currentUserName //TODO: Připojení na změnu iniciálů podle jména uživatele
 
 
 <!--TODO: Safety_Partners_Utils_Connector =======================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

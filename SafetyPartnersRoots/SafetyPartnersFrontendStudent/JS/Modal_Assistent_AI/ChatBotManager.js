@@ -1,7 +1,7 @@
-import { sanitizeHTML } from '../../../utils/security.client'
+import { sanitizeHTML } from '../../../utils/security.client.js'
+import { zeptatSeAsistenta } from './ChatBotApi.js'
 
-
-//TODO: Link na Elementy 
+//TODO: Link na Elementy
 const chatbotModal = document.getElementById("ChatBotModal")
 const chatbotOpen = document.getElementById("ChatBotOpen")
 const chatbotClose = document.querySelector(".chatbot-close")
@@ -10,87 +10,56 @@ const userInput = document.getElementById("userInput")
 const sendButton = document.getElementById("SendMessage")
 const chatBotThinking = document.getElementById("chatBotThinkingId")
 
-let chatbotData = {}
-
-//Funkce pro komunikaci s AI BACKENDEM:
-// 
-
-
-
-
-
-
 //TODO: ZOBRAZENÍ===========================================================================
 
 //FRONTEND: Zobrazení modalu Chatbota
 
 //TODO: Otevření modalu
-chatbotOpen.addEventListener("click" ,function(){
+chatbotOpen.addEventListener("click", function () {
     chatbotModal.style.display = "block"
 })
 //TODO: Zavření přes křížek
-chatbotClose.addEventListener("click", function(){
+chatbotClose.addEventListener("click", function () {
     chatbotModal.style.display = "none"
 })
 //TODO: Zavření klikem mimo okno
-window.onclick = function(event){
-    if(event.target == chatbotModal){
+window.onclick = function (event) {
+    if (event.target == chatbotModal) {
         chatbotModal.style.display = "none"
     }
 }
+
 //TODO: FUNKCE============================================================
+// OPRAVA: Původně tu bylo `fuse.search(...)`, ale proměnná `fuse` (Fuse.js) nikde
+//         v souboru neexistovala – volání by vždy spadlo. Fuse.js se navíc už nepoužívá:
+//         dotaz jde přes ChatBotApi.js na sdílený AI backend (TensorFlow embedding +
+//         Supabase), se stejnou datovou základnou jako hledání v Dokumentaci.
+//         Offline/výpadkový fallback řeší ChatBotApi.js sám (bez externí knihovny).
 
-sendButton.addEventListener("click", function(){
+sendButton.addEventListener("click", async function () {
     const rawMessage = userInput.value.trim()
-    if(rawMessage === "") return
+    if (rawMessage === "") return
 
+    const safeMessage = sanitizeHTML(rawMessage)
 
-const safeMessage = sanitizeHTML(rawMessage)
+    //TODO: Přidání uživatelského dotazu do historie
+    const userMsg = document.createElement("p")
+    userMsg.textContent = "Ty: " + safeMessage
+    chatHistory.appendChild(userMsg)
 
+    //TODO: Mazání textového pole
+    userInput.value = ""
+    chatBotThinking.hidden = false
 
-//TODO: Přidání uživatelského dotazu do historie 
-const userMsg = document.createElement("p")
-userMsg.textContent = "Ty: " + safeMessage
-chatHistory.appendChild(userMsg)
+    const { odpoved } = await zeptatSeAsistenta(safeMessage)
 
-//TODO: Mazání textového pole
-// 
-userInput.value = ""
+    //TODO: Odpověď Chatbota
+    const botMsg = document.createElement("p")
+    botMsg.textContent = "ChatBot: " + odpoved
+    chatHistory.appendChild(botMsg)
 
-chatBotThinking.hidden = false
+    chatBotThinking.hidden = true
 
-
-setTimeout(() => {
-    
-
-//Fuzy vyhledávání pomocí fuse.js
-
-let botReply = 'Stále se ještě učím'
-
-const result = fuse.search(safeMessage)
-
-if(result.length > 0){
-    const bestMatch = result[0].item
-    botReply = bestMatch.answer
-
-}else {
-    console.log('Omlouvám se, ale nenašel jsem shodu s trénovacími daty')
-}
-
-
-//TODO: Odpověď Chatbota
-const botMsg = document.createElement("p")
-botMsg.textContent = "ChatBot: " + botReply
-chatHistory.appendChild(botMsg)
-
-chatBotThinking.hidden = true
-
-//TODO: Scroll dolů
-chatHistory.scrollTop = chatHistory.scrollHeight
-
-
-
-
-}, 3000) //FRONTEND: Zpoždění 3 sekundy pro simulaci "přemýšlení" Chatbota
+    //TODO: Scroll dolů
+    chatHistory.scrollTop = chatHistory.scrollHeight
 })
-

@@ -11,17 +11,23 @@
 <meta property="og:url" content=""><!--TODO: DOplnit adresu webu-->
 <meta property="og:type" content="website">
 <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/x-icon" href="../../SPL.png">
   <link rel="stylesheet" href="../Css/Style.css">
   <link rel="stylesheet" href="../Css/Modal-Courses.css">
   <link rel="stylesheet" href="../Css/ChatBotStyle.css">
-  <title>Safety Partners - Kurzy</title>
+  <title>Aetherium Core - Starter - Kurzy</title>
 </head>
 <body>
 <div class="Main_menu">
-  <h2>Aetherium core</h2>
+  <h2>Aetherium Core - Starter</h2>
   <div class="Logo-Row">
-  <img src="../Logo.png" alt="Logo" class="Logo">
+  <img src="../../AetheriumIcon.svg" alt="Logo" class="Logo">
   <h4>E-Learning Management</h4>
   </div>
   <!--TODO: Vertikální menu-->
@@ -88,7 +94,7 @@
 </div>
 
 <!--TODO: Modal nabídka-->
-<div class="Modal-Courses">
+<main class="Modal-Courses">
   <h3 class="CoursesOffer">Výběr Kurzu</h3>
   <button type="button" class="ModalButton ModalButton-BezpečnostPráce"
           data-title="Bezpečnost Práce"
@@ -105,6 +111,7 @@
           data-description="Požární ochrana', 'Základní školení v oblasti požární ochrany.">
           Požární Ochrana
         </button>
+        <section class="Modal-coursesSecondRow">
   <button type="button" class="ModalButton ModalButton-PožárníOchranaProVedoucíPracovníky"
           data-title="PožárníOchranaProVedoucíPracovníky"
           data-description="Požární ochrana pro vedoucí', 'Speciální školení pro odpovědné osoby.">
@@ -120,12 +127,7 @@
           data-description="První-pomoc', 'Školení pro zaměstnance poskytující první-pomoc.">
           První pomoc
         </button>
-    <button type="button" class="ModalButton ModalButton-Práce-ve-výškách"
-          data-title="Práce ve výškách"
-          data-description="Práce ve výškách', 'Školení pro zaměstnance pracující v nadstandartní výšce.">
-          Práce ve výškách
-        </button>
-
+></section>
 <!--TODO: Modal okno-->
 <div id="ModalWindow" class="ModalWindow ModalHidden">
 <div class="ModalContent">
@@ -138,7 +140,7 @@
   </div>
 </div>
 </div>
-</div    
+</main>
 
 
 <!--TODO: Patička -->
@@ -152,7 +154,7 @@
 
 
 <script type="module" src="../JS/Modal/ManagerKurzy.js"></script>
-<script type="module" src="../JS/Modal/ChatBotManager.js"></script>
+<script type="module" src="../JS/Modal_Assistent_AI/ChatBotManager.js"></script>
 <script type="module" src="../../utils/security.client.js"></script>
 
 </body>

@@ -12,10 +12,9 @@ body {
 
 .Modal-Courses{
     text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center; /* Tím zarovnáš všechna tlačítka na střed */
-    gap: 0.5vw;
+    margin: -10vw;
+
 
 }
 
@@ -27,54 +26,49 @@ body {
     align-items: center;
 
 
-
-
-    
 }
 
-/*TODO: Modal Okna*/
+
+/*TODO: KURZ ================================================================================= */
 
 .ModalButton-BezpečnostPráce {
-  border: #FF6600 solid 0.14vw;
-background: linear-gradient(to right, #003d80, #005099 );
-  border-radius: 30vw;
-  width: 35vw;
-  height: 3vw;
-  margin-top: 2vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2vw;
-  cursor: pointer;
-  margin-left: 18vw;
-  color: white;
-  box-shadow:
+    border: #FF6600 solid 0.14vw;
+    background: linear-gradient(to right, #003d80, #5f89bc );
+    border-radius: 1vw;
+    width: 12vw;
+    height: 12vw;
+    margin-top: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 18vw;
+    color: white;
+    box-shadow:
     0 2px 0 0 #8eb2d4,
     0 3px 5px rgba(93, 93, 93, 0.4),
     inset 0 1px 0 rgba(255,255,255,0.25);
 
   transform: translateY(0px);
   transition: transform 80ms ease-out, box-shadow 80ms ease-out;
-
 }
 
 .ModalButton-BezpečnostPráce:active {
-  transform: translateY(5px);
+    transform: translateY(5px);
   box-shadow:
     0 1px 0 0 #b34400,
     0 2px 6px rgba(0,0,0,0.3),
     inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
-/*TODO: Hover */
-.ModalButton-BezpečnostPráce:hover {
-  background-color: #007acc; /* světlejší modrá */
-}
+/*TODO: KURZ ================================================================================= */
+
 
 .ModalButton-BezpečnostPráceProVedoucíPracovníky{
     border: #FF6600 solid 0.14vw;
     background: linear-gradient(to right, #003d80, #5f89bc );
-    border-radius: 30vw;
-    width: 35vw;
-    height: 3vw;
+    border-radius: 1vw;
+    width: 12vw;
+    height: 12vw;
     margin-top: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
@@ -98,20 +92,15 @@ background: linear-gradient(to right, #003d80, #005099 );
     inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
+/*TODO: KURZ ================================================================================= */
 
-
-
-/*TODO: Hover */
-.ModalButton-BezpečnostPráceProVedoucíPracovníky:hover {
-  background-color: #007acc; /* světlejší modrá */
-}
 
 .ModalButton-PožárníOchrana{
     border: #FF6600 solid 0.14vw;
-    background: linear-gradient(to right, #003d80, #5f89bc);
-    border-radius: 30vw;
-    width: 35vw;
-    height: 3vw;
+    background: linear-gradient(to right, #003d80, #5f89bc );
+    border-radius: 1vw;
+    width: 12vw;
+    height: 12vw;
     margin-top: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
@@ -136,19 +125,15 @@ background: linear-gradient(to right, #003d80, #005099 );
 }
 
 
+/*TODO: KURZ ================================================================================= */
 
-
-/*TODO: Hover */
-.ModalButton-PožárníOchrana:hover {
-  background-color: #007acc; /* světlejší modrá */
-}
 
 .ModalButton-PožárníOchranaProVedoucíPracovníky{
     border: #FF6600 solid 0.14vw;
-    border-radius: 30vw;
-    background: linear-gradient(to right, #003d80, #5f89bc);
-    width: 35vw;
-    height: 3vw;
+    background: linear-gradient(to right, #003d80, #5f89bc );
+    border-radius: 1vw;
+    width: 12vw;
+    height: 12vw;
     margin-top: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
@@ -172,17 +157,15 @@ background: linear-gradient(to right, #003d80, #005099 );
     inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
-/*TODO: Hover */
-.ModalButton-PožárníOchranaProVedoucíPracovníky:hover {
-  background-color: #007acc; /* světlejší modrá */
-}
+/*TODO: KURZ ================================================================================= */
+
 
 .ModalButton-ŘidičiReferenti{
     border: #FF6600 solid 0.14vw;
     background: linear-gradient(to right, #003d80, #5f89bc );
-    border-radius: 30vw;
-    width: 35vw;
-    height: 3vw;
+    border-radius: 1vw;
+    width: 12vw;
+    height: 12vw;
     margin-top: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
@@ -206,18 +189,12 @@ background: linear-gradient(to right, #003d80, #005099 );
     inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
-
-.ModalButton-ŘidičiReferenti:hover {
-  background-color: #007acc; /* světlejší modrá */
-}
-
-
 .ModalButton-První-pomoc{
     border: #FF6600 solid 0.14vw;
     background: linear-gradient(to right, #003d80, #5f89bc );
-    border-radius: 30vw;
-    width: 35vw;
-    height: 3vw;
+    border-radius: 1vw;
+    width: 12vw;
+    height: 12vw;
     margin-top: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
@@ -232,7 +209,6 @@ background: linear-gradient(to right, #003d80, #005099 );
   transform: translateY(0px);
   transition: transform 80ms ease-out, box-shadow 80ms ease-out;
 }
-
 
 .ModalButton-První-pomoc:active {
   transform: translateY(5px);
@@ -241,48 +217,6 @@ background: linear-gradient(to right, #003d80, #005099 );
     0 2px 6px rgba(0,0,0,0.3),
     inset 0 1px 0 rgba(255,255,255,0.15);
 }
-
-
-
-.ModalButton-Práce-ve-výškách{
-    border: #FF6600 solid 0.14vw;
-    background: linear-gradient(to right, #003d80, #5f89bc);
-    border-radius: 30vw;
-    width: 35vw;
-    height: 3vw;
-    margin-top: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw;
-    cursor: pointer;
-    margin-left: 18vw;
-    color: white;
-    box-shadow:
-    0 2px 0 0 #8eb2d4,
-    0 3px 5px rgba(93, 93, 93, 0.4),
-    inset 0 1px 0 rgba(255,255,255,0.25);
-
-  transform: translateY(0px);
-  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
-}
-
-.ModalButton-Práce-ve-výškách:active {
-  transform: translateY(5px);
-  box-shadow:
-    0 1px 0 0 #b34400,
-    0 2px 6px rgba(0,0,0,0.3),
-    inset 0 1px 0 rgba(255,255,255,0.15);
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 

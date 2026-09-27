@@ -1,6 +1,6 @@
 import { sanitizeHTML } from '../../../utils/security.client'
 
-// TODO: Link na Elementy 
+// TODO: Link na Elementy
 const chatHistory = document.getElementById("chathistory")
 const userInput = document.getElementById("userInput")
 const sendButton = document.getElementById("SendMessage")
@@ -15,9 +15,9 @@ async function askAiBot(message) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: message })
         });
-        
+
         const data = await response.json();
-        return data.answer; 
+        return data.answer;
     } catch (error) {
         console.error('Chyba při komunikaci s AI:', error);
         return 'Omlouvám se, ale nepodařilo se mi spojit s mozkem systému.';

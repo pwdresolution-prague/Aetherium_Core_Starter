@@ -1,6 +1,6 @@
 // Visit.js
 import { selectButton, firstVisitSection, returningVisitSection, modalValue } from "../JS/ModalWindow.js"
-import supabase from "../Connect/SupabaseClient.js"
+import supabase from "../Connect/SupabaseConnect.js"
 
 // ============================================================
 // Elementy přihlašovacího formuláře

@@ -14,21 +14,10 @@ body {
 
 /*TODO: Dashboard vizual structure ============================================================= */
 
-
 .dashboardHeader {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    margin-bottom: 35vh;
-    font-size: medium;
-    
-
-
+    padding-bottom: 20vh;
+    margin-top: -20vh;
 }
-
-
 
 
 .DashboardStructure {
@@ -38,15 +27,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 68vw;
-    height: 48vh;
+    height: 61vh;
     border-radius: 0.7vw;
-    margin-top: -56vh;
     margin-left: 25vw;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.55);
 
-    
-    
-} 
+
+
+}
 
 .DashboardStructureGlass {
     border-inline-end-color: 0.2vw solid #686663;
@@ -55,14 +43,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 67.5vw;
-    height: 47.5vh;
+    height: 60.5vh;
     border-radius: 0.7vw;
     margin-top: -0vh;
     margin-left: 0vw;
     backdrop-filter: blur(20vw) saturate(300%);
-    backdrop-filter: blur(40vh) saturate(100%)
+    backdrop-filter: blur(40vh) saturate(100%);
 
-   
+
 
 }
 
@@ -70,8 +58,8 @@ body {
 
 .profileAvatar {
   position: relative;
-  margin-left: 2vw;
-  margin-bottom: 32vh;
+  margin-left: 0vw;
+  margin-bottom: 36.5vh;
 
   width: 6rem;
   height: 6rem;
@@ -176,7 +164,7 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-/* COMMENT: ::backdrop je pseudo-element, který <dialog> vykresluje ZA sebou, 
+/* COMMENT: ::backdrop je pseudo-element, který <dialog> vykresluje ZA sebou,
    když je otevřený přes showModal() — funguje jen u <dialog>, ne u běžného divu */
 #avatarPickerModal::backdrop {
   background: rgba(0, 20, 40, 0.6);
@@ -228,25 +216,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 48vw;
-    margin-bottom: 6vh;
+    margin-right: 40vw;
+    margin-bottom: 2vh;
     gap: 0.3vw;
     font-size: 0.9vw;
-    
+    padding-left: 4vw;
 
-    
-    
-    
+
+
+
+
 
 }
-
-
-
-
-.EditProfile {
-    
-}
-
 
 
 
@@ -274,30 +255,24 @@ body {
     transition: background-color 0.18s ease, transform 0.12s ease, color 0.18s ease;
 }
 
-/* Hover -- najetí myší (desktop) */
+/* Hover -- najetí myší (desktop)
 .editProfileText:hover {
     background-color: rgba(255, 102, 0, 0.15);
     color: #FF6600;
 }
 
-/* Active -- v okamžiku samotného kliknutí (myš stisknutá) */
+/* Active -- v okamžiku samotného kliknutí (myš stisknutá)
 .editProfileText:active {
     transform: scale(0.96);
     background-color: rgba(255, 102, 0, 0.3);
 }
 
-/* Focus-visible -- klávesnicová navigace (Tab), NE myš */
+/* Focus-visible -- klávesnicová navigace (Tab), NE myš
 .editProfileText:focus-visible {
     outline: 0.14vw solid #FF6600;
     outline-offset: 0.2vw;
 }
-
-/* Ikona reaguje spolu s textem, protože sdílí .EditProfile jako rodiče */
-.EditProfile:has(.editProfileText:hover) .eIProfile,
-.EditProfile:has(.editProfileText:active) .eIProfile {
-    transform: scale(1.15);
-}
-
+*/
 
 
 
@@ -311,8 +286,8 @@ body {
     background: linear-gradient(to bottom, #003d80, #5f89bc); /* stejný modrý gradient jako tlačítko */
     color: #ffffff;
     padding: 2vw;
-    width: 32vw;
-    height: 50vh;
+    width: 33vw;
+    height: 65vh;
     margin-left: 36vw;
     margin-top: 11vh;
     box-shadow:
@@ -334,9 +309,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5vw;
-    margin-top: -3.5vh;
-    transition: transform 0.15s ease;
+
+
+    transform: translate(-1vw, -2.6vw);
 }
 
 .editProfileModal[open] {
@@ -390,30 +365,24 @@ body {
     transition: background-color 0.18s ease, transform 0.12s ease, color 0.18s ease;
 }
 
-/* Hover -- najetí myší (desktop) */
+/* Hover -- najetí myší (desktop)
 .editPasswordText:hover {
     background-color: rgba(255, 102, 0, 0.15);
     color: #FF6600;
 }
 
-/* Active -- v okamžiku samotného kliknutí (myš stisknutá) */
+/* Active -- v okamžiku samotného kliknutí (myš stisknutá)
 .editPasswordText:active {
     transform: scale(0.96);
     background-color: rgba(255, 102, 0, 0.3);
 }
 
-/* Focus-visible -- klávesnicová navigace (Tab), NE myš */
+/* Focus-visible -- klávesnicová navigace (Tab), NE myš
 .editPasswordText:focus-visible {
     outline: 0.14vw solid #FF6600;
     outline-offset: 0.2vw;
 }
-
-/* Ikona reaguje spolu s textem, protože sdílí .EditProfile jako rodiče */
-.EditProfile:has(.editPasswordText:hover) .eIPassword,
-.EditProfile:has(.editPasswordText:active) .eIPassword{
-    transform: scale(1.15);
-}
-
+*/
 
 
 .editPasswordModal {
@@ -452,8 +421,8 @@ body {
     justify-content: center;
     margin-right: 2vw;
     margin-top: -3.5vh;
-    transition: transform 0.15s ease;
-    
+    transform: translate(-0.8vw, -0.9vw);
+
 }
 
 .editPasswordModal[open] {
@@ -494,19 +463,20 @@ body {
 
 .GenderSelector {
 
-    width: 10vw; 
+    width: 10vw;
     height: 3vh;
     border-radius: 0.5vw;
-    padding: 0.5vw;
+    padding: 0.2vw;
+    gap: 1vw;
     margin-bottom: 2vw;
     margin-top: 2vw;
     border: rgb(42, 41, 41) solid 0.12vw;
     background: linear-gradient(to right, #d8d0ca, #f5dad0);
     border-color: #b27660 solid 0.15vw;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
     appearance: none;
     appearance: none;
@@ -528,7 +498,7 @@ body {
 .FormulářEdit {
     margin-left: 9vw;
     gap: 0.3vh;
-    
+
 
 }
 
@@ -536,8 +506,8 @@ body {
 
 
 .labelName {
-    padding: 0.5vw;
-    font-size: 0.9vw;   
+    padding: 0.9vw;
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
 }
@@ -549,16 +519,16 @@ body {
     border-radius: 0.5vw;
     padding: 0.5vw;
     background-color: white;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
-    padding: 0.7vw;
-    
+    padding: 0.8vw;
+
 }
 
 .labelSurName {
-    padding: 0.5vw;
-    font-size: 0.9vw;   
+    padding: 0.8vw;
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
 }
@@ -568,18 +538,18 @@ body {
     width: 10vw;
     height: 3vh;
     border-radius: 0.5vw;
-    padding: 0.5vw;
+    padding: 0.8vw;
     background-color: white;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 0.7vw;
-    
+
 }
 
 .labelEmail {
-    padding: 0.5vw;
-    font-size: 0.9vw;   
+    padding: 0.8vw;
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
 }
@@ -589,19 +559,19 @@ body {
     width: 10vw;
     height: 3vh;
     border-radius: 0.5vw;
-    padding: 0.5vw;
+    padding: 0.8vw;
     background-color: white;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 0.7vw;
-    
+
 }
 
 
 .labelPhone {
-    padding: 0.5vw;
-    font-size: 0.9vw;   
+    padding: 0.9vw;
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
 }
@@ -611,18 +581,18 @@ body {
     width: 10vw;
     height: 3vh;
     border-radius: 0.5vw;
-    padding: 0.5vw;
+    padding: 0.8vw;
     background-color: white;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 0.7vw;
-    
+
 }
 
 .labelWorkplace {
-    padding: 0.5vw;
-    font-size: 0.9vw;   
+    padding: 0.8vw;
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
 }
@@ -632,13 +602,13 @@ body {
     width: 10vw;
     height: 3vh;
     border-radius: 0.5vw;
-    padding: 0.5vw;
+    padding: 0.8vw;
     background-color: white;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 0.7vw;
-    
+
 }
 
 .ConfirmButton {
@@ -688,7 +658,7 @@ body {
 
 .ChangePasswordLabel {
     padding: 0.5vw;
-    font-size: 0.9vw;   
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
 }
@@ -696,11 +666,11 @@ body {
 .ChangePassword {
     display: flex;
     width: 10vw;
-    height: 3vh;
+    height: 4vh;
     border-radius: 0.5vw;
     padding: 0.5vw;
     background-color: white;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 0.7vw;
@@ -709,7 +679,7 @@ body {
 
 .ChangePasswordLabelConfirm {
     padding: 0.5vw;
-    font-size: 0.9vw;   
+    font-size: 0.9vw;
     display: flex;
     align-items: center;
 }
@@ -717,11 +687,11 @@ body {
 .ChangePasswordConfirm {
     display: flex;
     width: 10vw;
-    height: 3vh;
+    height: 4vh;
     border-radius: 0.5vw;
     padding: 0.5vw;
     background-color: white;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 0.7vw;
@@ -744,7 +714,7 @@ body {
 
 .PasswordInputChange {
     width: 10vw;
-    height: 3vh;
+    height: 4vh;
     border-radius: 0.5vw;
     padding: 0.5vw;
     padding-right: 2.2vw; /* místo pro ikonu oka */
@@ -768,6 +738,8 @@ body {
     margin-right: 6vw;
     opacity: 0.6;
     transition: opacity 0.15s ease;
+
+
 }
 
 .TogglePasswordVisibility:hover .EyeIcon {
@@ -824,7 +796,7 @@ body {
     font-size: 0.75vw;
     color: var(--strength-color, #ccc);
     transition: color 0.25s ease;
-    
+
 }
 
 .PasswordConfirmButton {
@@ -832,7 +804,7 @@ body {
   background: linear-gradient(to right, #d9aa8a, #b27660);
   border-radius: 0.7rem;
   width: 12vw;
-  height: 3vh;
+  height: 4vh;
   border: white solid 0.12rem;
   color: white;
   font-size: 1rem;
@@ -841,6 +813,9 @@ body {
   transition: opacity 0.2s ease;
   margin-left: -0.9vw;
   margin-top: 3vh;
+  align-items: center;
+  display: flex;
+  text-align: center;
 
 }
 
@@ -959,6 +934,6 @@ body {
 
 
 .FooterMyProfile {
-    margin-top: 6vh;
+    margin-top: -35vh;
 
 }

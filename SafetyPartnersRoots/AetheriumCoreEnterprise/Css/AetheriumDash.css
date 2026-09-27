@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+
 }
 
 h2{
@@ -14,7 +14,9 @@ h2{
     display: flex;
     padding: 0.8vw;
     margin-left: 1.5vw;
-    padding-top: 1vw;
+    padding: 0 auto;
+    font-family: 'Koulen', sans-serif;
+    letter-spacing: 0.09rem;
 
 }
 .Main_menu {
@@ -33,30 +35,38 @@ h2{
 
 
 .Logo-Row{
-    align-items: center;
-    display: flex;
-    gap: 0.4vw;
-    margin-left: 0.5vw;
+     display: flex;
+
+    margin-right: 9.5rem;
+    margin-bottom: 2rem;
 
 }
 
 .Logo{
-    width: 6vw;
-    height: auto;
-    margin-bottom: 13vw;
-    margin-right: 3vw;
-    
+   width: 4rem;
+    height: 4rem;
+    transform: translate(-5vw, -1.3vw);
+    margin-left: 5rem;
+    padding: 0.9rem;
+    margin-right: 2rem;
+    transform: translate(-4vw, -2vw);
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+
 }
 
 h4 {
-  color: white;
-  margin-left: 1vw;   
+  color: #f75c1f;
+  margin-left: 1vw;
   right:  -4vw;
-  transform: translate(-5.8vw, -4.4vw); 
+  transform: translate(-8vw, -5.1vw);
   margin-bottom: 6.5vw;
   white-space: nowrap;
-  margin-top: 2vw;
-  
+  margin-top: 5vw;
+    letter-spacing: 0.15rem;
+    font-family: 'Lekton', 'Courier New', monospace;
+
+
 
 
 }
@@ -91,13 +101,13 @@ h4 {
 
 
 }
-  
+
 
 .Menu-Icon{
   width: 2vw;
   height: 2vw;
   vertical-align: middle;
-  
+
 
 
 }
@@ -113,8 +123,8 @@ h4 {
   margin-top: -8vw;
   margin-left: 8.3vw;
   border: white solid 0.15vw;
-  display: flex;             
-  align-items: center;        
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -137,7 +147,7 @@ h4 {
   padding-left: 2vw;
   border-bottom: 0.3vw solid white;
   background: linear-gradient(to right, #003366, #0066CC);
-  
+
 
 
 
@@ -152,7 +162,7 @@ h4 {
   padding: 1vw 2vw;
   margin: 0;
   margin-left: 35vw;
-  
+
 
 
 }
@@ -168,10 +178,8 @@ h4 {
 }
 
 .Top_Menu li a:hover {
-  background: #003366;    
+  background: #003366;
 }
 
 
 /*TODO: FOOTER -->
-
-

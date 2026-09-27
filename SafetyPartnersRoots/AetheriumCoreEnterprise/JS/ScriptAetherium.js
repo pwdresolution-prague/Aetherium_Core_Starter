@@ -1,9 +1,11 @@
 // ScriptAetherium.js — importy VŽDY nahoru!
 import { firstVisitSection, returningVisitSection } from "../JS/ModalWindow.js"
 import { initAresLookup } from "../Connect/AresLookup.js"
-import supabase from "../Connect/SupabaseClient.js"
+import supabase from "../Connect/SupabaseConnect.js"
 import { sanitizeText, isValidIco, isValidDic, formatPhoneStrict } from "../JS/SanitizeForm.js"
 import { validateForm } from "../JS/ValidateForm.js"
+import { saveForPayment } from '../BackEnd/FormToPay.js'
+
 
 
 // ============================================================
@@ -44,11 +46,11 @@ async function ulozFirmu(data) {
     // uložení nesmyslných/nebezpečných dat do DB
     if (!isValidIco(data.ico)) {
         console.error("Neplatné IČO:", data.ico)
-        return
+        return false
     }
     if (data.dic && !isValidDic(data.dic)) {
         console.error("Neplatné DIČ:", data.dic)
-        return
+        return false
     }
 
     const { error } = await supabase
@@ -59,9 +61,14 @@ async function ulozFirmu(data) {
             dic: data.dic?.trim() ?? null,
         })
 
-    if (error) console.error("Chyba při ukládání:", error)
+    if (error) {
+        console.error("Chyba při ukládání:", error)
+        return false
 }
 
+return true
+
+}
 // ============================================================
 //TODO:  GDPR Checkbox → aktivace Submit buttonu
 // ============================================================
@@ -117,13 +124,15 @@ AetheriumForm.addEventListener("submit", async (e) => {
         return // TODO: zobrazit chyby u polí
     }
 
-    await ulozFirmu({
+    const saved =await ulozFirmu({
         ico: sanitizedValues["ičoId"],
         dic: sanitizedValues["dicId"],
         nazevFirmy: sanitizedValues["název-firmyId"],
     })
-
-    sessionStorage.clear()
+    if (!saved) return
+    //sessionStorage.clear()
+    //
+    saveForPayment(sanitizedValues)
 })
 
 initAresLookup()

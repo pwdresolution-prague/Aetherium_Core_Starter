@@ -1,0 +1,944 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h2{
+    font-weight: 1vw;
+    color: white;
+    display: flex;
+    transform: translate(1vw, 0.8vw);
+    margin-left: 1.5vw;
+    padding: 0 auto;
+    font-family: 'Koulen', sans-serif;
+    letter-spacing: 0.09rem;
+
+}
+.Main_menu {
+  background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #5f89bc 80%,     /* Živější modrá */
+    #001428 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 7vw;
+}
+
+
+.Logo-Row{
+    display: flex;
+
+    margin-right: 9.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.Logo{
+     width: 4rem;
+    height: 4rem;
+    transform: translate(-5vw, -0.5vw);
+    margin-left: 6rem;
+    padding: 0.9rem;
+    margin-right: 2rem;
+    margin-bottom: -1rem;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+
+}
+
+h4 {
+  color: #f75c1f;
+  margin-left: 1vw;
+  right:  -4vw;
+  transform: translate(-8.5vw, -4.6vw);
+  margin-bottom: 6.5vw;
+  white-space: nowrap;
+  margin-top: 6vw;
+    letter-spacing: 0.15rem;
+    font-family: 'Lekton', 'Courier New', monospace;
+
+
+
+}
+
+.TextObsah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+}
+
+
+
+.Nadpis {
+        color: black;
+        font-weight: 300;
+        font-weight: bold;
+        margin-bottom: 3vw;
+        margin-top: -10vh;
+
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        max-width: 80vw;
+        font-family: 'Lekton', 'Courier New', monospace;
+
+
+
+}
+
+.Podnadpis {
+        color: black;
+        font-weight: 100;
+        max-width: 80vw;
+        margin-bottom: 1vw;
+        margin-left: 16vw;
+        font-size: 1.2vw;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+        font-family: 'Lekton', 'Courier New', monospace;
+
+}
+
+
+.Gap {
+    gap: 8vw;
+    width: 100%;
+    height: 7vh;
+
+
+
+}
+
+
+
+
+
+
+.FormulářSubscriber {
+    background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #5f89bc 80%,     /* Živější modrá */
+    #001428 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid rgba(0, 140, 255, 0.18);
+    width: 60vw;
+    height: 300vh;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 2vw;
+    align-items: center;
+
+    box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.8);
+    border-color: #f77343;
+}
+
+
+.SubscriberFormulářNadpis {
+    color: white;
+    font-size: 1vw;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+
+
+}
+
+.AetheriumCore-FormSubscriber {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+
+
+}
+
+
+
+
+
+/* TODO: Sekce první části formuláře */
+
+
+.SubscriberForm-FirstSection {
+    width: 100%;
+    padding: 2vw;
+    border-bottom: 0.1vw solid rgba(255,255,255,0.2);
+
+
+}
+
+.SubscriberSectionOne {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    color: white;
+
+
+
+}
+
+.Form label {
+    gap: 0.3vw;
+    font-size: 0.9vw;
+
+
+}
+
+/*TODO: Form First Section =============================================================
+===============================================================================
+==================================================================================
+==================================================================================*/
+
+
+.ares-filled { border-color: #ffffff; }
+.ares-loading { opacity: 0.6; }
+.ares-error { border-color: #b81717; }
+.ares-status--success { color: #ffffff; }
+.ares-status--error { color: #b71d1d; }
+
+.ičo {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+
+}
+
+.dič {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.název-firmy {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.právní-forma {
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.sídlo-společnosti {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.datum-založení {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.stav-subjektu {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.spisová-značka {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.datová-schránka {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+
+
+
+
+.SubscriberForm-SecondSection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2vw;
+    border-bottom: 0.1vw solid rgba(255,255,255,0.2);
+}
+
+
+
+/* TODO: Sekce druhé části formuláře... ====================================
+================================================================================
+==================================================================================
+=================================================================================*/
+
+
+
+
+.SubscriberSectionTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    color: white;
+}
+
+.mfa-otp {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.otp-status--loading { color: #f59e0b; }
+.otp-status--success { color: #22c55e; }
+.otp-status--error   { color: #ef4444; }
+
+#sendOtpBtn {
+    width: 10vw;
+    height: 3vw;
+    background: linear-gradient(to right, #d9aa8a, #b27660);
+    border-radius: 1.1vw;
+    margin-top: 4vw;
+    border: white solid 0.15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.7;
+    margin-top: 2vh;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    font-size: 0.85vw;
+
+
+}
+
+.Segment-trhu {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.telefonní-číslo {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.email {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.adresa {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.heslo {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+.potvrzení-hesla {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+/* TODO: Sekce třetí části formuláře... */
+
+
+
+.SubscriberForm-ThirdSection {
+    width: 100%;
+    padding: 2vw;
+    border-bottom: 0.1vw solid rgba(255,255,255,0.2);
+
+
+}
+
+.SubscriberSectionThree {
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    color: white;
+    margin-top: 3vw;
+
+}
+
+
+.Segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 1vw;
+}
+
+.sectorSelector {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+
+
+.PredikcePočtu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 1vw;
+}
+
+
+.početŠkolení {
+    display: flex;
+    width: 33vw;
+    height: 4vh;
+    border-radius: 1vw;
+    background-color: white;
+    font-size: 0.9vw;
+    padding: 0.5vw 1vw;
+    align-items: center;
+
+
+
+}
+
+.početŠkoleníCheckbox {
+    margin-top: 2vh;
+    margin-left: 16vw;
+
+
+
+
+
+
+
+}
+
+
+/*TODO: Vstupní pole pro textarea */
+
+.CompanyDescription {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 1vw;
+
+}
+
+
+.CompanyDescriptionTextArea {
+    display: flex;
+    width: 33vw;
+    border-radius: 1vw;
+    background-color: white;
+    font-size: 0.9vw;
+    padding: 0.5vw 1vw;
+    font-family: inherit;
+    resize: none;
+
+}
+
+.CharCounter {
+    color: white;
+    font-size: 0.8vw;
+    opacity: 0.7;
+    align-self: flex-end;
+    margin-right: 1vw;
+
+}
+
+
+.segmentVyužití {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 1vw;
+}
+
+
+.účel {
+    display: flex;
+    width: 33vw;
+    border-radius: 1vw;
+    background-color: white;
+    font-size: 0.9vw;
+    padding: 0.5vw 1vw;
+    resize: vertical;
+    font-family: inherit;
+
+}
+
+
+
+/*TODO: WARNING ===========================================================================================
+
+margin-inline: auto;
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TODO: Modal Window pro GDPR zobrazení */
+
+.TermsButton {
+    width: 18vw;
+    height: 2.7vw;
+    border: rgb(42, 41, 41) solid 0.12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    border-radius: 1.1vw;
+    margin-left: 9vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    margin-top: 5vh;
+
+
+
+
+
+}
+
+.TermsButton {
+    transition: all 0.3s ease;
+}
+
+.TermsButton:hover {
+
+    color: #5c5a5a;
+    text-shadow:
+        0 0 0.1px #2d2e2e,
+        0 0 0.5px #47484a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.modalSubscriberGdpr {
+  display: none;
+  position: fixed;
+  inset: 0;
+  width: 54vw;
+  height: 74vh;
+  background: rgba(220, 211, 211, 0.9);
+  padding: 5vh 0;
+  border: 0.2vw solid #003d80;
+  z-index: 1000;
+  box-shadow: 0px 4px 15px rgba(96, 90, 90, 0.5);
+  border-radius: 2vw;
+  margin-left: 22.5vw;
+  margin-top: 13vh;
+
+
+
+
+}
+
+.modalSubscriberGdpr.open {
+    display: flex;
+
+}
+
+
+.Margin {
+    display: flex;
+    margin-left: 4vw;
+
+}
+
+.NadpisGdpr {
+    font-size: 1.5vw;
+    margin-top: -1vh;
+    margin-left: 15vw;
+    white-space: nowrap;
+
+
+
+
+
+
+}
+
+
+.modal-content {
+  width: 52vw;
+  height: 61vh;
+  display: flex;
+  margin-top: 6vh;
+  background: rgba(138, 131, 131, 0.9);
+  border-radius: 1.5vw;
+  padding: 1vw;
+  margin-left: -37.6vw;
+
+
+}
+
+
+
+.close-button {
+  background: none;
+  color:white;
+  border: none;
+  float: right;
+  font-size: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -1vw;
+
+
+}
+
+.ObchodníNadpis {
+    color: white;
+    font-size: 1.5vw;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+/*BUG: Text pro zobrazení obchodních podmínek a GDPR dokumentu v Modal Window */
+
+.Obsah {
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 1.5vh;
+}
+
+.datovýObsah {
+    color: white;
+    margin-top: 2vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+.MarginGdpr {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.GdprPodmínky {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.Rulles {
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    height: 3vw;
+    background: linear-gradient(to right, #d9aa8a, #b27660);
+    border-radius: 1.1vw;
+    border: white solid 0.15vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2vw;
+    margin-left: 20vw;
+    margin-top: 19vh;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    gap: 5vw;
+
+
+
+
+
+
+}
+/*TODO: GDPR a Obchodní podmínky Files ====================================== */
+
+
+
+
+
+
+#gdprCheckbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+
+
+
+
+
+
+}
+
+
+.Podmínka {
+    color: white;
+    font-size: 0.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0vw;
+    margin-right: 11vw;
+
+
+
+
+
+
+}
+
+
+
+/*BUG: Button odesílající formulář do backendu */
+.SubmitButtonSubs {
+    width: 10vw;
+    height: 3vw;
+    background: linear-gradient(to right, #d9aa8a, #b27660);
+    border-radius: 1.1vw;
+    margin-top: 4vw;
+    border: white solid 0.15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2vw;
+    margin-left: 13.5vw;
+    margin-top: 26vh;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Submit button — výchozí stav (disabled) */
+.SubmitButtonSubs:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background-color: #999;
+}
+
+/* Submit button — aktivní stav */
+.SubmitButtonSubs.active {
+    opacity: 1;
+    cursor: pointer;
+    background: linear-gradient(to right, #d9aa8a, #b27660);
+}
+
+
+
+/*TODO:
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Patička {
+    background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #5f89bc 80%,     /* Živější modrá */
+    #001428 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.9vw;
+
+
+}
+
+
+.Author {
+    color: white;
+    font-size: 1vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

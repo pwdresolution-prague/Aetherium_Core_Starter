@@ -1,0 +1,464 @@
+/*TODO: Hub Dokumentace – kartotéka (Návody / Legislativa a normy / Materiály ke stažení)
+  Celá stránka se nikdy neposouvá – vejde se přesně na výšku obrazovky (100vh).
+  Seznam položek je vlevo (zavřený, kompaktní), detail vybrané položky vpravo –
+  otevírá se vždy jen JEDNA položka, jako vytažená karta z kartotéky. */
+
+
+
+.DokPageShell {
+    margin-left: 22vw;
+    height: 89.2vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -83.8vh;
+    border-color: solid 5px white;
+
+
+}
+
+.ContentColumn {
+    flex-shrink: 0;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Container1 { width: 94%; }
+
+.DokWrapper {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4vw 2vw 0;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    background:
+        radial-gradient(120% 90% at 0% 0%, rgba(0, 61, 128, 0.35) 0%, transparent 55%),
+        #426fb9;
+}
+
+.ContainerDokuemntace {
+    flex-shrink: 0;
+    margin: 0.8vw 2vw 1vw;
+}
+
+/*TODO: Horní pás – vyhledávač + záložky, pevná výška, nikdy se nescrolluje === */
+.DokTopBar {
+    flex-shrink: 0;
+}
+
+.DokSearchBox {
+    display: flex;
+    align-items: center;
+    gap: 0.7vw;
+    background: linear-gradient(160deg, #001428 0%, #5f89bc 30%, #003d80 60%, #005099 80%, #192c41 100%);
+    border: 1px solid rgba(0, 140, 255, 0.18);
+    border-radius: 0.6vw;
+    padding: 0.7vw 1.1vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    margin-bottom: 2vw;
+}
+
+.DokSearchIcon {
+    width: 1.05vw;
+    height: 1.05vw;
+    min-width: 15px;
+    min-height: 15px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: rgba(255,255,255,0.7);
+    stroke-width: 2;
+}
+
+.DokSearchBox input {
+    background: rgba(255,255,255,0.08);
+    border: 0.12vw solid rgba(255,255,255,0.25);
+    border-radius: 0.5vw;
+    outline: none;
+    color: white;
+    font-family: var(--font-body, Arial, Helvetica, sans-serif);
+    font-size: 0.95vw;
+    width: 100%;
+    padding: 0.55vw 0.9vw;
+    transition: border-color 0.2s ease;
+}
+
+.DokSearchBox input:focus { border-color: #FF6600; }
+.DokSearchBox input::placeholder { color: rgba(255,255,255,0.6); }
+
+/*TODO: Navigace záložek ================================================================ */
+.DokTabs {
+    display: flex;
+    gap: 0.6vw;
+    margin-bottom: 1vw;
+    flex-wrap: wrap;
+}
+
+.DokTabButton {
+    background: rgba(255,255,255,0.08);
+    color: white;
+    border: 0.1vw solid rgba(255,255,255,0.25);
+    border-radius: 999px;
+    padding: 0.45vw 1.1vw;
+    font-family: var(--font-body, Arial, Helvetica, sans-serif);
+    font-size: 0.85vw;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.DokTabButton:hover { border-color: rgba(255,255,255,0.5); transform: translateY(-1px); }
+
+.DokTabButton.active {
+    background: linear-gradient(to right, #FF6600, #f77343);
+    border-color: white;
+}
+
+/*TODO: KARTOTÉKA – dvousloupcové jádro, vyplní zbývající výšku, nescrolluje se jako celek === */
+.DokKartoteka {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(210px, 27%) 1fr;
+    gap: 1vw;
+    padding-bottom: 1vw;
+}
+
+/*TODO: Levý sloupec – "šuplík" kartotéky: kompaktní, zavřené řádky =========== */
+.DokList {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45vw;
+    padding-right: 0.35vw;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,102,0,0.5) transparent;
+}
+
+.DokList::-webkit-scrollbar { width: 6px; }
+.DokList::-webkit-scrollbar-thumb { background: rgba(255,102,0,0.45); border-radius: 999px; }
+
+.DokListGroupLabel {
+    font-family: var(--font-body, Arial, Helvetica, sans-serif);
+    letter-spacing: 0.04rem;
+    font-size: 0.72vw;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin: 0.3vw 0.2vw 0.1vw;
+}
+
+.DokListRow {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+    width: 100%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 0.55vw;
+    padding: 0.55vw 0.75vw;
+    transition: background 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
+}
+
+.DokListRow:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.DokListRow[data-active="true"] {
+    background: linear-gradient(120deg, rgba(255,102,0,0.28), rgba(255,255,255,0.06));
+    border-color: #FF6600;
+    box-shadow: 0 4px 14px rgba(255,102,0,0.25);
+}
+
+.DokListRowIcon {
+    flex-shrink: 0;
+    width: 1.5vw;
+    height: 1.5vw;
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 0.4vw;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75vw;
+    font-family: var(--font-body, Arial, Helvetica, sans-serif);
+    color: #ffe1cc;
+}
+
+.DokListRow[data-active="true"] .DokListRowIcon {
+    background: #FF6600;
+    color: white;
+}
+
+.DokListRowBody {
+    flex-grow: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+}
+
+.DokListRowTitle {
+    font-size: 0.85vw;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.DokListRowMeta {
+    font-size: 0.68vw;
+    color: rgba(255,255,255,0.6);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.DokListRowChevron {
+    flex-shrink: 0;
+    width: 0.45vw;
+    height: 0.45vw;
+    min-width: 6px;
+    min-height: 6px;
+    border-right: 2px solid rgba(255,255,255,0.45);
+    border-bottom: 2px solid rgba(255,255,255,0.45);
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.DokListRow[data-active="true"] .DokListRowChevron {
+    border-color: #FF6600;
+    transform: rotate(45deg);
+}
+
+.DokListEmpty {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85vw;
+    padding: 0.6vw;
+}
+
+/*TODO: Pravý sloupec – DETAIL: jen JEDNA otevřená položka, "vytažená karta" ==== */
+.DokDetail {
+    overflow-y: auto;
+    background: linear-gradient(160deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 1rem;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    padding: 1.4vw 1.6vw;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,102,0,0.5) transparent;
+    height: 80%;;
+}
+
+.DokDetail::-webkit-scrollbar { width: 6px; }
+.DokDetail::-webkit-scrollbar-thumb { background: rgba(255,102,0,0.45); border-radius: 999px; }
+
+.DokDetailEmpty {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    color: rgba(255,255,255,0.55);
+    text-align: center;
+}
+
+.DokDetailEmpty svg {
+    width: 2.6vw;
+    height: 2.6vw;
+    min-width: 34px;
+    min-height: 34px;
+    fill: none;
+    stroke: rgba(255,255,255,0.35);
+    stroke-width: 1.4;
+}
+
+.DokDetailEmpty p { font-size: 0.9vw; }
+
+/*TODO: Animace otevření karty v detailu ==================================== */
+@keyframes dokDetailOpen {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.DokDetailCard {
+    animation: dokDetailOpen 0.28s ease;
+}
+
+.DokDetailHead {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1vw;
+    margin-bottom: 0.9vw;
+    padding-bottom: 0.8vw;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.DokDetailBadge {
+    font-size: 0.68vw;
+    padding: 0.2vw 0.6vw;
+    border-radius: 999px;
+    background: linear-gradient(to right, #FF6600, #f77343);
+    white-space: nowrap;
+    font-weight: bold;
+    color: white;
+}
+
+.DokDetailTitle {
+    font-family: var(--font-body, Arial, Helvetica, sans-serif);
+    letter-spacing: 0.03rem;
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+
+.DokDetailSub {
+    font-family: var(--font-body, Arial, Helvetica, sans-serif);
+    font-size: 0.9vw;
+    color: #ffe1cc;
+    margin-top: 0.2vw;
+}
+
+/* Návody – kroky */
+.DokDetailSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55vw;
+    margin-left: 1.2rem;
+    font-size: 0.95vw;
+    color: rgba(255,255,255,0.92);
+    line-height: 1.5;
+}
+
+/* Legislativa – shrnutí + patička */
+.DokDetailShrnuti {
+    font-size: 0.95vw;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.55;
+    margin-bottom: 1vw;
+}
+
+.DokDetailFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.6vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.75);
+    border-top: 0.06vw solid rgba(255,255,255,0.2);
+    padding-top: 0.7vw;
+}
+
+.DokDetailFooter a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(to right, #FF6600, #f77343);
+    border-radius: 0.5vw;
+    padding: 0.45vw 0.9vw;
+}
+
+.DokDetailFooter a:hover { filter: brightness(1.08); }
+
+.DokDetailMeta {
+    display: block;
+    margin-top: 0.9vw;
+    font-size: 0.78vw;
+    color: rgba(255,255,255,0.6);
+}
+
+/* Materiály – detail se stažením */
+.DokDetailDownload {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5vw;
+    background: linear-gradient(to right, #FF6600, #f77343);
+    border: white solid 0.1vw;
+    border-radius: 0.5vw;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9vw;
+    padding: 0.6vw 1.3vw;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 4px 0 0 #b34400, 0 6px 12px rgba(0,0,0,0.35);
+    margin-top: 0.6vw;
+    transition: transform 0.12s ease;
+}
+
+.DokDetailDownload:active { transform: translateY(2px); box-shadow: 0 2px 0 0 #b34400; }
+
+/*TODO: Panel s výsledky sjednoceného hledání – přebírá stejnou kartotéku ============= */
+.DokKartoteka[data-mode="hledani"] .DokList { grid-column: 1 / -1; }
+.DokKartoteka[data-mode="hledani"] .DokDetail { display: none; }
+
+.DokSearchResultBadge {
+    font-size: 0.68vw;
+    padding: 0.15vw 0.5vw;
+    border-radius: 999px;
+    background: #FF6700;
+    white-space: nowrap;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* === RESPONZIVITA – na mobilu se scroll povolí, kartotéka se srovná pod sebe ========= */
+@media (max-width: 900px) {
+    html, body { height: auto; overflow: auto; }
+    .Main_menu { position: static; width: 100%; height: auto; }
+    .DokPageShell { margin-left: 0; height: auto; overflow: visible; }
+    .ContentColumn { max-width: 100%; }
+    .DokWrapper { padding: 4vw; overflow: visible; }
+    .DokKartoteka { grid-template-columns: 1fr; overflow: visible; }
+    .DokList { max-height: 45vh; }
+    .DokDetail { min-height: 40vh; }
+}
+
+
+.ContainerDokuemntace {
+    background: linear-gradient(160deg, #001428 0%, #5f89bc 30%, #003d80 60%, #005099 80%, #192c41 100%);
+    border: #0066CC solid 0.15vw;
+    border-radius: 0.5vw;
+    padding: 0.6vw 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+}
+
+.PatičkaDokuemntace {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+
+
+.DokuemntaceDiv{
+    margin-left: 20vw;
+    margin-bottom: -3vh;
+}
+
+
+.PatičkaDokuemntace{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+  z-index: 1000;
+
+
+
+
+
+
+}

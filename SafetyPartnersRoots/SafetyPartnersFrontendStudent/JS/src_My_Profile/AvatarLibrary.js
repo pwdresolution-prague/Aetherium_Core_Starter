@@ -1,20 +1,18 @@
-import { createAvatar } from '@dicebear/core'
-import { lorelei } from '@dicebear/collection'
+import { Style, Avatar } from '@dicebear/core'
+import loreleiDefinition from '@dicebear/styles/lorelei.json'
 
-//FRONTEND: Pevné seedy = stálá nabídka 12 avatarů, nenáhodné, pokaždé jinak
-// 
+const loreleiStyle = new Style(loreleiDefinition)
+
 const AVATAR_SEEDS = [
     'Aetherium_Avatar_01', 'Aetherium_Avatar_02', 'Aetherium_Avatar_03',
     'Aetherium_Avatar_04', 'Aetherium_Avatar_05', 'Aetherium_Avatar_06',
     'Aetherium_Avatar_07', 'Aetherium_Avatar_08', 'Aetherium_Avatar_09',
     'Aetherium_Avatar_10', 'Aetherium_Avatar_11', 'Aetherium_Avatar_12',
-
 ]
 
 export function generateAvatarPresets() {
-    return AVATAR_SEEDS .map(seed => ({
+    return AVATAR_SEEDS.map((seed) => ({
         seed,
-        svg: createAvatar(lorelei, { seed, size: 64}).toString()
+        svg: new Avatar(loreleiStyle, { seed, size: 64 }).toString(),
     }))
-    
 }

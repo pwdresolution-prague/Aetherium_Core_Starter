@@ -1,5 +1,5 @@
 //TODO: Modal Visit  ==================================================
-import supabase from "../Connect/SupabaseClient.js"
+import supabase from "../Connect/SupabaseConnect.js"
 //TODO: //TODO: Skript pro výběr typu návštěvy a zobrazení příslušných částí formuláře
 
 //TODO: Uchopení modalu přes Select ======================================
@@ -41,11 +41,11 @@ options.forEach(option => { //Funkce for'Each alokace na veškeré option elemen
 
 
 
-            
+
 
 
     })
-    
+
 });
 
 
@@ -60,7 +60,7 @@ modalOver.addEventListener("click", function(e) {
 })
 
 closeModalButtonSection.addEventListener('click', () => {
-    modalOver.style.display = 'none'
+    modalOver.classList.remove('active')
 })
 
 
@@ -88,5 +88,3 @@ window.addEventListener('click', (event) => {
         modal.style.display = 'none'
     }
 })
-
-

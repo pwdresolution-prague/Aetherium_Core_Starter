@@ -6,44 +6,44 @@
 
 /* :root {
          /*TODO: Sekce Up & Li Menu barevné struktury =============================================== */
-        
 
-/* Vertikální přechod kombinace modré, šedé, a prvky b&W =========== 
+
+/* Vertikální přechod kombinace modré, šedé, a prvky b&W ===========
 
 --color-vertical: background: linear-gradient (
     160deg,
-    #001428 0%,     
-    #5f89bc 30%,     
-    #003d80 60%,    
-    #005099 80%,    
-    #192c41 100%     
+    #001428 0%,
+    #5f89bc 30%,
+    #003d80 60%,
+    #005099 80%,
+    #192c41 100%
   );
 
 
-  Horizontální kombinace modré, šedé, a prvky b&W =========== 
+  Horizontální kombinace modré, šedé, a prvky b&W ===========
 
 --color-linear: background: linear-gradient (
     160deg,
-    #001428 0%,      
-    #5f89bc 30%,     
-    #003d80 60%,    
-    #005099 80%,     
-    #192c41 100%     
+    #001428 0%,
+    #5f89bc 30%,
+    #003d80 60%,
+    #005099 80%,
+    #192c41 100%
   );
 
-vizuální pohyblivost pomocí nástroje transition ================== 
+vizuální pohyblivost pomocí nástroje transition ==================
 
 --effect-vizual: transition: transform (
-     0.3s ease, 
-     box-shadow 0.3s ease, 
-     border-color 0.3s ease;  
+     0.3s ease,
+     box-shadow 0.3s ease,
+     border-color 0.3s ease;
 );
 
 
-vizuální doplňky pomocí funkce Border ============== 
+vizuální doplňky pomocí funkce Border ==============
 
 --effect-shadow: border: (
-    1px solid 
+    1px solid
     rgba(0, 140, 255, 0.18);
 );
 
@@ -51,13 +51,13 @@ vizuální doplňky pomocí funkce Border ==============
 }
 
 
-TODO: Sekce profilování gradientního okna na plochu Student - Main-page ===== 
+TODO: Sekce profilování gradientního okna na plochu Student - Main-page =====
 
 
 .root {
 
 
---color-style-dashboard: background: 
+--color-style-dashboard: background:
     linear-gradient(
         to bottom,
             #9da4ab,
@@ -118,3 +118,7 @@ TODO: Sekce profilování gradientního okna na plochu Student - Main-page =====
 
 }
 
+--font-display: 'Big Shoulders Stencil', sans-serif;   /* krátké nadpisy sekcí */
+  --font-elegant: 'Cormorant Garamond', serif;            /* certifikáty, oficiální texty */
+  --font-body: 'IBM Plex Sans', Arial, sans-serif;        /* formuláře, běžný text */
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;

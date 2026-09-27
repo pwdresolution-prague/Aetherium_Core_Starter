@@ -5,16 +5,17 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+   font-family: Arial, sans-serif;
+
 }
 
 .TextObsah {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
-    
+
+
 
 }
 
@@ -25,14 +26,18 @@ body {
         font-weight: 300;
         font-weight: bold;
         margin-bottom: 3vw;
-        margin-top: -10vw;
+        margin-top: -10vh;
+
         text-align: center;
+        align-items: center;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         max-width: 80vw;
+        font-family: 'Lekton', 'Courier New', monospace;
 
 
-                 
+
+
 }
 
 .Podnadpis {
@@ -40,11 +45,14 @@ body {
         font-weight: 300;
         max-width: 80vw;
         margin-bottom: 1vw;
-        margin-left: 12vw;
+        margin-left: 16vw;
         font-size: 1.2vw;
         text-align: center;
+        align-items: center;
         display: flex;
         justify-content: center;
+        white-space: nowrap;
+        font-family: 'Lekton', 'Courier New', monospace;
 
 }
 
@@ -61,11 +69,11 @@ body {
 
 
 .Selector {
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     text-align: center;
-    
+
 
 }
 
@@ -80,7 +88,7 @@ body {
     border: rgb(42, 41, 41) solid 0.12vw;
     background: linear-gradient(to right, #d8d0ca, #f5dad0);
     border-color: #757474 solid 0.15vw;
-    justify-content: center;    
+    justify-content: center;
     display: flex;
     align-items: center;
     font-size: 0.9vw;
@@ -103,7 +111,7 @@ body {
     visibility: hidden;
 
     transition: 0.25s ease;
-    
+
 }
 
 .modalOverlay.active {
@@ -127,7 +135,7 @@ body {
     padding: 2vw;
     border-radius: 1vw;
     width: 75vw;
-    height: 45vh;
+    height: 60vh;
     margin-bottom: 10vh;
     border: 2px solid #d76f4a;
     box-shadow: 0px 4px 15px rgba(96, 90, 90, 0.5);
@@ -141,13 +149,13 @@ body {
     #5f89bc 100%   /* Tmavá námořní */
 
   );
-  
 
 
 
 
 
-  
+
+
 }
 
 
@@ -180,9 +188,9 @@ body {
     margin-right: 38vw;
     display: flex;
     align-items: center;
-    font-size: medium;
-    
-    
+    font-size:small;
+
+
 
 
 
@@ -208,8 +216,8 @@ body {
     border-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;       
-    justify-content: center;  
+    align-items: center;
+    justify-content: center;
     font-size: medium;
     margin-left: 32vw;
     margin-top: -28.3vw;
@@ -227,17 +235,17 @@ body {
     display: flex;
     flex-direction: column;
     width: 26vw;
-    height: 22vh;
+    height: 28vh;
     gap: 2vw;
     border-radius: 2vw;
-    border: 2px solid rgba(217, 121, 86, 0.3); 
+    border: 2px solid rgba(217, 121, 86, 0.3);
     align-items: center;
     margin-top: 3.6vw;
     padding: 0.8vw;
     margin-left: 32.25vw;
-    margin-top: -20vw;
+    margin-top: -17.1vw;
 
-    
+
 
 
 
@@ -245,7 +253,7 @@ body {
 }
 
 .login-form-active input {
-    
+
     background: linear-gradient(to right, #e3deda, #b4a79e);
     border-radius: 1.1vw;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
@@ -258,7 +266,7 @@ body {
     text-align: center;
     align-items: center;
 
-} 
+}
 
 .login-form-active input:focus {
     gap: 3vw;
@@ -275,10 +283,10 @@ body {
     background: linear-gradient(to right, #d9aa8a, #b27660);
     border-radius: 1.1vw;
     margin-top: 1.4vw;
-    
+
     border: white solid 0.15vw;
-    display: flex;             
-    align-items: center;        
+    display: flex;
+    align-items: center;
     justify-content: center;
     color: white;
     font-size: 1.2vw;
@@ -286,7 +294,7 @@ body {
     box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
     margin-right: 13vw;
 
-} 
+}
 
 .login-form-active button:hover {
     transform: translateY(-2px);
@@ -299,8 +307,8 @@ body {
 .closeButtonSection {
 background: none;
 color:white;
-  border: none;     
-  
+  border: none;
+
   font-size: 2vw;
   font-weight: bold;
   margin-left: 70vw;
@@ -308,9 +316,3 @@ color:white;
 
 
 }
-
-
-
-
-
-

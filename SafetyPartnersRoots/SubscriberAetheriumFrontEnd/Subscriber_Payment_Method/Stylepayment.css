@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h2{
+    font-weight: 1vw;
+    color: white;
+    display: flex;
+    transform: translate(1vw, 0.8vw);
+    margin-left: 1.5vw;
+    padding: 0 auto;
+    font-family: 'Koulen', sans-serif;
+    letter-spacing: 0.09rem;
+
+}
+.Main_menu {
+  background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #5f89bc 80%,     /* Živější modrá */
+    #001428 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 7vw;
+}
+
+
+.Logo-Row{
+    display: flex;
+
+    margin-right: 9.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.Logo{
+     width: 4rem;
+    height: 4rem;
+    transform: translate(-5vw, -0.5vw);
+    margin-left: 6rem;
+    padding: 0.9rem;
+    margin-right: 2rem;
+    margin-bottom: -1rem;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+
+}
+
+h4 {
+  color: #f75c1f;
+  margin-left: 1vw;
+  right:  -4vw;
+  transform: translate(-8.5vw, -4.6vw);
+  margin-bottom: 6.5vw;
+  white-space: nowrap;
+  margin-top: 6vw;
+    letter-spacing: 0.15rem;
+    font-family: 'Lekton', 'Courier New', monospace;
+
+
+
+}
+
+.TextObsah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+}
+
+
+
+
+
+
+.Patička {
+    background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #5f89bc 80%,     /* Živější modrá */
+    #001428 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.9vw;
+
+
+}
+
+
+.Author {
+    color: white;
+    font-size: 1vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ============================================================
+   Platební shrnutí — PaymentSubscriber.js
+   ============================================================ */
+.PaymentMain {
+    max-width: 500px;
+    margin: 2vw auto;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    margin-top: -50vh;
+}
+
+.PaymentSection {
+    background: #fff;
+    border-radius: 0.6vw;
+    box-shadow: 0 0.2vw 0.8vw rgba(0, 0, 0, 0.08);
+    padding: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.PaymentSectionTitle {
+    font-family: 'Koulen', sans-serif;
+    letter-spacing: 0.05rem;
+    color: #001428;
+    margin-bottom: 1vw;
+}
+
+.PaymentTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.PaymentRow td {
+    padding: 0.5vw 0;
+    border-bottom: 1px solid #eee;
+}
+
+.PaymentLabel {
+    color: #555;
+    font-family: 'Lekton', monospace;
+}
+
+.PaymentValue {
+    text-align: right;
+    font-weight: 700;
+}
+
+.PaymentTotalRow td {
+    border-bottom: none;
+    padding-top: 1vw;
+}
+
+.PaymentTotal {
+    color: #f75c1f;
+    font-size: 1.3vw;
+}
+
+.PaymentPayButton {
+    width: 100%;
+    margin-top: 1.5vw;
+    padding: 0.9vw;
+    border: none;
+    border-radius: 0.4vw;
+    background: #003d80;
+    color: #fff;
+    font-family: 'Koulen', sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.PaymentPayButton:hover {
+    background: #f75c1f;
+}
+
+.PaymentNote {
+    margin-top: 0.8vw;
+    font-size: 0.75vw;
+    color: #888;
+    text-align: center;
+}
+
+.PaymentError {
+    color: #b00020;
+}
+
+.PaymentBackLink {
+    color: #003d80;
+    font-weight: 700;
+}
+
+.PaymentLoading {
+    color: #888;
+}
+
+.Gap {
+     gap: 8vw;
+    width: 100%;
+    height: 19vh;
+
+}
+
+
+
+
+
+.GapTwo {
+ gap: 8vw;
+    width: 100%;
+    height: 38.3vh;
+
+}
+
+
+/*TODO: Aside panel přehledu v systému....
+=============================================================================================
+=
+=================================================================================================
+*/
+
+/* ============================================================
+   Levý panel — kroky registrace
+   ============================================================ */
+.SummarySteps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14vw;
+    padding: 2vw 1vw;
+    background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
+    border-radius: 1vw;
+    border: 1px solid rgba(0, 140, 255, 0.18);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-color: #f77343;
+    margin-left: 8vw;
+}
+
+.StepItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4vw;
+    text-align: center;
+}
+
+.StepIcon {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.StepLabel {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75vw;
+    font-family: 'Lekton', monospace;
+    white-space: nowrap;
+}
+
+.StepDone .StepIcon {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: white;
+}
+
+.StepDone .StepLabel { color: #22c55e; }
+
+.StepActive .StepIcon {
+    background: #22c55e;;
+    border-color: #22c55e;
+    color: white;
+}
+
+.StepActive .StepLabel { color: #22c55e }
+
+.StepPending .StepIcon {
+    background: transparent;
+    border-color: #FF6600;
+    color: white;
+}
+
+.StepConnector {
+    width: 2px;
+    height: 2.5vw;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0.3vw 0;
+}

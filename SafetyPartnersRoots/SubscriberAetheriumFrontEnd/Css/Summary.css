@@ -1,0 +1,399 @@
+/* Summary.css — styly pro Summary.html */
+
+.SummaryMain {
+    display: flex;
+    gap: 3vw;
+    padding: 3vw 5vw;
+    min-height: 70vh;
+    align-items: flex-start;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+/* ============================================================
+   Levý panel — kroky registrace
+   ============================================================ */
+.SummarySteps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 14vw;
+    padding: 2vw 1vw;
+    background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
+    border-radius: 1vw;
+    border: 1px solid rgba(0, 140, 255, 0.18);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-color: #f77343;
+}
+
+.StepItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4vw;
+    text-align: center;
+}
+
+.StepIcon {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.StepLabel {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75vw;
+    font-family: 'Lekton', monospace;
+    white-space: nowrap;
+}
+
+.StepDone .StepIcon {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: white;
+}
+
+.StepDone .StepLabel { color: #22c55e; }
+
+.StepActive .StepIcon {
+    background: #FF6600;
+    border-color: #FF6600;
+    color: white;
+}
+
+.StepActive .StepLabel { color: #FF6600; }
+
+.StepPending .StepIcon {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.StepConnector {
+    width: 2px;
+    height: 2.5vw;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0.3vw 0;
+}
+
+/* ============================================================
+   Středový panel — obsah souhrnu
+   ============================================================ */
+.SummaryContent {
+    flex: 1;
+}
+
+.SummarySection {
+    background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
+    border: 1px solid rgba(0, 140, 255, 0.18);
+    border-radius: 1vw;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.SummarySectionTitle {
+    color: white;
+    font-family: 'Koulen', sans-serif;
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+    letter-spacing: 0.05rem;
+    border-bottom: 1px solid rgba(255, 102, 0, 0.4);
+    padding-bottom: 0.8vw;
+}
+
+.SummaryTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.SummaryRow {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.SummaryRow:last-child {
+    border-bottom: none;
+}
+
+.SummaryLabel {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Lekton', monospace;
+    font-size: 0.85vw;
+    padding: 0.7vw 1vw 0.7vw 0;
+    width: 40%;
+    vertical-align: top;
+}
+
+.SummaryValue {
+    color: white;
+    font-family: 'Lekton', monospace;
+    font-size: 0.9vw;
+    padding: 0.7vw 0;
+}
+
+.SummaryVerified {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* ============================================================
+   Akční tlačítka
+   ============================================================ */
+.SummaryActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vw;
+    gap: 1vw;
+}
+
+.SummaryBackButton {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: 'Lekton', monospace;
+    font-size: 0.9vw;
+    transition: color 0.2s ease;
+}
+
+.SummaryBackButton:hover {
+    color: white;
+}
+
+.SummaryContinueButton {
+    background: linear-gradient(to right, #FF6600, #f77343);
+    color: white;
+    border: none;
+    padding: 1vw 2.5vw;
+    border-radius: 1.1vw;
+    font-size: 1vw;
+    font-family: 'Lekton', monospace;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: filter 0.2s ease, transform 0.1s ease;
+}
+
+.SummaryContinueButton:hover {
+    filter: brightness(1.1);
+}
+
+.SummaryContinueButton:active {
+    transform: translateY(2px);
+}
+
+/* ============================================================
+   Stavové zprávy
+   ============================================================ */
+.SummaryLoading {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Lekton', monospace;
+    text-align: center;
+    padding: 3vw;
+}
+
+.SummaryError {
+    color: #ef4444;
+    font-family: 'Lekton', monospace;
+    text-align: center;
+    padding: 3vw;
+}
+
+.SummaryBackLink {
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    margin-top: 1vw;
+    text-decoration: none;
+}
+
+.SummaryBackLink:hover {
+    color: white;
+}
+
+
+/*TODO: Midside Aside =============================================================== */
+
+.SummarySection {
+    background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #5f89bc 80%,     /* Živější modrá */
+    #001428 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid rgba(0, 140, 255, 0.18);
+    width: 50vw;
+    height: 150vh;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 2vw;
+    align-items: center;
+
+    box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.8);
+    border-color: #f77343;
+}
+
+
+/*TODO: Rightside Aside ===================================================================== */
+
+.importPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 80vh;
+    padding: 2vw 1vw;
+    background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
+    border-radius: 1vw;
+    border: 1px solid rgba(0, 140, 255, 0.18);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-color: #f77343;
+
+}
+
+
+.importTitle {
+    color: white;
+    font-family: 'Lekton', monospace;
+    font-size: 0.9vw;
+    transition: color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1vw;
+    margin-left: -1vw;
+
+
+}
+
+.importHint {
+    color: white;
+
+    font-size: 0.9vw;
+    transition: color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1vw;
+    margin-left: 1.3vw;
+
+}
+
+
+/*TODO: Import studentů... ================================================= */
+
+.ImportTitle { color: white; font-family: 'Lekton', monospace; font-size: 1.2vw; }
+.ImportHint  { color: rgba(255,255,255,.6); font-family: 'Lekton', monospace; font-size: .8vw; text-align: center; }
+
+.ImportDropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 10vw;
+    margin: 1vw 0;
+    border: 2px dashed rgba(255,255,255,.3);
+    border-radius: 1vw;
+    color: rgba(255,255,255,.7);
+    font-family: 'Lekton', monospace;
+    font-size: .9vw;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+}
+.ImportDropzone:hover,
+.ImportDropzone.is-over { border-color: #FF6600; background: rgba(255,102,0,.08); }
+
+.ImportResult { width: 100%; color: white; font-family: 'Lekton', monospace; font-size: .85vw; }
+.ImportError  { color: #ef4444; }
+
+
+.ImportMapping {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+    color: white;
+    font-family: 'Lekton', monospace;
+}
+
+.MappingRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vw;
+    padding: 0.6vw;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: .6vw;
+}
+
+.MappingColumnName { font-weight: bold; font-size: .85vw; }
+
+.MappingSample {
+    color: rgba(255,255,255,.5);
+    font-size: .7vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.MappingSelect {
+    background: #001428;
+    color: white;
+    border: 1px solid rgba(255,102,0,.4);
+    border-radius: .4vw;
+    padding: .3vw;
+    font-family: 'Lekton', monospace;
+    font-size: .8vw;
+}
+
+.MappingConfirm {
+    background: linear-gradient(to right, #FF6600, #f77343);
+    color: white;
+    border: none;
+    padding: .6vw 1.5vw;
+    border-radius: .8vw;
+    font-family: 'Lekton', monospace;
+    cursor: pointer;
+    align-self: center;
+    margin-top: .5vw;
+}
+
+.MappingConfirm:hover { filter: brightness(1.1); }
+
+
+
+/*TODO: =================================================
+==============================================================================================
+COMMENT: Sekce akceptování obsahu
+*/
+
+
+.AllowButton {
+    width: 10vw;
+    height: 3vw;
+    background: linear-gradient(to right, #d9aa8a, #b27660);
+    border-radius: 1.1vw;
+    margin-top: 4vw;
+    border: white solid 0.15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.7;
+    margin-top: 2vh;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    font-size: 0.85vw;
+}

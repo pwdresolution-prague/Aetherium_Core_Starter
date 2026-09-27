@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Safety Partners - Aetherium Core - Shrnutí registrace">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="/SPL.png">
+<link rel="stylesheet" href="../Css/SubForm.css">
+<link rel="stylesheet" href="../Css/Summary.css">
+<title> Aetherium Core — Shrnutí registrace</title>
+</head>
+<body>
+
+<div class="Main_menu">
+    <h2>Aetherium Core - Starter</h2>
+    <div class="Logo-Row">
+        <img src="../../AetheriumIcon.svg" alt="Logo" class="Logo">
+        <h4>Subscriber Summary</h4>
+    </div>
+</div>
+
+<div class="Gap"></div>
+
+<main class="SummaryMain">
+
+    <!-- COMMENT: Levý panel — progress indikátor kroků registrace -->
+    <aside class="SummarySteps">
+        <div class="StepItem StepDone">
+            <span class="StepIcon">✓</span>
+            <span class="StepLabel">Firemní údaje</span>
+        </div>
+        <div class="StepConnector"></div>
+        <div class="StepItem StepDone">
+            <span class="StepIcon">✓</span>
+            <span class="StepLabel">Ověření telefonu</span>
+        </div>
+        <div class="StepConnector"></div>
+        <div class="StepItem StepActive">
+            <span class="StepIcon">3</span>
+            <span class="StepLabel">Shrnutí</span>
+        </div>
+        <div class="StepConnector"></div>
+        <div class="StepItem StepPending">
+            <span class="StepIcon">4</span>
+            <span class="StepLabel">Platba</span>
+        </div>
+    </aside>
+
+    <!-- COMMENT: Střední panel — dynamicky naplněný z FormToPaySubscriber.js -->
+     <fieldset class="SummarySection">
+    <section class="SummaryContent">
+        <div id="summaryContent">
+            <!-- LOGIKA: Obsah se vygeneruje přes JS z dat v sessionStorage -->
+            <p class="SummaryLoading">Načítám přehled registrace...</p>
+        </div>
+    </section>
+<button class="AllowButton" id="AllowButtonId">Přejít k platbě</button>
+</fieldset>
+<!--TODO: Pravý aside panel s importem CSV souborů s kontakty na Studenty =========================-->
+<aside class="importPanel">
+    <h2 class="importTitle">Import Studentů</h2>
+    <p class="importHint">CSV, XLSX, XLS</p>
+
+    <label class="ImportDropzone" id="importDropZoneId">
+        <input type="file" id="importFileId" accept=".csv,.xlsx,.xls" hidden>
+        <span>Přetáhněte soubor sem nebo klikněte</span>
+    </label>
+    <div class="ImportMapping" id="importMappingId" hidden></div>
+    <div class="ImportResult" id="importResultId" hidden></div>
+</aside>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="Patička">
+    <p class="Author">&copy; 2026 PWD Resolution — Všechna práva vyhrazena.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- LOGIKA: Pouze FormToPaySubscriber.js — ostatní moduly zde nejsou potřeba -->
+<script type="module" src="../JS/SummaryLogic/FormToPaySubscriber.js"></script>
+<script type="module" src="../JS/SummaryLogic/StudentImport.js"></script>
+<script type="module" src="../JS/SummaryLogic/SummarySmoothScroll.js"></script>
+
+
+
+</body>
+</html>

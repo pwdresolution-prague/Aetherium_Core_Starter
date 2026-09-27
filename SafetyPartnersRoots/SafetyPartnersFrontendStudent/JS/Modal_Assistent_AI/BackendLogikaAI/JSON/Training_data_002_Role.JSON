@@ -29,7 +29,7 @@
       { "question": "Co znamená role Klient v systému?", "answer": "Klient je organizace, která si pronajímá LMS platformu a poskytuje školení svým vlastním pracovníkům, tedy Studentům." },
       { "question": "Může LMS spravovat více Odběratelů najednou?", "answer": "Ano, Odběraterl může mít pod sebou libovolný počet Klientů, kterým zpřístupňuje vybrané kurzy." },
       { "question": "Vidí Odběratel data uživatelů napříč všemi svými Klienty?", "answer": "Ano, Odběratel má přehled o všech svých Klientech a jejich uživatelích v rámci vlastního tenantu." },
-      { "question": "Může Odběratel vytvářet vlastní kurzy nezávisle na Adminovi platformy?", "answer": "Ano, v závislosti na nastavených oprávněních může Odběratel vytvářet a spravovat vlastní kurzy pro své Klienty." }
+      { "question": "Může Odběratel vytvářet vlastní kurzy nezávisle na Adminovi platformy?", "answer": "Ne, v závislosti na nastavených oprávněních ne může Odběratel vytvářet a spravovat vlastní kurzy pro své Klienty." }
     ]
   },
   {
@@ -101,7 +101,7 @@
   {
     "Sekce": "Role a oprávnění",
     "etapa": 45,
-    "tema": "Změna hesla a obnova přístupu",
+    "tema": "Změna hesla a obnova přístupu",N, 
     "data": [
       { "question": "Jak si změním své heslo?", "answer": "Heslo si můžete změnit v nastavení profilu po zadání aktuálního a nového hesla." },
       { "question": "Zapomněl jsem heslo, jak se znovu dostanu do systému?", "answer": "Na přihlašovací obrazovce použijte odkaz 'Zapomenuté heslo', kam vám přijde odkaz pro jeho obnovení." },

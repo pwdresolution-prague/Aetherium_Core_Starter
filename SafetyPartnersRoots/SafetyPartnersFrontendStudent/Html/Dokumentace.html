@@ -11,17 +11,24 @@
 <meta property="og:url" content=""><!--TODO: DOplnit adresu webu-->
 <meta property="og:type" content="website">
 <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/x-icon" href="../../SPL.png">
   <link rel="stylesheet" href="../Css/Style.css">
   <link rel="stylesheet" href="../Css/ChatBotStyle.css">
-  <title>Safety Partners - Hlavní stránka</title>
+  <link rel="stylesheet" href="../Css/Dokuemntace.css">
+  <title>Aetherium Core - Starter - Dokumentace</title>
 </head>
 <body>
 <script src="../JS/Script.js"></script>
 <div class="Main_menu">
-  <h2>SAFETY PARTNERS</h2>
+  <h2>Aetherium Core - Starter</h2>
   <div class="Logo-Row">
-  <img src="../Logo.png" alt="Logo" class="Logo">
+  <img src="../../AetheriumIcon.svg" alt="Logo" class="Logo">
   <h4>E-Learning Management</h4>
   </div>
 
@@ -71,7 +78,9 @@
 </div>
 
 
+<div class="DokPageShell">
 
+<div class="ContentColumn">
 
 
 <!--TODO: Horní menu-->
@@ -87,26 +96,56 @@
 <!--TODO: Divy k UpMenu-->
 </div>
 </div>
-
-
 </div>
-
-
 </div>
+<!--FRONTEND: Dokumentace – kartotéka: seznam vlevo (zavřený), detail vpravo (otevírá se po jednom) -->
+<main class="DokWrapper">
 
+  <div class="DokTopBar">
+    <!--TODO: Sjednocený vyhledávač napříč všemi třemi záložkami -->
+    <div class="DokSearchBox">
+      <svg class="DokSearchIcon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="DokumentaceSearchInput" placeholder="Hledat napříč dokumentací – návody, normy, materiály…">
+    </div>
+
+    <!--TODO: Přepínač záložek -->
+    <nav class="DokTabs">
+      <button type="button" class="DokTabButton active" data-tab="navody">Návody</button>
+      <button type="button" class="DokTabButton" data-tab="legislativa">Legislativa a normy</button>
+      <button type="button" class="DokTabButton" data-tab="materialy">Materiály ke stažení</button>
+    </nav>
+  </div>
+
+  <!--TODO: Kartotéka – jednotný dvousloupcový systém pro všechny záložky i hledání -->
+  <div class="DokKartoteka">
+
+    <!--TODO: Levý sloupec – zavřený seznam položek aktivní záložky (klik otevře detail vpravo) -->
+    <aside class="DokList" id="DokList" aria-label="Seznam dokumentace"></aside>
+
+    <!--TODO: Pravý sloupec – detail JEDNÉ vybrané položky -->
+    <section class="DokDetail" id="DokDetail">
+      <div class="DokDetailEmpty">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h11l5 5v11H4z"></path><path d="M15 4v5h5"></path></svg>
+        <p>Vyberte položku ze seznamu vlevo.</p>
+      </div>
+    </section>
+
+  </div>
+
+</main>
 
 
 <!--TODO: Patička-->
-  <div class="Container2">
-    <h3 class="Patička">Safety Partners 2026 Blue Shade Theme</h3>
-    </div>
+<div class="DokuemntaceDiv">
+    <h3 class="PatičkaDokuemntace">Aetherium core 2026 Blue Shade Theme</h3>
+</div>
+</div><!-- /.DokPageShell -->
 
 
 
-
-<script src="../JS/Modal/ChatBotManager.js"></script>
+<script type="module" src="../JS/Modal_Assistent_AI/ChatBotManager.js"></script>
 <script type="module" src="../../utils/security.client.js"></script>
-
+<script type="module" src="../JS/DokumentaceLogika/DokuemntaceLogika.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-import supabase from '../Connect/SupabaseClient.js'
+import supabase from '../Connect/SupabaseConnect.js'
 import { formatPhoneStrict } from './SanitizeForm.js'
 
 const telefonInput = document.getElementById('telefonní-číslo')
@@ -14,11 +14,11 @@ let phoneForOtp = ""
 let otpVerified = false
 let onChange = () => {} //COMMENT: callback si nastaví volající soubor
 
-//LOGIKA: Umožní vnějšímu kodu z ScriptAetherium si zaregistrovat a 
+//LOGIKA: Umožní vnějšímu kodu z ScriptAetherium si zaregistrovat a
 // callbacknout funkci která volá pokaždé když se změní stav ověření telefonu.
 // LOGIKA: modul neví o submitBtn/GdprCheckbox nic
-// jen vždy zavoolá změnu ven a o vše se stará modul 
-// 
+// jen vždy zavoolá změnu ven a o vše se stará modul
+//
 export function onOtpVerifiedChange(callback) {
     onChange = callback
 }

@@ -1,0 +1,1022 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.CMS_Dashboard {
+    margin-top: -50vh;
+
+
+
+}
+
+.MakeModalWindow {
+
+  background: linear-gradient(to right, #d67c40, #f77343);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border-radius: 0.5vw;
+  border: 0.14vw solid #102b96;
+  width: 15vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50vw;
+  margin-top: 2vw;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  box-shadow:
+
+    0 8px 15px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(3px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+
+.MakeModalWindow:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Make_Course {
+    color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+}
+
+
+
+
+
+
+
+
+.EditModalWindow {
+
+  background: linear-gradient(to right, #d67c40, #f77343);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border-radius: 0.5vw;
+  border: 0.14vw solid #102b96;
+  width: 15vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50vw;
+  margin-top: 2vw;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  box-shadow:
+
+    0 8px 15px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(3px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.EditModalWindow:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+.Edit_Course {
+    color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+}
+
+
+
+
+
+
+.CMS_Modal {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.98);
+    transition: opacity 0.25s ease, transform 0.25s ease, overlay 0.25s allow-discrete, display 0.25s allow-discrete;
+    border: 0.14vw solid #FF6600; /* stejný akcentní border jako u tlačítka */
+    border-radius: 1.2vw; /* zaoblené rohy, konzistentní s ostatními kartami */
+    background: linear-gradient(to bottom, #003d80, #5f89bc); /* stejný modrý gradient jako tlačítko */
+    color: #ffffff;
+    padding: 0.5vw;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 15px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+}
+
+.CMS_Modal::backdrop {
+  background: rgba(0, 20, 40, 0.6);
+  backdrop-filter: blur(0.3vw);
+}
+
+/* NOVÉ: stav při otevření */
+.CMS_Modal[open] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* NOVÉ: startovní stav pro animaci "zevnitř" při otevírání */
+@starting-style {
+    .CMS_Modal[open] {
+        opacity: 0;
+        transform: translateY(-16px) scale(0.98);
+    }
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+
+
+}
+/*COMMENT: Funkce volby a Logika add Page  ========================
+=====================================================================================================
+=======================================================================================================
+======================================================================================================
+======================================================================================================
+*/
+
+.AddPageMenuWrapper {
+    position: relative;
+}
+
+.AddPageMenu {
+    position: absolute;
+    bottom: 110%;
+    left: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #FF6600;
+    border-radius: 0.4vw;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    min-width: 14vw;
+    z-index: 10;
+}
+
+.AddPageMenuItem {
+    padding: 0.6vw 0.8vw;
+    cursor: pointer;
+    font-size: 0.85vw;
+    white-space: nowrap;
+    color: #333;
+}
+
+.AddPageMenuItem:hover {
+    background: #ffe1cc;
+    color: #1a1a1a;
+}
+
+.StructuredPageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1.5vw;
+    overflow-y: auto;
+    color: #333;
+}
+
+.QuestionLabel {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9vw;
+}
+
+.QuestionTextInput {
+    width: 100%;
+    min-height: 7vh;
+    padding: 0.6vw;
+    border: 1px solid #FF6600;
+    border-radius: 0.4vw;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+}
+
+.QuestionTextInput::placeholder {
+    color: #999;
+}
+
+.AnswersWrapper, .TrueFalseRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+
+.TrueFalseRow {
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.AnswerRow, .TrueFalseOption {
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+    color: #333;
+}
+
+.AnswerCheckbox, .AnswerRadio {
+    width: 1.2vw;
+    height: 1.2vw;
+    accent-color: #FF6600;
+}
+
+.AnswerTextInput, .MediaTypeSelect {
+    flex: 1;
+    padding: 0.5vw;
+    border: 1px solid #ccc;
+    border-radius: 0.4vw;
+    color: #1a1a1a;
+    background: #fff;
+}
+
+.AnswerTextInput::placeholder {
+    color: #999;
+}
+
+.StructuredPageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1.5vw;
+    overflow-y: auto;
+    color: #333;
+}
+
+.StructuredPageContent[hidden] {
+    display: none;
+}
+
+/*COMMENT: Modalové okno resizible Image ========================
+=====================================================================================================
+=======================================================================================================
+======================================================================================================
+======================================================================================================
+*/
+
+
+
+
+.ResizableImageWrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.ResizableImageWrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.ResizableImageWrapper.is-selected img {
+    outline: 2px dashed #FF6600;
+    outline-offset: 2px;
+}
+
+.ResizeHandle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FF6600;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: none;
+}
+
+.ResizableImageWrapper.is-selected .ResizeHandle {
+    display: block;
+}
+
+.ResizeHandle--nw { top: -5px;    left: -5px;    cursor: nwse-resize; }
+.ResizeHandle--ne { top: -5px;    right: -5px;   cursor: nesw-resize; }
+.ResizeHandle--sw { bottom: -5px; left: -5px;    cursor: nesw-resize; }
+.ResizeHandle--se { bottom: -5px; right: -5px;   cursor: nwse-resize; }
+
+
+
+/*COMMENT: Modalové okno pro zobrazení nahrání obrázku ========================
+=====================================================================================================
+=======================================================================================================
+======================================================================================================
+======================================================================================================
+*/
+
+
+.MediaPickButton {
+    padding: 0.6vw 1vw;
+    border: 1px solid #FF6600;
+    border-radius: 0.4vw;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.85vw;
+    align-self: flex-start;
+}
+
+.MediaPickButton:hover {
+    background: #ffe1cc;
+}
+
+.MediaPreviewWrapper {
+    margin-top: 1vw;
+    max-width: 100%;
+}
+
+.MediaPreviewElement {
+    max-width: 100%;
+    max-height: 40vh;
+    border-radius: 0.4vw;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+
+
+
+.DragModalButton {
+    position: absolute;      /* umístění vůči cmsEditorArea / modalu, viz. poznámka níž */
+    bottom: 1vw;
+    left: 1vw;
+    width: 2.2vw;
+    height: 2.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FF6600;
+    border-radius: 50%;      /* kulaté tlačítko, jak jsi zmiňoval "ikona v rohu" */
+    background: linear-gradient(to bottom, #003d80, #5f89bc); /* stejný modrý gradient jako CMS_Modal */
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.DragModalButton:hover {
+    transform: scale(1.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.DragModalButton svg {
+    stroke: #fff;             /* lucide ikony dědí barvu přes stroke, ne color */
+    pointer-events: none;     /* klik na ikonu uvnitř tlačítka se pošle na button, ne na svg samotné */
+}
+
+
+
+.FilesInputModal {
+    border: 0.14vw solid #FF6600;
+    border-radius: 0.8vw;
+    background: linear-gradient(to bottom, #003d80, #5f89bc);
+    color: #fff;
+    padding: 1.5vw;
+    width: 30vw;
+    height: 20vh;
+    margin-left: 19vw;
+    margin-top: 46vh;
+
+
+
+    /* NOVÉ: bez tohohle transition @starting-style nemá co animovat */
+    opacity: 0;
+    transform:  scale(0.35);
+    transition: opacity 0.25s ease, transform 0.25s ease, overlay 0.25s allow-discrete, display 0.25s allow-discrete;
+}
+
+.FilesInputModal::backdrop {
+    background: rgba(0, 20, 40, 0.6);
+    backdrop-filter: blur(0.3vw);
+}
+
+/* NOVÉ: cílový stav při otevření -- tohle ti chybělo úplně */
+.FilesInputModal[open] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Tvůj kousek -- teď má konečně co dělat, protože ví, odkud a kam animovat */
+@starting-style {
+    .FilesInputModal[open] {
+        opacity: 0;
+        transform: translateY(-16px) scale(0.35);
+    }
+}
+
+
+
+.FileDropZone {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.5);  /* přerušovaná čára = univerzální vizuální signál pro drag&drop */
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.FileDropZone:hover {
+    border-color: #FF6600;
+    background-color: rgba(255, 102, 0, 0.08);
+}
+
+/* NOVÉ: vizuální stav při reálném přetahování souboru nad zónou
+   -- třídu 'dragover' si přidáš/odebereš v JS na dragenter/dragleave */
+.FileDropZone.dragover {
+    border-color: #FF6600;
+    background-color: rgba(255, 102, 0, 0.15);
+}
+
+
+
+.close-modalDrag {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FRONTEND: Editor ===============================================================
+=================================================================================
+================================================================================
+===============================================================================
+==============================================================================
+=============================================================================*/
+
+
+.CMS_editorArticle {
+    width: 85vw;
+    height: 61vh;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow-y: auto;     /* dlouhý obsah kurzu se scrolluje uvnitř bílé plochy, ne celý modal */
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    margin-top: 4vh;
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.cmsEditorArea{
+
+    flex:1;
+    position: relative;
+    display:flex;
+
+
+    flex-direction: column;
+
+    overflow:hidden;
+    margin-top: -52vh;
+}
+
+.EditačníPrvky {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+.ModalIntroduction {
+    margin-left: 23vw;
+    margin-top: 2.8vh;
+}
+/* COMMENT: Vstupní paramatr názvu kurzu */
+
+.InputTitleLabel {
+    gap: 0.2vw;
+
+}
+
+.InputTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 4.5vh;
+    border-radius: 0.5vw;
+    padding: 0.2vw;
+    background-color: white;
+    padding: 0.7vw;
+    border: 1px solid #FF6600;
+    margin-bottom: 39vh;
+    margin-right: 33vw;
+
+
+}
+
+/*COMMENT: Vstupní Selektor výběru kurzu či Testu */
+
+.SelectCourseClass {
+    gap: 0.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 18vw;
+    height: 4.5vh;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    background-color: white;
+    padding: 0.5vw;
+    border: 1px solid #FF6600;
+    margin-top: -43.5vh;
+    margin-left: 25vw;
+
+}
+
+
+
+
+.PageOutline{
+
+    height:48px;
+
+    min-height:48px;
+
+    display:flex;
+    align-items:center;
+
+    gap:8px;
+
+    padding:0 10px;
+
+    border-bottom:1px solid #d9d9d9;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    background:#fafafa;
+    margin-top: 26vw;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.OutlinePageButton {
+    min-width: 36px;         /* ZMĚNA z width: 36px → min-width */
+    height: 36px;
+    padding: 0 8px;           /* NOVÉ: prostor navíc pro dvouciferná čísla + křížek */
+    border: 1px solid var(--border-color, #ccc);
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-shrink: 0;           /* NOVÉ: tlačítko se nesmí zmenšovat pod svůj obsah */
+}
+.OutlinePageButton.active {
+    background: var(--accent-color, #2b6ef2);
+    color: white;
+    border-color: var(--accent-color, #2b6ef2);
+}
+
+
+.OutlinePageDelete {
+    font-size: 12px;
+    opacity: 0.5;
+    padding: 0 2px;
+}
+
+.OutlinePageDelete:hover {
+    opacity: 1;
+    color: #d9534f; /* jemné červené zvýraznění při hoveru */
+}
+
+
+.ToolbarButton {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+
+}
+
+.EditorContent {
+    color: black;
+    flex: 1;
+    width: 100%;
+    padding: 1vw;
+    overflow-y: auto;
+    text-align: left;
+    align-items: flex-start;
+    border: none;          /* ZMĚNA: rám dáme až na vnitřní .ProseMirror, ne sem */
+}
+
+/* Reset marginů pro všechny nadpisy -- H4 defaultně (bez tohohle)
+   má VĚTŠÍ margin než H1-H3, proto text "uletí" právě u něj */
+.EditorContent .ProseMirror h1,
+.EditorContent .ProseMirror h2,
+.EditorContent .ProseMirror h3,
+.EditorContent .ProseMirror h4,
+.EditorContent .ProseMirror h5,
+.EditorContent .ProseMirror h6 {
+    margin: 0.5em 0;
+    line-height: 1.3;
+}
+
+
+/*FRONTEND TEMP DIAGNOSTIKA -- smazat po vyřešení, slouží jen k vyloučení
+   jakéhokoliv jiného pravidla, co by mohlo h4 posouvat mimo box */
+.EditorContent .ProseMirror h4 {
+    margin: 0.5em 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    float: none !important;
+}
+
+.EditorContent .ProseMirror {
+    width: 80vw;
+    min-height: 95%;
+    height: auto;         /* box smí růst s obsahem, nedrží pevnou výšku */
+    overflow-y: auto;     /* pokud přeteče, scrolluje se UVNITŘ, nevytéká ven */
+    outline: none;
+    border: 2px solid #FF6600;
+    border-radius: 0.3vw;
+    padding: 0.8vw;
+    box-sizing: border-box;
+}
+
+.FileInputHidden {
+    display: none;
+}
+
+.FileDropZone p {
+    pointer-events: none;
+}
+
+.EditorContent .ProseMirror img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*COMMENT: Spodní část modalového okna jako Koncept forward plus page a backward a Konfirmace ===========
+===================================================================================
+========================================================================================
+============================================================================================
+=========================================================================================
+=========================================================================================== */
+
+
+.ButtonSectionAll {
+    margin-top: 3.5vh;
+}
+
+.OptionButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1vw;
+    margin-top: 2vh;
+
+}
+.SaveConceptLogic {
+    display: flex;
+    gap: 0.5vw;
+    padding: 0.5vw;
+    margin-top: 0.25vh;
+}
+
+/*.Koncept {
+    width: 8vw;
+    height: 3.5vh;
+    border: 1px solid #1a37a0;
+    background: linear-gradient(to right, #d9aa8a, #b27660);
+    border-radius: 0.5vw;
+    color: #fff;
+    font-size: medium;
+
+}
+*/
+
+.Koncept  {
+
+    width: 10vw;
+    height: 3.5vh;
+    border: 1px solid #1a37a0;
+    background: linear-gradient(to right, #d67c40, #f77343);
+    border-radius: 0.5vw;
+    color: #fff;
+    font-size: medium;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    box-shadow:
+
+    0 8px 15px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+    transform: translateY(3px);
+    transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+
+.Koncept:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FooterModalLogic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0.5vw;
+    margin-top: 0.25vh;
+}
+
+/*COMMENT: Backward Section */
+
+
+.BackwardButton {
+    width: 4vw;
+    height: 3.5vh;
+    border: 1px solid #FF6600;
+    border-radius: 0.5vw;
+
+}
+
+.BackwardButton:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+.BackwardClass {
+    font-size: large;
+    color: rgb(95, 91, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.1vh;
+}
+
+
+
+
+/*COMMENT: AddPage Section */
+
+.AddPageButton {
+    width: 4vw;
+    height: 3.5vh;
+    border: 1px solid #FF6600;
+    border-radius: 0.5vw;
+}
+
+.AddPageButton:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+.AddPageClass {
+    font-size: large;
+    color: rgb(95, 91, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.1vh;
+}
+
+/*COMMENT: Forward Section */
+
+
+.ForwardButton {
+    width: 4vw;
+    height: 3.5vh;
+    border: 1px solid #FF6600;
+    border-radius: 0.5vw;
+}
+
+.ForwardButton:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+.ForwardClass {
+    font-size: large;
+    color: rgb(95, 91, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.1vh;
+}
+
+
+
+.ConfirmCourseLogic {
+    display: flex;
+    gap: 0.5vw;
+    padding: 0.5vw;
+    margin-top: 0.25vh;
+}
+
+
+
+
+.Confirmace  {
+    width: 8vw;
+    height: 3.5vh;
+    border: 1px solid #1a37a0;
+    background: linear-gradient(to right, #d67c40, #f77343);
+    border-radius: 0.5vw;
+    margin-left: 34vw;
+    color: #fff;
+    font-size: medium;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    box-shadow:
+
+    0 8px 15px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+    transform: translateY(3px);
+    transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+
+.Confirmace:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}

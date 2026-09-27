@@ -22,7 +22,7 @@ const eventSchema = {
 //TODO: Struktura procesů standartního uživatelského účtu "Student" z hlediska probíhajícícch událostí v panelu "Frontend_Student"
 
 
-const eventTypes = {
+export const eventTypes = {
     //TODO: Kurzy ====================================================
     "course_created": {label: "kurz_vytvořen", icon: "ti ti_education" },
     "course_in_process": {label: "kurz_v_processu", icon: "ti ti_education" },
@@ -53,7 +53,10 @@ const eventTypes = {
     "system_send_new_message": {label: "nová_zpráva_generována_systémem", icon: "ti_ti_system_active" },
     "system_send_new_document": {label: "nový_přijatý_document", icon: "ti ti_system_active" },
     "system_unlocked_new_report": {label: "nový_report_připraven_k_náhledu", icon: "ti ti_system_active" },
-
+    //TODO: Systém documentation
+    "documentation_guide_opened": { label: "návod_otevřen", icon: "ti ti_docs" },
+    "documentation_material_downloaded": { label: "materiál_stažen", icon: "ti ti_docs" },
+    "documentation_search_performed": { label: "vyhledávání_dokumentace", icon: "ti ti_docs" },
 
 
 
@@ -69,11 +72,11 @@ function renderEvents(events) {
     list.innerHTML = ""
 
     if(!events || events.length === 0) {
-        list.innerHTML = `<li class="event-time event-item--empty"> 
+        list.innerHTML = `<li class="event-time event-item--empty">
         <p class="event-items">Žádné události k zobrazení</p>
         </li>`
         return
-            
+
     }
 
 
@@ -99,7 +102,7 @@ events.forEach(event => {
     li.dataset.userId = event.user_id
     li.dataset.message = event.message
 
-    
+
 
     li.innerHTML = `
                 <span class="event-icon ${type.icon}" aria-hidden="true"></span>
@@ -122,7 +125,7 @@ list.appendChild(li)
 }
 
 
-//BACKEND: Připojení jako událostní typ dat 
+//BACKEND: Připojení jako událostní typ dat
 
 const mock_events = [
     {
@@ -132,7 +135,7 @@ const mock_events = [
         user_id: "user_001",
         created_at: "2025-06-26T10:30:00Z",
 
-    }, 
+    },
 
     {
         id: "2",
@@ -149,13 +152,13 @@ const mock_events = [
         message: "Právě je generován certifikát...",
         user_id: "User_001",
         created_at: "2025-06-26T10:30:00Z",
-         
+
 
      }
 
 
 
-   
+
 ]
 
 

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Safety Partners - E-learning managment system">
+<meta property="og:title" content="Absolvujte kurz, Kompletujte test, Certifikát platný">
+<meta property="og:description" content="Certifikáty Generované AI v PDF">
+<meta property="og:image" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:url" content=""><!--TODO: DOplnit adresu webu-->
+<meta property="og:type" content="website">
+<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="/SPL.png">
+<link rel="stylesheet" href="../ViewsCss/Dashboard.css">
+<link rel="stylesheet" href="../ViewsCss/StyleCMS.css">
+<link rel="stylesheet" href="../ViewsCss/ModalCMS.css">
+<link rel="stylesheet" href="../ViewsCss/ChatBotStyleCMS.css">
+<link rel="stylesheet" href="../ViewsCss/Analytics.css">
+<link rel="stylesheet" href="../ViewsCss/CMSDashboard.css">
+<title>AETHERIUM CORE - STARTER - Notifikace</title>
+</head>
+<body>
+<div class="Main_menu">
+  <h2>AETHERIUM CORE - STARTER</h2>
+  <div class="Logo-Row">
+  <img src="../../../AetheriumIcon.svg" alt="Logo" class="Logo">
+  <h4>Editorial Dashboard</h4>
+  </div>
+  <!--TODO: Vertikální menu-->
+  <ul class="Vertical_Menu">
+    <li><a href="../Views/CMS.html">
+      <img src="../Kurzy.png" alt="Kurzy" class="Menu-Icon">Redakční systém</a></li>
+    <li><a href="../Views/UživateléAOprávnění.html">
+      <img src="../Uživatel.png" alt="Uživatel" class="Menu-Icon">Uživatelé</a></li>
+    <li><a href="../Views/Analytika.html">
+      <img src="../Reporty.png" alt="Reporty" class="Menu-Icon">Analytika</a></li>
+    <li><a href="../Views/CertifkátyCMS.html">
+      <img src="../Dokumentace.png" alt="Dokumentace" class="Menu-Icon">Certifikáty</a></li>
+    <li><a href="../Views/NastaveníCMS.html">
+      <img src="../Nastavení.png" alt="Nastavení" class="Menu-Icon">Nastavení</a></li>
+  </ul>
+  </div>
+
+<!--TODO: CHATBOT FORMULÁŘE............................................................................................-->
+
+<!--TODO: ChatBot Button-->
+<div class="ButtonChatBot">
+  <img src="../Button.png" alt="Button" class="Button" id="ChatBotOpen">
+</div>
+
+<!--TODO: ChatBotModal-->
+<div id="ChatBotModal" class="chatbot-modal">
+  <div class="chatbot-modal-content">
+    <span class="chatbot-close">&times;</span>
+<h3 class="h3ChatBot">Chatbot</h3>
+
+<!--TODO: Historie chatu-->
+<div class="chatbot-history" id="chathistory">
+<p><em>"Jak se zapsat do kurzu", "Kdy mohu udělat test?", "Kde najdu certifikát?", "Kdy musím dělat znovu test?"</em></p>
+</div>
+<!--TODO: Tělo Chatbota-->
+<div class="chatbot-body">
+  <p>Zde se zeptejte ChatBota</p>
+  <textarea id="userInput" placeholder="Napiš svůj dotaz..."></textarea>
+  <button id="SendMessage" type="button">Odeslat</button>
+  </div>
+ </div>
+</div>
+
+
+
+
+<!--TODO: Horní menu-->
+  <div class="Container1">
+      <div class="Content">
+<div class="Up_Menu">
+  <ul class="TopMenu">
+<li><a href="../Views/Dashboard.html">Dashboard</a></li>
+<li><a href="../Views/Notifikace.html">Notifikace</a></li>
+<li><a href="../Views/Legislativa.html">Legislativa</a></li>
+<li><a href="../Views/Audit_Log.html">Audit Log</a></li>
+</ul>
+<!--TODO: Divy k UpMenu-->
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--TODO: Patička-->
+  <div class="Container2">
+    <h3 class="Patička">Aetherium Core 2026 by PWD Resolution</h3>
+    </div>
+
+
+
+<!--TODO: SKRIPTY......................................................................................................-->
+<script type="module" src="/utils/security.client.js"></script>
+<script type="module" src="../Services/Chatbotmanager.js"></script>
+
+
+
+</body>
+</html>

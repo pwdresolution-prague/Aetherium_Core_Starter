@@ -22,9 +22,9 @@
     align-items: center;
     flex-direction: column;
     display: flex;
-    
 
-  
+
+
 }
 
 
@@ -40,14 +40,14 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   border: 2px solid rgba(0, 140, 255, 0.18);
     width: 60vw;
-    height: 300vh;
+    height: 400vh;
     border-radius: 1vw;
     display: flex;
     flex-direction: column;
     gap: 2vw;
     padding: 2vw;
     align-items: center;
-    
+
     box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.8);
     border-color: #f77343;
 }
@@ -56,10 +56,10 @@
 .FormulářNadpis {
     color: white;
     font-size: 1vw;
-    
+
     text-align: center;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 2vw;
 
 
@@ -78,31 +78,31 @@
     width: 100%;
     padding: 2vw;
     border-bottom: 0.1vw solid rgba(255,255,255,0.2);
-    
+
 
 }
 
 .SectionOne {
     display: flex;
     flex-direction: column;
-    gap: 1vw; 
+    gap: 1vw;
     align-items: center;
     color: white;
-  
+
 
 
 }
 
 .Form label {
-    
-    
-    
-    
-    
+
+
+
+
+
 
     gap: 0.3vw;
     font-size: 0.9vw;
-    
+
 
 }
 
@@ -120,9 +120,9 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
-    
+
 }
 
 .dič {
@@ -130,7 +130,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -139,7 +139,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -147,7 +147,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -156,7 +156,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -165,7 +165,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -174,7 +174,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -183,7 +183,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -192,7 +192,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -223,7 +223,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -238,8 +238,8 @@
     border-radius: 1.1vw;
     margin-top: 4vw;
     border: white solid 0.15vw;
-    display: flex;             
-    align-items: center;        
+    display: flex;
+    align-items: center;
     justify-content: center;
     color: white;
     font-size: 0.7;
@@ -256,7 +256,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -265,7 +265,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -274,7 +274,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -283,7 +283,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -292,7 +292,7 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -301,8 +301,8 @@
     width: 33vw;
     height: 3vh;
     border-radius: 1vw;
-    padding: 0.5vw;
-    background-color: white; 
+    padding: 1vw;
+    background-color: white;
 }
 
 /* TODO: Sekce třetí části formuláře... */
@@ -315,7 +315,7 @@
 .SectionThree {
     display: flex;
     flex-direction: column;
-    gap: 1vw; 
+    gap: 1vw;
     align-items: center;
     color: white;
     margin-top: 3vw;
@@ -334,17 +334,17 @@
     gap: 1vw;
     background-color: white;
     font-size: 0.9vw;
-    padding: 0.5vw 1vw; 
+    padding: 1vw 1vw;
 
 }
 
 .BozpOk {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
-    
 
-    
+
+
 }
 
 
@@ -356,15 +356,15 @@
     gap: 1vw;
     background-color: white;
     font-size: 0.9vw;
-    padding: 0.5vw 1vw; 
+    padding: 1vw 1vw;
 }
 
 .BozpVpOk {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 
@@ -376,15 +376,15 @@
     gap: 1vw;
     background-color: white;
     font-size: 0.9vw;
-    padding: 0.5vw 1vw; 
+    padding: 1vw 1vw;
 }
 
 .PoOk {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 
@@ -396,16 +396,16 @@
     gap: 1vw;
     background-color: white;
     font-size: 0.9vw;
-    padding: 0.5vw 1vw; 
+    padding: 1vw 1vw;
 }
 
 
 .PoVpOk {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 
@@ -417,17 +417,17 @@
     gap: 1vw;
     background-color: white;
     font-size: 0.9vw;
-    padding: 0.5vw 1vw; 
+    padding: 1vw 1vw;
 
 }
 
 
 .RrOk {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 
@@ -440,17 +440,17 @@
     gap: 1vw;
     background-color: white;
     font-size: 0.9vw;
-    padding: 0.5vw 1vw; 
+    padding: 1vw 1vw;
 
 }
 
 
 .PpOk {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 
@@ -464,15 +464,15 @@
     gap: 1vw;
     background-color: white;
     font-size: 0.9vw;
-    padding: 0.5vw 1vw; 
+    padding: 1vw 1vw;
 }
 
 .PvvOk {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 
@@ -488,8 +488,8 @@
     width: 18vw;
     height: 2.7vw;
     border: rgb(42, 41, 41) solid 0.12vw;
-    display: flex;             
-    align-items: center;        
+    display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 1vw;
     border-radius: 1.1vw;
@@ -498,7 +498,7 @@
 
 
 
-    
+
 
 }
 
@@ -507,7 +507,7 @@
 }
 
 .TermsButton:hover {
-    
+
     color: #5c5a5a;
     text-shadow:
         0 0 0.1px #2d2e2e,
@@ -532,49 +532,49 @@
   width: 54vw;
   height: 74vh;
   background: rgba(220, 211, 211, 0.9);
-  padding: 5vh 0; 
-  border: 0.2vw solid #003d80;  
+  padding: 5vh 0;
+  border: 0.2vw solid #003d80;
   z-index: 1000;
   box-shadow: 0px 4px 15px rgba(96, 90, 90, 0.5);
   border-radius: 2vw;
   margin-left: 22.5vw;
   margin-top: 13vh;
-  
 
 
-  
+
+
 }
 
 .modal.open {
     display: flex;
-    
+
 }
 
 .NadpisGdpr {
     font-size: 1.5vw;
-    align-items: center;  
+    align-items: center;
     display: flex;
     text-align: center;
     justify-content: center;
     margin-bottom: 3vh;
-    
+
 }
 
 
 .modal-content {
   width: 52vw;
-  height: 62vh;
-  margin-left: 0.75vw;
-  margin-bottom: 4vh;
+  height: 61vh;
+  margin-left: 0.85vw;
+  margin-bottom: 2vh;
   background: rgba(138, 131, 131, 0.9);
   border-radius: 1.5vw;
   padding: 2vw;
   align-items: center;
   text-align: center;
-  
 
 
-  
+
+
 }
 
 
@@ -582,25 +582,26 @@
 .close-button {
   background: none;
   color:white;
-  border: none;     
+  border: none;
   float: right;
   font-size: 2vw;
   font-weight: bold;
   cursor: pointer;
   margin-top: -1vw;
-  
+  margin-left: 1vw;
+
 
 }
 
 .ObchodníNadpis {
     color: white;
     font-size: 1.5vw;
-    align-items: center;  
+    align-items: center;
     display: flex;
     text-align: center;
-    justify-content: center; 
+    justify-content: center;
     margin: 0;
-    
+
 }
 
 /*BUG: Text pro zobrazení obchodních podmínek a GDPR dokumentu v Modal Window */
@@ -613,7 +614,7 @@
   width: 100%;
 }
 
-datovýObsah {
+.datovýObsah {
     color: white;
     margin-top: 2vw;
 
@@ -626,13 +627,13 @@ datovýObsah {
     height: 3vw;
     background: linear-gradient(to right, #d9aa8a, #b27660);
     border-radius: 1.1vw;
-    border: white solid 0.15vw;            
-    align-items: center;        
+    border: white solid 0.15vw;
+    align-items: center;
     justify-content: center;
     color: white;
     font-size: 1.2vw;
     margin-left: 19vw;
-    margin-top: 30vh;
+    margin-top: 20vh;
     z-index: 1000;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
     gap: 5vw;
@@ -641,7 +642,7 @@ datovýObsah {
 
 
 
-    
+
 }
 
 /*TODO: GDPR a Obchodní podmínky Files ====================================== */
@@ -656,12 +657,12 @@ datovýObsah {
     justify-content: center;
     align-items: center;
     margin-left: 5vw;
-    
 
 
 
 
-    
+
+
 }
 
 
@@ -676,8 +677,8 @@ datovýObsah {
     margin-right: 11vw;
 
 
-    
-    
+
+
 
 
 }
@@ -692,8 +693,8 @@ datovýObsah {
     border-radius: 1.1vw;
     margin-top: 4vw;
     border: white solid 0.15vw;
-    display: flex;             
-    align-items: center;        
+    display: flex;
+    align-items: center;
     justify-content: center;
     color: white;
     font-size: 1.2vw;
@@ -755,7 +756,7 @@ datovýObsah {
     align-items: center;
     justify-content: center;
     margin-top: 5vw;
-    
+
 
 }
 
@@ -763,80 +764,7 @@ datovýObsah {
 .Author {
     color: white;
     font-size: 1vw;
-    align-items: center;  
+    align-items: center;
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
