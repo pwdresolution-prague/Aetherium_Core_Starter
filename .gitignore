@@ -63,3 +63,18 @@ SafetyPartners.drawio.bkp
 Html_Snippet_Specific_Tags.md
 Html_Snippets_specific_tags_2.md
 n8n/
+
+# secrets a lokální env
+.env
+.env.*
+!.env.example
+!.env.*.example
+flows_cred.json
+.nodered.env
+
+# závislosti a build
+node_modules/
+dist/
+
+# systémový odpad
+.DS_Store
