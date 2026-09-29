@@ -1,39 +1,88 @@
-//TODO: Z veškerých reportů které zde jsou psané tak sestavím přesný popis současné architektury FRONTEND 
+# 13 — Frontend Admin Logic (Provider CMS)
 
+**Stav:** Mapa Admin/CMS frontendu (2026-09-29)  
+**Kořen:** `SafetyPartnersRoots/SafetyPartnersFrontendProvider/`
 
+---
 
+## 1. CMS Views (HTML)
 
-<!--IMPORTANT: 27_06_2026-28_06_2026_Noční práce Doma na systému Aetherium_Core...>
-Celonoční práce na vytvoření siǵnalizace chodu systému, v Admin rozhraní...
-Napojení HTML na JS, JS napojeno na CSS, a postupně vše společně vyladěno tak že nyní je zapnutý pouze chod systému, a "off" má databáze, APi a Authorizace připojení...
+| View | Účel |
+|------|------|
+| `CMS/Views/CMS.html` | Hlavní CMS / editor |
+| `CMS/Views/Dashboard.html` | Admin dashboard |
+| `CMS/Views/UživateléAOprávnění.html` | Uživatelé a práva |
+| `CMS/Views/CertifkátyCMS.html` | Certifikáty |
+| `CMS/Views/Legislativa.html` | Legislativa |
+| `CMS/Views/NastaveníCMS.html` | Nastavení |
+| `CMS/Views/Notifikace.html` | Notifikace / expirace |
+| `CMS/Views/Analytika.html` | Analytika |
+| `CMS/Views/Audit_Log.html` | Audit log |
 
-<!--FIXME: Důležitá informace do HTML zaveden nový způsob kodu : 
-    <!--IMPORTANT: Progresivní průběh operace -->
-        <output class="contentDatabaseValue" name="result" for="inputA inputB">96%</output>
-        Jedná se o Html tag stavěný na matematický výpočet...
-        >
+---
 
-<!--FRONTEND: 01_07_2026 Denní práce Doma na Systému Aetherium_Core -->
-    <p>
-    Dnešní práce na kontrole trénovacích dat + Chatbot struktura fungovaní možnosti přemýšlení s zpožděním 2s, následně veškeré doplnění potřebných <br>
-    údajů do google Tasks s ohledem na strukturu a funkce..
+## 2. CMS Editor kurzů
 
+**Vstupní orchestrace:** `CMS/Components/CMS_Dashboard/InputEditor.js`
 
-    ChatBot_Asistent - Fungování chatbot Assistenta je nyníí ve fázi stálého napojení na Fuse.js, s tím že se pomalu přejde s kontrolou dat na 
-    aktuální vývoj z FAQ na skutečný malý model.., dále se tento model bude propisovat svými daty na soukromou databázovou strukturu v Supabase
-    a pomalu ale jistě s současnými vylepšeními systému se budou ostřit i data a tím se struktura veškerého systému zlepší na tu uroveň že bude reálné stavět i tuto část systému dále...
-    
+| Prvek | ID / chování |
+|-------|----------------|
+| Název kurzu | `#InputTitleId` → `courseState.title` |
+| Typ kurzu | `#SelectCourseId` → `courseState.type` |
+| Outline stránek | `#PageOutlineId` — čísla + ikony typů, mazání |
+| Navigace | Backward / Forward |
+| Přidat stránku | menu z `PAGE_TYPES` (`#AddPageMenuId`) |
+| TipTap | toolbar + `#EditorContentId` pro type `content` |
+| Structured | `#StructuredPageContentId` pro otázky/media |
+| Uložit koncept | `#SaveCreationId` → draft |
+| Publikovat | `#ConfirmCreationId` → validace + published |
 
-<!--FRONTEND: 03_07_2026 Noční práce na Systému Aetherium Core: -->
+Související:
 
-"data": [
-      { "question": "Jak si zapnu dvoufázové ověření?", "answer": "V sekci 'Bezpečnost' zapněte 2FA a naskenujte QR kód pomocí své aplikace [5]." },
-      { "question": "Kde aktivuji bezpečnější přihlašování?", "answer": "Přejděte do sekce 'Bezpečnost', zapněte dvoufaktorové ověření a naskenujte QR kód [5]." },
-      { "question": "Jak nastavit 2FA pro můj účet?", "answer": "V sekci 'Bezpečnost' aktivujte 2FA a propojte systém s autentizační aplikací přes QR kód [5]." }
-    ]
+- `EditorToolbar.js` — TipTap init, ikony  
+- `PageTypesLogic/PageTypes.js` — registr typů  
+- `ResizableImage.js`, `FilesInput.js` — média  
 
-    Vytvořit Systémový postup podle vzoru dat s otázkami: 
-    
+Detail dat: [12-Course_Data_structure.md](./12-Course_Data_structure.md)
 
+---
 
+## 3. Dashboard a telemetrie
 
+**Soubory:**
+
+- `CMS/Components/Dashboard.js`  
+- `CMS/Components/Admin_Dashboard_Logika/TelemetryLogic.js`  
+
+### Grafy (Chart.js)
+
+| Funkce | Obsah |
+|--------|--------|
+| `renderAttendanceCharts` | timeline online, role (Student/Client/Subscriber), zařízení, avg session |
+| `renderCourseCharts` | top kurzy, completion doughnut, enrollments 7 dní, avg completion days |
+| `renderContentCharts` | typy obsahu, storage MB, growth 30 dní, recent list |
+| `renderBiometryCharts` | score trend, events (pozornost/paste/vzorec), rhythm dwell, flagged list |
+
+Paleta: primary `#FF6700`, secondary `#f7b733`, danger `#E24B4A`.  
+Instance grafů se drží v `Map` a při re-render se `destroy()` (prevence „Canvas already in use“).
+
+Data jsou připravena na napojení ze Supabase; v aktuálním kódu jde o strukturu očekávaných objektů.
+
+---
+
+## 4. Signál chodu systému
+
+Z reportů (červen 2026): Admin rozhraní signalizace on/off pro databázi, API a autorizaci — HTML/JS/CSS propojení pro monitoring stavu.
+
+---
+
+## 5. TODO Admin
+
+- Skutečné Supabase insert/update z editoru  
+- Live data do telemetrie místo mock struktur  
+- Propojení Notifikace → expirační job  
+- Sjednocení práv Developer vs Admin vs Client v UI  
+
+---
+
+*Související: [11_Frontend_Logic.md](./11_Frontend_Logic.md), [06_AI_Systems.md](./06_AI_Systems.md)*

@@ -1,72 +1,104 @@
-<p>
-22.06.2026 - 21: 17- Dashboard selektivního prostředí Ftrontend Student
+# 06 — AI Systems
 
-- Analytika a asociační postupy z hlediska cca 7 dní uplynulého týdne
+**Stav:** Popis aktuálních a plánovaných AI komponent (2026-09-29)
 
-- Dopolední hodiny až odpolední čas - směna v zaměstnání a asociační rozvržení přístupu z FAQ 
+---
 
-řízené databáze směrem k technickému vykreslení vize a představy na podkladu znalostních principů 
+## 1. Chatbot asistent (Student)
 
-příslušné tématiky, dělitelné na libovolný počet procesních sloupců, v závislosti na zakreslení 
+**Umístění:**  
+`SafetyPartnersFrontendStudent/JS/Modal_Assistent_AI/`
 
-architektury do Draw.io...
+| Soubor | Role |
+|--------|------|
+| `ChatBotFuseTrainData.js` | Trénovací FAQ data (`questionsAndAnswers`) |
+| `BackendLogikaAI/TrainingDataNormalizer.js` | Normalizace textu |
+| `BackendLogikaAI/EmbeddingObal.js` | Obal pro embeddingy (připraveno) |
+| `BackendLogikaAI/SupabaseConnectAssistent.js` | Napojení na Supabase |
 
-V následující hodině dle veškerých predikcí, je vhodné strukturu zpracovat a přispět k dokuemntaci 
+**Aktuální engine:** Fuse.js (fuzzy search nad otázkami)
 
-následným progresivním nárustem informací...
+- Threshold a klíče nastaveny v dokumentaci/reportech (typicky `keys: ['question']`, `threshold: 0.4`)  
+- Normalizace: lower-case, trim, odstranění interpunkce  
+- ~75 FAQ položek: kurzy, testy, certifikáty, účet, podpora, technické problémy  
 
+**Plánovaný posun:**
 
+1. Fuse.js (hotovo)  
+2. Doplnění dat z FAQ / CMS do Supabase  
+3. Menší model / LangChain + embeddingy (TensorFlow.js USE v dependencies)  
+4. Chatbot zná prostředí LMS díky této dokumentaci  
 
+---
 
+## 2. ML klasifikátor sloupců (Import studentů)
 
+**Účel:** Automaticky rozpoznat, který sloupec CSV/XLSX je jméno, příjmení, e-mail, telefon.
 
-//TODO: Fuse.js napojení FAQ
-// 
-// //TODO: Inicializace Fuse.js
-const options = {
-    keys: ['question'],
-    threshold: 0.4
-}
+| Komponenta | Umístění |
+|------------|----------|
+| Features | `SummaryLogic/ColumnFeatures.js` |
+| Model predict | `SummaryLogic/ColumnModel.js` |
+| Model assets | `public/models/column-classifier/` |
+| Integrace | `StudentImport.js` → `buildColumnMap` |
 
-const fuse = new Fuse(questionsAndAnswers, options)
-console.log('Fuse je inicializován s trénovacími daty')
+Flow:
 
+1. Alias match na hlavičky  
+2. Pro nerozpoznané sloupce: `predictColumns` (min. confidence 0.6)  
+3. Ruční UI pro zbývající  
+4. Korekce se ukládají (features + label) pro budoucí trénink — **bez PII**  
 
+---
 
-//TODO: Funkce pro normalizaci Textu 
-function normalizeText(text) {
-    return text
-        .toLowerCase() //Všechna písmena malá
-        .trim()     //Odstraní mezery na začátku a na konci
-        .replace(/[.,!?¿¡]/g, "")  //Odtsraní tečky a čárky, vykřičníky a otazníky 
-}
+## 3. Kernel AI (PWD_LMS_Kernel)
 
-//CHATBOT: První fáze tréninku
-// 
-05_08_2026_18:06_Dokumentace prvního učení Aetherium_assistenta pro LMS...
+Složka `PWD_LMS_Kernel/src/Ai/`:
 
-Shromáždění dat dle kategorií částí systému...
+| Soubor | Stav |
+|--------|------|
+| Data.js | prázdný |
+| Dataset.js | prázdný |
+| Predikce.js | prázdný |
+| model.js | prázdný |
+| reprot.js | prázdný |
 
-//ADMIN: 
-//
-//COMMENT: Etapa: 1 
-//COMMENT: Téma "Kurzy"
+`Supabase.js` v Kernelu je naplněn (~1.2 KB).  
+Jádro (`Jádro.js`, `Pravidla.js`, `audit.js`) zatím prázdné — připravená struktura pro budoucí centrální AI/pravidla.
 
+---
 
+## 4. Závislosti v package.json (AI-related)
 
-//SUBSCRIBER:
-// 
-// 
-// 
+- `@langchain/core`, `@langchain/openai`  
+- `@tensorflow/tfjs`, `@tensorflow/tfjs-node`  
+- `@tensorflow-models/universal-sentence-encoder`  
+- `fuse.js`  
+- `danfojs-node`, `numeric`, `mathjs`  
 
+---
 
+## 5. Behaviorální telemetrie (Admin)
 
+`TelemetryLogic.js` → sekce „Behaviorální biometrie“:
 
+- skóre integrity studia (trend)  
+- události: ztráta pozornosti, paste detekce, podezřelý vzorec  
+- rhythm / dwell time  
 
-//STUDENT:
-// 
-// 
-// 
+**Důležité (GDPR):** systém **nesbírá** fyzickou biometrii (obličej, otisky, hlas).  
+Jde o provozní telemetrii interakcí — viz [07_Security.md](./07_Security.md) a [10_Legislative_Module.md](./10_Legislative_Module.md).
 
+---
 
+## 6. Doporučení pro chatbota LMS
 
+Aby asistent uměl vést Studenta i Admina:
+
+1. Indexovat tuto dokumentaci (markdown) jako knowledge base  
+2. Mapovat FAQ kategorie na role (Student / Admin / Subscriber)  
+3. Postupně nahrazovat statické odpovědi dynamickými daty z Supabase (stav kurzu, expirace certifikátu…)  
+
+---
+
+*Související: [14_Features_Overview.md](./14_Features_Overview.md), [11_Frontend_Logic.md](./11_Frontend_Logic.md)*
