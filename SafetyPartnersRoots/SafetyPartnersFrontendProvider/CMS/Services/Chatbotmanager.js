@@ -1,7 +1,9 @@
-// Chatbotmanager.js
-import { questionsAndAnswers } from '../../../SafetyPartnersFrontendStudent/JS/Modal_Assistent_AI/ChatBotFuseTrainData.js'   // uprav cestu dle skutečné struktury
-import Fuse from 'fuse.js'
+
 import { sanitizeHTML } from '../../../utils/security.client.js'
+import { zeptatSeAsistenta } from
+  '../../../SafetyPartnersFrontendStudent/JS/Modal_Assistent_AI/ChatBotApi.js'
+
+const { odpoved } = await zeptatSeAsistenta(safeMessage, { audience: 'admin' })
 // ... zbytek beze změny
 
 //TODO: Link na Elementy
@@ -98,3 +100,14 @@ userInput.value = ""
 
 
 })
+
+
+
+
+
+
+
+
+
+
+
