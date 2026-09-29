@@ -78,3 +78,6 @@ dist/
 
 # systémový odpad
 .DS_Store
+
+# archivy
+*.zip
