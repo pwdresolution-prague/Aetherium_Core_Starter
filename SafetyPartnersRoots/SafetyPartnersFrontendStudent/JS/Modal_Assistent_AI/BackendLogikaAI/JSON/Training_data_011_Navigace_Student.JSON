@@ -1,0 +1,71 @@
+[
+  {
+    "Sekce": "Navigace studenta",
+    "etapa": 1,
+    "tema": "Sekce Kurzy",
+    "data": [
+      { "question": "Jak otevřu seznam kurzů?", "answer": "V menu studenta klikněte na 'Kurzy'. Zobrazí se přiřazené kurzy a jejich stav." },
+      { "question": "Co znamená stav kurzu 'nezahájeno'?", "answer": "Kurz vám byl přiřazen, ale ještě jste neotevřeli první lekci. Klikněte na kurz a začněte studovat." },
+      { "question": "Co znamená 'rozpracováno'?", "answer": "Kurz jste již začali. Systém ukládá postup — můžete pokračovat od poslední dokončené části." },
+      { "question": "Kdy je kurz 'dokončený'?", "answer": "Po splnění všech povinných lekcí a úspěšném závěrečném testu. Poté se zpřístupní certifikát v sekci Certifikáty." },
+      { "question": "Musím lekce procházet postupně?", "answer": "Pokud je kurz nastaven jako sekvenční, další lekce se odemknou až po dokončení předchozí. Jinak to uvádí detail kurzu." },
+      { "question": "Kde vidím detail jednoho kurzu?", "answer": "V sekci Kurzy klikněte na název kurzu. Otevře se detail s popisem, lekcemi, materiály a stavem testu." }
+    ]
+  },
+  {
+    "Sekce": "Navigace studenta",
+    "etapa": 2,
+    "tema": "Sekce Testy",
+    "data": [
+      { "question": "Kdy se mi odemkne test?", "answer": "Zpravidla po dokončení povinných lekcí kurzu. Pokud test nevidíte, zkontrolujte v Kurzech, zda máte hotové všechny povinné části." },
+      { "question": "Jak spustím test?", "answer": "V sekci Testy nebo v detailu kurzu klikněte na spuštění testu. Před startem si přečtěte časový limit a pravidla." },
+      { "question": "Kolik bodů potřebuji k úspěchu?", "answer": "Standardně alespoň 60 % bodů, pokud u konkrétního kurzu není uvedeno jinak. Přesný práh je v detailu testu." },
+      { "question": "Kolikrát můžu test opakovat?", "answer": "Pokud není u kurzu stanoveno jinak, test lze opakovat. Po neúspěchu si zopakujte látku a zkuste znovu." },
+      { "question": "Vidím výsledky hned?", "answer": "Ano. Po odevzdání se zobrazí skóre a u uzavřených otázek i vyhodnocení. Testy se hodnotí automaticky." },
+      { "question": "Co když během testu spadne internet?", "answer": "Po obnovení připojení se systém pokusí navázat na poslední uložený krok. Pro jistotu používejte stabilní připojení." }
+    ]
+  },
+  {
+    "Sekce": "Navigace studenta",
+    "etapa": 3,
+    "tema": "Sekce Dokumentace",
+    "data": [
+      { "question": "Co je v sekci Dokumentace?", "answer": "Studijní materiály ke kurzům — texty, soubory ke stažení a podklady, které potřebujete k přípravě na test." },
+      { "question": "Mohu materiály stáhnout do počítače?", "answer": "Ano, u dostupných souborů použijte stažení. Offline prohlížení materiálů je možné; samotné testy ale vyžadují online připojení." },
+      { "question": "Nevidím žádné dokumenty, proč?", "answer": "Materiály se obvykle zpřístupní po zápisu do kurzu. Ověřte, že máte přiřazený kurz a že administrátor materiály nahrál." }
+    ]
+  },
+  {
+    "Sekce": "Navigace studenta",
+    "etapa": 4,
+    "tema": "Sekce Certifikáty",
+    "data": [
+      { "question": "Jak si stáhnu certifikát?", "answer": "Jděte do sekce 'Certifikáty', u daného kurzu klikněte na 'Stáhnout certifikát'. Stáhne se PDF." },
+      { "question": "Proč tam certifikát ještě není?", "answer": "Certifikát vznikne až po úspěšném dokončení kurzu a testu. Dokud kurz není dokončený, PDF se nezobrazí." },
+      { "question": "Mohu si certifikát stáhnout znovu?", "answer": "Ano. Certifikát zůstává v sekci Certifikáty trvale a můžete ho stáhnout opakovaně." },
+      { "question": "Jak dlouho certifikát platí?", "answer": "Platnost je uvedena na certifikátu (často kolem 2 let podle typu školení). Před expirací vás systém upozorní." },
+      { "question": "Jak ověřím, že je certifikát pravý?", "answer": "Každý certifikát má unikátní ID. Pravost lze ověřit na portálu organizace / provozovatele LMS." }
+    ]
+  },
+  {
+    "Sekce": "Navigace studenta",
+    "etapa": 5,
+    "tema": "Sekce Reporty a historie",
+    "data": [
+      { "question": "Kde vidím historii školení?", "answer": "V sekci Reporty a v historii u jednotlivých kurzů. Najdete absolvované kurzy, výsledky testů a data dokončení." },
+      { "question": "Mohu exportovat výsledky do PDF?", "answer": "Ano. V sekci Certifikáty nebo Reporty použijte volbu exportu do PDF, pokud je u vašeho účtu dostupná." },
+      { "question": "Vidí moje výsledky i firma?", "answer": "Ano. V rámci firemního propojení má oprávněný administrátor / Subscriber přístup ke studijním výsledkům pro dokladování školení." }
+    ]
+  },
+  {
+    "Sekce": "Navigace studenta",
+    "etapa": 6,
+    "tema": "Profil, nastavení, podpora",
+    "data": [
+      { "question": "Kde upravím profil?", "answer": "V sekci 'Můj profil' můžete upravit zobrazované údaje. Změnu e-mailu potvrzujte podle pokynů v Nastavení." },
+      { "question": "Kde změním heslo?", "answer": "V sekci Nastavení (nebo Bezpečnost / Nastavení účtu). Heslo si můžete kdykoli změnit po přihlášení." },
+      { "question": "Kde je podpora?", "answer": "Sekce 'Podpora' nebo 'Kontakt'. Můžete také napsat na support@SafetyPartners.cz nebo použít AI asistenta pro rychlé návody." },
+      { "question": "Jak se odhlásím?", "answer": "V horní liště klikněte na 'Odhlásit se'. Po odhlášení je pro další práci nutné znovu přihlášení." }
+    ]
+  }
+]

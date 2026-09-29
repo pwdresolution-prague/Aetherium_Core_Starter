@@ -1,0 +1,43 @@
+[
+  {
+    "Sekce": "Technické LMS",
+    "etapa": 1,
+    "tema": "Načítání a chyby stránky",
+    "data": [
+      { "question": "Kurz se nenačítá.", "answer": "Obnovte stránku (F5). Pokud problém trvá, vyčistěte cache prohlížeče nebo zkuste Chrome/Edge v anonymním okně. Zkontrolujte internet." },
+      { "question": "Video v lekci nejde přehrát.", "answer": "Ověřte připojení a zkuste jiný podporovaný prohlížeč. Pokud selhává jen jedno video, použijte u materiálu 'Nahlásit problém'." },
+      { "question": "Nejde odeslat test.", "answer": "Zkontrolujte stabilní internet a zkuste odeslat znovu. Po výpadku se systém často dokáže napojit na poslední uložený stav." },
+      { "question": "Stránka hlásí chybu oprávnění.", "answer": "Nejste přihlášeni, nebo nemáte přiřazený kurz. Odhlaste se, přihlaste znovu. Pokud chyba zůstane, kontaktujte administrátora firmy." }
+    ]
+  },
+  {
+    "Sekce": "Technické LMS",
+    "etapa": 2,
+    "tema": "Prohlížeče a výkon",
+    "data": [
+      { "question": "Který prohlížeč je nejlepší?", "answer": "Aktuální Chrome, Edge, Firefox nebo Safari. Zastaralé verze Internet Explorer nejsou podporované." },
+      { "question": "LMS je pomalé, co s tím?", "answer": "Zavřete nepotřebné záložky, ověřte rychlost připojení a vypněte rozšíření, která blokují skripty. Na starších PC preferujte desktop prohlížeč." },
+      { "question": "Funguje to na tabletu?", "answer": "Částečně ano, ale primární návrh je desktop. Pro mobil a tablet je v přípravě mobilní aplikace Aetherium." }
+    ]
+  },
+  {
+    "Sekce": "Technické LMS",
+    "etapa": 3,
+    "tema": "Ukládání postupu",
+    "data": [
+      { "question": "Ukládá se postup v kurzu automaticky?", "answer": "Ano. Můžete zavřít prohlížeč a později pokračovat od poslední dokončené části." },
+      { "question": "Musím kurz dokončit najednou?", "answer": "Ne. Samostudium umožňuje přerušení. Výjimkou mohou být časově omezené testy, které je třeba dokončit v jednom pokusu." },
+      { "question": "Zůstane postup po výpadku proudu?", "answer": "Postup lekcí ano. U běžícího testu záleží na tom, zda stihl server uložit poslední odpovědi — po obnovení připojení to zkuste znovu otevřít." }
+    ]
+  },
+  {
+    "Sekce": "Technické LMS",
+    "etapa": 4,
+    "tema": "Kontakt při technické závadě",
+    "data": [
+      { "question": "Kam nahlásit technickou chybu?", "answer": "Sekce Podpora / Kontakt, e-mail support@SafetyPartners.cz, nebo tlačítko 'Nahlásit problém' u konkrétního materiálu." },
+      { "question": "Je dostupný live chat s člověkem?", "answer": "V pracovní době může být dostupný chat s podporou. Mimo ni použijte formulář nebo e-mail; AI asistent pomůže s návody 24/7." },
+      { "question": "Co mám do hlášení napsat?", "answer": "Čas chyby, prohlížeč, co jste dělali (kurz/test), a text chybové hlášky. Pomůže to rychlejšímu vyřešení." }
+    ]
+  }
+]

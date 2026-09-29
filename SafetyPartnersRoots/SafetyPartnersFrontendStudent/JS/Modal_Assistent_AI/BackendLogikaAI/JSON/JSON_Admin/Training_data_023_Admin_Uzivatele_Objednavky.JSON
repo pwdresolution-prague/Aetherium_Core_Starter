@@ -1,0 +1,44 @@
+[
+  {
+    "Sekce": "Admin uživatelé",
+    "etapa": 1,
+    "tema": "Správa uživatelů a oprávnění",
+    "data": [
+      { "question": "Kde spravuji uživatele?", "answer": "V CMS view Uživatelé a oprávnění. Zde řešíte přístupy rolí Admin, Subscriber, Client a Student v rámci tenantu." },
+      { "question": "Jak vznikne účet Student?", "answer": "Typicky po zaplacené objednávce: import CSV/XLSX u Subscribera a Edge Function create-students-from-order vytvoří auth uživatele a řádek ve students." },
+      { "question": "Mohu založit Client z Admina?", "answer": "Ano dle business logiky: Admin vytváří profil Client pro firmu, která poptává školení. Přihlašovací údaje se generují a zasílají e-mailem (dokončete dle vašeho mail flow)." },
+      { "question": "Jaká je vazba student–firma?", "answer": "Tabulka students má client_id, subscriber_id a order_id. Student patří pod firmu a poskytovatele, kteří objednávku zaplatili." }
+    ]
+  },
+  {
+    "Sekce": "Admin uživatelé",
+    "etapa": 2,
+    "tema": "Objednávky a import studentů",
+    "data": [
+      { "question": "Kdy lze založit studenty hromadně?", "answer": "Až když order.status = paid a počet importovaných ≤ order.student_count. Edge Function jinak vrátí 409." },
+      { "question": "Co dělá Edge Function create-students-from-order?", "answer": "Ověří ownership objednávky přes RLS (caller JWT), pak service_role vytvoří uživatele (role student) a vloží students. Chyba u jednoho e-mailu neshodí celý import." },
+      { "question": "Jak funguje import CSV?", "answer": "Subscriber nahrává CSV/XLSX (max 5 MB, 5000 řádků). Systém mapuje sloupce aliasy + ML klasifikátorem + ručně, validuje e-maily a ukládá valid/invalid/duplicates." },
+      { "question": "Proč import hlásí chybějící e-mailový sloupec?", "answer": "Bez rozpoznaného sloupce e-mail nelze studenty založit. Upravte mapování sloupců v UI importu." }
+    ]
+  },
+  {
+    "Sekce": "Admin uživatelé",
+    "etapa": 3,
+    "tema": "Role a RLS",
+    "data": [
+      { "question": "Co je RLS v kontextu Admina?", "answer": "Row Level Security v Supabase omezuje čtení/zápis na oprávněné řádky. Např. orders_select_own — volající vidí jen své objednávky." },
+      { "question": "Kdy se používá service_role?", "answer": "Jen na serveru (Edge Function) po ověření ownership. Nikdy ve frontendovém bundle — tam je pouze anon klíč." },
+      { "question": "Jaká role se nastaví novému studentovi?", "answer": "user_metadata.role = 'student' při auth.admin.createUser v Edge Function." }
+    ]
+  },
+  {
+    "Sekce": "Admin uživatelé",
+    "etapa": 4,
+    "tema": "Hromadné akce",
+    "data": [
+      { "question": "Mohu přiřadit kurz celému oddělení?", "answer": "Ano v administraci: vyberte skupinu nebo oddělení a přiřaďte kurz s termínem splnění." },
+      { "question": "Jak najdu, kdo nemá splněné povinné školení?", "answer": "V reportech / přehledu uživatelů filtrujte podle stavu kurzu (nezahájeno, po termínu). Exportujte pro audit firmy." },
+      { "question": "Zůstají data po odchodu zaměstnance?", "answer": "Historie školení se typicky uchovává pro dokladovatelnost i po deaktivaci účtu, v souladu s legislativními požadavky." }
+    ]
+  }
+]

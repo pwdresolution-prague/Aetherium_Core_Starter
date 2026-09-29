@@ -1,0 +1,44 @@
+[
+  {
+    "Sekce": "Bezpečnost a GDPR",
+    "etapa": 1,
+    "tema": "Ochrana účtu",
+    "data": [
+      { "question": "Jak si zabezpečím účet?", "answer": "Používejte silné heslo, zapněte 2FA v sekci Bezpečnost a heslo s nikým nesdílejte. Po práci na sdíleném PC se vždy odhlaste." },
+      { "question": "Systém po mně chce SMS kód — proč?", "answer": "Jde o ověření telefonu (OTP) při registraci nebo citlivé operaci. Kód platný jednorázově posílá systém přes ověřeného poskytovatele SMS." },
+      { "question": "Někdo zná mé heslo, co dělat?", "answer": "Ihned si heslo změňte v Nastavení a kontaktujte administrátora. Pokud máte 2FA, útočník bez telefonu/aplikace se nepřihlásí." }
+    ]
+  },
+  {
+    "Sekce": "Bezpečnost a GDPR",
+    "etapa": 2,
+    "tema": "Co systém o mně ukládá",
+    "data": [
+      { "question": "Jaké údaje o mně LMS drží?", "answer": "Základní identifikační údaje (jméno, e-mail, případně telefon), vazbu na firmu, výsledky testů, historii kurzů a certifikáty potřebné pro dokladování školení." },
+      { "question": "Sleduje systém, jak studuji?", "answer": "Ano, provozní telemetrie (např. čas na modulech, prokliky, čas testu) slouží k ověření aktivní účasti a podkladům pro certifikaci. Nejde o snímání obličeje ani hlasu." },
+      { "question": "Sbíráte biometrii (obličej, otisky)?", "answer": "Ne. Systém neukládá fyzickou biometrii. Vyhodnocuje pouze interakční vzorce v aplikaci, v souladu s minimalizací dat." },
+      { "question": "Kde najdu informace o GDPR?", "answer": "V profilu / sekci GDPR nebo v dokumentaci organizace. Je tam přehled účelů zpracování a kontakt na správce údajů." }
+    ]
+  },
+  {
+    "Sekce": "Bezpečnost a GDPR",
+    "etapa": 3,
+    "tema": "Přístup k datům a výmaz",
+    "data": [
+      { "question": "Kdo vidí mé výsledky?", "answer": "Vy, oprávnění administrátoři vaší organizace a provozovatel platformy v rozsahu nutném pro provoz a legislativní evidenci." },
+      { "question": "Sdílíte data s třetími stranami?", "answer": "Data se nepředávají třetím stranám mimo smluvní provoz (např. hosting v EU, SMS brána) nebo zákonné povinnosti." },
+      { "question": "Mohu požádat o výmaz účtu?", "answer": "Ano, přes Podporu / Kontakt. Některé záznamy o školení mohou být uchovány kvůli právní evidenci i po deaktivaci přístupu." },
+      { "question": "Jsou data v EU?", "answer": "Provoz počítá s uložením na zabezpečených serverech v EU a s pravidly minimalizace dat u AI rozhraní." }
+    ]
+  },
+  {
+    "Sekce": "Bezpečnost a GDPR",
+    "etapa": 4,
+    "tema": "Poctivost u testů",
+    "data": [
+      { "question": "Kontroluje systém, že test dělám já?", "answer": "Systém používá přihlášenou relaci, časové limity a náhodné pořadí otázek. Podezřelé vzorce může označit k přezkoumání administrátorem." },
+      { "question": "Musím mít zapnutou kameru?", "answer": "U standardních školení obvykle ne. Pokud kurz kameru vyžaduje, je to uvedeno před spuštěním testu." },
+      { "question": "Co je 'podezřelé chování' u testu?", "answer": "Například nestandardní rytmus odpovědí nebo detekce vložení textu. Výsledek může jít k ruční kontrole, nemusí automaticky znamenat neplatnost." }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "Sekce": "Admin orientace",
+    "etapa": 1,
+    "tema": "Role Admin v Aetherium Core",
+    "data": [
+      { "question": "Co mohu jako Admin v systému dělat?", "answer": "Máte plnou kontrolu nad LMS: CMS editor kurzů a testů, dashboard s telemetrií, správa uživatelů a oprávnění, certifikáty, notifikace expirací, legislativa, analytika a audit log." },
+      { "question": "Jak se liší Admin od Student?", "answer": "Student prochází kurzy a skládá testy. Admin vytváří obsah, přiřazuje školení, sleduje plnění a certifikáty a spravuje tenanty (firmy a studenty)." },
+      { "question": "Jak se liší Admin od Subscriber?", "answer": "Subscriber typicky objednává školení, importuje studenty a řeší platby. Admin provozuje platformu, CMS a globální nastavení. V některých instalacích se práva překrývají podle tenantu." },
+      { "question": "Kde je Admin rozhraní?", "answer": "Vstup přes AdminLogin (Developer Control / Admin Control). Hlavní práce probíhá v SafetyPartners Frontend Provider — CMS views: CMS, Dashboard, Uživatelé, Certifikáty, Legislativa, Notifikace, Analytika, Audit." }
+    ]
+  },
+  {
+    "Sekce": "Admin orientace",
+    "etapa": 2,
+    "tema": "Hlavní menu Admin CMS",
+    "data": [
+      { "question": "Jaké sekce má Admin CMS?", "answer": "CMS (editor kurzů), Dashboard, Uživatelé a oprávnění, Certifikáty CMS, Legislativa, Nastavení CMS, Notifikace, Analytika a Audit log." },
+      { "question": "Kde vytvářím kurzy?", "answer": "V sekci CMS — editor s názvem kurzu, typem, stránkami (text TipTap, otázky, média) a akcemi Uložit koncept / Publikovat." },
+      { "question": "Kde vidím statistiky?", "answer": "Na Dashboardu a v Analytice. Telemetrie zahrnuje návštěvnost, kurzy, obsah a behaviorální skóre (Chart.js grafy)." },
+      { "question": "Kde řeším expirace certifikátů?", "answer": "V Notifikacích a přehledu certifikátů. Systém podporuje upozornění 2 měsíce, 30, 14, 7, 2 a 1 den před koncem platnosti." }
+    ]
+  },
+  {
+    "Sekce": "Admin orientace",
+    "etapa": 3,
+    "tema": "Developer vs Admin Control",
+    "data": [
+      { "question": "Co je Developer Control?", "answer": "Nejvyšší úroveň ve větvi AdminLogin — plný vývojářský přístup k systému a diagnostice." },
+      { "question": "Co je Admin Control?", "answer": "Provozní administrace LMS: CMS, uživatelé, reporty, certifikáty a nastavení bez nutnosti vývojářských nástrojů." },
+      { "question": "Co je Client Control v AdminLogin?", "answer": "Vstup pro Client roli se sdílenými UI prvky, ale omezenými právy oproti plnému Adminovi — správa vlastních studentů a přehledů firmy." }
+    ]
+  },
+  {
+    "Sekce": "Admin orientace",
+    "etapa": 4,
+    "tema": "AI asistent pro Admina",
+    "data": [
+      { "question": "K čemu je chatbot v Admin režimu?", "answer": "Pomáhá s orientací v CMS: jak publikovat kurz, jaké typy stránek existují, kde je telemetrie, jak fungují notifikace expirací a RLS/objednávky." },
+      { "question": "Umí asistent upravit kurz za mě?", "answer": "Ne. Vysvětlí postupy v editoru; obsah kurzu a publikaci provádíte vy v CMS." },
+      { "question": "Kde najdu technickou dokumentaci systému?", "answer": "Ve složce Aetherium_core-Documentation/Doc — přehled architektury, rolí, CMS, databáze a features. Asistent z ní vychází při odpovědích." }
+    ]
+  }
+]

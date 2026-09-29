@@ -1,0 +1,47 @@
+[
+  {
+    "Sekce": "Účet a firma",
+    "etapa": 1,
+    "tema": "Jak vznikl můj účet",
+    "data": [
+      { "question": "Jak jsem se do systému dostal?", "answer": "Účet studenta obvykle založí systém po zaplacené objednávce vaší firmy. Administrátor nebo Subscriber nahraje seznam studentů a systém vytvoří přístupové údaje." },
+      { "question": "Proč mám účet pod firmou?", "answer": "LMS je multi-tenantní: váš účet je navázán na Client (firmu) a Subscriber (poskytovatele školení). Proto vidíte kurzy přiřazené vaší organizací." },
+      { "question": "Mohu mít jeden e-mail na více účtů?", "answer": "Ne. Jeden e-mail je vázán na jeden účet. Pokud potřebujete změnu, kontaktujte administrátora přes Podporu." },
+      { "question": "Kdo mi může resetovat přístup?", "answer": "Administrátor vaší organizace nebo provozní podpora LMS. Na přihlašovací stránce použijte také 'Zapomenuté heslo'." }
+    ]
+  },
+  {
+    "Sekce": "Účet a firma",
+    "etapa": 2,
+    "tema": "Role v systému z pohledu studenta",
+    "data": [
+      { "question": "Jaká je moje role?", "answer": "Jste Student — koncový uživatel kurzů, testů a certifikátů. Nemáte přístup do Admin CMS ani do správy jiných uživatelů." },
+      { "question": "Co dělá Admin?", "answer": "Admin spravuje celý systém: kurzy, telemetrii, uživatele, legislativu a certifikáty. Student do této části nevstupuje." },
+      { "question": "Co je Subscriber?", "answer": "Subscriber je poskytovatel / partner, který objednává školení pro firmy, importuje studenty a řeší platby. Vidí výsledky v rámci svých klientů." },
+      { "question": "Co je Client?", "answer": "Client je firma, která si školení objednala. Má přehled o svých zaměstnancích-studentech, ale ne plná admin práva platformy." },
+      { "question": "Vidí nadřízený mé výsledky?", "answer": "Oprávněné osoby ve vaší firmě (Client/Subscriber) mohou vidět stav školení a výsledky pro účely compliance a auditu." }
+    ]
+  },
+  {
+    "Sekce": "Účet a firma",
+    "etapa": 3,
+    "tema": "Přihlášení a zabezpečení účtu",
+    "data": [
+      { "question": "Zapomněl jsem heslo.", "answer": "Na přihlašovací stránce klikněte na 'Zapomenuté heslo' a postupujte podle e-mailu. Pokud e-mail nechodí, kontaktujte podporu." },
+      { "question": "Jak zapnu dvoufaktorové ověření?", "answer": "V sekci Bezpečnost / Nastavení zapněte 2FA a naskenujte QR kód autentizační aplikací. Po aktivaci budete při přihlášení zadávat kód z aplikace." },
+      { "question": "Musím při registraci ověřovat telefon?", "answer": "U registračních formulářů firmy (Enterprise/Subscriber) se používá SMS OTP přes Supabase. U běžného studentského přihlášení záleží na nastavení vaší organizace." },
+      { "question": "Jak změním e-mail?", "answer": "V Nastavení účtu. Změnu je potřeba potvrdit na nové adrese. Staré potvrzení certifikátů se pak váže na nový e-mail." }
+    ]
+  },
+  {
+    "Sekce": "Účet a firma",
+    "etapa": 4,
+    "tema": "Povinné školení od firmy",
+    "data": [
+      { "question": "Proč mám povinný kurz?", "answer": "Administrátor vaší organizace vám kurz přiřadil podle pozice nebo legislativy. Povinné kurzy mají termín splnění a sledují se v reportech firmy." },
+      { "question": "Co když nestihnu termín?", "answer": "Systém vás i firmu upozorní na blížící se deadline. Po termínu je nesplnění evidováno a řeší ho administrátor organizace." },
+      { "question": "Mohu si vybrat jiný kurz místo povinného?", "answer": "Povinný kurz nelze nahradit libovolným jiným. Volitelné kurzy jsou navíc, pokud je vaše organizace povolí." },
+      { "question": "Kdo mi kurz přiřadil?", "answer": "Administrátor nebo oprávněný uživatel Client/Subscriber. Přiřazení je vázané na objednávku a počet studentů ve firmě." }
+    ]
+  }
+]

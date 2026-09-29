@@ -1,0 +1,58 @@
+[
+  {
+    "Sekce": "Orientace v LMS",
+    "etapa": 1,
+    "tema": "Co je Aetherium Core LMS",
+    "data": [
+      { "question": "Co je tohle za systém?", "answer": "Jste v Aetherium Core LMS — e-learningové platformě pro školení, testy a certifikáty. Používá ji vaše firma nebo školící partner pro povinná i odborná školení." },
+      { "question": "K čemu mi LMS slouží?", "answer": "Slouží k absolvování přiřazených kurzů, skládání testů, stahování certifikátů a sledování platnosti školení. Vše je vázané na váš účet a vaši organizaci." },
+      { "question": "Kdo provozuje tento LMS?", "answer": "Platformu Aetherium Core provozuje PWD Resolution (Safety Partners). Vaše firma nebo školící partner vám účet přiřadil v rámci objednávky školení." },
+      { "question": "Je to mobilní aplikace nebo web?", "answer": "Primárně jde o webovou aplikaci v prohlížeči (desktop). Pro mobilní zařízení je připravována mobilní aplikace; na webu je zobrazení na telefonu omezené." }
+    ]
+  },
+  {
+    "Sekce": "Orientace v LMS",
+    "etapa": 2,
+    "tema": "Hlavní menu studenta",
+    "data": [
+      { "question": "Jaké sekce mám v menu jako student?", "answer": "V studentovém prostředí najdete: Dashboard (úvod), Kurzy, Testy, Dokumentace, Certifikáty, Reporty, Můj profil, Nastavení a Podpora. Dále je k dispozici AI asistent (chatbot)." },
+      { "question": "Kde začít po přihlášení?", "answer": "Po přihlášení otevřete Dashboard — uvidíte přehled stavu kurzů a důležitá upozornění. Odtud přejděte do sekce Kurzy na přiřazená školení." },
+      { "question": "Kde najdu své kurzy?", "answer": "V levém menu nebo horní navigaci klikněte na sekci 'Kurzy'. Zobrazí se přiřazené a dostupné kurzy včetně stavu (nezahájeno, rozpracováno, dokončeno)." },
+      { "question": "Kde jsou testy?", "answer": "Sekce 'Testy' obsahuje závěrečné a průběžné testy k vašim kurzům. Test se obvykle odemkne po dokončení povinných lekcí kurzu." },
+      { "question": "Kde stáhnu materiály ke studiu?", "answer": "Studijní materiály jsou v sekci 'Dokumentace' a také v detailu konkrétního kurzu. Po zápisu do kurzu tam najdete podklady ke stažení." },
+      { "question": "Kde mám certifikáty?", "answer": "Všechny vydané certifikáty jsou v sekci 'Certifikáty'. Odtud je můžete znovu stáhnout jako PDF." }
+    ]
+  },
+  {
+    "Sekce": "Orientace v LMS",
+    "etapa": 3,
+    "tema": "Dashboard studenta",
+    "data": [
+      { "question": "Co uvidím na dashboardu?", "answer": "Dashboard shrnuje váš studijní stav: aktivní kurzy, blížící se termíny, upozornění na expiraci certifikátů a rychlé odkazy do Kurzy, Testy a Certifikáty." },
+      { "question": "Proč na dashboardu nic nevidím?", "answer": "Pokud ještě nemáte přiřazený žádný kurz, dashboard může být prázdný. Po přiřazení kurzu administrátorem nebo firmou se zde objeví přehled. Případně obnovte stránku." },
+      { "question": "Jak se dostanu zpět na úvod?", "answer": "Klikněte na logo Aetherium / Safety Partners nebo na položku Dashboard / Domů v menu." }
+    ]
+  },
+  {
+    "Sekce": "Orientace v LMS",
+    "etapa": 4,
+    "tema": "AI asistent v LMS",
+    "data": [
+      { "question": "K čemu je chatbot v systému?", "answer": "AI asistent pomáhá s orientací v LMS: kam kliknout, jak spustit test, kde je certifikát, co dělat při expiraci a jak řešit běžné technické potíže." },
+      { "question": "Na co se můžu asistenta ptát?", "answer": "Na kurzy, testy, certifikáty, profil, notifikace, GDPR a ovládání systému. U odborného obsahu konkrétního školení vás případně odkáže na materiál kurzu nebo podporu." },
+      { "question": "Kde otevřu chatbota?", "answer": "Asistenta otevřete tlačítkem chatbota (obvykle v pravém dolním rohu nebo v liště studentového rozhraní). Otevře se modal s konverzací." },
+      { "question": "Pamatuje si asistent naši konverzaci?", "answer": "V rámci jedné otevřené konverzace ano. Mezi různými přihlášeními se historie standardně neuchovává, pokud to systém výslovně nenabízí." }
+    ]
+  },
+  {
+    "Sekce": "Orientace v LMS",
+    "etapa": 5,
+    "tema": "Prohlížeče a zařízení",
+    "data": [
+      { "question": "V jakém prohlížeči mám LMS používat?", "answer": "Doporučené jsou aktuální verze Chrome, Firefox, Edge a Safari. Starší prohlížeče mohou mít problémy s editorem a testy." },
+      { "question": "Funguje LMS na mobilu?", "answer": "Webové zobrazení je primárně desktopové. Pro smartphone a tablet je v přípravě mobilní aplikace; na webu může být některé ovládání omezené." },
+      { "question": "Musím si něco instalovat?", "answer": "Ne. Stačí moderní prohlížeč a internet. Samostatná instalace desktopového programu není potřeba." },
+      { "question": "Funguje LMS offline?", "answer": "Většina funkcí (kurzy, testy, certifikáty) vyžaduje připojení. Některé materiály z Dokumentace lze stáhnout a prohlížet offline." }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "Sekce": "Testy detail",
+    "etapa": 1,
+    "tema": "Typy otázek v testech",
+    "data": [
+      { "question": "Jaké typy otázek v testech potkám?", "answer": "Podle nastavení kurzu: jedna správná odpověď, více správných, ano/ne, otevřená otázka a případně práce s médiem. Přesné typy jsou dány editorem kurzu v CMS." },
+      { "question": "Jsou otázky u všech studentů stejné?", "answer": "Často se míchá pořadí a varianty, aby každý měl jinou sestavu. Cíl je spravedlivé ověření, ne opisování." },
+      { "question": "Uvidím správné odpovědi po testu?", "answer": "U mnoha kurzů ano — po odevzdání se zobrazí vyhodnocení. Konkrétní chování nastavuje autor kurzu." }
+    ]
+  },
+  {
+    "Sekce": "Testy detail",
+    "etapa": 2,
+    "tema": "Časový limit a pokusy",
+    "data": [
+      { "question": "Je test časově omezený?", "answer": "Často ano. Limit a zbývající čas se zobrazují před startem a během vyplňování." },
+      { "question": "Co když čas vyprší?", "answer": "Test se obvykle automaticky odevzdá s dosud vyplněnými odpověďmi. Výsledek se spočítá z toho, co stihnete." },
+      { "question": "Mohu test přerušit a dokončit zítra?", "answer": "Záleží na nastavení. Některé testy vyžadují jeden souvislý pokus; u jiných je možné navázat po výpadku. Před startem si přečtěte pravidla." },
+      { "question": "Po neúspěchu hned znovu?", "answer": "Pokud nejsou pokusy omezené, ano. Doporučujeme nejdřív zopakovat lekce v Kurzech a Dokumentaci." }
+    ]
+  },
+  {
+    "Sekce": "Testy detail",
+    "etapa": 3,
+    "tema": "Hodnocení a minimum",
+    "data": [
+      { "question": "Jaké je minimální skóre?", "answer": "Standardně kolem 60 %; u některých školení může být vyšší. Přesnou hodnotu najdete v detailu testu / kurzu." },
+      { "question": "Jsou testy hodnoceny automaticky?", "answer": "Ano, uzavřené otázky se vyhodnotí hned. Otevřené odpovědi mohou vyžadovat kontrolu lektora, pokud je tak kurz nastaven." },
+      { "question": "Nesouhlasím s výsledkem, co dělat?", "answer": "Kontaktujte podporu nebo administrátora přes Podporu a uveďte název kurzu, čas pokusu a důvod. Lze požádat o přezkoumání." }
+    ]
+  },
+  {
+    "Sekce": "Testy detail",
+    "etapa": 4,
+    "tema": "Propojení testu a certifikátu",
+    "data": [
+      { "question": "Stačí projít lekce bez testu?", "answer": "Pro certifikát obvykle ne — je potřeba úspěšný závěrečný test. Bez něj kurz zůstane nedokončený." },
+      { "question": "Po úspěšném testu se nic nestalo.", "answer": "Obnovte stránku a zkontrolujte Certifikáty a stav kurzu. Pokud test prošel a certifikát chybí, nahlaste to podpoře s názvem kurzu." },
+      { "question": "Počítá se nejlepší pokus, nebo poslední?", "answer": "Záleží na nastavení kurzu. Často se eviduje úspěšný pokus, který odemkl certifikát. Detail historie je u kurzu / v Reportech." }
+    ]
+  }
+]
