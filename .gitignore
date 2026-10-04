@@ -1,0 +1,45 @@
+# tajnosti
+.env
+.env.*
+.nodered.env
+*.pem
+*.key
+
+# Node-RED
+flows_cred.json
+.config.*.json
+
+# závislosti a build
+node_modules/
+dist/
+build/
+.next/
+.vite/
+
+# Supabase lokální
+supabase/.temp/
+supabase/.branches/
+
+# systém
+.DS_Store
+*.log
+
+# odpad
+__MACOSX/
+.~lock.*
+**/.~lock.*#
+.$*.bkp
+**/*.drawio.bkp
+.atlas-cache.json
+:USERPROFILE*
+**/.temp/
+
+# důvěrné dokumenty
+Konfigurace/
+Public_Documents/
+Soc_sites_Drafts/
+Structure_and_Information/
+Vývoj_Metodologie/
+Aetherium_WebDesigne/
+*.docx
+*.pdf

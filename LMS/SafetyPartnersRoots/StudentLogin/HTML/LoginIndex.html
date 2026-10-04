@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Safety Partners - E-learning managment system">
+<meta property="og:title" content="Absolvujte kurz, Kompletujte test, Certifikát platný">
+<meta property="og:description" content="Certifikáty Generované AI v PDF">
+<meta property="og:image" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:url" content=""><!--TODO: DOplnit adresu webu-->
+<meta property="og:type" content="website">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:;">
+<link rel="icon" type="image/x-icon" href="/LMS/SafetyPartnersRoots/SPL.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../CSS/LoginStyle.css">
+<title>AetheriumCore - Starter - SignUp / Login</title>
+</head>
+<body>
+
+<div class="Main_menu">
+  <h2>AETHERIUM CORE - STARTER</h2>
+  <div class="Logo-Row">
+  <img src="../../../AetheriumIcon.svg" alt="Logo" class="Logo">
+  <h4>Student Login Environment</h4>
+  </div>
+
+
+<!--TODO: Hlavní logo-->
+<div class="WelcomeContainer">
+    <img src="/AetheriumCore.png" alt="Logo" class="LogoLogin">
+    <div class="Welcome-Buttons">
+        <button id="openSignUp" type="button">Registrace</button>
+        <button id="openLogIn" type="button">Přihlášení</button>
+    </div>
+</div>
+
+<!--TODO: MODAL okno Registracea přihlášení-->
+<div class="login-modal" id="loginModal">
+    <div class="login-modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+
+
+<div class="login-tabs">
+    <button id="tabSignup" type="button">SignUp</button>
+    <button id="tabLogin" class="active" type="button">Login</button>
+</div>
+
+<form class="login-form active" id="loginForm">
+    <input type="email" placeholder="email" required id="loginEmailInput">
+    <input type="password" placeholder="Heslo" required id="loginPasswordInput">
+    <button type="submit">Přihlásit</button>
+</form>
+
+<form class="login-form" id="signupForm">
+    <input type="tel" placeholder="Telefonní číslo" required id="signupPhoneInput">
+    <input type="text" placeholder="Jméno" id="signupNameInput">
+    <input type="text" name="token" placeholder="Zadejte firemní token" id="tokenInput">
+    <input type="email" placeholder="Email (Volitelné)" id="signupEmailInput">
+    <input type="password" placeholder="Heslo" required id="signupPasswordInput" autocomplete="current-password">
+    <input type="password" placeholder="Potvrzení hesla" required id="signupPasswordAgainInput" autocomplete="current-password">
+    <button type="submit">Registrovat</button>
+</form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--TODO: Patička-->
+  <div class="ContainerLogin">
+    <h3 class="PatičkaLogin">Aetherium Core 2026 by PWD Resolution</h3>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../JS/LoginScript.js"></script>
+<script type="module" src="/StudentLogin/JS/SupabaseConnectEnv.js"></script>
+<script type="module" src="/utils/security.client.js"></script>
+<script type="module" src="/SafetyPartnersRoots/StudentLogin/JS/TokenGenerator.js"></script>
+<script type="module" src="/StudentLogin/JS/Sanitize.js"></script>
+
+
+
+
+</body>
+</html>

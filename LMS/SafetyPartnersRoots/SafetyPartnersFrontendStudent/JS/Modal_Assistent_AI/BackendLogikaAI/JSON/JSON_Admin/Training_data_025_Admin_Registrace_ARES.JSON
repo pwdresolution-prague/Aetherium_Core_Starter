@@ -1,0 +1,33 @@
+[
+  {
+    "Sekce": "Admin registrace a ARES",
+    "etapa": 1,
+    "tema": "Enterprise registrace firmy",
+    "data": [
+      { "question": "Jak probíhá registrace nové firmy?", "answer": "Formulář AetheriumCoreEnterprise: IČO → ARES auto-fill, kontaktní údaje, OTP telefon, rozsah školení, GDPR souhlas, uložení do profiles po ověření." },
+      { "question": "Co dělá ARES lookup?", "answer": "Po zadání validního 8místného IČO načte z ares.gov.cz název, sídlo, právní formu, datum vzniku, stav, DIČ, spisovou značku a datovou schránku a vyplní formulář." },
+      { "question": "Jak se validuje IČO?", "answer": "Kontrolní součet dle české praxe v AresLookup.js. Neplatné IČO se do API neposílá." },
+      { "question": "Proč je potřeba SMS OTP při registraci?", "answer": "Ověření telefonu přes Supabase Auth (Twilio). Až po ověření se odemkne odeslání a data jdou do DB pod RLS." }
+    ]
+  },
+  {
+    "Sekce": "Admin registrace a ARES",
+    "etapa": 2,
+    "tema": "Od registrace k objednávce",
+    "data": [
+      { "question": "Co následuje po registraci firmy?", "answer": "Výběr rozsahu (počet studentů/kurzů), objednávka, platba. Po status paid lze importovat a zakládat studenty." },
+      { "question": "Kde je platební část?", "answer": "AetheriumPaymentMethod a Subscriber Payment flow (FormToPay, PaymentSubscriber). Po úspěšné platbě se odemkne Edge import studentů." },
+      { "question": "Proč studenti nejdou založit?", "answer": "Nejčastěji: objednávka není paid, překročen student_count, chybí Authorization, nebo e-maily už existují / jsou neplatné v importu." }
+    ]
+  },
+  {
+    "Sekce": "Admin registrace a ARES",
+    "etapa": 3,
+    "tema": "Bezpečnost registračního flow",
+    "data": [
+      { "question": "Jsou data z ARES hned v databázi?", "answer": "Ne. Do úspěšného MFA zůstávají dočasně v prohlížeči. Teprve po ověření jdou do profiles." },
+      { "question": "Mohu ARES modul vypnout?", "answer": "Ano. Je zapouzdřený — vypnutí jen deaktivuje auto-fill, aplikace nesmí spadnout." },
+      { "question": "Jaké env proměnné potřebuje frontend?", "answer": "VITE_SUPABASE_URL a VITE_SUPABASE_ANON_KEY. Případný ARES klíč jako VITE_ARES_API_KEY, pokud ho API vyžaduje." }
+    ]
+  }
+]

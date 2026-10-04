@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Safety Partners - E-learning managment system">
+<meta property="og:title" content="Absolvujte kurz, Kompletujte test, Certifikát platný">
+<meta property="og:description" content="Certifikáty Generované AI v PDF">
+<meta property="og:image" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:url" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:type" content="website">
+<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+
+
+<link rel="icon" type="image/x-icon" href="/SPL.png">
+<link rel="stylesheet" href="../Css/SubForm.css">
+<title>Aetherium core Subscriber - AetheriumCore - Starter</title>
+</head>
+<body>
+<div class="Main_menu">
+  <h2>Aetherium Core - starter</h2>
+  <div class="Logo-Row">
+  <img src="../../AetheriumIcon.svg" alt="Logo" class="Logo">
+  <h4>Subscriber Registration Dashboard Module</h4>
+  </div>
+    <div class="TextObsah">
+    <h2 class="Nadpis">Vítejte na vstupní stránce systému Aetherium core Subscriber</h2>
+    <h4 class="Podnadpis">Na této stránce zahájíte registraci vaší společnosti a konfiguraci klientských zásad. <br><br>Registrace vás provede čtyřmi kroky:  <br><br> - zadáním firemních údajů, <br><br>  - nastavením kontaktních a uživatelských preferencí, <br><br> - vytvořením datové struktury procesních prvků, <br><br> - odsouhlasením smluvních podmínek včetně zásad ochrany osobních údajů (GDPR).</h4>
+
+<!--TODO: Section rozdělující Select a Form ==============================================================================-->
+<!--===============================================================================================================================-->
+<div class="Gap"></div>
+<!-- ============================================================================================================================== -->
+<!--TODO: Section pro Athorization Form -->
+                        <!--==========================================================================-->
+                        <!--==========================================================================-->
+
+    <fieldset class="FormulářSubscriber">
+        <main class="SubscriberFormulářNadpis">Formulář pro registraci společnosti do systému Aetherium Core Subscriber</main>
+    <!--TODO: Formulář_Aetherium_Core_Enterprise-->
+    <section class="AetheriumCore-FormSubscriber">
+        <article class="First-Section">
+            <div class="AetheriumCore-Subscriber">
+            </div>
+            </article>
+            </section>
+
+           <!--TODO: Formulář první část-->
+            <form class="AetheriumCoreSubscriber-Form" id="AetheriumSubscriberForm">
+            <section class="SubscriberForm-FirstSection">
+                <article class="SubscriberSectionOne">
+                    <label>IČO</label>
+                        <input type="text" class="ičo" placeholder="Zde napište své ičo" maxlength="8" name="ičo" required id="ičoId" style="font-size: 0.9vw;">
+                    <span id="ares-status" hidden></span>
+                        <label>DIČ </label>
+                        <input type="text" class="dič" placeholder="Zde napište své dič" name="dič"  id="dicId" style="font-size: 0.9vw;">
+                    <label>Název firmy</label>
+                        <input type="text" class="název-firmy" placeholder="Zde napište název firmy" name="název-firmy" required id="název-firmyId" style="font-size: 0.9vw;">
+                    <label>Právní forma</label>
+                        <input type="text" class="právní-forma" placeholder="Zde napište právní formu" name="právní-forma" required id="právní-formaId" style="font-size: 0.9vw;">
+                    <label>Sídlo společnosti</label>
+                        <input type="text" class="sídlo-společnosti" placeholder="Zde napište sídlo společnosti" name="sídlo-společnosti" required id="sídlo-společnostiId" style="font-size: 0.9vw;">
+                    <label>Datum založení</label>
+                        <input type="date" class="datum-založení" placeholder="Zde napište datum založení" name="datum-založení"  id="datum-založeníId" style="font-size: 0.9vw;">
+                    <label>Stav subjektu</label>
+                        <input type="text" class="stav-subjektu" placeholder="Zde napište stav subjektu" name="stav-subjektu" required id="stav-subjektuId" style="font-size: 0.9vw;">
+                    <label>Spisová značka</label>
+                        <input type="text" class="spisová-značka" placeholder="Zde zadejte spisovou značku" name="spisová-značka"  id="spisová-značkaId" style="font-size: 0.9vw;">
+                    <label>Datová schránka</label>
+                        <input type="text" class="datová-schránka" placeholder="Zde napište id schránky" name="datová-schránka"  id="datová-schránkaId" style="font-size: 0.9vw;">
+                </section>
+                <!--TODO: Formulář Druhý část -->
+                <section class="SubscriberForm-SecondSection">
+                    <article class="SubscriberSectionTwo">
+                <!--TODO: Zde připravit Modal s registrací příslušné služby pro dvoufázové ověření =================-->
+                    <label>Telefonní číslo</label>
+                        <input type="tel" class="telefonní-číslo" placeholder="Zde napište své telefonní číslo" name="telefonní-číslo" required id="telefonní-číslo" style="font-size: 0.9vw;">
+                    <button type="button" id="sendOtpBtn">Odeslat ověřovací kód</button>
+                    <label>MFA / OTP</label>
+                        <input type="text" class="mfa-otp" placeholder="6místný kód" name="mfa-otp"  id="mfa-otp" style="font-size: 0.9vw;">
+                    <label>Segment trhu</label>
+                        <input type="text" class="Segment-trhu" placeholder="Zde napište obor svého podnikání" name="Obor-podnikání" required id="Obor-podnikání" style="font-size: 0.9vw;">
+                    <label>Email</label>
+                        <input type="email" class="email" placeholder="Zde napište svůj email" name="email" required id="emailId" style="font-size: 0.9vw;">
+                    <label>Adresa provozovny</label>
+                        <input type="text" class="adresa" placeholder="Zde napište svou adresu" name="adresa"  id="adresa" style="font-size: 0.9vw;">
+                    <label>Heslo</label>
+                        <input type="password" class="heslo" placeholder="Zde napište své heslo" name="heslo" required id="hesloId" autocomplete="on" style="font-size: 0.9vw;">
+                    <label>Potvrzení hesla</label>
+                        <input type="password" class="potvrzení-hesla" placeholder="Zde potvrďte své heslo" name="potvrzení-hesla" required id="potvrzení-hesla" autocomplete="on" style="font-size: 0.9vw;">
+                    </article>
+                </section>
+                <!--TODO: Formulář třetí část -->
+                <section class="SubscriberForm-ThirdSection">
+                    <article class="SubscriberSectionThree">
+
+                            <!--TODO: Formulář pro selektivní část obchodního zaměření -->
+                            <!--TODO: =================================================================================-->
+                            <label class="Segment">Výběr segmentu</label>
+                                <div class="CompanySelectorDiv" id="CompanySelectorDivId">
+                                    <select class="sectorSelector" id="sectorSelectorId">
+                                        <option class="ChooseOption" value="" id="ChooseOptionSelector" disabled selected >Zvolte obor podnikání</option>
+                                        <option class="ChooseOption" value="manufacturing" id="manufacturingId">Výroba a strojírenství</option>
+                                        <option class="ChooseOption" value="construction" id="constructionId">Stavebnictví a architektura</option>
+                                        <option class="ChooseOption" value="it" id="itId">Informační technologie a software</option>
+                                        <option class="ChooseOption" value="healthcare" id="healthcareId">Zdravotnictví a farmacie</option>
+                                        <option class="ChooseOption" value="finance" id="financeId">Finance a bankovnictví</option>
+                                        <option class="ChooseOption" value="education" id="educationId">Vzdělávání a školství</option>
+                                        <option class="ChooseOption" value="transportation" id="transportationId">Doprava a logistika</option>
+                                        <option class="ChooseOption" value="retail" id="retailId">Obchod a maloobchod</option>
+                                        <option class="ChooseOption" value="hospitality" id="hospitalityId">Cestovní ruch a pohostinství</option>
+                                        <option class="ChooseOption" value="media" id="mediaId">Média a zábava</option>
+                                        <option class="ChooseOption" value="agriculture" id="agricultureId">Zemědělství a potravinářství</option>
+                                        <option class="ChooseOption" value="legal" id="legalId">Právo a právní služby</option>
+                                        <option class="ChooseOption" value="government" id="governmentId">Veřejná správa a neziskový sektor</option>
+                                        <option class="ChooseOption" value="telecommunications" id="telecommunicationsId">Telekomunikace a IT infrastruktura</option>
+                                        <option class="ChooseOption" value="real-estate" id="real-estateId">Nemovitosti a správa nemovitostí</option>
+                                        <option class="ChooseOption" value="consulting" id="consultingId">Poradenství a konzultační služby</option>
+                                        <option class="ChooseOption" value="environment" id="environmentId">Životní prostředí a udržitelnost</option>
+                                        <option class="ChooseOption" value="research" id="researchId">Výzkum a vývoj</option>
+                                        <option class="ChooseOption" value="other" id="otherId">Jiné</option>
+                                    </select>
+                                </div>
+                                        <label class="PredikcePočtu">Predikovaný počet školení</label>
+                                            <input type="number" class="početŠkolení" name="" placeholder="0" min="0" max="1000" step="1"  id="početŠkoleníSubscriber" style="font-size: 0.9vw;">
+                                            <input type="checkbox" class="početŠkoleníCheckbox">
+                                        <!--TODO: Vytvoření vstupního pole pro krátký popis firemní činnosti-->
+                                        <label class="CompanyDescription" id="CompanyDescriptionId"></label>
+                                            <textarea class="CompanyDescriptionTextArea" id="CompanyTextId" name="CompanyDescriptionName" maxlength="300" rows="5" placeholder="Např. Čím se firma zabývá, jaké má specifické požadavky na výuku"></textarea>
+                                        <span class="CharCounter" id="CharCounterId">0 / 300</span>
+                                        <!--TODO: Segmentace učelu využití platformy-->
+                                        <label class="segmentVyužití" id="segmentVyužitíId">Účel využití</label>
+                                            <div class="účelVyužití" id="účelVyužitíId">
+                                                <select class="účel" id="účelId" name="účel" required>
+                                                    <option value="" disable selected>Zvolte účel využití</option>
+                                                    <option value="interní" id="interniId">Interní školení vlastních zaměstnanců</option>
+                                                    <option value="reselling" id="resellId">Prodej a distribuce školení</option>
+                                                    <option value="doubleComb" id="CompinationId">Interní i externí kombinace</option>
+                                                </select>
+                                            </div>
+
+
+
+                                    </article>
+                                </section>
+
+
+                        <!--TODO: Section pro Obchodní podmínky a GDPR dokumnet s Modalovým zobrazením-->
+                        <!--==========================================================================-->
+                        <!--==========================================================================-->
+                        <button type="button" class="TermsButton" id="openTerms">Zobrazit obchodní podmínky a GDPR</button>
+                              <!--TODO: Modal Window pro GDPR zobrazení-->
+                                <div class="modalSubscriberGdpr">
+                                    <div class="Margin">
+                                    <p class="NadpisGdpr">Gdpr & a obchodní podmínky</p>
+                                    </div>
+                                  <div class="modal-content">
+                                        <div class="Gdpr-modal-content">
+                                            <button  class="close-button" id="closeTerms">&times;</button>
+                                        <p class="Obsah">Zde budou zobrazeny obchodní podmínky a zásady ochrany osobních údajů (GDPR). Uživatelé musí souhlasit s těmito podmínkami, aby mohli pokračovat v registraci a využívání služeb Aetherium Core Enterprise.
+                                        Obchodní podmínky zahrnují informace o tom, jak budou osobní údaje zpracovávány, jaká jsou práva uživatelů ohledně svých údajů, a další důležité informace týkající se používání služby.
+                                        Uživatelé by měli pečlivě přečíst tyto podmínky a ujistit se, že s nimi souhlasí, než budou pokračovat v registraci.</p>
+                                            <!--TODO: GDPR Soubory a Obchoidní podmínky Files-->
+                                            <br>
+                                            <p class="datovýObsah">Před registrací si prosím přečtěte dokumenty</p>
+                                            <br><br>
+                                            <div class="MarginGdpr">
+                                            <a href="" class="GdprPodmínky" target="_blank" type="checkbox" rel="noopener noreferrer">Zásady ochrany osobních údajů</a>
+                                            <br>
+                                            <br>
+                                            <a href="" class="GdprPodmínky" target="_blank" type="checkbox" rel="noopener noreferrer">Obchodní podmínky</a>
+                                            <br>
+                                            </div>
+                                            <div class="Rulles">
+                                            <input type="checkbox" id="gdprCheckbox" name="gdpr" required >
+                                            <label class="Podmínka" for="GdprCheckbox">Souhlasím se<br>zpracováním</label>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            <button type="submit" class="SubmitButtonSubs" id="submitBtn" disabled>Odeslat</button>
+
+                        </form>
+                    </fieldset>
+
+                    <div class="Gap"></div>
+
+<footer class="Patička">
+    <p class="Author">&copy; 2024 PWD - Resolution - Všechna práva vyhrazena.</p>
+
+
+</footer>
+
+
+<!--TODO: SKRIPTY......................................................................................................-->
+<!--FRONTEND: ARES načítání - scripty -->
+<script type="module" src="../Connect/AresLookUpProvider.js"></script>
+<script type="module" src="../JS/ProviderAetherium.js"></script>
+<!--SUPABASE: Konektivní část  -->
+<script type="module" src="../Connect/SupabaseConnect.js"></script>
+<!--FRONTEND: Připojení počátadla formuláře -->
+<script type="module" src="../JS/DescriptionCounter.js"></script>
+
+<!--FRONTEND: GDPR script -->
+<script type="module" src="../JS/ModalSubscriber.js"></script>
+<script type="module" src="../JS/SmoothScrollForm.js"></script>
+<!--TODO: MFA/OTP -->
+<script type="module" src="../JS/Mfa_Otp.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+[
+  {
+    "etapa": 81,
+    "tema": "Aktualizace prohlížeče pro LMS",
+    "data": [
+      { "question": "Jak mám aktualizovat svůj prohlížeč?", "answer": "Navštivte oficiální web výrobce vašeho prohlížeče a stáhněte si nejnovější verzi pro zajištění kompatibility s LMS." },
+      { "question": "Kde stáhnu novou verzi Chromu nebo Edge?", "answer": "Aktualizace získáte přímo na oficiálních stránkách prohlížečů (Google, Microsoft, Apple)." },
+      { "question": "Potřebuji nejnovější prohlížeč pro správný chod kurzů?", "answer": "Ano, doporučujeme stáhnout poslední verzi z webu výrobce, aby systém fungoval bez chyb." }
+    ]
+  },
+  {
+    "etapa": 82,
+    "tema": "LinkedIn a sociální přihlášení",
+    "data": [
+      { "question": "Je možné se přihlásit přes LinkedIn?", "answer": "Ano, systém Aetherium Core nabízí možnost sociálního přihlášení přes LinkedIn nebo Google." },
+      { "question": "Funguje přihlašování jedním kliknutím přes sítě?", "answer": "Nabízíme možnost sociálního přihlášení pro rychlejší přístup k vašemu účtu." },
+      { "question": "Můžu k účtu připojit svůj Google profil?", "answer": "Ano, v systému můžete využít propojení se sítěmi Google a LinkedIn." }
+    ]
+  },
+  {
+    "etapa": 83,
+    "tema": "GDPR a uchovávané údaje",
+    "data": [
+      { "question": "Kde zjistím, jaká data o mně schraňujete?", "answer": "V sekci GDPR ve vašem profilu vidíte přesný přehled všech údajů, které o vás uchováváme." },
+      { "question": "Kdo má přístup k mým osobním informacím?", "answer": "Informace o nakládání s daty a přístupech jsou transparentně uvedeny v sekci GDPR." },
+      { "question": "Kde najdu přehled mých soukromých dat v systému?", "answer": "Podívejte se do sekce GDPR, kde je uveden výpis všech evidovaných údajů." }
+    ]
+  },
+  {
+    "etapa": 84,
+    "tema": "Podpora tabletů",
+    "data": [
+      { "question": "Můžu studovat na iPadu?", "answer": "Ano, systém je plně responzivní a je přizpůsoben i pro tablety a jiná mobilní zařízení." },
+      { "question": "Funguje rozhraní kurzu na tabletech s Androidem?", "answer": "Náš LMS systém je navržen tak, aby byl plně funkční na všech moderních tabletech." },
+      { "question": "Je web přizpůsoben pro dotykové obrazovky?", "answer": "Ano, celý systém je plně responzivní a optimalizovaný pro mobilní zařízení a tablety." }
+    ]
+  },
+  {
+    "etapa": 85,
+    "tema": "Dostupnost live chatu",
+    "data": [
+      { "question": "Kdy můžu využít chat s podporou?", "answer": "Live chat s naší technickou podporou je dostupný přímo v systému během standardní pracovní doby." },
+      { "question": "Máte na webu online chat pro rychlou pomoc?", "answer": "Ano, v pracovní době můžete využít chatovací okno přímo v rozhraní LMS." },
+      { "question": "Jak rychle odpovídáte na chatu?", "answer": "Během pracovní doby reagujeme na live chatu okamžitě, abychom vám pomohli s technickými dotazy." }
+    ]
+  },
+  {
+    "etapa": 86,
+    "tema": "Hlášení problémů s videem",
+    "data": [
+      { "question": "Video v kurzu nefunguje správně, co mám dělat?", "answer": "Použijte tlačítko 'Nahlásit problém', které najdete přímo u daného videa nebo materiálu." },
+      { "question": "Kde můžu nahlásit chybu v lekci?", "answer": "Přímo u konkrétního studijního materiálu klikněte na možnost 'Nahlásit problém'." },
+      { "question": "Lekce obsahuje chybu v obsahu, kam to napsat?", "answer": "Využijte funkci 'Nahlásit problém' umístěnou přímo u daného studijního podkladu." }
+    ]
+  },
+  {
+    "etapa": 87,
+    "tema": "Jeden e-mail na jeden účet",
+    "data": [
+      { "question": "Můžu si pod jedním e-mailem založit dva profily?", "answer": "Ne, v systému Aetherium_Core je každý e-mail vázán pouze na jeden uživatelský účet." },
+      { "question": "Lze mít více uživatelů se stejnou e-mailovou adresou?", "answer": "To bohužel není možné, systém vyžaduje pro každý profil unikátní e-mail." },
+      { "question": "Proč mi nejde vytvořit druhý účet na stejný e-mail?", "answer": "V rámci zabezpečení a evidence je každý e-mail pevně propojen pouze s jedním účtem." }
+    ]
+  },
+  {
+    "etapa": 88,
+    "tema": "Zpřístupnění certifikátu",
+    "data": [
+      { "question": "Kdy přesně se mi odemkne certifikát?", "answer": "Certifikát se vám v systému automaticky zpřístupní ihned po úspěšném složení závěrečného testu." },
+      { "question": "Musím na certifikát po testu čekat?", "answer": "Ne, po splnění všech podmínek testu je certifikát okamžitě dostupný ke stažení." },
+      { "question": "Kde se objeví odkaz na stažení po úspěchu?", "answer": "Jakmile úspěšně projdete testem, certifikát najdete v sekci 'ertifikáty'." }
+    ]
+  },
+  {
+    "etapa": 89,
+    "tema": "Dostupnost po dokončení",
+    "data": [
+      { "question": "Zmizí mi kurz, když ho splním?", "answer": "Ne, většinu kurzů si můžete v systému procházet i po jejich úspěšném dokončení." },
+      { "question": "Můžu se vrátit k lekcím i po získání diplomu?", "answer": "Ano, obsah kurzu vám zůstává přístupný i po jeho splnění a získání certifikátu." },
+      { "question": "Zůstávají materiály kurzu aktivní i pro absolventy?", "answer": "Ano, i po dokončení kurzu k nim máte stále přístup pro zopakování látky." }
+    ]
+  },
+  {
+    "etapa": 90,
+    "tema": "Samostudium vs. Termíny",
+    "data": [
+      { "question": "Musím kurz dokončit v určitý den?", "answer": "Většina kurzů je navržena jako samostudium, výjimkou jsou ty s pevně stanoveným termínem." },
+      { "question": "Je studium časově vázané na konkrétní hodinu?", "answer": "Pokud není uvedeno jinak, studujete vlastním tempem; jen u některých školení jsou pevné termíny." },
+      { "question": "Můžu studovat kdykoliv chci?", "answer": "Ano, naše kurzy pro samostudium jsou vám k dispozici 24/7 podle vašich potřeb." }
+    ]
+  },
+  {
+    "etapa": 91,
+    "tema": "Vstupní požadavky kurzu",
+    "data": [
+      { "question": "Jsou nějaké podmínky pro zápis do kurzu?", "answer": "Každý kurz má své specifické vstupní požadavky uvedené přímo ve svém detailu." },
+      { "question": "Musím mít něco splněno, než začnu nový kurz?", "answer": "Přečtěte si prosím informace v detailu kurzu, kde jsou prerekvizity a požadavky vypsány." },
+      { "question": "Kde najdu informace o náročnosti kurzu?", "answer": "Všechny potřebné informace včetně úrovně a požadavků jsou součástí popisu každého kurzu." }
+    ]
+  },
+  {
+    "etapa": 92,
+    "tema": "Počet pokusů u testu",
+    "data": [
+      { "question": "Kolikrát můžu jít na opravný test?", "answer": "Test můžete opakovat neomezeně, pokud není v popisu konkrétního kurzu uvedeno jinak." },
+      { "question": "Je počet opakování testu nějak zpoplatněn?", "answer": "Standardně nabízíme neomezené množství pokusů bez dalších poplatků, pokud kurz neurčí jinak." },
+      { "question": "Můžu test zkoušet tak dlouho, dokud ho neudělám?", "answer": "Ano, systém vám standardně umožní neomezený počet pokusů pro úspěšné splnění." }
+    ]
+  },
+  {
+    "etapa": 93,
+    "tema": "Hranice 70 % bodů",
+    "data": [
+      { "question": "Jaké je minimum bodů pro certifikát?", "answer": "Pro úspěšné absolvování testu a získání certifikátu je standardně potřeba získat alespoň 70 % bodů." },
+      { "question": "Stačí mi polovina správných odpovědí?", "answer": "Ne, k úspěšnému splnění musíte dosáhnout hranice minimálně 70 %." },
+      { "question": "Co se stane, když získám jen 50 % bodů?", "answer": "Budete muset test opakovat, protože hranice pro úspěch je stanovena na 70 %." }
+    ]
+  },
+  {
+    "etapa": 94,
+    "tema": "Umístění unikátního ID",
+    "data": [
+      { "question": "Kde najdu ID kód svého certifikátu?", "answer": "Každý certifikát obsahuje své unikátní ID, které najdete přímo na vygenerovaném dokumentu." },
+      { "question": "Čím se prokazuje pravost certifikátu?", "answer": "Pravost se ověřuje pomocí unikátního ID kódu, který je vytištěn na každém certifikátu." },
+      { "question": "Kde je na diplomu napsané to ověřovací číslo?", "answer": "Unikátní ID je součástí grafiky vašeho certifikátu, obvykle v jeho dolní části." }
+    ]
+  },
+  {
+    "etapa": 95,
+    "tema": "Export historie výsledků",
+    "data": [
+      { "question": "Jak si uložím přehled svých výsledků do počítače?", "answer": "V sekci Certifikáty klikněte na tlačítko 'Exportovat do PDF' a stáhněte si souhrnnou zprávu." },
+      { "question": "Lze získat PDF se seznamem všech mých známek?", "answer": "Ano, v sekci Certifikáty můžete využít funkci exportu do PDF pro získání celkového přehledu." },
+      { "question": "Kde stáhnu potvrzení o všech mých absolvovaných testech?", "answer": "Své výsledky si můžete jednoduše vyexportovat do PDF v sekci věnované certifikátům." }
+    ]
+  },
+  {
+    "etapa": 96,
+    "tema": "Rozdíl v nastavení hesla",
+    "data": [
+      { "question": "Kde si změním své aktuální heslo?", "answer": "Své heslo můžete změnit v sekci 'Můj profil' po přihlášení do systému." },
+      { "question": "Co dělat, když si na heslo nemůžu vzpomenout?", "answer": "V takovém případě použijte odkaz 'Zapomenuté heslo' přímo na přihlašovací stránce." },
+      { "question": "Je změna hesla a reset hesla to samé?", "answer": "Změnu provádíte v nastavení účtu, zatímco reset (při zapomenutí) probíhá přes úvodní stránku." }
+    ]
+  },
+  {
+    "etapa": 97,
+    "tema": "Interní zprávy administrátorovi",
+    "data": [
+      { "question": "Můžu poslat správci zprávu přímo v LMS?", "answer": "Ano, administrátora můžete kontaktovat přes interní zprávy nebo pomocí formuláře v sekci 'Kontakt'." },
+      { "question": "Existuje v systému schránka pro komunikaci s podporou?", "answer": "Ano, můžete využít interní zprávy pro přímou komunikaci se správcem systému." },
+      { "question": "Jak napíšu zprávu technickému správci webu?", "answer": "Využijte sekci 'Kontakt' nebo pošlete interní zprávu přímo z rozhraní LMS." }
+    ]
+  },
+  {
+    "etapa": 98,
+    "tema": "Čištění mezipaměti prohlížeče",
+    "data": [
+      { "question": "Systém se chová divně, co mám zkusit jako první?", "answer": "Doporučujeme obnovit stránku, případně vyčistit cache (mezipaměť) vašeho prohlížeče." },
+      { "question": "Jak vyřeším chybu při načítání obrázků v kurzu?", "answer": "Zkuste vyčistit cache prohlížeče a znovu načíst stránku s kurzem." },
+      { "question": "Pomůže vymazání historie prohlížení s chybou v LMS?", "answer": "Ano, vyčištění mezipaměti (cache) často vyřeší technické potíže s nahráváním obsahu." }
+    ]
+  },
+  {
+    "etapa": 99,
+    "tema": "Stahování offline materiálů",
+    "data": [
+      { "question": "Dají se lekce číst i bez internetu?", "answer": "Některé vybrané studijní materiály lze stáhnout, ale většina funkcí systému vyžaduje internet." },
+      { "question": "Můžu si podklady ke kurzu vzít s sebou na cesty?", "answer": "Ano, v sekci 'Moje kurzy' si můžete stáhnout dostupné materiály pro offline prohlížení." },
+      { "question": "Které části LMS fungují i bez připojení?", "answer": "Offline jsou dostupné pouze stažené dokumenty; pro testy a interaktivní lekce musíte být online." }
+    ]
+  },
+  {
+    "etapa": 100,
+    "tema": "Zjištění verze aplikace",
+    "data": [
+      { "question": "Jakou verzi mobilní aplikace právě používám?", "answer": "Číslo verze vaší aplikace najdete v jejím nastavení, kde jsou vidět i dostupné aktualizace." },
+      { "question": "Kde v aplikaci uvidím, jestli je potřeba update?", "answer": "Podívejte se do nastavení mobilní aplikace, tam je zobrazena verze i info o aktualizacích." },
+      { "question": "Mám v telefonu nejnovější Aetherium_core aplikaci?", "answer": "To si můžete ověřit přímo v nastavení aplikace, kde se zobrazuje aktuální číslo verze." }
+    ]
+  }
+]
+

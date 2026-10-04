@@ -1,0 +1,43 @@
+[
+  {
+    "Sekce": "První kroky",
+    "etapa": 1,
+    "tema": "První přihlášení",
+    "data": [
+      { "question": "Jsem tu poprvé, co mám udělat?", "answer": "1) Přihlaste se údaji od firmy. 2) Otevřete Dashboard. 3) Jděte do Kurzy a otevřete první přiřazený kurz. 4) Projděte lekce a až budou odemčené, spusťte test. 5) Certifikát stáhněte v Certifikáty." },
+      { "question": "Nedostal jsem heslo, co teď?", "answer": "Zkontrolujte spam. Pokud nic nepřišlo, použijte 'Zapomenuté heslo' se svým firemním e-mailem, nebo požádejte administrátora o znovuodeslání přístupu." },
+      { "question": "Přihlásím se a nevidím žádný kurz.", "answer": "Účet může být aktivní dříve, než vám administrátor přiřadí školení. Požádejte firmu o přiřazení kurzu, pak obnovte stránku." },
+      { "question": "Mám špatný jazyk rozhraní.", "answer": "V Nastavení účtu zvolte preferovaný jazyk, pokud je vícejazyčnost u vaší instalace zapnutá." }
+    ]
+  },
+  {
+    "Sekce": "První kroky",
+    "etapa": 2,
+    "tema": "Typický průchod školením",
+    "data": [
+      { "question": "Jak vypadá celý proces školení?", "answer": "Přiřazení kurzu → studium lekcí (Dokumentace + obsah kurzu) → závěrečný test → automatický certifikát → sledování platnosti a případná recertifikace." },
+      { "question": "Kolik času si mám vyhradit?", "answer": "Záleží na kurzu — orientační délku najdete v detailu kurzu. Samostudium můžete rozdělit do více dnů." },
+      { "question": "Co když kurz nestihnu do termínu firmy?", "answer": "Co nejdříve informujte nadřízeného / administrátora. Systém termín eviduje a posílá upozornění; prodloužení řeší organizace." }
+    ]
+  },
+  {
+    "Sekce": "První kroky",
+    "etapa": 3,
+    "tema": "Kde hledat nápovědu",
+    "data": [
+      { "question": "Kde je nápověda pro začátečníky?", "answer": "Základní tipy uvidíte po vstupu do systému. Podrobné návody řeší AI asistent (tento chat) a sekce Podpora." },
+      { "question": "Nerozumím ovládání kurzu.", "answer": "Zeptejte se mě konkrétně (např. 'jak spustím test'). Případně otevřete detail kurzu — obsahuje popis, lekce a stav splnění." },
+      { "question": "Chci mluvit s člověkem, ne s botem.", "answer": "Použijte sekci Podpora / Kontakt nebo e-mail support@SafetyPartners.cz. V pracovní době může být dostupný i live chat s operátorem." }
+    ]
+  },
+  {
+    "Sekce": "První kroky",
+    "etapa": 4,
+    "tema": "Časté mýty",
+    "data": [
+      { "question": "Musím mít nainstalovaný speciální program?", "answer": "Ne. Stačí prohlížeč a internet." },
+      { "question": "Test se dá obejít bez studia?", "answer": "Test ověřuje znalosti; systém sleduje čas a vzorce vyplňování. Cílem je skutečné absolvování školení pro vaši bezpečnost a compliance firmy." },
+      { "question": "Certifikát platí navždy?", "answer": "Ne. Většina odborných a zákonných školení má omezenou platnost. Sledujte expiraci v Certifikátech a notifikace." }
+    ]
+  }
+]

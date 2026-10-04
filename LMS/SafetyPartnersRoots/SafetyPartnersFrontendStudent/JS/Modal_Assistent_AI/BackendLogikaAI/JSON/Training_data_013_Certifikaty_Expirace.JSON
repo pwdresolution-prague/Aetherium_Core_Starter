@@ -1,0 +1,46 @@
+[
+  {
+    "Sekce": "Certifikáty a expirace",
+    "etapa": 1,
+    "tema": "Vydání certifikátu",
+    "data": [
+      { "question": "Kdy dostanu certifikát?", "answer": "Automaticky po úspěšném dokončení kurzu a závěrečného testu. Objeví se v sekci Certifikáty ke stažení jako PDF." },
+      { "question": "Musím o certifikát žádat?", "answer": "Ne. Po splnění podmínek se certifikát vygeneruje a uloží do vašeho účtu. Stačí ho stáhnout." },
+      { "question": "Kde se certifikáty ukládají v systému?", "answer": "V zabezpečeném úložišti (Storage bucket Certificates) a ve vašem studentském přehledu Certifikáty." },
+      { "question": "Má certifikát unikátní číslo?", "answer": "Ano. Každý certifikát má unikátní ID pro ověření pravosti na portálu." }
+    ]
+  },
+  {
+    "Sekce": "Certifikáty a expirace",
+    "etapa": 2,
+    "tema": "Platnost a upozornění",
+    "data": [
+      { "question": "Jak dlouho certifikát platí?", "answer": "Záleží na typu školení — často cca 2 roky. Přesné datum je na certifikátu a v detailu v sekci Certifikáty." },
+      { "question": "Dostanu upozornění před expirací?", "answer": "Ano. Systém posílá připomínky v intervalech 2 měsíce, 30, 14, 7, 2 a 1 den před koncem platnosti (podle nastavení administrace)." },
+      { "question": "Mohu si vypnout upozornění na expiraci?", "answer": "Běžné notifikace upravíte v nastavení profilu. Upozornění na povinná školení a expirace často nelze vypnout, protože slouží compliance." },
+      { "question": "Kde vidím, kdy mi certifikát končí?", "answer": "V sekci Certifikáty u každého záznamu a na dashboardu, pokud se blíží termín." }
+    ]
+  },
+  {
+    "Sekce": "Certifikáty a expirace",
+    "etapa": 3,
+    "tema": "Recertifikace",
+    "data": [
+      { "question": "Co mám dělat po propadnutí certifikátu?", "answer": "Absolvujte opakovací (re-certifikační) kurz a test. Po úspěchu získáte nový certifikát s novým ID a platností." },
+      { "question": "Musím celý kurz znovu, nebo jen test?", "answer": "Záleží na nastavení kurzu. Některá školení vyžadují znovu celý obsah, u jiných stačí přezkoušení. Informace jsou v detailu kurzu." },
+      { "question": "Dostanu automaticky opakovací kurz?", "answer": "Systém vás na expiraci upozorní a administrátor / firma může přiřadit opakovací školení. Sledujte notifikace a sekci Kurzy." },
+      { "question": "Bude mít nový certifikát stejné číslo?", "answer": "Ne. Každé nové vydání má vlastní unikátní identifikátor a nové datum platnosti." }
+    ]
+  },
+  {
+    "Sekce": "Certifikáty a expirace",
+    "etapa": 4,
+    "tema": "Stažení a sdílení",
+    "data": [
+      { "question": "Ztratil jsem PDF — co teď?", "answer": "Znovu stáhněte certifikát ze sekce Certifikáty. Originál zůstává v systému." },
+      { "question": "Mohu certifikát dát na LinkedIn?", "answer": "Ano. PDF si stáhněte a nahrajte do profilu, případně použijte exportní formát, pokud ho systém nabízí." },
+      { "question": "Platí certifikát i po změně zaměstnavatele?", "answer": "Certifikát je vázán na vás jako osobu. Přístup k PDF ve starém tenantu řešte s administrátorem; doklad samotný zůstává platný do data expirace." },
+      { "question": "Potřebuji papírovou verzi.", "answer": "Standard je elektronické PDF. Papírovou verzi řešte s administrátorem organizace, pokud ji firma vyžaduje." }
+    ]
+  }
+]

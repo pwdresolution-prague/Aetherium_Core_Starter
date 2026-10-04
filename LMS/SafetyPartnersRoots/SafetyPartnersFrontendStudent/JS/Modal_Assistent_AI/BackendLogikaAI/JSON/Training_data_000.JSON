@@ -1,0 +1,175 @@
+//TODO Uložný prostor pro etapy
+// 
+// 
+  {
+    "etapa": 9,
+    "tema": "Změna hesla a zabezpečení",
+    "data": [
+      { "question": "Zapomněl jsem přístupové údaje, co teď?", "answer": "Na přihlašovací stránce klikněte na odkaz 'Zapomenuté heslo'. [8]" },
+      { "question": "Jak si můžu nastavit bezpečnější heslo?", "answer": "Heslo si můžete kdykoliv změnit v sekci 'Moje účet'. [8]" },
+      { "question": "Kde aktivuji dvoufázové přihlášení?", "answer": "V sekci 'Bezpečnost' zapněte 2FA a naskenujte QR kód do své aplikace. [9]" }
+    ]
+  },
+
+
+
+  {
+    "etapa": 11,
+    "tema": "Mobilní aplikace a tablety",
+    "data": [
+      
+      { "question": "Jak propojím webový účet s aplikací?", "answer": "Stačí se v aplikaci přihlásit stejnými údaji, které používáte na webu. [11]" },
+      { "question": "Funguje LMS na iPadu?", "answer": "Ano, naše rozhraní je optimalizováno pro tablety i chytré telefony. [11]" }
+    ]
+  },
+
+
+{ "question": "Nefunguje mi přihlášení, koho mám kontaktovat?", "answer": "Napište nám na support@Administrator.cz nebo využijte formulář v sekci 'Kontakt'. [10, 13]" },
+      { "question": "Kdy je dostupná technická podpora na chatu?", "answer": "Live chat s podporou je k dispozici během standardní pracovní doby. [14]" }
+    ]
+
+  {
+    "Sekce": "Můj profil",
+    "etapa": 16,
+    "tema": "Správa profilu a e-mailu",
+    "data": [
+      { "question": "Chci si změnit fotku nebo jméno v profilu.", "answer": "Své údaje můžete upravit v sekci 'Můj účet'. [8]" },
+      { "question": "Jak nastavím nový e-mail pro zasílání certifikátů?", "answer": "E-mailovou adresu změníte v nastavení účtu; změnu bude nutné potvrdit na nové adrese. [8]" },
+      { "question": "Lze změnit jazyk, ve kterém se mi LMS zobrazuje?", "answer": "Ano, preferovaný jazyk si zvolíte v sekci 'Nastavení účtu'. [13]" }
+    ]
+  },
+  {
+    "etapa": 17,
+    "tema": "Firemní propojení a správa",
+    "data": [
+      { "question": "Proč vidím kurzy své firmy?", "answer": "Váš účet je automaticky přidělen pod správu firmy, u které jste evidován. [9]" },
+      { "question": "Může můj nadřízený vidět mé výsledky?", "answer": "V rámci firemního propojení má Subscriber vaší společnosti přístup k vašim studijním výsledkům. [9]" },
+      { "question": "Jak spáruji svůj soukromý účet s firemním?", "answer": "Toto propojení obvykle řeší administrátor systému na základě vaší evidence ve firmě. [9]" }
+    ]
+  },
+ 
+
+
+
+
+
+
+
+  {
+    "etapa": 19,
+    "tema": "Offline režim a stahování",
+    "data": [
+      { "question": "Můžu studovat i bez internetu?", "answer": "Většina funkcí vyžaduje připojení, ale některé materiály lze stáhnout pro offline prohlížení. [14]" },
+      { "question": "Dají se lekce stáhnout do počítače?", "answer": "Ano, vybrané studijní materiály jsou k dispozici ke stažení v sekci 'Moje dokumenty'. [2, 14]" },
+      { "question": "Potřebuji být celou dobu online během testu?", "answer": "Ano, pro odeslání a vyhodnocení testu je stabilní připojení nezbytné. [10, 14]" }
+    ]
+  },
+  {
+    "etapa": 20,
+    "tema": "Právní náležitosti a GDPR",
+    "data": [
+      { "question": "Jaké osobní údaje o mně systém ukládá?", "answer": "Přehled všech ukládaných údajů najdete v sekci věnované GDPR. [13]" },
+      { "question": "Kdo všechno má přístup k mým datům?", "answer": "Informace o přístupech a ochraně dat jsou transparentně uvedeny v sekci GDPR ve vašem profilu. [13]" },
+      { "question": "Jak můžu úplně smazat svůj účet?", "answer": "V případě žádosti o zrušení účtu kontaktujte našeho administrátora skrze sekci 'Kontakt'. [9]" }
+    ]
+  }
+
+]
+
+[
+  {
+    "etapa": 21,
+    "tema": "Notifikace a připomínky",
+    "data": [
+      { "question": "Dostanu upozornění, že mi brzy vyprší certifikát?", "answer": "Ano, systém automaticky posílá e-mailové upozornění před koncem platnosti certifikátu." },
+      { "question": "Jak dlouho dopředu přijde připomínka na blížící se termín školení?", "answer": "Připomínka se odesílá s předstihem nastaveným administrátorem, obvykle několik týdnů před vypršením platnosti." },
+      { "question": "Můžu si vypnout e-mailová upozornění?", "answer": "Notifikace lze upravit v nastavení profilu, některá upozornění týkající se povinných školení však vypnout nelze." },
+      { "question": "Jak poznám, že mi přišel nový kurz k absolvování?", "answer": "O přiřazení nového kurzu vás informujeme e-mailem a upozorněním přímo v LMS po přihlášení." }
+    ]
+  },
+  {
+    "etapa": 22,
+    "tema": "Recertifikace a propadlá platnost",
+    "data": [
+      { "question": "Co mám dělat, když mi certifikát propadl?", "answer": "Po vypršení platnosti je potřeba kurz znovu absolvovat a složit test, aby vám byl vystaven nový certifikát." },
+      { "question": "Musím projít celým kurzem znovu, nebo jen testem?", "answer": "To závisí na nastavení konkrétního kurzu, u některých školení stačí přezkoušení bez opakování celého obsahu." },
+      { "question": "Přijde mi automaticky nový termín na opakovací školení?", "answer": "Ano, systém vás na blížící se konec platnosti upozorní a nabídne přiřazení opakovacího kurzu." },
+      { "question": "Zachová si nový certifikát stejné evidenční číslo?", "answer": "Ne, každý nově vystavený certifikát má vlastní unikátní identifikátor a datum platnosti." }
+    ]
+  },
+  {
+    "etapa": 23,
+    "tema": "Ztráta přístupu k certifikátu",
+    "data": [
+      { "question": "Ztratil jsem PDF s certifikátem, dá se znovu stáhnout?", "answer": "Ano, certifikát zůstává trvale uložen v sekci 'Certifikáty' a lze si ho kdykoliv znovu stáhnout." },
+      { "question": "Mám nárok na certifikát, i když jsem změnil zaměstnavatele?", "answer": "Certifikát je vázán na vaši osobu, nikoliv na konkrétního zaměstnavatele, takže zůstává přístupný i po změně firmy." },
+      { "question": "Dá se certifikát znovu vygenerovat s jiným jménem po sňatku?", "answer": "V takovém případě kontaktujte administrátora vaší organizace, který může údaje v systému upravit." }
+    ]
+  },
+  {
+    "etapa": 24,
+    "tema": "Ochrana osobních údajů a GDPR",
+    "data": [
+      { "question": "Jaké moje osobní údaje si systém ukládá?", "answer": "Systém ukládá základní identifikační údaje, výsledky testů a historii absolvovaných školení nutné pro vystavení certifikátu." },
+      { "question": "Kdo má přístup k mým výsledkům testů?", "answer": "Přístup mají pouze oprávnění administrátoři vaší organizace a provozovatel systému, v souladu se zásadami ochrany osobních údajů." },
+      { "question": "Můžu požádat o výmaz svých dat?", "answer": "Ano, žádost o výmaz můžete zaslat administrátorovi, některé záznamy je však nutné uchovat kvůli právní evidenci školení." },
+      { "question": "Sdílíte moje data s třetími stranami?", "answer": "Data nesdílíme s třetími stranami mimo případy vyžadované zákonem nebo nezbytné pro provoz systému." }
+    ]
+  },
+  {
+    "etapa": 25,
+    "tema": "Komunikace s AI asistentem",
+    "data": [
+      { "question": "Na co všechno se tě můžu zeptat?", "answer": "Můžete se mě ptát na cokoliv ohledně kurzů, testů, certifikátů nebo ovládání systému." },
+      { "question": "Rozumíš i odborným dotazům na legislativu?", "answer": "Ano, umím poradit i s otázkami týkajícími se platné legislativy vztahující se ke konkrétnímu školení." },
+      { "question": "Co když neznáš odpověď na můj dotaz?", "answer": "V takovém případě vás nasměruji na lidskou podporu nebo administrátora, který vám pomůže." },
+      { "question": "Pamatuješ si, na co jsem se tě ptal minule?", "answer": "V rámci jedné konverzace ano, historie mezi jednotlivými relacemi se ale neuchovává, pokud to systém výslovně neumožňuje." }
+    ]
+  },
+  {
+    "etapa": 26,
+    "tema": "Správa firmy a přehled zaměstnanců (strana Klient/Odběratel)",
+    "data": [
+      { "question": "Jak zjistím, kteří zaměstnanci ještě nemají splněné povinné školení?", "answer": "V administraci najdete přehledovou tabulku se stavem školení všech zaměstnanců, včetně filtru na nesplněné kurzy." },
+      { "question": "Můžu hromadně přiřadit kurz celému oddělení?", "answer": "Ano, kurz lze přiřadit najednou vybrané skupině nebo celému oddělení pomocí hromadné akce v administraci." },
+      { "question": "Jak exportuji přehled školení pro firemní audit?", "answer": "Přehled lze exportovat do PDF nebo CSV přímo ze sekce reportů v administraci." },
+      { "question": "Vidím i historii školení zaměstnanců, kteří už ve firmě nepracují?", "answer": "Ano, historická data zůstávají v systému uložena i po deaktivaci uživatelského účtu, pro účely zpětné dokladovatelnosti." }
+    ]
+  },
+  {
+    "etapa": 27,
+    "tema": "Vícejazyčnost a přístupnost",
+    "data": [
+      { "question": "Jsou kurzy dostupné i v jiném jazyce než v češtině?", "answer": "Vybrané kurzy jsou dostupné ve více jazykových verzích, dostupnost konkrétního jazyka najdete v detailu kurzu." },
+      { "question": "Je systém přizpůsobený pro uživatele se zrakovým postižením?", "answer": "Rozhraní podporuje základní prvky přístupnosti, jako je čitelnost pro čtečky obrazovky, průběžně tuto oblast vylepšujeme." },
+      { "question": "Můžu si v systému změnit jazyk rozhraní?", "answer": "Ano, jazyk rozhraní lze změnit v nastavení profilu." }
+    ]
+  },
+  {
+    "etapa": 28,
+    "tema": "Legislativní změny a dopad na absolvovaná školení",
+    "data": [
+      { "question": "Co se stane s mým certifikátem, když se změní zákon, podle kterého jsem školení dělal?", "answer": "Certifikát zůstává platný podle znění legislativy platného v době jeho vystavení, o zásadních změnách vás informujeme a případně nabídneme aktualizační školení." },
+      { "question": "Jak se dozvím, že se legislativa related k mému oboru změnila?", "answer": "O relevantních legislativních změnách vás informujeme e-mailem, jakmile jsou změny schváleny a promítnuty do obsahu kurzů." },
+      { "question": "Musím po změně zákona absolvovat školení znovu okamžitě?", "answer": "Záleží na povaze změny a na pokynech vaší organizace, systém vás v takovém případě upozorní na doporučený termín aktualizačního školení." }
+    ]
+  },
+  {
+    "etapa": 29,
+    "tema": "Ověřování identity a poctivost při testování",
+    "data": [
+      { "question": "Kontroluje systém, že test dělám opravdu já?", "answer": "Ano, systém během testu sleduje standardní bezpečnostní prvky, aby ověřil, že test vyplňuje přihlášený uživatel." },
+      { "question": "Co se stane, když systém zaznamená podezřelé chování během testu?", "answer": "V takovém případě může být výsledek testu označen k ručnímu přezkoumání administrátorem." },
+      { "question": "Musím mít při testu zapnutou kameru?", "answer": "To závisí na nastavení konkrétního kurzu, u standardních školení kamera obvykle vyžadována není." }
+    ]
+  },
+  {
+    "etapa": 30,
+    "tema": "Mobilní aplikace a offline přístup",
+    "data": [
+      { "question": "Existuje mobilní aplikace, nebo se dá jen přes prohlížeč?", "answer": "Systém aktuálně funguje jako webová aplikace přizpůsobená pro mobilní zařízení, samostatná mobilní aplikace není potřeba." },
+      { "question": "Dá se kurz stáhnout a projít bez internetu?", "answer": "Ne, pro absolvování kurzu i testu je nutné aktivní připojení k internetu." },
+      { "question": "Uloží se mi rozpracovaný test, když mi vypadne wifi?", "answer": "Systém se po obnovení připojení pokusí navázat tam, kde byl test přerušen, doporučujeme ale stabilní připojení po celou dobu testu." }
+    ]
+  }
+]

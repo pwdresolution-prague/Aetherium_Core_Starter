@@ -1,0 +1,387 @@
+[
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 36,
+    "tema": "Role a oprávnění v systému – přehled",
+    "data": [
+      { "question": "Jaké role systém rozlišuje?", "answer": "Systém rozlišuje role Admin, Klient, Odběratel a Uživatel, každá s odlišnou úrovní oprávnění a přístupu." },
+      { "question": "Kde zjistím, jakou roli mám aktuálně přidělenou?", "answer": "Vaši roli zobrazuje systém v nastavení profilu, případně vám ji sdělí administrátor vaší organizace." },
+      { "question": "Může mít jeden uživatel víc rolí najednou?", "answer": "Ano, u některých organizací může mít uživatel kombinovanou roli, například Odběratel i běžný student zároveň." },
+      { "question": "Kdo rozhoduje o přidělení role konkrétnímu uživateli?", "answer": "Role přiděluje nadřazený administrátor v hierarchii, tedy Admin Klientovi, nebo Klient Odběrateli." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 37,
+    "tema": "Role Admin – platformový operátor",
+    "data": [
+      { "question": "Co všechno může dělat Admin platformy?", "answer": "Admin spravuje celou platformu, zakládá účty Klientů, dohlíží na obsah kurzů a má přístup ke globálním statistikám a nastavením." },
+      { "question": "Vidí Admin data všech Klientů a Odběratelů?", "answer": "Ano, Admin má nejvyšší úroveň přístupu a může nahlížet do dat napříč celou platformou v souladu s interními pravidly." },
+      { "question": "Kolik administrátorů platformy může systém mít?", "answer": "Počet administrátorů platformy není technicky omezen, obvykle jde ale jen o úzký okruh provozovatelů systému." },
+      { "question": "Může Admin zasahovat do obsahu kurzů jednotlivých Klientů?", "answer": "Admin má technickou možnost zasahovat do struktury systému, do konkrétního obsahu kurzu Klienta zasahuje jen ve výjimečných a odůvodněných případech." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 38,
+    "tema": "Role Klient",
+    "data": [
+      { "question": "Co znamená role Klient v systému?", "answer": "Klient je organizace, která si pronajímá LMS platformu a poskytuje školení svým vlastním pracovníkům, tedy Studentům." },
+      { "question": "Může LMS spravovat více Odběratelů najednou?", "answer": "Ano, Odběraterl může mít pod sebou libovolný počet Klientů, kterým zpřístupňuje vybrané kurzy." },
+      { "question": "Vidí Odběratel data uživatelů napříč všemi svými Klienty?", "answer": "Ano, Odběratel má přehled o všech svých Klientech a jejich uživatelích v rámci vlastního tenantu." },
+      { "question": "Může Odběratel vytvářet vlastní kurzy nezávisle na Adminovi platformy?", "answer": "Ne, v závislosti na nastavených oprávněních ne může Odběratel vytvářet a spravovat vlastní kurzy pro své Klienty." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 39,
+    "tema": "Role Odběratel",
+    "data": [
+      { "question": "Co je role Odběratel?", "answer": "Odběratel je firma, která nakupuje školení od poskytovatele LMS a spravuje v systému své vlastní zaměstnance." },
+      { "question": "Může Klient vidět data jiných Klientů stejného Klienta?", "answer": "Ne, data jednotlivých Klientů jsou vzájemně oddělená a nejsou mezi sebou viditelná." },
+      { "question": "Jaká oprávnění má Klient v rámci svého účtu?", "answer": "Klient spravuje své Klienty, přiřazuje jim dostupné kurzy a sleduje jejich pokrok a výsledky." },
+      { "question": "Může Klient upravovat obsah kurzů, které mu Odběratel zpřístupnil?", "answer": "Ne, obsah kurzů spravuje Odběratel nebo Admin platformy, Klient má k obsahu pouze přístup pro své uživatele." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 40,
+    "tema": "Role Uživatel – koncový student",
+    "data": [
+      { "question": "Co může dělat běžný uživatel v systému?", "answer": "Uživatel se přihlašuje ke kurzům, absolvuje testy a stahuje si své certifikáty, bez přístupu do administrace." },
+      { "question": "Vidí uživatel výsledky ostatních kolegů?", "answer": "Ne, uživatel má přístup pouze ke svým vlastním výsledkům a certifikátům." },
+      { "question": "Může si uživatel sám změnit svou roli na Klienta?", "answer": "Ne, změnu role může provést pouze nadřazený Klient organizace." },
+      { "question": "Má uživatel přístup k nastavení organizace?", "answer": "Ne, nastavení organizace je dostupné pouze rolím s vyšším oprávněním." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 41,
+    "tema": "Vytváření a správa uživatelských účtů",
+    "data": [
+      { "question": "Jak Klient založí nový uživatelský účet?", "answer": "Nový účet se zakládá v administraci vyplněním základních údajů zaměstnance a přiřazením role." },
+      { "question": "Dostane nový uživatel automaticky přihlašovací údaje e-mailem?", "answer": "Ano, po založení účtu obdrží uživatel e-mail s pokyny pro první přihlášení a nastavení hesla." },
+      { "question": "Může Klient upravit údaje uživatele dodatečně?", "answer": "Ano, jméno, e-mail nebo přiřazenou pozici lze kdykoliv upravit v detailu uživatelského účtu." },
+      { "question": "Jak zjistím seznam všech aktivních uživatelů v organizaci?", "answer": "Přehled aktivních uživatelů najdete v sekci správy uživatelů v administraci." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 42,
+    "tema": "Přiřazování rolí a oprávnění",
+    "data": [
+      { "question": "Jak Klient změní roli uživatele?", "answer": "Roli lze změnit v detailu uživatelského účtu výběrem nové role ze seznamu dostupných oprávnění." },
+      { "question": "Může mít jeden uživatel administrátorská práva jen pro část organizace?", "answer": "Ano, oprávnění lze omezit na konkrétní oddělení nebo skupinu uživatelů." },
+      { "question": "Kdo může uživateli udělit administrátorskou roli?", "answer": "Administrátorskou roli může udělit pouze nadřazený administrátor s dostatečným oprávněním." },
+      { "question": "Je možné nastavit uživateli jen práva pro čtení bez možnosti úprav?", "answer": "Ano, systém umožňuje nastavit i omezenou roli pouze pro čtení a prohlížení dat bez možnosti jejich úpravy." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 43,
+    "tema": "Hromadný import uživatelů",
+    "data": [
+      { "question": "Dá se najednou nahrát více zaměstnanců, nebo je nutné zakládat je jednotlivě?", "answer": "Ano, uživatele lze hromadně importovat pomocí souboru ve formátu CSV nebo Excel." },
+      { "question": "Jaké údaje musí hromadný import obsahovat?", "answer": "Import obvykle vyžaduje jméno, příjmení, e-mail a případně přiřazenou pozici či oddělení zaměstnance." },
+      { "question": "Co se stane, pokud v importním souboru chybí povinný údaj?", "answer": "Systém chybný řádek při importu označí a umožní opravu chyby ještě před dokončením importu." },
+      { "question": "Lze při hromadném importu rovnou přiřadit i kurzy?", "answer": "Ano, u pokročilého importu lze zaměstnancům rovnou přiřadit výchozí sadu povinných kurzů." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 44,
+    "tema": "Deaktivace a mazání účtů",
+    "data": [
+      { "question": "Co se stane s daty zaměstnance, který ukončí pracovní poměr?", "answer": "Účet zaměstnance se deaktivuje, historická data o absolvovaných školeních však zůstávají v systému zachována." },
+      { "question": "Je rozdíl mezi deaktivací a úplným smazáním účtu?", "answer": "Ano, deaktivace pouze zamezí přístupu do systému, zatímco smazání účtu trvale odstraní i uložená data." },
+      { "question": "Může být účet po deaktivaci znovu obnoven?", "answer": "Ano, deaktivovaný účet lze kdykoliv znovu aktivovat, pokud se zaměstnanec do organizace vrátí." },
+      { "question": "Kdo má oprávnění účet trvale smazat?", "answer": "Trvalé smazání účtu je vyhrazeno administrátorům s nejvyšší úrovní oprávnění, obvykle v souladu s žádostí o výmaz dat." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 45,
+    "tema": "Změna hesla a obnova přístupu",N, 
+    "data": [
+      { "question": "Jak si změním své heslo?", "answer": "Heslo si můžete změnit v nastavení profilu po zadání aktuálního a nového hesla." },
+      { "question": "Zapomněl jsem heslo, jak se znovu dostanu do systému?", "answer": "Na přihlašovací obrazovce použijte odkaz 'Zapomenuté heslo', kam vám přijde odkaz pro jeho obnovení." },
+      { "question": "Může administrátor resetovat heslo za mě?", "answer": "Ano, administrátor může iniciovat reset hesla přímo z detailu vašeho uživatelského účtu." },
+      { "question": "Jak dlouho je platný odkaz pro obnovu hesla?", "answer": "Odkaz pro obnovu hesla je z bezpečnostních důvodů platný jen po omezenou dobu, obvykle několik hodin." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 46,
+    "tema": "Dvoufaktorové ověření a zabezpečení účtu",
+    "data": [
+      { "question": "Nabízí systém dvoufaktorové ověření přihlášení?", "answer": "Ano, u citlivějších rolí, zejména administrátorů, je možné aktivovat dvoufaktorové ověření přihlášení." },
+      { "question": "Jak si dvoufaktorové ověření aktivuji?", "answer": "Aktivace probíhá v nastavení zabezpečení profilu propojením s ověřovací aplikací nebo přes e-mailový kód." },
+      { "question": "Je dvoufaktorové ověření povinné pro všechny role?", "answer": "Povinnost dvoufaktorového ověření může nastavit administrátor organizace, standardně bývá vyžadována zejména u administrátorských účtů." },
+      { "question": "Co dělat, když ztratím přístup k zařízení s ověřovací aplikací?", "answer": "V takovém případě kontaktujte administrátora, který může dvoufaktorové ověření pro váš účet dočasně obnovit." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 47,
+    "tema": "Struktura organizace – oddělení a skupiny",
+    "data": [
+      { "question": "Dá se v systému vytvořit vlastní struktura oddělení?", "answer": "Ano, administrátor může vytvořit oddělení, pobočky nebo skupiny a přiřadit k nim jednotlivé uživatele." },
+      { "question": "K čemu slouží rozdělení uživatelů do skupin?", "answer": "Skupiny usnadňují hromadné přiřazování kurzů, filtrování statistik a přehlednější správu velkého počtu uživatelů." },
+      { "question": "Může mít jeden uživatel přiřazení do více skupin současně?", "answer": "Ano, uživatel může být zařazen do více skupin, například podle oddělení i podle pracovní pozice zároveň." },
+      { "question": "Kdo spravuje strukturu organizace u Odběratele?", "answer": "Strukturu spravuje administrátor na straně Odběratele, případně mu s počátečním nastavením pomůže Klient." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 48,
+    "tema": "Delegování administrátorských práv",
+    "data": [
+      { "question": "Může hlavní administrátor delegovat část práv na kolegu?", "answer": "Ano, lze vytvořit dílčí administrátorskou roli s omezeným rozsahem oprávnění pro konkrétní oblast nebo tým." },
+      { "question": "Jak omezím delegovanému administrátorovi přístup jen na jedno oddělení?", "answer": "Při přiřazení administrátorské role lze zvolit rozsah platnosti omezený na konkrétní oddělení nebo skupinu." },
+      { "question": "Vidí delegovaný administrátor i citlivé firemní statistiky?", "answer": "Rozsah viditelných dat závisí na přiděleném oprávnění, citlivé souhrnné statistiky lze ponechat vyhrazené jen hlavnímu administrátorovi." },
+      { "question": "Lze delegovaná práva kdykoliv odebrat?", "answer": "Ano, delegovaná práva může hlavní administrátor kdykoliv upravit nebo zcela zrušit." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 49,
+    "tema": "Audit log – sledování akcí administrátorů",
+    "data": [
+      { "question": "Eviduje systém, kdo a kdy provedl změnu v nastavení?", "answer": "Ano, veškeré administrátorské akce se zaznamenávají do auditního logu s uvedením uživatele, data a typu změny." },
+      { "question": "Kdo má přístup k auditnímu logu?", "answer": "Přístup k auditnímu logu mají zpravidla jen administrátoři s nejvyšší úrovní oprávnění." },
+      { "question": "Dá se z auditního logu zjistit, kdo smazal konkrétního uživatele?", "answer": "Ano, log obsahuje záznam o smazání účtu včetně identifikace administrátora, který akci provedl." },
+      { "question": "Jak dlouho se auditní záznamy uchovávají?", "answer": "Doba uchování auditních záznamů se řídí interními pravidly organizace a případnými zákonnými požadavky." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 50,
+    "tema": "Nastavení oprávnění na úrovni kurzu",
+    "data": [
+      { "question": "Může administrátor omezit přístup ke konkrétnímu kurzu jen na vybrané uživatele?", "answer": "Ano, viditelnost a přístup ke kurzu lze omezit na konkrétní skupinu nebo jednotlivé uživatele." },
+      { "question": "Jak nastavím, že kurz smí spravovat jen konkrétní lektor?", "answer": "V nastavení kurzu lze přiřadit správce obsahu, který má výhradní právo kurz upravovat." },
+      { "question": "Může mít různé skupiny uživatelů přístup k odlišné verzi stejného kurzu?", "answer": "U některých kurzů lze nastavit odlišný obsah nebo úroveň pro různé skupiny uživatelů v rámci jedné organizace." },
+      { "question": "Kdo rozhoduje o zpřístupnění kurzu napříč více odděleními?", "answer": "O zpřístupnění kurzu napříč odděleními rozhoduje administrátor s dostatečným oprávněním v rámci organizace." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 51,
+    "tema": "Správa přístupu Odběratele k obsahu Klienta",
+    "data": [
+      { "question": "Jak Klient zpřístupní konkrétní kurz vybranému Odběrateli?", "answer": "Klient v administraci vybere Odběratele a přiřadí mu dostupné kurzy ze svého katalogu." },
+      { "question": "Může Odběratel vidět kurzy, které mu Klient nezpřístupnil?", "answer": "Ne, Odběratel vidí pouze kurzy, ke kterým mu Klient explicitně udělil přístup." },
+      { "question": "Co se stane s přístupem Odběratele, když Klient kurz odebere z nabídky?", "answer": "Odebráním kurzu z nabídky ztrácí Odběratel možnost nově do kurzu zapisovat, historické výsledky zůstávají zachovány." },
+      { "question": "Může Odběratel požádat o rozšíření přístupu k dalším kurzům?", "answer": "Ano, rozšíření nabídky lze domluvit přímo s Klientem, který spravuje dostupnost jednotlivých kurzů." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 52,
+    "tema": "Licence a počet uživatelských míst",
+    "data": [
+      { "question": "Je počet uživatelů v systému nějak omezený?", "answer": "Počet uživatelských míst se řídí smluvním rozsahem licence dané organizace." },
+      { "question": "Co se stane, když se pokusím přidat uživatele nad rámec zakoupené licence?", "answer": "Systém vás upozorní na vyčerpání volných míst a nabídne možnost rozšíření licence." },
+      { "question": "Kde vidím aktuální využití licenčních míst?", "answer": "Přehled využitých a volných licenčních míst najdete v administraci v sekci nastavení organizace." },
+      { "question": "Uvolní se licenční místo po deaktivaci uživatele?", "answer": "Ano, deaktivací uživatelského účtu se odpovídající licenční místo obvykle uvolní pro nové přiřazení." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 53,
+    "tema": "Nastavení firemní identity organizace",
+    "data": [
+      { "question": "Můžeme si v systému nastavit vlastní logo firmy?", "answer": "Ano, logo organizace lze nahrát v nastavení a zobrazuje se v rozhraní i na vygenerovaných certifikátech." },
+      { "question": "Dá se upravit barevné schéma prostředí podle firemní identity?", "answer": "U vybraných úrovní licence je možné přizpůsobit barevné schéma rozhraní firemním barvám." },
+      { "question": "Kde se nastavuje název organizace zobrazovaný uživatelům?", "answer": "Název organizace se nastavuje v základních údajích firmy v sekci správy organizace." },
+      { "question": "Projeví se změna loga i na již vystavených certifikátech?", "answer": "Ne, změna loga se projeví jen u nově vystavených certifikátů, starší dokumenty zůstávají v původní podobě." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 54,
+    "tema": "Notifikační nastavení pro administrátory",
+    "data": [
+      { "question": "Dostává administrátor souhrnné přehledy automaticky?", "answer": "Ano, administrátor si může nastavit pravidelné souhrnné e-maily o stavu školení v organizaci." },
+      { "question": "Jak často lze nastavit odesílání souhrnných reportů?", "answer": "Frekvenci reportů, například týdenní nebo měsíční, si administrátor volí v nastavení notifikací." },
+      { "question": "Dostane administrátor upozornění na blížící se hromadné expirace certifikátů?", "answer": "Ano, systém upozorňuje administrátora na skupiny zaměstnanců s blížícím se koncem platnosti certifikátů." },
+      { "question": "Je možné nastavit notifikace jen pro vybraná oddělení?", "answer": "Ano, rozsah notifikací lze omezit na konkrétní oddělení nebo skupinu uživatelů, které administrátor spravuje." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 55,
+    "tema": "Reporty a exporty pro administrátory",
+    "data": [
+      { "question": "Jaké reporty má administrátor k dispozici?", "answer": "K dispozici jsou reporty o stavu školení, úspěšnosti testů, platnosti certifikátů i celkové aktivitě uživatelů." },
+      { "question": "Lze report vygenerovat za vybrané časové období?", "answer": "Ano, u většiny reportů lze zvolit konkrétní časové rozmezí, za které se data zobrazí." },
+      { "question": "Do jakých formátů lze reporty exportovat?", "answer": "Reporty lze exportovat do formátů PDF, CSV nebo Excel podle potřeby administrátora." },
+      { "question": "Můžu si vytvořit vlastní přizpůsobený report?", "answer": "U pokročilejších licencí je možné sestavit vlastní report výběrem konkrétních sledovaných ukazatelů." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 56,
+    "tema": "Správa šablon certifikátů",
+    "data": [
+      { "question": "Může si organizace nastavit vlastní vzhled certifikátu?", "answer": "Ano, administrátor s příslušným oprávněním může vybrat nebo upravit šablonu certifikátu pro svou organizaci." },
+      { "question": "Kde se spravují jednotlivé šablony certifikátů?", "answer": "Šablony certifikátů se spravují v administraci v sekci věnované certifikaci a designu dokumentů." },
+      { "question": "Musí schválit novou šablonu certifikátu Admin platformy?", "answer": "U zásadních změn šablony může být vyžadováno schválení provozovatelem platformy kvůli zachování jednotné důvěryhodnosti dokumentu." },
+      { "question": "Ovlivní změna šablony již vystavené certifikáty?", "answer": "Ne, změna šablony se projeví pouze u nově vystavovaných certifikátů." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 57,
+    "tema": "Multi-tenant izolace dat",
+    "data": [
+      { "question": "Jak systém zajišťuje, že data jedné firmy neuvidí jiná firma?", "answer": "Data jsou uložena a oddělena podle jednotlivých tenantů, každá organizace má přístup výhradně ke svým vlastním datům." },
+      { "question": "Může chyba v nastavení způsobit únik dat mezi Klienty?", "answer": "Architektura systému je navržena tak, aby k tomu nedocházelo, izolace dat je ošetřena na úrovni databáze i aplikační logiky." },
+      { "question": "Vidí jeden Klient statistiky jiného Klienta na stejné platformě?", "answer": "Ne, jednotliví Klienti mezi sebou nemají žádnou vzájemnou viditelnost dat." },
+      { "question": "Kdo jediný má přehled napříč všemi tenanty?", "answer": "Přehled napříč všemi tenanty má výhradně Admin platformy jako provozovatel celého systému." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 58,
+    "tema": "Přechod mezi tenanty pro administrátora",
+    "data": [
+      { "question": "Může jeden administrátor spravovat více organizací zároveň?", "answer": "Ano, pokud je mu to přiděleno, může administrátor přepínat mezi spravovanými tenanty v rámci jednoho účtu." },
+      { "question": "Jak se přepínám mezi jednotlivými spravovanými organizacemi?", "answer": "Přepínání mezi organizacemi je dostupné v horním menu administrace pro uživatele s odpovídajícím oprávněním." },
+      { "question": "Zůstávají data jednotlivých tenantů oddělená i při přepínání?", "answer": "Ano, i při přepnutí na jinou organizaci vidí administrátor výhradně data zvoleného tenantu." },
+      { "question": "Kdo může administrátorovi přidělit přístup k více organizacím?", "answer": "Přístup k více tenantům přiděluje Admin platformy na základě smluvního vztahu s danými organizacemi." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 59,
+    "tema": "Podpora a eskalace problémů",
+    "data": [
+      { "question": "Na koho se obrátím, když administrátor mé firmy problém nevyřeší?", "answer": "V takovém případě lze problém eskalovat na podporu provozovatele platformy." },
+      { "question": "Jak dlouho trvá vyřízení eskalovaného požadavku?", "answer": "Doba vyřízení závisí na povaze problému, běžné dotazy bývají vyřízeny v řádu pracovních dní." },
+      { "question": "Existuje v systému přímé tlačítko pro nahlášení problému administrátorovi?", "answer": "Ano, u většiny sekcí je dostupná možnost 'Nahlásit problém', která žádost odešle přímo příslušnému administrátorovi." },
+      { "question": "Můžu sledovat stav svého nahlášeného požadavku?", "answer": "Ano, stav vyřízení požadavku je viditelný v přehledu vašich nahlášených problémů." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 60,
+    "tema": "Jazykové nastavení organizace",
+    "data": [
+      { "question": "Může administrátor nastavit výchozí jazyk pro celou organizaci?", "answer": "Ano, výchozí jazyk rozhraní i komunikace lze nastavit centrálně pro celou organizaci." },
+      { "question": "Může si jednotlivý uživatel zvolit odlišný jazyk, než má organizace nastavený?", "answer": "Ano, uživatel si může individuálně zvolit preferovaný jazyk v nastavení svého profilu." },
+      { "question": "Platí jazykové nastavení i pro obsah kurzů?", "answer": "Jazyk rozhraní a jazyk obsahu kurzu se nastavují samostatně, dostupnost jazykové verze kurzu závisí na jeho konkrétním obsahu." },
+      { "question": "Ovlivňuje jazykové nastavení i vystavené certifikáty?", "answer": "Ano, certifikát se generuje v jazyce odpovídajícím nastavení v době jeho vystavení." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 61,
+    "tema": "Řízení přístupu k citlivým datům",
+    "data": [
+      { "question": "Kdo má přístup k citlivým osobním údajům zaměstnanců?", "answer": "Přístup k citlivým osobním údajům mají pouze administrátoři s explicitně uděleným oprávněním." },
+      { "question": "Jak systém omezuje neoprávněný přístup k výsledkům testů?", "answer": "Výsledky testů jsou dostupné pouze samotnému uživateli a administrátorům s odpovídajícím oprávněním v rámci jeho organizace." },
+      { "question": "Existuje samostatná role zaměřená jen na ochranu osobních údajů?", "answer": "U větších organizací lze přidělit specifickou roli s omezeným přístupem výhradně na agendu ochrany osobních údajů." },
+      { "question": "Jak se řeší žádost o výmaz dat v rámci administrace?", "answer": "Žádost o výmaz zpracovává administrátor organizace ve spolupráci s provozovatelem platformy, s ohledem na zákonné lhůty pro uchování." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 62,
+    "tema": "Automatizované workflow pro administrátory",
+    "data": [
+      { "question": "Dá se nastavit automatické přiřazení kurzu novému zaměstnanci?", "answer": "Ano, lze nastavit pravidlo, které automaticky přiřadí definovanou sadu kurzů při založení nového účtu." },
+      { "question": "Umí systém automaticky upozornit na blížící se konec platnosti certifikátů celého týmu?", "answer": "Ano, administrátor může nastavit automatické hromadné upozornění před vypršením platnosti certifikátů." },
+      { "question": "Lze automatizovat opakované přiřazení školení podle pozice zaměstnance?", "answer": "Ano, pravidla lze navázat na konkrétní pracovní pozici, takže se kurz automaticky přiřadí každému novému zaměstnanci na dané pozici." },
+      { "question": "Kde se automatizovaná pravidla v administraci nastavují?", "answer": "Automatizovaná pravidla se konfigurují v sekci workflow nebo automatizací v administraci organizace." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 63,
+    "tema": "Správa lektorů a garantů v administraci",
+    "data": [
+      { "question": "Jak se lektorovi přidělí oprávnění spravovat konkrétní kurz?", "answer": "Administrátor přiřadí lektorovi roli správce obsahu u konkrétního kurzu v jeho detailu." },
+      { "question": "Může lektor vidět výsledky studentů jen u svého kurzu?", "answer": "Ano, přístup lektora je standardně omezen pouze na kurzy, u kterých má přidělenou roli garanta nebo správce." },
+      { "question": "Kdo schvaluje nového garanta kurzu?", "answer": "Nového garanta schvaluje administrátor organizace, případně Admin platformy u sdílených nebo zákonných kurzů." },
+      { "question": "Může být jeden lektor garantem u více kurzů zároveň?", "answer": "Ano, jeden lektor může být přiřazen jako garant k libovolnému počtu kurzů." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 64,
+    "tema": "Nastavení testovacích parametrů administrátorem",
+    "data": [
+      { "question": "Může administrátor změnit hranici úspěšnosti testu pro svou organizaci?", "answer": "Ano, u vlastních kurzů může administrátor upravit hranici úspěšnosti podle potřeb organizace." },
+      { "question": "Jde nastavit odlišný počet pokusů pro různá oddělení?", "answer": "Ano, testovací parametry lze u vlastních kurzů přizpůsobit i na úrovni jednotlivých skupin uživatelů." },
+      { "question": "Může administrátor zamknout možnost opakování testu úplně?", "answer": "Ano, u specifických kurzů lze nastavit pouze jeden povolený pokus bez možnosti opakování." },
+      { "question": "Kde administrátor najde nastavení testovacích parametrů kurzu?", "answer": "Nastavení najdete v editaci konkrétního kurzu v sekci věnované testu a jeho pravidlům." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 65,
+    "tema": "Historie změn v nastavení organizace",
+    "data": [
+      { "question": "Uchovává systém historii změn provedených v nastavení organizace?", "answer": "Ano, změny v klíčovém nastavení organizace se zaznamenávají a jsou dohledatelné v historii úprav." },
+      { "question": "Kdo může historii změn nastavení prohlížet?", "answer": "Historii změn mají přístupnou administrátoři s dostatečným oprávněním v rámci dané organizace." },
+      { "question": "Dá se zjistit, kdo změnil hranici úspěšnosti u konkrétního testu?", "answer": "Ano, tato informace je dohledatelná v auditním záznamu spolu s datem a identitou administrátora, který změnu provedl." },
+      { "question": "Lze změnu v nastavení vrátit zpět?", "answer": "U některých nastavení je možné se vrátit k předchozí hodnotě, jinak je nutné provést novou manuální úpravu." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 66,
+    "tema": "Práva pouze pro čtení",
+    "data": [
+      { "question": "K čemu slouží role s právy pouze pro čtení?", "answer": "Role s právy pouze pro čtení umožňuje prohlížet přehledy a statistiky bez možnosti cokoliv v systému upravovat." },
+      { "question": "Kdo obvykle využívá roli pouze pro čtení?", "answer": "Tuto roli často využívají nadřízení nebo externí auditoři, kteří potřebují přehled bez zásahu do dat." },
+      { "question": "Může uživatel s právy jen pro čtení stahovat reporty?", "answer": "Ano, export reportů je u této role obvykle povolen, úpravy dat však nikoliv." },
+      { "question": "Dá se role pouze pro čtení omezit jen na vybrané oddělení?", "answer": "Ano, rozsah viditelných dat lze i u této role omezit na konkrétní oddělení nebo skupinu uživatelů." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 67,
+    "tema": "Onboarding nového klienta do systému",
+    "data": [
+      { "question": "Jak probíhá zavedení nové organizace do systému?", "answer": "Novou organizaci založí Admin platformy, nastaví základní parametry a vytvoří první administrátorský účet pro Klienta." },
+      { "question": "Kdo importuje první sadu zaměstnanců při zavádění nového klienta?", "answer": "Počáteční import zaměstnanců obvykle provádí administrátor Klienta, případně s asistencí podpory provozovatele platformy." },
+      { "question": "Jak dlouho trvá kompletní zavedení nové organizace?", "answer": "Doba zavedení závisí na rozsahu organizace a počtu přizpůsobení, obvykle jde o řád dní až týdnů." },
+      { "question": "Dostane nový Klient školení k ovládání administrace?", "answer": "Ano, v rámci onboardingu je standardně nabízeno zaškolení administrátorů nové organizace." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 68,
+    "tema": "Ukončení spolupráce s klientem",
+    "data": [
+      { "question": "Co se stane s daty organizace po ukončení spolupráce?", "answer": "Data jsou uchována po smluvně stanovenou dobu a poté v souladu s pravidly organizace archivována nebo vymazána." },
+      { "question": "Zůstanou certifikáty vystavené uživatelům platné i po ukončení smlouvy?", "answer": "Ano, jednou vystavené certifikáty zůstávají platné, přístup k novým školením však po ukončení smlouvy končí." },
+      { "question": "Může organizace požádat o export všech svých dat před ukončením spolupráce?", "answer": "Ano, před ukončením spolupráce je možné požádat o kompletní export dat organizace." },
+      { "question": "Kdo iniciuje proces ukončení spolupráce v systému?", "answer": "Proces ukončení spolupráce iniciuje Admin platformy na základě dohody s Klientem." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 69,
+    "tema": "Bezpečnostní politiky hesel a přístupu",
+    "data": [
+      { "question": "Jaké jsou požadavky na složitost hesla?", "answer": "Heslo musí splňovat minimální délku a kombinaci znaků podle bezpečnostní politiky nastavené organizací." },
+      { "question": "Musí uživatelé měnit heslo pravidelně?", "answer": "U organizací s přísnější bezpečnostní politikou může být nastavena povinná pravidelná změna hesla." },
+      { "question": "Zablokuje systém účet po opakovaně špatně zadaném hesle?", "answer": "Ano, po několika neúspěšných pokusech o přihlášení systém účet dočasně zablokuje z bezpečnostních důvodů." },
+      { "question": "Kdo může nastavit bezpečnostní politiku hesel pro organizaci?", "answer": "Bezpečnostní politiku nastavuje administrátor organizace v rámci možností, které mu umožňuje jeho úroveň oprávnění." }
+    ]
+  },
+  {
+    "Sekce": "Role a oprávnění",
+    "etapa": 70,
+    "tema": "Podpora administrátora ze strany platformy",
+    "data": [
+      { "question": "Na koho se administrátor organizace obrátí s technickým problémem?", "answer": "Administrátor může kontaktovat podporu provozovatele platformy přímo z administračního rozhraní." },
+      { "question": "Existuje pro administrátory samostatná znalostní báze nebo dokumentace?", "answer": "Ano, provozovatel platformy poskytuje administrátorům rozšířenou dokumentaci a návody nad rámec běžné uživatelské nápovědy." },
+      { "question": "Jak rychle reaguje podpora platformy na kritické problémy administrátorů?", "answer": "Kritické problémy ovlivňující provoz organizace mají prioritní vyřízení podle úrovně smluvní podpory." },
+      { "question": "Můžeme jako organizace požádat o školení nových administrátorů?", "answer": "Ano, provozovatel platformy nabízí i doškolení nově nastupujících administrátorů podle potřeby organizace." }
+    ]
+  }
+]

@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+
+
+
+.Main_menu {
+  background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #005099 80%,     /* Živější modrá */
+    #192c41 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(0, 140, 255, 0.18);
+
+  width: 22vw;
+  height: 55.6vw;
+
+}
+
+h2{
+    font-family: 'Koulen', sans-serif;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+    color: white;
+    display: flex;
+    margin-left: 1.4vw;
+    white-space: nowrap;
+    margin-top: 0.5rem;
+    letter-spacing: 0.09rem;
+
+
+
+
+
+}
+
+
+.Logo-Row{
+
+    display: flex;
+
+    margin-right: 9.5rem;
+    margin-bottom: 2rem;
+
+
+
+
+}
+
+.Logo {
+    width: 4rem;
+    height: 4rem;
+    transform: translate(-5vw, -1.3vw);
+    margin-left: 5rem;
+    padding: 0.9rem;
+    margin-right: 2rem;
+    gap: 2rem;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+
+
+
+}
+
+h4 {
+    font-family: 'Lekton', 'Courier New', monospace;
+  color: #f75c1f;
+  margin-right: 8rem;
+  transform: translate(-8vw, -5.5vw);
+  margin-bottom: 12vw;
+  white-space: nowrap;
+  margin-top: 6vw;
+    letter-spacing: 0.15rem;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+
+
+
+}
+
+.Vertical_Menu {
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  margin-left: 5vw;
+  color: white;
+  margin-top: -12vw;
+
+
+
+
+
+
+
+
+}
+
+.Vertical_Menu li a{
+  text-decoration: none;
+  display: flex;
+  color: white;
+  gap: 2vw;
+  padding: 1vw;
+  font-family: var(--font-body);
+  font-size: medium;
+  align-items: center;
+
+
+
+
+}
+
+
+.Menu-Icon{
+  width: 2vw;
+  height: 2vw;
+  vertical-align: middle;
+
+
+
+}
+
+
+
+
+.ButtonChatBot{
+  width: 5vw;
+  height: 5vw;
+  background: linear-gradient(to right, #FF6600, #f77343);
+  border-radius: 1.1vw;
+  margin-top: -8vw;
+  margin-left: 8.3vw;
+  border: white solid 0.15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 6px 0 0 #05233f,
+    0 8px 15px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transform: translateY(0px);
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.ButtonChatBot:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 1px 0 0 #b34400,
+    0 2px 6px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+
+
+
+
+
+.Button{
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+
+}
+
+
+.Up_Menu{
+  position: absolute;
+  left: 22vw;
+  top: 0;
+  width: calc(100vw - 22vw);
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  border-bottom: 0.3vw solid white;
+  background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #005099 80%,     /* Živější modrá */
+    #192c41 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(0, 140, 255, 0.18);
+
+
+
+
+}
+
+.TopMenu{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+  padding: 1vw 2vw;
+  margin: 0;
+  margin-left: 35vw;
+
+
+
+}
+
+.TopMenu li a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-body);
+  font-size: medium;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  transition: background 0.3s;
+
+}
+
+.Top_Menu li a:hover {
+  background: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*TODO: Dashboard vizual structure ============================================================= */
+
+
+
+
+
+
+.DashboardStructure {
+    border: 0.2vw solid #f77343;
+    background: linear-gradient(to top, #9da4ab, #2f5275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48vw;
+    height: 60vh;
+    border-radius: 0.7vw;
+    margin-top: -75vh;
+    margin-left: 25vw;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.55);
+
+
+
+}
+
+.DashboardStructureGlass {
+    border-inline-end-color: 0.2vw solid #686663;
+    background: linear-gradient(to bottom, #9da4ab, #528dc9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47.5vw;
+    height: 59.5vh;
+    border-radius: 0.7vw;
+    margin-top: -0vh;
+    margin-left: 0vw;
+    backdrop-filter: blur(20vw) saturate(300%);
+    backdrop-filter: blur(40vh) saturate(100%)
+
+
+
+}
+
+
+
+.infoPanelTags {
+    border: 0.2vw solid #f77343;
+    background: linear-gradient(to bottom, #9da4ab, #2f5275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21vw;
+    height: 50vh;
+    border-radius: 0.7vw;
+    margin-top: -40.20vh;
+    margin-left: 76vw;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.55);
+
+
+}
+
+.infoHeader {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 45.0vh;
+    font-size: medium;
+    font-weight: 500;
+    position: fixed;
+    margin-top: 0vh;
+    margin-left: 4vw;
+
+
+
+
+
+
+
+
+}
+
+.infoPanelTags {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60vh;
+
+
+
+
+}
+
+
+.border {
+    display: flex;
+    align-items: center;
+
+}
+
+.diode {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #555;
+  right: 4.5vw;
+  bottom: 46.9vh;
+
+}
+
+.diode.on {
+  background: #0a641d;
+  animation: glow-green 3s infinite;
+}
+
+.diode.off {
+  background: #E24B4A;
+
+}
+
+@keyframes glow-green {
+  0%, 100% { box-shadow: 0 0 0 0   rgba(17, 158, 117, 3.5); }
+  50%       { box-shadow: 0 0 0 7.5px rgba(17, 148, 209, 0); }
+
+}
+
+
+
+
+/*TODO: Obsahová část Left-panelu ============================================================== */
+
+
+.Obsahové-pole {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -23vh;
+
+}
+
+
+.event-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin-right: -8vw;
+    align-items: center;
+    margin-left: 1.5vw;
+
+
+
+
+}
+
+
+.event-news {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw;
+    margin-left: 1.5vw;
+    font-size: 1.015vw;
+
+
+
+
+}
+
+.event-log {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw;
+    margin-left: 1.5vw;
+    font-size: 0.9vw;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Container2 {
+  background: linear-gradient(
+    160deg,
+    #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
+    #5f89bc 30%,     /* Tmavá námořní */
+    #003d80 60%,     /* Střední modrá */
+    #005099 80%,     /* Živější modrá */
+    #192c41 100%     /* Zpět do hlubin — vytváří "oblouk" světla */
+  );
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(0, 140, 255, 0.18);
+  border-radius: 0.5vw;
+  border: #0066CC solid 0.15vw;
+  width: calc(65vw - 35vw);
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35vw;
+  margin-top: 23vh;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+
+
+}
+
+
+.Patička {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+
+
+
+
+
+
+}

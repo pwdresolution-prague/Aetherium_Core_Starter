@@ -1,0 +1,191 @@
+[
+  {
+    "etapa": 21,
+    "tema": "Akreditace a uznávání kurzů",
+    "data": [
+      { "question": "Mají vaše kurzy oficiální akreditaci?", "answer": "U vybraných kurzů ano, informace o akreditaci ministerstvem najdete vždy v detailu kurzu." [2] },
+      { "question": "Je tento certifikát uznávaný úřady?", "answer": "Pokud je kurz akreditován, je to výslovně uvedeno v jeho popisu." [2] },
+      { "question": "Kde zjistím, jestli je školení certifikované státem?", "answer": "Podívejte se do detailu kurzu, kde uvádíme informace o akreditaci vybranými institucemi." [2] }
+    ]
+  },
+  {
+    "etapa": 22,
+    "tema": "Sociální přihlašování",
+    "data": [
+      { "question": "Můžu se přihlásit přes Google?", "answer": "Ano, náš systém podporuje sociální přihlášení pomocí Google  účtu." [3] },
+      { "question": "Lze propojit můj účet s LinkedInem?", "answer": "Ano, v nastavení nebo při přihlášení můžete využít propojení se sítěmi Google a LinkedIn." [3] },
+      { "question": "Podporujete přihlášení jedním kliknutím?", "answer": "Ano, využijte možnosti sociálního přihlášení pro rychlejší přístup." [3] }
+    ]
+  },
+  {
+    "etapa": 23,
+    "tema": "Sdílení úspěchů",
+    "data": [
+      { "question": "Jak si dám certifikát na LinkedIn?", "answer": "Certifikát lze přímo z LMS exportovat ve formátu optimalizovaném pro sdílení na LinkedIn." },
+      { "question": "Můžu poslat odkaz na svůj diplom někomu dalšímu?", "answer": "Ano, certifikáty lze exportovat a sdílet jako odkaz nebo PDF soubor." },
+      { "question": "Existuje tlačítko pro sdílení výsledků na sítě?", "answer": "Ano, v sekci certifikátů najdete možnost exportu pro LinkedIn." }
+    ]
+  },
+  {
+    "etapa": 24,
+    "tema": "Historie aktivit uživatele",
+    "data": [
+      { "question": "Kde uvidím, kdy jsem se naposledy přihlásil?", "answer": "Vaše přihlášení a průběh studiem zaznamenává sekce 'Historie aktivit - Můj profil'." [4] },
+      { "question": "Existuje výpis mých splněných lekcí?", "answer": "Ano, historie aktivit obsahuje záznamy o všech absolvovaných lekcích a testech." [4] },
+      { "question": "Můžu dohledat své staré studijní kroky?", "answer": "Ano, veškerá historie vašich interakcí s kurzy je uložena v systému." [4] }
+    ]
+  },
+  {
+    "etapa": 25,
+    "tema": "Průběh online testování",
+    "data": [
+      { "question": "Jak vypadá rozhraní při testu?", "answer": "Test probíhá přímo v prohlížeči, otázky se zobrazují postupně a výsledky získáte okamžitě po splnění testu." [5] },
+      { "question": "Musím test odevzdat najednou?", "answer": "Ano, po zodpovězení všech otázek kliknete na odeslat pro automatické vyhodnocení." [5] },
+      { "question": "Uvidím během testu, kolik mi zbývá času?", "answer": "Ano, každý test má v záhlaví zobrazený časový limit." [6] }
+    ]
+  },
+  {
+    "etapa": 26,
+    "tema": "Papírové vs. elektronické certifikáty",
+    "data": [
+      { "question": "Pošlete mi certifikát poštou?", "answer": "Standardně zasíláme elektronickou verzi v PDF, papírovou verzi lze vystavit na vyžádání." [7] },
+      { "question": "Je PDF certifikát dostatečný jako originál?", "answer": "Ano, naše digitální certifikáty obsahují unikátní ID pro ověření pravosti." [2, 7] },
+      { "question": "Dá se objednat tištěné osvědčení?", "answer": "Ano, pokud potřebujete fyzickou kopii, kontaktujte prosím naši podporu." [7] }
+    ]
+  },
+  {
+    "etapa": 27,
+    "tema": "Přístup po skončení kurzu",
+    "data": [
+      { "question": "Můžu se vrátit k lekcím i po získání certifikátu?", "answer": "Ano, většinu kurzů můžete procházet a opakovat si v nich látku i po jejich úspěšném dokončení." [8] },
+      { "question": "Zmizí mi kurz ze seznamu po testu?", "answer": "Kurz zůstává ve vašem účtu v historii, abyste se k němu mohli kdykoliv vrátit." [8] },
+      { "question": "Jsou studijní materiály dostupné navždy?", "answer": "Většina materiálů zůstává přístupná pro vaše potřeby i po skončení platnosti certifikátu." [8] }
+    ]
+  },
+  {
+    "etapa": 28,
+    "tema": "Newsletter a novinky",
+    "data": [
+      { "question": "Jak se dozvím o nových školeních?", "answer": "Informace o novinkách a nových kurzech v nabídce zasíláme pravidelně pomocí newsletteru." [1] },
+      { "question": "Kde najdu seznam aktuálních akcí?", "answer": "Sledujte svůj e-mail pro newsletter s novinkami nebo sekci kurzů v LMS." [1] },
+      { "question": "Existuje přehled kurzů pro tento měsíc?", "answer": "Standardní nabídka je dostupná v sekci Kurzy, o speciálních nabídkách informujeme newsletterem." [1] }
+    ]
+  },
+  {
+    "etapa": 29,
+    "tema": "Přezkoumání výsledků testu",
+    "data": [
+      { "question": "Nesouhlasím s výsledkem testu, co mám dělat?", "answer": "Pokud se domníváte, že došlo k technické chybě, kontaktujte podporu pro přezkoumání výsledků." [9] },
+      { "question": "Může administrátor ručně opravit můj bodový zisk?", "answer": "V odůvodněných případech může administrátor po prověření situace do hodnocení zasáhnout." [9] },
+      { "question": "Kde reklamovat špatně vyhodnocenou otázku?", "answer": "Využijte sekci 'Kontakt' a popište konkrétní problém s danou otázkou." [9] }
+    ]
+  },
+ {
+    "etapa": 30,
+    "tema": "Zabezpečení účtu a Aetherium MFA",
+    "data": [
+      { 
+        "question": "Proč je v Aetherium core vyžadováno MFA (vícefaktorové ověření)?", 
+        "answer": "MFA chrání vaše výukové pokroky, behaviorální data a vygenerované certifikáty před zneužitím, i kdyby došlo k prozrazení vašeho hesla." 
+      },
+      { 
+        "question": "Jakým způsobem obdržím kód pro dvoufázové ověření?", 
+        "answer": "Systém nabízí flexibilní metody: kód vám přijde jako SMS (ideální pro uživatele bez e-mailu), do vaší e-mailové schránky, nebo můžete využít standardní Authenticator aplikaci." 
+      },
+      { 
+        "question": "Co mám dělat, pokud nemám přístup k MFA kódu?", 
+        "answer": "V takovém případě využijte sekci 'Podpora' v horním menu nebo kontaktujte svého firemního Správce LMS (Level 1/2), který může v Admin rozhraní resetovat vaše ověřovací faktory." 
+      }
+    ]
+  },
+  {
+    "etapa": 31,
+    "tema": "Navazující studium",
+    "data": [
+      { "question": "Doporučíte mi, co studovat dál?", "answer": "Ano, po dokončení kurzu vám systém automaticky nabídne doporučené navazující kurzy." [11] },
+      { "question": "Jaké jsou další kroky po tomto školení?", "answer": "Systém analyzuje váš profil a navrhne kurzy, které rozšiřují vaše získané znalosti." [11] },
+      { "question": "Kde najdu tipy na další vzdělávání?", "answer": "Doporučení na nové kurzy uvidíte ve svém uživatelském rozhraní po splnění aktuálních cílů." [11] }
+    ]
+  },
+  {
+    "etapa": 32,
+    "tema": "Pravidla pro více kurzů",
+    "data": [
+      { "question": "Můžu studovat pět kurzů najednou?", "answer": "Ano, můžete být zapsáni do více kurzů současně, pokud jsou v rámci platnosti." [1] },
+      { "question": "Existuje limit na počet aktivních kurzů?", "answer": "Počet současně studovaných kurzů není v základu omezen, záleží na vaší expiraci." [1] },
+      { "question": "Lze přepínat mezi rozdělanými kurzy?", "answer": "Ano, studium můžete v jednom kurzu přerušit a pokračovat v jiném podle potřeby." [1] }
+    ]
+  },
+  {
+    "etapa": 33,
+    "tema": "Kontakt na administrátora",
+    "data": [
+      { "question": "Jak pošlu zprávu správci systému?", "answer": "Administrátora můžete kontaktovat přes interní zprávy nebo formulář v sekci 'Kontakt'." [12] },
+      { "question": "Kde najdu pomoc od správce?", "answer": "Využijte kontaktní formulář, který automaticky doručí vaši žádost správnému administrátorovi." [12] },
+      { "question": "Jak vyřešit problém s firemním přiřazením?", "answer": "Kontaktujte administrátora, který má správu vaší firmy v systému na starosti." [10, 12] }
+    ]
+  },
+  {
+    "etapa": 34,
+    "tema": "Synchronizace zařízení",
+    "data": [
+      { "question": "Uvidím na mobilu to samé co na PC?", "answer": "Ano, veškerý váš postup je synchronizován napříč všemi zařízeními v reálném čase." [3, 4] },
+      { "question": "Musím se na tabletu přihlašovat znovu?", "answer": "Ano, z bezpečnostních důvodů je nutné se na novém zařízení poprvé přihlásit." [3, 10] },
+      { "question": "Můžu začít test na PC a dokončit ho na mobilu?", "answer": "Ano, systém naváže přesně tam, kde jste skončili, i při změně zařízení." [4, 5] }
+    ]
+  },
+  {
+    "etapa": 35,
+    "tema": "Prohlížeče a kompatibilita",
+    "data": [
+      { "question": "Funguje LMS v prohlížeči Edge?", "answer": "Ano, plně podporujeme Chrome, Firefox, Edge i Safari." [4] },
+      { "question": "Mám starý Internet Explorer, bude to fungovat?", "answer": "Doporučujeme používat aktuální verze moderních prohlížečů pro správné zobrazení všech prvků." [4] },
+      { "question": "Musím instalovat nějaké pluginy?", "answer": "Ne, systém běží přímo v prohlížeči bez nutnosti instalace dalších doplňků." [4] }
+    ]
+  },
+  {
+    "etapa": 36,
+    "tema": "Nápověda pro začátečníky",
+    "data": [
+      { "question": "Jsem tu poprvé, co mám dělat?", "answer": "Základní nápovědu a průvodce získáte automaticky při prvním vstupu do systému." [4] },
+      { "question": "Kde najdu manuál k ovládání LMS?", "answer": "Průvodce ovládáním je dostupný v sekci nápovědy hned po přihlášení." [4] },
+      { "question": "Existuje video-návod k systému?", "answer": "Základní instrukce najdete v úvodní sekci nápovědy pro nové uživatele." [4] }
+    ]
+  },
+  {
+    "etapa": 37,
+    "tema": "Mazání účtu a dat",
+    "data": [
+      { "question": "Chci smazat svůj profil z vaší databáze.", "answer": "Pro úplné odstranění účtu napište žádost administrátorovi skrze sekci 'Kontakt'." [10] },
+      { "question": "Co se stane s mými certifikáty po smazání účtu?", "answer": "Po smazání účtu dojde k trvalému odstranění všech vašich dat včetně historie a certifikátů." [10] },
+      { "question": "Mohu požádat o anonymizaci svých údajů?", "answer": "Ano, veškeré požadavky ohledně nakládání s daty řeší sekce GDPR a náš administrátor." [3] }
+    ]
+  },
+  {
+    "etapa": 38,
+    "tema": "Aktualizace materiálů",
+    "data": [
+      { "question": "Jak poznám, že je materiál v kurzu zastaralý?", "answer": "Všechny kurzy pravidelně aktualizujeme, datum poslední revize najdete v detailu kurzu." [1, 4] },
+      { "question": "Dostanu upozornění na novou verzi lekce?", "answer": "Pokud dojde k zásadní změně v kurzu, který studujete, budete informováni v rozhraní LMS." [1] },
+      { "question": "Proč se změnily otázky v mém procvičování?", "answer": "Obsah kurzů a testů průběžně vylepšujeme, aby odpovídal aktuálním standardům." [1, 5] }
+    ]
+  },
+  {
+    "etapa": 39,
+    "tema": "Výpadky a chyby připojení",
+    "data": [
+      { "question": "Vypadl mi internet během lekce, ztratím postup?", "answer": "Nebojte se, systém ukládá váš postup průběžně, po obnovení připojení navážete." [5, 12] },
+      { "question": "Co dělat, když se mi nenačítá video?", "answer": "Zkuste vyčistit cache prohlížeče nebo zkontrolujte stabilitu svého připojení." [12] },
+      { "question": "Stránka se načítá příliš dlouho.", "answer": "Prověřte rychlost svého internetu nebo zkuste obnovit stránku klávesou F5." [12] }
+    ]
+  },
+  {
+    "etapa": 40,
+    "tema": "Právní informace a podmínky",
+    "data": [
+      { "question": "Kde najdu obchodní podmínky?", "answer": "Odkaz na obchodní podmínky a ochranu osobních údajů najdete v patičce webu nebo v sekci GDPR." [3] },
+      { "question": "Jak chráníte moje osobní údaje?", "answer": "Veškeré informace o zabezpečení a nakládání s daty najdete v sekci věnované GDPR." [3] },
+      { "question": "Můžu si vyžádat výpis dat, která o mně evidujete?", "answer": "Ano, v sekci GDPR máte přehled o všech uchovávaných údajích." [3] }
+    ]
+  }
+]

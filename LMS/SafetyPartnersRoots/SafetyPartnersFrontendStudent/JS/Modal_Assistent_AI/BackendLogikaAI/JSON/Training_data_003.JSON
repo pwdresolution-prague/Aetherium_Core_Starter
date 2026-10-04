@@ -1,0 +1,182 @@
+[
+  {
+    "etapa": 41,
+    "tema": "Procvičovací otázky",
+    "data": [
+      { "question": "Kde si můžu nanečisto vyzkoušet test?", "answer": "Procvičovací otázky najdete v sekci 'Kurzy', kde si můžete látku zopakovat před ostrým testem." },
+      { "question": "Existují v systému otázky na zkoušku?", "answer": "Ano, v sekci 'Kurzy' máte k dispozici otázky k procvičení." },
+      { "question": "Kde najdu materiály pro přípravu na test?", "answer": "Přípravné otázky k procvičování jsou dostupné přímo v sekci 'Kurzy'." }
+    ]
+  },
+  {
+    "etapa": 42,
+    "tema": "Časové limity testů",
+    "data": [
+      { "question": "Kolik času mám na vyplnění závěrečného testu?", "answer": "Každý test má svůj časový limit, který se vám zobrazí v informacích těsně před jeho zahájením." },
+      { "question": "Ukončí se test sám po vypršení času?", "answer": "Ano, testy jsou časově omezené a systém vás na limit upozorní před startem." },
+      { "question": "Kde uvidím zbývající čas během testování?", "answer": "Časový limit je uveden před zahájením a zbývající čas vidíte v záhlaví testového rozhraní." }
+    ]
+  },
+  {
+    "etapa": 43,
+    "tema": "Minimální skóre pro úspěch",
+    "data": [
+      { "question": "Kolik procent musím mít, abych prošel?", "answer": "Standardně je pro úspěšné absolvování kurzu potřeba získat alespoň 70 % správných odpovědí." },
+      { "question": "Co je hranice úspěšnosti u testu?", "answer": "Pro splnění testu musíte dosáhnout minimálně 70% úspěšnosti." },
+      { "question": "Stačí mi polovina bodů k získání certifikátu?", "answer": "Ne, standardní hranice k úspěchu je stanovena na 70 % bodů." }
+    ]
+  },
+  {
+    "etapa": 44,
+    "tema": "Postupné zobrazování otázek",
+    "data": [
+      { "question": "Uvidím všechny otázky testu najednou?", "answer": "V rámci online testování se otázky v LMS zobrazují postupně jedna po druhé." },
+      { "question": "Jakým způsobem se v testu listuje mezi otázkami?", "answer": "Otázky se v systému zobrazují postupně a výsledky se vyhodnotí až na úplném konci." },
+      { "question": "Zobrazují se otázky v seznamu pod sebou?", "answer": "Ne, v online testu se otázky v rozhraní zobrazují postupně za sebou." }
+    ]
+  },
+  {
+    "etapa": 45,
+    "tema": "Výpadek připojení během testu",
+    "data": [
+      { "question": "Co když mi vypadne internet uprostřed testu?", "answer": "V případě výpadku připojení navážete po opětovném přihlášení v posledním vykonaném kroku." },
+      { "question": "Ztratím všechny odpovědi, když se mi restartuje počítač?", "answer": "Ne, systém si pamatuje váš postup a umožní vám pokračovat tam, kde jste skončili." },
+      { "question": "Můžu test rozdělit na více částí?", "answer": "Ano, v případě technického přerušení navážete přesně v místě posledního kroku." }
+    ]
+  },
+  {
+    "etapa": 46,
+    "tema": "Náhodné generování testů",
+    "data": [
+      { "question": "Jsou otázky v testu pro každého stejné?", "answer": "Otázky se generují náhodně, aby každý student pracoval na jiné variantě testu." },
+      { "question": "Mění se pořadí otázek při opakování testu?", "answer": "Ano, pro zajištění objektivity systém náhodně mění pořadí otázek i jejich výběr." },
+      { "question": "Jak LMS zajišťuje férovost testování?", "answer": "Využíváme náhodné generování otázek a časové limity pro každého studenta." }
+    ]
+  },
+  {
+    "etapa": 47,
+    "tema": "Zobrazení správných odpovědí",
+    "data": [
+      { "question": "Dozvím se, kde jsem udělal chybu?", "answer": "Ano, po ukončení testu se vám zobrazí správná řešení u všech otázek." },
+      { "question": "Můžu si prohlédnout své špatné odpovědi?", "answer": "Systém vám po testu umožní nahlédnout do správných řešení a porovnat je s vašimi." },
+      { "question": "Uvidím po testu vysvětlení chyb?", "answer": "Po odevzdání testu uvidíte správné odpovědi, což vám pomůže se z chyb poučit." }
+    ]
+  },
+  {
+    "etapa": 48,
+    "tema": "Duplicitní certifikáty",
+    "data": [
+      { "question": "Ztratil jsem stažený certifikát, můžu si ho stáhnout znova?", "answer": "Ano, v sekci 'Certifikáty' si můžete kopii certifikátu stáhnout kdykoliv znovu." },
+      { "question": "Kolikrát si můžu vygenerovat své osvědčení?", "answer": "Počet stažení není omezen, duplikát najdete vždy ve svém profilu." },
+      { "question": "Je vystavení kopie certifikátu zpoplatněno?", "answer": "Stažení kopie z vašeho účtu v sekci 'Certifikáty' je zdarma." }
+    ]
+  },
+  {
+    "etapa": 49,
+    "tema": "Mezinárodní uznání certifikátů",
+    "data": [
+      { "question": "Bude můj certifikát platit i v Německu?", "answer": "Většina našich certifikátů je uznávána i v zahraničí, ale vždy záleží na konkrétním typu kurzu." },
+      { "question": "Uznávají vaše školení i zahraniční firmy?", "answer": "Ano, naše certifikáty mají širokou platnost, detaily o mezinárodním uznání najdete v popisu kurzu." },
+      { "question": "Je certifikát v angličtině?", "answer": "Informace o jazykových mutacích certifikátu a jeho platnosti v cizině jsou uvedeny u každého kurzu." }
+    ]
+  },
+  {
+    "etapa": 50,
+    "tema": "Nahlášení problému s certifikátem",
+    "data": [
+      { "question": "Mám na certifikátu chybu ve jméně, co s tím?", "answer": "Jakýkoliv problém s certifikátem nahlaste podpoře skrze sekci 'Můj profil v sekci změna uživatelských údajů'." },
+      { "question": "Certifikát se mi nenačítá správně v PDF.", "answer": "Pokud máte technické potíže se zobrazením, kontaktujte nás přes formulář 'Kontakt'." },
+      { "question": "Kde reklamovat špatné datum na osvědčení?", "answer": "Využijte sekci 'Kontakt' a my údaje na certifikátu prověříme a opravíme." }
+    ]
+  },
+  {
+    "etapa": 51,
+    "tema": "Potvrzení o účasti vs. certifikát",
+    "data": [
+      { "question": "Můžu dostat papír, že jsem se kurzu účastnil, i když jsem neudělal test?", "answer": "Vždy záleží na konkretním poskytovateli edukačních kurzů a zaměření." },
+      { "question": "Kde najdu potvrzení o absolvování lekcí?", "answer": "Potvrzení o účasti je k dispozici v sekci Můj profil / sekce Moje kurzy." },
+      { "question": "Je rozdíl mezi certifikátem a potvrzením o účasti?", "answer": "Certifikát stvrzuje úspěšný test, zatímco potvrzení o účasti dokládá vaši aktivitu v kurzu." }
+    ]
+  },
+  {
+    "etapa": 52,
+    "tema": "Historie testů a pokusů",
+    "data": [
+      { "question": "Kde najdu své minulé výsledky z testů?", "answer": "Kompletní historii vašich testů najdete v detailu sekce Můj profil / sekce Moje kurzy." },
+      { "question": "Uvidím v systému, jak jsem dopadl před rokem?", "answer": "Ano, historie testů se ukládá a je dostupná v detailech vašich absolvovaných kurzů." },
+      { "question": "Dá se dohledat, kolik pokusů jsem na test potřeboval?", "answer": "Záznamy o vašem průběhu a jednotlivých pokusech jsou uloženy v historii kurzu, dále vždy záleží na konkretním poskytovateli edukačních kurzů a zaměření." }
+    ]
+  },
+  {
+    "etapa": 53,
+    "tema": "Formát exportu výsledků",
+    "data": [
+      { "question": "Můžu si vyexportovat své skóre do tabulky?", "answer": "Standardně nabízíme export výsledků do PDF přes tlačítko v sekci Certifikáty." },
+      { "question": "V jakém formátu dostanu přehled svých kurzů?", "answer": "Své výsledky si můžete stáhnout jako přehledný PDF dokument." },
+      { "question": "Lze stáhnout historii studijních aktivit?", "answer": "Ano, v sekci certifikátů využijte možnost 'Exportovat do PDF' pro získání souhrnu." }
+    ]
+  },
+  {
+    "etapa": 54,
+    "tema": "Ověřování certifikátů pomocí ID", //TODO: Zajištění odpovědi týkjající se správného formátování ID na stránce PDF certifikace
+    "data": [
+      { "question": "Jak může můj zaměstnavatel zjistit, že certifikát není falešný?", "answer": "Každý certifikát má unikátní ID, které lze snadno ověřit přímo na našem portálu." },
+      { "question": "Kde se na certifikátu nachází ověřovací kód?", "answer": "Unikátní ID kód najdete přímo na dokumentu certifikátu, obvykle v jeho dolní části." },
+      { "question": "Funguje ověření pravosti i pro starší osvědčení?", "answer": "Ano, všechna naše vydaná osvědčení s ID jsou v systému dohledatelná a ověřitelná." }
+    ]
+  },
+  {
+    "etapa": 55,
+    "tema": "Převod certifikátů",
+    "data": [
+      { "question": "Uzná mi můj certifikát i jiná škola?", "answer": "Převod je možný v případě, že s danou institucí spolupracujeme a ona naše certifikáty uznává." },
+      { "question": "Lze propojit můj úspěch s jiným vzdělávacím systémem?", "answer": "Spolupracujeme s vybranými institucemi na vzájemném uznávání certifikací, informujte se u správy." },
+      { "question": "Jak přenést své výsledky k jinému poskytovateli?", "answer": "O možnosti převodu certifikátu k partnerské instituci se informujte přes sekci 'Kontakt'." }
+    ]
+  },
+  {
+    "etapa": 56,
+    "tema": "Ověření změny e-mailu",
+    "data": [
+      { "question": "Proč mi po změně e-mailu nepřišel potvrzovací kód?", "answer": "Zkontrolujte složku SPAM; potvrzení musí přijít na vaši novou adresu pro dokončení změny." },
+      { "question": "Je nutné potvrzovat nový e-mail?", "answer": "Ano, změna e-mailu v nastavení účtu vyžaduje potvrzení zprávy zaslané na novou adresu." },
+      { "question": "Co dělat, když potvrzovací odkaz na e-mail nefunguje?", "answer": "Zkuste odeslat žádost o změnu znovu nebo kontaktujte podporu v sekci 'Kontakt'." }
+    ]
+  },
+  {
+    "etapa": 57,
+    "tema": "Bezpečné odhlášení z LMS",
+    "data": [
+      { "question": "Kde najdu tlačítko pro odchod ze systému?", "answer": "Pro bezpečné opuštění systému klikněte na tlačítko 'Odhlásit se' v horní liště." },
+      { "question": "Odhlásí mě systém automaticky při nečinnosti?", "answer": "Z bezpečnostních důvodů může dojít k automatickému odhlášení po delší době neaktivity." },
+      { "question": "Jak se ujistím, že můj účet na veřejném PC nezůstal otevřený?", "answer": "Vždy po ukončení práce použijte tlačítko 'Odhlásit se' v pravém horním rohu." }
+    ]
+  },
+  {
+    "etapa": 58,
+    "tema": "Jazykové mutace rozhraní",
+    "data": [
+      { "question": "Můžu mít LMS v angličtině?", "answer": "Ano, preferovaný jazyk celého rozhraní si můžete vybrat v sekci 'Můj účet'." },
+      { "question": "Změní se po přepnutí jazyka i obsah kurzů?", "answer": "Přepnutí jazyka změní ovládací prvky systému; dostupnost kurzu v jiném jazyce závisí na konkrétní nabídce." },
+      { "question": "Kde najdu volbu pro češtinu?", "answer": "Jazyk rozhraní se nastavuje v 'Můj účet', kde je čeština jako výchozí volba." }
+    ]
+  },
+  {
+    "etapa": 59,
+    "tema": "Cache a technické nahrávání",
+    "data": [
+      { "question": "Co znamená 'vyčistit cache' a jak to udělám?", "answer": "Vyčištění mezipaměti prohlížeče pomáhá při chybách v načítání; návod najdete v nápovědě svého prohlížeče." },
+      { "question": "Prohlížeč mi ukazuje starou verzi kurzu.", "answer": "Zkuste vynutit obnovení stránky (Ctrl+F5) nebo vyčistit cache prohlížeče." },
+      { "question": "Kurz se zasekl na bílé obrazovce.", "answer": "Zkuste obnovit stránku nebo prověřte verzi svého prohlížeče, zda je aktuální." }
+    ]
+  },
+  {
+    "etapa": 60,
+    "tema": "Zpětná vazba k materiálům",
+    "data": [
+      { "question": "Kam můžu napsat, že se mi kurz líbil?", "answer": "Vaši zpětnou vazbu uvítáme skrze sekci 'Kontakt' nebo přímo u hodnocení kurzu." },
+      { "question": "Lze hodnotit kvalitu videí v lekcích?", "answer": "Ano, u materiálů můžete využít tlačítko 'Nahlásit problém' nebo zaslat hodnocení podpoře." },
+      { "question": "Můžu navrhnout zlepšení pro testy?", "answer": "Určitě, vaše podněty k fungování systému nám můžete poslat přes kontaktní formulář." }
+    ]
+  }
+]

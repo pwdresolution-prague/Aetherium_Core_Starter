@@ -1,0 +1,55 @@
+[
+  {
+    "Sekce": "Admin CMS Editor",
+    "etapa": 1,
+    "tema": "Základy editoru kurzu",
+    "data": [
+      { "question": "Jak vytvořím nový kurz?", "answer": "Otevřete CMS, zadejte název (InputTitle), zvolte typ kurzu (SelectCourse), přidejte stránky tlačítkem + a uložte jako koncept nebo publikujte." },
+      { "question": "Co je draft a published?", "answer": "Draft (koncept) je rozpracovaný kurz neviditelný studentům. Published je publikovaná verze po validaci — připravená k přiřazení studentům." },
+      { "question": "Mohu uložit kurz bez publikace?", "answer": "Ano. Akce Uložit koncept uloží status draft. Publikovat vyžaduje název, typ, alespoň jednu stránku a průchod validací." },
+      { "question": "Co se stane při publikaci, když je stránka prázdná?", "answer": "Validace publikaci zablokuje. Textový obsah nesmí být prázdný; otázky musí mít znění a u single/multi alespoň jednu správnou odpověď; media musí mít URL." }
+    ]
+  },
+  {
+    "Sekce": "Admin CMS Editor",
+    "etapa": 2,
+    "tema": "Typy stránek kurzu",
+    "data": [
+      { "question": "Jaké typy stránek mohu přidat?", "answer": "Textový obsah (TipTap), otázka jedna správná, otázka více správných, Ano/Ne, otevřená otázka a Obrázek/Video (media)." },
+      { "question": "Jak přidám textovou lekci?", "answer": "V menu + zvolte Textový obsah. Pište v TipTap editoru s toolbarem. HTML se ukládá do page.data.html." },
+      { "question": "Jak vytvořím otázku s jednou správnou odpovědí?", "answer": "Přidejte typ 'Otázka – jedna správná'. Vyplňte znění a odpovědi; označte právě správné varianty podle pravidel single choice." },
+      { "question": "Jak přidám mediální stránku?", "answer": "Typ Obrázek/Video: vyplňte mediaUrl, mediaType (image/video) a volitelně caption. Bez URL neprojde validace při publikaci." },
+      { "question": "Mohu typy stránek míchat v jednom kurzu?", "answer": "Ano. Kurz je posloupnost stránek různých typů. Outline vlevo ukazuje ikony a pořadí; stránky lze mazat a přepínat." }
+    ]
+  },
+  {
+    "Sekce": "Admin CMS Editor",
+    "etapa": 3,
+    "tema": "Outline a navigace v editoru",
+    "data": [
+      { "question": "K čemu je outline stránek?", "answer": "Přehled všech stránek kurzu s číslem a ikonou typu. Kliknutím přepnete aktuální stránku; křížkem stránku smažete." },
+      { "question": "Jak změním pořadí stránek?", "answer": "V aktuální verzi editoru přepínáte Backward/Forward mezi stránkami. Explicitní drag-and-drop pořadí doplňujte podle dalšího vývoje CMS." },
+      { "question": "Kam se ukládá obsah při psaní?", "answer": "Do courseState v paměti prohlížeče. Při změně TipTap se html zapisuje do aktuální content stránky. Persist do Supabase je napojený na Uložit / Publikovat (dokončete napojení dle dokumentace)." }
+    ]
+  },
+  {
+    "Sekce": "Admin CMS Editor",
+    "etapa": 4,
+    "tema": "Validace před publikací",
+    "data": [
+      { "question": "Proč nejde kurz publikovat?", "answer": "Chybí název, typ nebo stránky, nebo validace našla prázdný content, otázku bez textu/správné odpovědi, prázdné tvrzení ano/ne, nebo media bez URL." },
+      { "question": "Kolik odpovědí má mít single choice?", "answer": "Výchozí šablona vytváří 4 odpovědi s UUID. U single/multi musí být alespoň jedna označená jako correct." },
+      { "question": "Mohu publikovat kurz jen s mediální stránkou?", "answer": "Ano, pokud má validní mediaUrl a kurz má název a typ. Mix typů je libovolný, pokud každá stránka projde validací." }
+    ]
+  },
+  {
+    "Sekce": "Admin CMS Editor",
+    "etapa": 5,
+    "tema": "TipTap a média",
+    "data": [
+      { "question": "Jaký editor se používá pro text?", "answer": "TipTap (headless WYSIWYG) s toolbarem v CMS. Quill je v projektu jako doplňkový editor pro jiné formuláře." },
+      { "question": "Mohu nahrát obrázek do lekce?", "answer": "Editor podporuje práci s obrázky (FilesInput, ResizableImage). Pro produkci napojte upload na Storage; do media stránky lze zadat URL." },
+      { "question": "Kde je registr typů stránek v kódu?", "answer": "PAGE_TYPES v PageTypesLogic/PageTypes.js. Nový typ = nový renderer + jeden záznam do registru." }
+    ]
+  }
+]

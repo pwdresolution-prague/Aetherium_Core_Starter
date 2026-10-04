@@ -1,0 +1,174 @@
+[
+  {
+    "etapa": 61,
+    "tema": "Odběr novinek a newsletter",
+    "data": [
+      { "question": "Kde se dozvím o nových kurzech v nabídce?", "answer": "V případě novinek a nových kurzů budete informováni pomocí našeho newsletteru." },
+      { "question": "Jak zjistím, co je u vás nového?", "answer": "Sledujte svůj e-mail, veškeré aktuality rozesíláme prostřednictvím newsletteru." },
+      { "question": "Existuje seznam připravovaných školení?", "answer": "Informace o novinkách v nabídce kurzů zasíláme uživatelům v pravidelném newsletteru." }
+    ]
+  },
+  {
+    "etapa": 62,
+    "tema": "Tempo a styl studia",
+    "data": [
+      { "question": "Můžu si určit, jak rychle kurz projdu?", "answer": "Ano, kurzy jsou navrženy pro samostudium, takže můžete studovat vlastním tempem." },
+      { "question": "Je studium omezeno denním limitem lekcí?", "answer": "Ne, kurzy umožňují studovat vlastním tempem podle vašich časových možností." },
+      { "question": "Musím u kurzu sedět v kuse, nebo můžu přestat?", "answer": "Samostudium vám umožňuje studovat flexibilně a postupovat vlastním tempem." }
+    ]
+  },
+  {
+    "etapa": 63,
+    "tema": "Doporučení po skončení kurzu",
+    "data": [
+      { "question": "Co mám dělat, až kurz úspěšně dokončím?", "answer": "Po dokončení vám systém automaticky nabídne doporučené navazující kurzy." },
+      { "question": "Dostanu tip na další vzdělávání?", "answer": "Ano, po splnění kurzu vám systém vygeneruje doporučení na další vhodné moduly." },
+      { "question": "Existuje nějaká studijní cesta?", "answer": "Po každém kurzu vám systém doporučí, které navazující školení by pro vás bylo vhodné." }
+    ]
+  },
+  {
+    "etapa": 64,
+    "tema": "Opakování neúspěšných testů",
+    "data": [
+      { "question": "Co se stane, když se mi test nepovede?", "answer": "Můžete si látku zopakovat a test složit znovu v rámci povoleného počtu pokusů." },
+      { "question": "Můžu test zkusit znova, když jsem neprošel?", "answer": "Ano, systém vám umožní látku zopakovat a pokusit se o test znovu." },
+      { "question": "Kolikrát smím test opravovat?", "answer": "Testy lze opakovat neomezeně, pokud není u konkrétního kurzu uvedeno jinak." }
+    ]
+  },
+  {
+    "etapa": 65,
+    "tema": "Rychlost vyhodnocení výsledků",
+    "data": [
+      { "question": "Jak dlouho budu čekat na výsledky testu?", "answer": "Výsledky testu se vám v rozhraní zobrazí ihned po jeho dokončení." },
+      { "question": "Dozvím se body hned, nebo až za pár dní?", "answer": "Výsledky a bodové hodnocení uvidíte okamžitě po odeslání testu." },
+      { "question": "Kdy mi přijde zpráva o úspěchu v testu?", "answer": "Výsledek vidíte ihned v systému po dokončení všech otázek." }
+    ]
+  },
+  {
+    "etapa": 66,
+    "tema": "Přerušení testu a připojení",
+    "data": [
+      { "question": "Můžu si dát v půlce testu pauzu?", "answer": "V případě výpadku připojení navážete v posledním vykonaném kroku." },
+      { "question": "Co dělat, když se mi při testu vypne počítač?", "answer": "Po restartu a přihlášení navážete tam, kde jste před výpadkem skončili." },
+      { "question": "Ztratí se mé odpovědi při přerušení spojení?", "answer": "Ne, systém ukládá váš postup, takže při výpadku navážete v posledním kroku." }
+    ]
+  },
+  {
+    "etapa": 67,
+    "tema": "Mechanismus hodnocení",
+    "data": [
+      { "question": "Kdo opravuje moje testy?", "answer": "Všechny testy v našem LMS jsou vyhodnocovány automaticky systémem po jejich odevzdání." },
+      { "question": "Opravuje testy lektor?", "answer": "Ne, hodnocení probíhá automaticky ihned poté, co test v systému odevzdáte." },
+      { "question": "Jak funguje automatické známkování?", "answer": "Systém automaticky porovná vaše odpovědi se správným klíčem ihned po odeslání." }
+    ]
+  },
+  {
+    "etapa": 68,
+    "tema": "Revize chyb v testu",
+    "data": [
+      { "question": "Ukáže mi systém, co jsem měl v testu špatně?", "answer": "Ano, po ukončení testu se můžete podívat na správná řešení u jednotlivých otázek." },
+      { "question": "Kde najdu přehled svých chyb?", "answer": "Správná řešení uvidíte v systému hned poté, co test dokončíte." },
+      { "question": "Můžu si po testu projít správné odpovědi?", "answer": "Ano, systém vám umožní nahlédnout na správná řešení u všech otázek v testu." }
+    ]
+  },
+  {
+    "etapa": 69,
+    "tema": "Doba platnosti certifikace",
+    "data": [
+      { "question": "Jak dlouho mi bude tento certifikát platit?", "answer": "Platnost certifikátu je obvykle 2 roky, přesné datum najdete přímo na něm." },
+      { "question": "Vyprší mi certifikát po nějaké době?", "answer": "Ano, certifikáty mají omezenou platnost (zpravidla 2 roky) uvedenou na dokumentu." },
+      { "question": "Kde zjistím datum expirace mého osvědčení?", "answer": "Informace o platnosti je součástí každého certifikátu." }
+    ]
+  },
+  {
+    "etapa": 70,
+    "tema": "Řešení potíží s certifikáty",
+    "data": [
+      { "question": "Můj certifikát vypadá poškozený, na koho se obrátit?", "answer": "Jakýkoliv problém s certifikátem nahlaste naší podpoře v sekci 'Kontakt'." },
+      { "question": "Certifikát se mi nedaří otevřít.", "answer": "Pokud máte problém se souborem certifikátu, napište nám přes sekci 'Kontakt'." },
+      { "question": "Kam psát, když v certifikátu chybí údaje?", "answer": "Pro nahlášení chyb v certifikátech využijte formulář v sekci 'Kontakt'." }
+    ]
+  },
+  {
+    "etapa": 71,
+    "tema": "Dohledání historie testování",
+    "data": [
+      { "question": "Kde najdu své staré výsledky z minulých let?", "answer": "Kompletní historii testů najdete přehledně v detailu každého kurzu." },
+      { "question": "Ukládáte záznamy o mých pokusech v testu?", "answer": "Ano, historie testů je uložena v detailu kurzu, kde si ji můžete prohlédnout." },
+      { "question": "Existuje archiv mých studijních výsledků?", "answer": "Veškerou historii testů a výsledků najdete v detailech jednotlivých kurzů." }
+    ]
+  },
+  {
+    "etapa": 72,
+    "tema": "Státní a ministerská akreditace",
+    "data": [
+      { "question": "Uznává tyto kurzy Ministerstvo školství?", "answer": "U vybraných kurzů máme akreditaci ministerstvem, tato informace je vždy v detailu kurzu." },
+      { "question": "Je toto školení oficiálně certifikované?", "answer": "Pokud je kurz akreditován ministerstvem, uvádíme to v jeho podrobném popisu." },
+      { "question": "Mají kurzy razítko od státní autority?", "answer": "Informaci o ministerské akreditaci najdete u popisu konkrétního zvoleného kurzu." }
+    ]
+  },
+  { "etapa": 73,
+    "tema": "Úprava osobních údajů",
+    "data": [
+      { "question": "Jak si můžu změnit jméno v systému?", "answer": "Své osobní údaje a profil můžete upravit v sekci 'Můj profil'." },
+      { "question": "Kde najdu nastavení svého uživatelského jména?", "answer": "Profilové informace lze měnit přímo v sekci 'Můj profil' po přihlášení." },
+      { "question": "Lze v systému aktualizovat mé kontaktní údaje?", "answer": "Ano, veškeré úpravy profilu provádějte v sekci 'Můj profil'." }
+    ]
+  },
+  { "etapa": 74,
+    "tema": "Potvrzení nového e-mailu",
+    "data": [
+      { "question": "Změnil jsem e-mail, ale stále se nic neděje.", "answer": "Po změně e-mailu v nastavení vám musí přijít potvrzení na vaši novou adresu." },
+      { "question": "Musím klikat na nějaký odkaz při změně e-mailu?", "answer": "Ano, změnu e-mailové adresy je nutné potvrdit v e-mailu zaslaném na novou adresu." },
+      { "question": "Proč je potřeba potvrzovat změnu e-mailu?", "answer": "Je to bezpečnostní krok; potvrzení vám dorazí na nově zadanou adresu." }
+    ]
+  },
+  { "etapa": 75,
+    "tema": "Firemní správa účtu",
+    "data": [
+      { "question": "Kdo mě přiřadil k mé firmě?", "answer": "Váš účet je automaticky přidělen do správy firmy, u které jste v systému evidován." },
+      { "question": "Proč vidím v profilu logo svého zaměstnavatele?", "answer": "Váš uživatelský účet je propojen se správou firmy, pod kterou v LMS spadáte." },
+      { "question": "Jak funguje propojení účtu s mým zaměstnavatelem?", "answer": "Přiřazení pod firmu probíhá automaticky na základě vaší evidence v systému." }
+    ]
+  },
+  { "etapa": 76,
+    "tema": "Odhlášení z portálu",
+    "data": [
+      { "question": "Jak se bezpečně odhlásím?", "answer": "Stačí kliknout na tlačítko 'Odhlásit se', které najdete v horní liště systému." },
+      { "question": "Kde je odhlašovací tlačítko?", "answer": "Tlačítko pro odhlášení z LMS se nachází v horní části obrazovky." },
+      { "question": "Jak ukončím svou relaci v systému?", "answer": "Pro ukončení práce a odhlášení využijte příslušné tlačítko v horní liště." }
+    ]
+  },
+  { "etapa": 77,
+    "tema": "Kontakt na technickou podporu", //TODO: Support dle klientely
+    "data": [
+      { "question": "Na koho se obrátit, když mi nic nefunguje?", "answer": "Kontaktujte nás přes sekci 'Kontakt' nebo na e-mailu support@Clients.cz." },
+      { "question": "Kde najdu e-mail na vaši podporu?", "answer": "Naši technickou podporu zastihnete na adrese support@Clients.cz." },
+      { "question": "Jak nahlásit technickou chybu v LMS?", "answer": "Využijte sekci 'Kontakt' nebo pošlete zprávu na support@Clients.cz." }
+    ]
+  },
+  { "etapa": 78,
+    "tema": "Problémy s videem a lekcemi",
+    "data": [
+      { "question": "Video v lekci nehraje, co s tím?", "answer": "Zkuste obnovit stránku nebo vyčistit cache (mezipaměť) svého prohlížeče." },
+      { "question": "Nedaří se mi spustit studijní materiál.", "answer": "Zkontrolujte připojení k internetu a případně vymažte cache prohlížeče." },
+      { "question": "Co dělat, když se lekce zasekne při načítání?", "answer": "Doporučujeme obnovit stránku nebo zkusit prohlížeč v anonymním okně po vymazání cache." }
+    ]
+  },
+  { "etapa": 79,
+    "tema": "Synchronizace zařízení",
+    "data": [
+      { "question": "Uvidím rozdělaný kurz i na mobilu?", "answer": "Ano, stačí se v mobilní aplikaci přihlásit stejnými údaji a váš postup se synchronizuje." },
+      { "question": "Propojí se můj postup z PC do telefonu?", "answer": "Ano, veškerá aktivita se automaticky synchronizuje napříč všemi zařízeními." },
+      { "question": "Musím na tabletu začínat kurz odznova?", "answer": "Ne, díky synchronizaci navážete tam, kde jste skončili na počítači." }
+    ]
+  },
+  { "etapa": 80, //TODO: Mobilní app v vyšší verzi
+    "tema": "Aktuálnost mobilní aplikace",
+    "data": [
+      { "question": "Jak poznám, že mám nejnovější verzi aplikace?", "answer": "V nastavení mobilní aplikace uvidíte číslo verze a dostupné aktualizace ke stažení." },
+      { "question": "Kde najdu informaci o verzi mé aplikace?", "answer": "Verzi aplikace a možnost aktualizace najdete přímo v jejím nastavení." },
+      { "question": "Potřebuji aplikaci aktualizovat pro správný chod?", "answer": "Doporučujeme sledovat nastavení aplikace, kde vidíte aktuálnost své verze." }
+    ]
+  }
+]

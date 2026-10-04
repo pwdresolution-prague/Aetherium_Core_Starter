@@ -1,0 +1,182 @@
+[
+  {
+    "etapa": 121,                 
+    "tema": "Bezpečnostní změna hesla", //TODO: Přístuúpové klíče jakožto MFA /OTP ověřovací kod, zěmna hesla a bezpečnostní otázky, možnost nastavení dvoufázového ověření
+    "data": [
+      { "question": "Mám pocit, že mi někdo koukal přes rameno, jak změním heslo?", "answer": "Své heslo si můžete okamžitě změnit v sekci 'Nastavení účtu' ve svém profilu." },
+      { "question": "Cesta k obnovení přístupového klíče?", "answer": "Přejděte do 'Nastavení účtu', kde najdete volbu pro změnu hesla." },
+      { "question": "Jak si nastavím silnější heslo?", "answer": "Nové a silnější heslo si můžete kdykoliv zvolit v sekci 'Nastavení účtu'." }
+    ]
+  },
+  {
+    "etapa": 122,
+    "tema": "Časová náročnost studia",
+    "data": [
+      { "question": "Kolik hodin mi zabere jedna lekce?", "answer": "Informace o délce a náročnosti kurzu najdete vždy v jeho detailu." },
+      { "question": "Dá se to stihnout za odpoledne?", "answer": "Délka studia se liší kurz od kurzu, podrobnosti uvidíte v popisu školení." },
+      { "question": "Je někde uvedena odhadovaná doba trvání kurzu?", "answer": "Ano, časovou náročnost uvádíme v detailu každého kurzu v systému." }
+    ]
+  },
+  {
+    "etapa": 123,
+    "tema": "Prohlížeče na mobilních zařízeních",
+    "data": [
+      { "question": "Musím mít Chrome i na iPhonu, aby mi jel kurz?", "answer": "LMS podporuje Safari, Chrome i Edge, takže můžete studovat v prohlížeči, který preferujete." },
+      { "question": "Funguje váš web v mobilním prohlížeči Safari?", "answer": "Ano, systém je plně responzivní a prohlížeč Safari na iOS je plně podporován." },
+      { "question": "Jaký prohlížeč doporučujete pro Android tablety?", "answer": "Doporučujeme aktuální verzi Chrome, ale systém funguje i v ostatních moderních prohlížečích." }
+    ]
+  },
+  {
+    "etapa": 124,
+    "tema": "Postup při zapomenutí hesla",
+    "data": [
+      { "question": "Nemůžu se dostat do systému, protože nevím heslo.", "answer": "Na přihlašovací stránce klikněte na odkaz 'Zapomenuté heslo' a postupujte dle instrukcí." },
+      { "question": "Kam mi přijde odkaz na reset hesla?", "answer": "Odkaz pro nastavení nového hesla vám systém zašle na vaši registrovanou e-mailovou adresu." },
+      { "question": "Jak vygenerovat nové heslo, když staré nefunguje?", "answer": "Využijte funkci 'Zapomenuté heslo' přímo na úvodní obrazovce LMS." }
+    ]
+  },
+  {
+    "etapa": 125,
+    "tema": "Správa více aktivních kurzů",
+    "data": [
+      { "question": "Můžu střídat studium dvou kurzů během jednoho dne?", "answer": "Ano, můžete studovat více kurzů najednou a libovolně mezi nimi přepínat." },
+      { "question": "Jak uvidím všechny své rozdělané kurzy?", "answer": "Seznam všech aktivních i dokončených kurzů najdete v sekci 'Moje kurzy'." },
+      { "question": "Lze být zapsán do tří školení současně?", "answer": "Ano, počet aktivních kurzů není omezen, pokud jsou v rámci platnosti." }
+    ]
+  },
+  {
+    "etapa": 126,
+    "tema": "Odhlášení z kurzu (Storno)",
+    "data": [
+      { "question": "Zapsal jsem se omylem na špatný kurz, jak se odhlásím?", "answer": "V detailu daného kurzu stačí kliknout na možnost 'Odhlásit se z kurzu'." },
+      { "question": "Zmizí mi kurz z profilu, když se z něj odhlásím?", "answer": "Ano, po odhlášení se kurz přestane zobrazovat ve vašem aktivním seznamu." },
+      { "question": "Lze zrušit registraci na lekci?", "answer": "Registraci zrušíte jednoduše v detailu kurzu pomocí volby 'Odhlásit se'." }
+    ]
+  },
+  {
+    "etapa": 127,
+    "tema": "Offline studijní podklady",
+    "data": [
+      { "question": "Dají se ty prezentace vytisknout pro studium ve vlaku?", "answer": "Ano, vybrané materiály jsou ke stažení v PDF, takže si je můžete vytisknout nebo číst offline." },
+      { "question": "Kde najdu soubory ke stažení do počítače?", "answer": "Materiály ke stažení jsou dostupné v sekci 'Moje kurzy' po přihlášení do konkrétního školení." },
+      { "question": "Můžu studovat bez Wi-Fi?", "answer": "Většina systému vyžaduje internet, ale stažené materiály můžete prohlížet i offline." }
+    ]
+  },
+  {
+    "etapa": 128,
+    "tema": "Ztráta 2FA zařízení", //FRONTEND: Enterprise verze s možností resetu 2FA přes administrátora, pokud uživatel ztratí přístup k autentizační aplikaci
+    "data": [ //TODO: Zajištění bezpečného resetu 2FA pro uživatele z pohledu na bezpečnostní rizika, např. ověření identity přes e-mail nebo telefonní číslo
+      { "question": "Ztratil jsem mobil s aplikací na kódy, jak se přihlásím?", "answer": "V tomto případě prosím kontaktujte naši technickou podporu, aby vám pomohla obnovit přístup k účtu." },
+      { "question": "Co dělat, když nemůžu zadat 2FA kód?", "answer": "Pokud máte problém s dvoufázovým ověřením, napište nám přes sekci 'Kontakt'." },
+      { "question": "Jak resetovat dvoufázové ověření bez přístupu k původnímu telefonu?", "answer": "Z bezpečnostních důvodů musí reset 2FA provést administrátor, kontaktujte nás na support@AetheriumCore.cz." }
+    ]
+  },
+  {
+    "etapa": 129,
+    "tema": "Transparentnost dat (GDPR)", //TODO: Zajištění veškerých dat do sekce GDPR
+    "data": [
+      { "question": "Jak dlouho u vás moje data zůstávají?", "answer": "Informace o uchovávání a zpracování vašich údajů najdete v sekci věnované GDPR ve vašem profilu." },
+      { "question": "Kdo je zodpovědný za moje osobní údaje?", "answer": "Podrobnosti o správci údajů a ochraně soukromí jsou uvedeny v sekci GDPR." },
+      { "question": "Můžu zakázat určité zpracování svých údajů?", "answer": "Vaše práva ohledně správy dat jsou popsána v sekci GDPR, kde najdete i kontakty pro tyto žádosti." }
+    ]
+  },
+  {
+    "etapa": 130,
+    "tema": "Férovost automatického hodnocení",
+    "data": [
+      { "question": "Můžu věřit tomu, že počítač můj test opravil správně?", "answer": "Ano, testy jsou vyhodnocovány automaticky podle přesně nastaveného klíče správných odpovědí." },
+      { "question": "Jak vím, že v testu není chyba v nastavení?", "answer": "Naše testy procházejí kontrolou; pokud přesto narazíte na nesrovnalost, kontaktujte podporu." },
+      { "question": "Dělá systém chyby při počítání procent?", "answer": "Automatické hodnocení je velmi přesné a eliminuje lidskou chybu při opravování." }
+    ]
+  },
+  {
+    "etapa": 131,
+    "tema": "Rozlišení procvičování a ostrého testu",
+    "data": [
+      { "question": "Počítají se výsledky z procvičovacích otázek do certifikátu?", "answer": "Ne, procvičovací otázky slouží pouze k vaší přípravě a jejich výsledek neovlivňuje získání osvědčení." },
+      { "question": "Musím udělat procvičování, než mě systém pustí k testu?", "answer": "Procvičování je dobrovolné, ale doporučujeme ho pro lepší zvládnutí ostrého testu." },
+      { "question": "Kde najdu ty otázky, co nejsou na známky?", "answer": "Otázky k procvičení jsou vám k dispozici v sekci 'Moje kurzy'." }
+    ]
+  },
+  {
+    "etapa": 132,
+    "tema": "Potvrzení vs. Certifikát (užití)",
+    "data": [
+      { "question": "Stačí mi potvrzení o účasti pro zaměstnavatele?", "answer": "To záleží na požadavcích vaší firmy; potvrzení dokládá účast, certifikát úspěšné složení zkoušky." },
+      { "question": "Kdy mi systém nabídne jen potvrzení místo certifikátu?", "answer": "Potvrzení o účasti je k dispozici v PDF jako doklad o vaší aktivitě v kurzu." },
+      { "question": "Dá se potvrzení o účasti stáhnout i po neúspěšném testu?", "answer": "Ano, potvrzení o vaší účasti v lekcích je dostupné nezávisle na výsledku testu." }
+    ]
+  },
+  {
+    "etapa": 133,
+    "tema": "Profesionální sdílení (LinkedIn)",
+    "data": [
+      { "question": "Jak si přidám certifikát do sekce 'Licenses & Certifications' na LinkedInu?", "answer": "Využijte možnost exportu pro LinkedIn v sekci certifikátů, která vám s tímto procesem pomůže." },
+      { "question": "Podporujete přímé sdílení diplomu na sociální sítě?", "answer": "Ano, certifikáty lze exportovat do formátu optimalizovaného právě pro sdílení na profesní síti LinkedIn." },
+      { "question": "Můžu svůj úspěch ukázat kolegům na internetu?", "answer": "Určitě, certifikát si můžete stáhnout nebo přímo sdílet na svém LinkedIn profilu." }
+    ]
+  },
+  {
+    "etapa": 134,
+    "tema": "Responsivita rozhraní (UI)",
+    "data": [
+      { "question": "Bude se mi web na mobilu zobrazovat správně?", "answer": "Ano, systém je plně responzivní a automaticky se přizpůsobí velikosti vaší obrazovky." },
+      { "question": "Můžu studovat i na malém telefonu?", "answer": "Ano, LMS je optimalizován pro mobilní zařízení, aby bylo studium pohodlné i na menších displejích." },
+      { "question": "Změní se ovládání, když přepnu z PC na tablet?", "answer": "Rozvržení prvků se přizpůsobí dotykovému ovládání, ale funkce zůstávají stejné." }
+    ]
+  },
+  {
+    "etapa": 135,
+    "tema": "Hlášení technických vad v obsahu",
+    "data": [
+      { "question": "V lekci chybí obrázek, komu to mám říct?", "answer": "U každého materiálu najdete tlačítko 'Nahlásit problém', kterým nás na chybu upozorníte." },
+      { "question": "Kde nahlásit překlep v testové otázce?", "answer": "Využijte funkci 'Nahlásit problém' přímo u dané otázky nebo materiálu." },
+      { "question": "Nefunguje mi odkaz v textu kurzu.", "answer": "Prosíme, nahlaste nám nefunkční prvek pomocí tlačítka 'Nahlásit problém' u dané lekce." }
+    ]
+  },
+  {
+    "etapa": 136,
+    "tema": "Změna jazyka pro expaty",
+    "data": [
+      { "question": "I don't speak Czech, can I change the interface to English?", "answer": "Yes, you can select your preferred language in the 'Account Settings' section." },
+      { "question": "Jak přepnout portál do slovenštiny?", "answer": "Preferovaný jazyk celého systému si můžete nastavit v sekci 'Nastavení účtu'." },
+      { "question": "Můžu mít instrukce k testu v jiném jazyce?", "answer": "Jazyk rozhraní se řídí vaším nastavením v profilu, dostupnost obsahu kurzu závisí na jeho nabídce." }
+    ]
+  },
+  {
+    "etapa": 137,
+    "tema": "Ověření pravosti pro náboráře",
+    "data": [
+      { "question": "Hledám si práci, jak firma ověří můj certifikát od vás?", "answer": "Firma může zadat unikátní ID z vašeho certifikátu do ověřovacího formuláře na našem portálu." },
+      { "question": "Potřebuji potvrdit platnost svého osvědčení třetí straně.", "answer": "Každý certifikát má ID kód, přes který si kdokoliv může ověřit jeho pravost na našem webu." },
+      { "question": "Kde najdou personalisté pravost mého diplomu?", "answer": "Ověření probíhá na našem veřejném portálu pomocí unikátního ID uvedeného na certifikátu." }
+    ]
+  },
+  {
+    "etapa": 138,
+    "tema": "Newsletter a ochrana proti spamu",
+    "data": [
+      { "question": "Nepřišel mi newsletter s novinkami, kde se stala chyba?", "answer": "Zkontrolujte prosím složku SPAM nebo hromadnou poštu ve svém e-mailu." },
+      { "question": "Jak se odhlásím z odběru novinek?", "answer": "V každém zaslaném newsletteru najdete v patičce odkaz pro zrušení odběru zpráv." },
+      { "question": "Budete mě spamovat nabídkami kurzů?", "answer": "Newsletter posíláme pouze v případě důležitých novinek a nových kurzů v systému." }
+    ]
+  },
+  {
+    "etapa": 139,
+    "tema": "Chyby při odesílání dat testu",
+    "data": [
+      { "question": "Klikl jsem na odeslat, ale stránka jen bíle svítí.", "answer": "Zkontrolujte své internetové připojení a zkuste stránku obnovit; systém by měl váš postup uchovat." },
+      { "question": "Systém napsal chybu při ukládání výsledků testu.", "answer": "Prověřte stabilitu sítě a zkuste test odeslat znovu, postup se ukládá průběžně." },
+      { "question": "Co dělat, když se test 'zakousne' těsně před koncem?", "answer": "Zkuste obnovit stránku nebo se znovu přihlásit; vaše odpovědi by měly zůstat uloženy." }
+    ]
+  },
+  {
+    "etapa": 140,
+    "tema": "Dostupnost technické podpory",
+    "data": [
+      { "question": "Jak rychle mi odpovíte na můj technický dotaz?", "answer": "Na dotazy odpovídáme co nejdříve, obvykle během standardní pracovní doby." },
+      { "question": "Kdy můžu očekávat pomoc od administrátora?", "answer": "Administrátoři řeší požadavky průběžně, nejrychleji na live chatu během pracovních hodin." },
+      { "question": "Pracuje podpora i o víkendu?", "answer": "Standardní podpora je k dispozici v pracovní dny; o víkendech reagujeme v rámci technických možností." }
+    ]
+  }
+]

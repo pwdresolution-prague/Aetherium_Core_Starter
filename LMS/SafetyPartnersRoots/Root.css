@@ -1,0 +1,124 @@
+/*TODO: ======================== COLORS ================================== */
+/* ======================================================================= */
+/*TODO: ================== CSS MAGIC STRUCTURE ===========================*/
+
+
+
+/* :root {
+         /*TODO: Sekce Up & Li Menu barevné struktury =============================================== */
+
+
+/* Vertikální přechod kombinace modré, šedé, a prvky b&W ===========
+
+--color-vertical: background: linear-gradient (
+    160deg,
+    #001428 0%,
+    #5f89bc 30%,
+    #003d80 60%,
+    #005099 80%,
+    #192c41 100%
+  );
+
+
+  Horizontální kombinace modré, šedé, a prvky b&W ===========
+
+--color-linear: background: linear-gradient (
+    160deg,
+    #001428 0%,
+    #5f89bc 30%,
+    #003d80 60%,
+    #005099 80%,
+    #192c41 100%
+  );
+
+vizuální pohyblivost pomocí nástroje transition ==================
+
+--effect-vizual: transition: transform (
+     0.3s ease,
+     box-shadow 0.3s ease,
+     border-color 0.3s ease;
+);
+
+
+vizuální doplňky pomocí funkce Border ==============
+
+--effect-shadow: border: (
+    1px solid
+    rgba(0, 140, 255, 0.18);
+);
+
+
+}
+
+
+TODO: Sekce profilování gradientního okna na plochu Student - Main-page =====
+
+
+.root {
+
+
+--color-style-dashboard: background:
+    linear-gradient(
+        to bottom,
+            #9da4ab,
+            #2f5275
+);
+
+
+
+--dashboard-border: (
+        0.2vw solid #f77343;
+);
+
+
+--dashboard-shadow: box-shadow (
+        0px 4px 15px rgba(0,0,0,0.5);
+);
+
+
+
+}
+
+
+
+
+
+
+.root {
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TODO: Využití aplikované proměnné : ======================================== */
+
+.card {
+
+    background: var(--color-effect);
+
+}
+
+--font-display: 'Big Shoulders Stencil', sans-serif;   /* krátké nadpisy sekcí */
+  --font-elegant: 'Cormorant Garamond', serif;            /* certifikáty, oficiální texty */
+  --font-body: 'IBM Plex Sans', Arial, sans-serif;        /* formuláře, běžný text */
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;

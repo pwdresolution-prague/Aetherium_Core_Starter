@@ -1,0 +1,42 @@
+[
+  {
+    "Sekce": "Admin bezpečnost",
+    "etapa": 1,
+    "tema": "Auth a klíče",
+    "data": [
+      { "question": "Jaký klíč smí být ve frontendu?", "answer": "Pouze anon klíč (VITE_SUPABASE_ANON_KEY). Service role výhradně v Edge Function prostředí Deno." },
+      { "question": "Jaké Auth metody systém používá?", "answer": "E-mail/heslo, SMS OTP, session refresh, reset hesla. Role v user_metadata (např. student)." },
+      { "question": "Kde se inicializuje Supabase klient?", "answer": "V Connect/SupabaseConnect.js modulů (Enterprise, Subscriber, Student, Kernel) přes createClient." }
+    ]
+  },
+  {
+    "Sekce": "Admin bezpečnost",
+    "etapa": 2,
+    "tema": "Sanitizace a validace",
+    "data": [
+      { "question": "Jak chráníme vstupy formulářů?", "answer": "SanitizeForm, ValidateForm, DOMPurify pro HTML, Zod pro schémata, validace IČO a telefonů (libphonenumber), síla hesla zxcvbn." },
+      { "question": "Proč sanitizovat HTML z editoru?", "answer": "TipTap generuje HTML; před zobrazením studentům musí projít DOMPurify, aby se předešlo XSS." }
+    ]
+  },
+  {
+    "Sekce": "Admin bezpečnost",
+    "etapa": 3,
+    "tema": "Architektura pro Admina",
+    "data": [
+      { "question": "Jaká je hlavní složka Admin CMS?", "answer": "SafetyPartnersRoots/SafetyPartnersFrontendProvider/ — Components CMS_Dashboard, Admin_Dashboard_Logika, Views HTML." },
+      { "question": "Kde je Edge Function?", "answer": "supabase/Index.ts — hromadné založení studentů po paid objednávce, CORS v Cors.ts." },
+      { "question": "Kde je dokumentace pro další vývoj?", "answer": "Aetherium_core-Documentation/Doc — Index, Architecture, Roles, Business Logic, CMS, Features Overview a další." },
+      { "question": "Co je PWD_LMS_Kernel?", "answer": "Plánované jádro (AI, pravidla, audit). Většina souborů je zatím prázdná; Supabase.js v Kernelu je napojený." }
+    ]
+  },
+  {
+    "Sekce": "Admin bezpečnost",
+    "etapa": 4,
+    "tema": "Provozní checklist",
+    "data": [
+      { "question": "Co zkontrolovat před go-live tenantu?", "answer": "RLS politiky, paid→import flow, publikované kurzy, bucket Certificates, OTP provider, notifikace expirací a GDPR texty." },
+      { "question": "Signál on/off DB a API", "answer": "Admin UI může zobrazovat stav připojení databáze, API a autorizace — vhodné pro noční diagnostiku provozu." },
+      { "question": "Node_modules v gitu?", "answer": "V repozitáři historicky jsou; pro produkci držte .gitignore a instalujte závislosti při buildu (Vite)." }
+    ]
+  }
+]

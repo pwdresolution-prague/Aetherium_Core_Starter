@@ -1,0 +1,269 @@
+[
+    {
+        "id": "ce06aeb7a9e1dfa1",
+        "type": "tab",
+        "label": "Flow 2 - Certifikaty SMS",
+        "disabled": false,
+        "info": "Denni notifikace expirace certifikatu (60/30/14/7/3/1 den) pres Twilio",
+        "env": []
+    },
+    {
+        "id": "390818a53bb5f685",
+        "type": "inject",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Cron 07:00",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 07 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "36fe66ce7f890c7b"
+            ]
+        ]
+    },
+    {
+        "id": "36fe66ce7f890c7b",
+        "type": "function",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Hledani_Expirace_Supabase_Query",
+        "func": "const limit = new Date();\nlimit.setDate(limit.getDate() + 60);\nconst limitISO = limit.toISOString().split(\"T\")[0];\n\nconst baseUrl = env.get(\"SUPABASE_URL\");\nconst apiKey  = env.get(\"SUPABASE_SERVICE_ROLE_KEY\") || env.get(\"SUPABASE_ANON_KEY\");\n\nif (!baseUrl || !apiKey) {\n    node.error(\"Chybi SUPABASE_URL nebo SUPABASE_SERVICE_ROLE_KEY / SUPABASE_ANON_KEY\");\n    return null;\n}\n\nmsg.url = `${baseUrl}/rest/v1/certificates_expiring_soon` +\n          `?expires_at=lte.${limitISO}` +\n          `&select=certificate_id,certificate_number,first_name,phone,expires_at`;\n\nmsg.headers = {\n    \"apikey\": apiKey,\n    \"Authorization\": `Bearer ${apiKey}`,\n    \"Content-Type\": \"application/json\",\n    \"Prefer\": \"return=representation\"\n};\n\nmsg.requestTimeout = 15000;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "20214c0b192a3e45"
+            ]
+        ]
+    },
+    {
+        "id": "20214c0b192a3e45",
+        "type": "http request",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "GET Supabase",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 700,
+        "y": 200,
+        "wires": [
+            [
+                "caaedba3b370977b"
+            ]
+        ]
+    },
+    {
+        "id": "caaedba3b370977b",
+        "type": "split",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Split certifikaty",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 900,
+        "y": 200,
+        "wires": [
+            [
+                "dc10ed546009fcb9"
+            ]
+        ]
+    },
+    {
+        "id": "dc10ed546009fcb9",
+        "type": "function",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Zasilani_sms",
+        "func": "const cert = msg.payload;\nconst THRESHOLDS = [60, 30, 14, 7, 3, 1];\n\nif (!cert || !cert.expires_at || !cert.phone) {\n    return null;\n}\n\nconst today = new Date();\ntoday.setHours(0, 0, 0, 0);\n\nconst expires = new Date(cert.expires_at);\nexpires.setHours(0, 0, 0, 0);\n\nconst daysLeft = Math.round((expires - today) / 86400000);\n\nif (!THRESHOLDS.includes(daysLeft)) {\n    return null;\n}\n\nconst expiryDate = expires.toLocaleDateString(\"cs-CZ\");\n\nlet urgency = \"\";\nif (daysLeft === 1) urgency = \" (zitra!)\";\nelse if (daysLeft <= 3) urgency = \" (brzy!)\";\n\nmsg.payload =\n    `Dobry den ${cert.first_name || \"\"}, ` +\n    `Vas certifikat ${cert.certificate_number} ` +\n    `vyprsi za ${daysLeft} ${daysLeft === 1 ? \"den\" : \"dni\"} (${expiryDate})${urgency}. ` +\n    `Prosim kontaktujte sveho poskytovatele ohledne obnoveni skoleni.`;\n\nmsg.phone = cert.phone;\nmsg.certificate_id = cert.certificate_id;\nmsg.days_left = daysLeft;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 200,
+        "wires": [
+            [
+                "1d6b509f52a8d291"
+            ]
+        ]
+    },
+    {
+        "id": "1d6b509f52a8d291",
+        "type": "delay",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Rate limit 1/s",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 340,
+        "wires": [
+            [
+                "4fae7f7dd9208434"
+            ]
+        ]
+    },
+    {
+        "id": "4fae7f7dd9208434",
+        "type": "function",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Twilio Prepare",
+        "func": "const sid   = env.get(\"TWILIO_ACCOUNT_SID\");\nconst token = env.get(\"TWILIO_AUTH_TOKEN\");\nconst from  = env.get(\"TWILIO_FROM_NUMBER\");\n\nif (!sid || !token || !from) {\n    node.error(\"Chybi TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN / TWILIO_FROM_NUMBER\");\n    return null;\n}\n\nmsg.url = `https://api.twilio.com/2010-04-01/Accounts/${sid}/Messages.json`;\n\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(`${sid}:${token}`).toString(\"base64\"),\n    \"Content-Type\": \"application/x-www-form-urlencoded\"\n};\n\nmsg.payload = new URLSearchParams({\n    To: msg.phone,\n    From: from,\n    Body: msg.payload\n}).toString();\n\nmsg.twilioBody = msg.payload;\nmsg.requestTimeout = 10000;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "3b40a2ed4bd454d5"
+            ]
+        ]
+    },
+    {
+        "id": "3b40a2ed4bd454d5",
+        "type": "http request",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "POST Twilio",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 740,
+        "y": 340,
+        "wires": [
+            [
+                "505b455a5254667f"
+            ]
+        ]
+    },
+    {
+        "id": "505b455a5254667f",
+        "type": "function",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Dead_Letter",
+        "func": "const MAX = flow.get(\"twilioMaxRetry\") || 5;\nconst code = msg.statusCode;\n\nif (code >= 200 && code < 300) {\n    return [null, null, msg];\n}\n\nconst retryable = code === undefined || code === 429 || code >= 500;\n\nmsg.retry = (msg.retry || 0) + 1;\n\nif (retryable && msg.retry <= MAX) {\n    msg.payload = msg.twilioBody;\n    msg.delay = 2000 * Math.pow(2, msg.retry - 1);\n    return [msg, null, null];\n}\n\nreturn [null, {\n    payload: {\n        failed_at: new Date().toISOString(),\n        certificate_id: msg.certificate_id,\n        phone: msg.phone,\n        days_left: msg.days_left,\n        status: code ?? \"network\",\n        error: msg.error?.message ?? msg.payload?.message ?? \"unknown\",\n        attempts: msg.retry\n    }\n}, null];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 340,
+        "wires": [
+            [
+                "1dd4f92b551f2501"
+            ],
+            [
+                "deadletter_debug"
+            ],
+            [
+                "success_debug"
+            ]
+        ]
+    },
+    {
+        "id": "1dd4f92b551f2501",
+        "type": "debug",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Retry path",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "deadletter_debug",
+        "type": "debug",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Dead Letter",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "success_debug",
+        "type": "debug",
+        "z": "ce06aeb7a9e1dfa1",
+        "name": "Success",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 400,
+        "wires": []
+    }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "Sekce": "Admin certifikáty",
+    "etapa": 1,
+    "tema": "Správa certifikátů",
+    "data": [
+      { "question": "Kde Admin spravuje certifikáty?", "answer": "V CMS view Certifikáty a v Storage bucketu Certificates. Studenti si PDF stahují ze své sekce Certifikáty." },
+      { "question": "Kdy systém certifikát vystaví?", "answer": "Po úspěšném dokončení kurzu a testu studentem. Certifikát dostane unikátní ID a uloží se k účtu studenta." },
+      { "question": "Mohu certifikát studentovi znovu vygenerovat?", "answer": "Student si může PDF stáhnout opakovaně. Regeneraci s opravou jména (např. po sňatku) řešte jako admin úpravu údajů a případné znovuvydání." },
+      { "question": "Jak ověřím pravost certifikátu?", "answer": "Podle unikátního ID na portálu. Stejný mechanismus mohou použít personalisté klientských firem." }
+    ]
+  },
+  {
+    "Sekce": "Admin certifikáty",
+    "etapa": 2,
+    "tema": "Expirace a notifikace",
+    "data": [
+      { "question": "Jaké intervaly notifikací expirace systém podporuje?", "answer": "2 měsíce, 30 dní, 14 dní, 7 dní, 2 dny a 1 den před koncem platnosti certifikátu." },
+      { "question": "Kde nastavím notifikace?", "answer": "V sekci Notifikace v Admin CMS. Přehled lze filtrovat podle Client, tématického okruhu a Studenta." },
+      { "question": "Dostane upozornění i firma?", "answer": "Ano — administrativní přehled a e-maily slouží firmě i studentovi, aby se včas naplánovala recertifikace." },
+      { "question": "Co po propadnutí certifikátu?", "answer": "Student potřebuje opakovací kurz/test. Admin nebo Client přiřadí re-certifikační školení; nový certifikát má nové ID." }
+    ]
+  },
+  {
+    "Sekce": "Admin certifikáty",
+    "etapa": 3,
+    "tema": "Legislativa a compliance",
+    "data": [
+      { "question": "K čemu je modul Legislativa?", "answer": "Správa legislativních podkladů a vazeb na zákonná školení (BOZP, odborné způsobilosti). View Legislativa.html v CMS." },
+      { "question": "Jak dokládám školení při auditu?", "answer": "Export reportů o absolvování, certifikáty s ID, audit log změn a historie přiřazení kurzů." },
+      { "question": "Co psát do smluv o telemetrii?", "answer": "Že jde o interakční vzorce (ne fyzickou biometrii), účel je ověření účasti a certifikace, data minimalizace, EU servery — viz legislativní dokumentace." }
+    ]
+  },
+  {
+    "Sekce": "Admin certifikáty",
+    "etapa": 4,
+    "tema": "Storage",
+    "data": [
+      { "question": "Jaký bucket se používá pro certifikáty?", "answer": "Storage bucket s názvem Certificates v Supabase." },
+      { "question": "Kam ukládat média kurzů?", "answer": "Do dedikovaných bucketů / Storage dle CMS uploadu. Certifikáty držte odděleně od výukových médií." }
+    ]
+  }
+]

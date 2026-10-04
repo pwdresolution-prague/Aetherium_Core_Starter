@@ -1,0 +1,43 @@
+[
+  {
+    "Sekce": "Admin Dashboard",
+    "etapa": 1,
+    "tema": "Přehled dashboardu",
+    "data": [
+      { "question": "Co ukazuje Admin Dashboard?", "answer": "Telemetrické grafy: návštěvnost v čase, rozložení podle rolí a zařízení, top kurzy, dokončenost, růst obsahu a behaviorální skóre integrity studia." },
+      { "question": "Jaké grafy jsou u návštěvnosti?", "answer": "Časová osa online uživatelů, doughnut podle rolí (Studenti, Klienti, Subscriberi), bar podle zařízení (Desktop, Mobil, Tablet) a průměrná délka session." },
+      { "question": "Co vidím u aktivních kurzů?", "answer": "Top kurzy podle aktivních studentů, poměr Dokončeno / Rozpracováno / Nezahájeno, enrollments za 7 dní a průměr dní do dokončení." },
+      { "question": "Co je obsahová databáze v grafech?", "answer": "Rozložení typů (Kurzy, Testy, Certifikáty, Legislativa), objem úložiště v MB, růst za 30 dní a seznam naposledy upravených položek." }
+    ]
+  },
+  {
+    "Sekce": "Admin Dashboard",
+    "etapa": 2,
+    "tema": "Behaviorální telemetrie",
+    "data": [
+      { "question": "Co znamená behaviorální biometrie v dashboardu?", "answer": "Nejde o obličej ani otisky. Jde o skóre z interakcí: trend skóre, události (ztráta pozornosti, paste, podezřelý vzorec), rytmus psaní a seznam označených pokusů." },
+      { "question": "Co dělat s flagged studentem?", "answer": "Otevřete detail pokusu v auditu / reportech, ověřte kontext a případně nařiďte přezkoušení. Automatické označení neznamená automatickou neplatnost." },
+      { "question": "Je telemetrie v souladu s GDPR?", "answer": "Ano při správném nastavení: pouze provozní vzorce, minimalizace dat, bez fyzické biometrie, servery v EU. Formulace pro smlouvy jsou v legislativní dokumentaci." }
+    ]
+  },
+  {
+    "Sekce": "Admin Dashboard",
+    "etapa": 3,
+    "tema": "Technické poznámky ke grafům",
+    "data": [
+      { "question": "Proč graf při druhém otevření padá?", "answer": "Canvas už byl použit. TelemetryLogic drží instance v Map a před re-render volá destroy() — tím se předejde chybě Chart.js." },
+      { "question": "Odkud berou grafy data?", "answer": "Očekávají strukturované objekty (timeline, byRole, topCourses…). Napojení na živá data ze Supabase je další krok vývoje; UI a typy grafů jsou připravené." },
+      { "question": "Jaká je barevná paleta grafů?", "answer": "Primary #FF6700, secondary #f7b733, danger #E24B4A, muted poloprůhledná bílá — jednotný vzhled napříč dashboardem." }
+    ]
+  },
+  {
+    "Sekce": "Admin Dashboard",
+    "etapa": 4,
+    "tema": "Analytika a audit",
+    "data": [
+      { "question": "Kde je audit log?", "answer": "V Admin CMS view Audit_Log — evidence změn a událostí pro dokladovatelnost vůči firemním klientům." },
+      { "question": "K čemu je Analytika?", "answer": "Rozšířené pohledy nad studijními a obsahovými daty vedle rychlých grafů na Dashboardu." },
+      { "question": "Mohu exportovat přehled pro firmu?", "answer": "Ano, z reportů / administrace lze připravit export (PDF/CSV) stavu školení zaměstnanců pro audit klienta." }
+    ]
+  }
+]

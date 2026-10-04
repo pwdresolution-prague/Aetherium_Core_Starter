@@ -1,0 +1,108 @@
+[
+    {
+        "id": "637c296fc947de29",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b6070226ee74b49a",
+        "type": "debug",
+        "z": "637c296fc947de29",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3fb934eb5c4f0985",
+        "type": "postgresql",
+        "z": "637c296fc947de29",
+        "name": "",
+        "query": "SELECT\n    current_database() AS database_name,\n    current_user AS database_user,\n    NOW() AS server_time;",
+        "postgreSQLConfig": "abe977887eba566c",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "b6070226ee74b49a"
+            ]
+        ]
+    },
+    {
+        "id": "bd0f0dc14abe0e07",
+        "type": "inject",
+        "z": "637c296fc947de29",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "3fb934eb5c4f0985"
+            ]
+        ]
+    },
+    {
+        "id": "abe977887eba566c",
+        "type": "postgreSQLConfig",
+        "name": "Supabase_Aetherium_Core",
+        "host": "aws-0-eu-west-1.pooler.supabase.com",
+        "hostFieldType": "str",
+        "port": 5432,
+        "portFieldType": "num",
+        "database": "postgres",
+        "databaseFieldType": "str",
+        "ssl": "true",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": 10,
+        "maxFieldType": "num",
+        "idle": 1000,
+        "idleFieldType": "num",
+        "connectionTimeout": 10000,
+        "connectionTimeoutFieldType": "num",
+        "userFieldType": "cred",
+        "userEnv": "",
+        "passwordFieldType": "cred",
+        "passwordEnv": ""
+    },
+    {
+        "id": "4794b2a9752c3854",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-postgresql": "0.16.2"
+        }
+    }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "etapa": 181,
+    "tema": "Přihlašovací údaje pro mobilní aplikaci",
+    "data": [
+      { "question": "Musím se do aplikace registrovat znovu?", "answer": "Ne, do mobilní aplikace se stačí přihlásit stejnými údaji, které používáte na webu [1]." },
+      { "question": "Jaké jméno a heslo platí pro vstup do mobilu?", "answer": "Pro přístup do aplikace využijte své standardní přihlašovací údaje ze systému Safety Partners [1]." },
+      { "question": "Funguje můj webový účet i v telefonu?", "answer": "Ano, stačí se v mobilní aplikaci přihlásit stejnými údaji jako na webu [1, 2]." }
+    ]
+  },
+  {
+    "etapa": 182,
+    "tema": "Přístup k obsahu po splnění kurzu",
+    "data": [
+      { "question": "Můžu si lekce prohlédnout i po získání certifikátu?", "answer": "Ano, většinu kurzů můžete procházet i po jejich úspěšném dokončení [3]." },
+      { "question": "Zůstanou mi materiály dostupné, když už mám hotovo?", "answer": "Ano, kurzy jsou pro vás v systému dostupné k prohlížení i po jejich dokončení [3]." },
+      { "question": "Lze se vrátit ke studiu už uzavřeného kurzu?", "answer": "Většinu kurzů si můžete v LMS znovu procházet i poté, co jste je splnili [3]." }
+    ]
+  },
+  {
+    "etapa": 183,
+    "tema": "Postup pro změnu kurzu",
+    "data": [
+      { "question": "Jak se přepnu na jiné školení, než které mám teď?", "answer": "Kurz můžete změnit v sekci 'Moje kurzy' kliknutím na tlačítko 'Změnit kurz' [3]." },
+      { "question": "Lze vyměnit vybraný kurz za jiný?", "answer": "Ano, v sekci 'Moje kurzy' zvolte možnost 'Změnit kurz' pro výběr jiného školení [3]." },
+      { "question": "Kde najdu tlačítko pro úpravu mé volby kurzu?", "answer": "Přejděte do sekce 'Moje kurzy' a využijte volbu 'Změnit kurz' [3]." }
+    ]
+  },
+  {
+    "etapa": 184,
+    "tema": "Nápověda při prvním vstupu",
+    "data": [
+      { "question": "Kde najdu instrukce pro nové uživatele?", "answer": "Základní nápovědu pro orientaci získáte automaticky při prvním vstupu do systému [2]." },
+      { "question": "Existuje nějaký úvodní průvodce systémem?", "answer": "Ano, při vstupu do systému je pro vás připravena základní nápověda pro začátečníky [2]." },
+      { "question": "Jak se naučím ovládat tento portál?", "answer": "Při prvním přihlášení získáte základní nápovědu k používání celého systému [2]." }
+    ]
+  },
+  {
+    "etapa": 185,
+    "tema": "Podpora webových prohlížečů",
+    "data": [
+      { "question": "Které prohlížeče jsou kompatibilní s vaším LMS?", "answer": "Plně podporujeme prohlížeče Chrome, Firefox, Edge a Safari [2]." },
+      { "question": "Pojede mi kurz i v prohlížeči Safari?", "answer": "Ano, systém Aetherium Core podporuje Chrome, Firefox, Edge i Safari [2]." },
+      { "question": "Jaký prohlížeč si mám nainstalovat pro studium?", "answer": "Můžete využít jakýkoliv z podporovaných prohlížečů: Chrome, Firefox, Edge nebo Safari [2]." }
+    ]
+  },
+  {
+    "etapa": 186,
+    "tema": "Responzivita a tablety",
+    "data": [
+      { "question": "Můžu studovat na tabletu?", "answer": "Ano, systém je plně responzivní a přizpůsobený pro tablety i jiná mobilní zařízení [2]." },
+      { "question": "Funguje LMS správně na iPadech?", "answer": "Ano, naše rozhraní je plně responzivní a optimalizované pro mobilní zařízení i tablety [2]." },
+      { "question": "Je web přizpůsoben pro malé obrazovky?", "answer": "Ano, celý systém je navržen jako responzivní, takže se přizpůsobí i tabletům [2]." }
+    ]
+  },
+  {
+    "etapa": 187,
+    "tema": "Hlášení vad ve studijních materiálech",
+    "data": [
+      { "question": "Co dělat, když v lekci nefunguje video?", "answer": "Použijte tlačítko 'Nahlásit problém' umístěné přímo u daného materiálu [4]." },
+      { "question": "Našel jsem chybu v textu kurzu, komu to říct?", "answer": "U každého materiálu v kurzu najdete tlačítko 'Nahlásit problém', kterým nás upozorníte [4]." },
+      { "question": "Jak upozornit na technickou vadu studijního podkladu?", "answer": "Využijte funkci 'Nahlásit problém' přímo u materiálu, se kterým máte potíže [4]." }
+    ]
+  },
+  {
+    "etapa": 188,
+    "tema": "Firemní propojení účtu",
+    "data": [
+      { "question": "Jak se můj účet spáruje s mou firmou?", "answer": "Váš účet je automaticky přidělen do správy firmy, u níž jste v systému evidován [5]." },
+      { "question": "Proč vidím kurzy své společnosti?", "answer": "Jako registrovaný zaměstnanec jste automaticky přiřazen pod správu vaší firmy [5]." },
+      { "question": "Musím o propojení s firmou žádat?", "answer": "Ne, k firemní správě je váš účet přiřazen automaticky na základě firemní žádosti [5]." }
+    ]
+  },
+  {
+    "etapa": 189,
+    "tema": "Možnosti sociálního přihlášení",
+    "data": [
+      { "question": "Lze se přihlásit přes Google?", "answer": "Ano, nabízíme možnost sociálního přihlášení přes Google nebo LinkedIn [1]." },
+      { "question": "Podporujete přihlašování pomocí LinkedIn profilu?", "answer": "Ano, do systému se můžete přihlásit pomocí svého LinkedIn nebo Google účtu [1]." },
+      { "question": "Můžu si propojit svůj účet se sociálními sítěmi?", "answer": "Ano, portál Aetherium Core umožňuje využití sociálního přihlášení [1]." }
+    ]
+  },
+  {
+    "etapa": 190,
+    "tema": "Postup aktivace 2FA", //TODO: Vytvoření QR kodu a bezpečnostního MFA přihlašování  
+    "data": [
+      { "question": "Jak si zapnu dvoufázové ověření?", "answer": "V sekci 'Bezpečnost' zapněte 2FA a naskenujte QR kód pomocí své aplikace [5]." },
+      { "question": "Kde aktivuji bezpečnější přihlašování?", "answer": "Přejděte do sekce 'Bezpečnost', zapněte dvoufaktorové ověření a naskenujte QR kód [5]." },
+      { "question": "Jak nastavit 2FA pro můj účet?", "answer": "V sekci 'Bezpečnost' aktivujte 2FA a propojte systém s autentizační aplikací přes QR kód [5]." }
+    ]
+  },
+  {
+    "etapa": 191,
+    "tema": "Bodová hranice pro certifikát",
+    "data": [
+      { "question": "Kolik bodů musím mít pro získání certifikátu?", "answer": "Standardně je pro úspěšné absolvování potřeba získat alespoň 70 % bodů [6]." },
+      { "question": "Jaká je úspěšnost nutná ke splnění testu?", "answer": "Pro úspěch v testu je standardně vyžadováno dosažení hranice 70 % bodů [6]." },
+      { "question": "Stačí mi k certifikaci polovina správných odpovědí?", "answer": "Ne, standardní minimum pro úspěšné složení testu je stanoveno na 70 % [6]." }
+    ]
+  },
+  {
+    "etapa": 192,
+    "tema": "Viditelnost časového limitu",
+    "data": [
+      { "question": "Dozvím se, kolik času mám na test?", "answer": "Ano, každý test má časový limit, který se vám zobrazí ještě před jeho zahájením [6]." },
+      { "question": "Kde je napsané, jak dlouho test trvá?", "answer": "Časový limit testu je uveden v informacích těsně před jeho spuštěním [6]." },
+      { "question": "Mají testy nějaké časové omezení?", "answer": "Ano, u každého testu je stanoven časový limit, o kterém budete informováni před startem [6]." }
+    ]
+  },
+  {
+    "etapa": 193,
+    "tema": "Obnovení testu po výpadku",
+    "data": [
+      { "question": "Co se stane, když mi vypadne Wi-Fi během testu?", "answer": "V případě výpadku připojení navážete po návratu v posledním vykonaném kroku [7]." },
+      { "question": "Ztratím své odpovědi při přerušení spojení?", "answer": "Ne, systém vám umožní pokračovat přesně tam, kde jste před výpadkem skončili [7]." },
+      { "question": "Lze test dokončit i po restartu prohlížeče?", "answer": "Ano, v případě technických potíží navážete v testu na svůj poslední vykonaný krok [7]." }
+    ]
+  },
+  {
+    "etapa": 194,
+    "tema": "Zpětná vazba k testu",
+    "data": [
+      { "question": "Uvidím po testu, co jsem měl špatně?", "answer": "Ano, po ukončení testu vám systém zobrazí správná řešení u všech otázek [8]." },
+      { "question": "Dozvím se správné odpovědi po odevzdání zkoušky?", "answer": "Ano, správná řešení uvidíte v rozhraní LMS ihned po ukončení testu [8]." },
+      { "question": "Lze si projít chyby v testu po jeho skončení?", "answer": "Ano, systém vám umožní prohlédnout si správná řešení u otázek po dokončení testu [8]." }
+    ]
+  },
+  {
+    "etapa": 195,
+    "tema": "Možnost tištěného certifikátu",
+    "data": [
+      { "question": "Pošlete mi certifikát domů v obálce?", "answer": "Standardně poskytujeme elektronickou verzi v PDF, papírovou verzi lze vystavit na vyžádání [9]." },
+      { "question": "Lze získat i originál certifikátu na papíře?", "answer": "Ano, ačkoliv je výchozí formát elektronický, o papírovou verzi můžete požádat [9]." },
+      { "question": "Dostanu od vás fyzický diplom?", "answer": "Standardně obdržíte elektronické PDF, ale na vyžádání vám můžeme vystavit i papírovou verzi [9]." }
+    ]
+  },
+  {
+    "etapa": 196,
+    "tema": "Doba platnosti osvědčení",
+    "data": [
+      { "question": "Jak dlouho mi platí certifikát od Aetherium Core?", "answer": "Doba platnosti se liší, ale obvykle jsou to 2 roky. Přesný údaj najdete přímo na certifikátu [10]." },
+      { "question": "Vyprší mi certifikát po určité době?", "answer": "Ano, certifikáty mají omezenou platnost (standardně 2 roky), která je uvedena na dokumentu [10]." },
+      { "question": "Kdy si musím kurz zopakovat kvůli expiraci?", "answer": "Platnost je obvykle 2 roky; konkrétní datum konce platnosti je uvedeno na vašem certifikátu [10]." }
+    ]
+  },
+  {
+    "etapa": 197,
+    "tema": "PDF export historie aktivit",
+    "data": [
+      { "question": "Jak si stáhnu seznam všech svých výsledků?", "answer": "V sekci Certifikáty klikněte na tlačítko 'Exportovat do PDF' pro získání přehledu [11]." },
+      { "question": "Lze získat písemné potvrzení o všech mých testech?", "answer": "Ano, své výsledky si můžete vyexportovat do PDF souboru v sekci Certifikáty [11]." },
+      { "question": "Kde najdu tlačítko pro stažení historie v PDF?", "answer": "Využijte možnost 'Exportovat do PDF', která se nachází v sekci Certifikáty [11]." }
+    ]
+  },
+  {
+    "etapa": 198,
+    "tema": "Ověření pravosti certifikátu",
+    "data": [
+      { "question": "Jak si můžu ověřit, že je můj certifikát pravý?", "answer": "Každý certifikát má unikátní ID, které lze snadno ověřit na našem portálu [11]." },
+      { "question": "Existuje veřejná kontrola vašich certifikátů?", "answer": "Ano, pravost certifikátu si kdokoli může ověřit pomocí unikátního ID kódu na našem webu [11]." },
+      { "question": "Kde získám kód z certifikátu pro jeho kontrolu?", "answer": "Unikátní ID z certifikátu najdete spodní straně a naleznete seznam na našem portálu [11]." }
+    ]
+  },
+  {
+    "etapa": 199,
+    "tema": "Zrušení uživatelského účtu",
+    "data": [
+      { "question": "Jak můžu úplně smazat svůj profil?", "answer": "Pro odstranění účtu napište žádost administrátorovi skrze sekci 'Kontakt' [5]." },
+      { "question": "Chci zrušit registraci v systému, co mám dělat?", "answer": "Požádejte administrátora o odebrání účtu prostřednictvím kontaktního formuláře [5]." },
+      { "question": "Kde najdu tlačítko pro smazání účtu?", "answer": "Smazání účtu provádí administrátor na základě vaší žádosti zaslané přes sekci 'Kontakt' [5]." }
+    ]
+  },
+  {
+    "etapa": 200,
+    "tema": "Dostupnost live chatu",
+    "data": [
+      { "question": "Máte v systému online chat pro rychlou pomoc?", "answer": "Ano, v pracovní době můžete využít live chat s podporou přímo v systému [12]." },
+      { "question": "Kdy je aktivní vaše technická podpora na chatu?", "answer": "Live chat s podporou je vám k dispozici během standardní pracovní doby [12]." },
+      { "question": "Lze řešit problémy s LMS v reálném čase?", "answer": "Ano, pro okamžitou pomoc využijte náš live chat dostupný v pracovní době [12]." }
+    ]
+  }
+]

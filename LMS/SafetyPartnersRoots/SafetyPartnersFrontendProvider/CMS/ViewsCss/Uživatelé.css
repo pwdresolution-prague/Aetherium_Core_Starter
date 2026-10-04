@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/*TODO: Dashboardspace ---------------- */
+.DesktopDashboard {
+    width: min(1400px, 100%);
+    flex-shrink: 0;
+    margin: 0 auto;
+    padding: 0 7vw;
+}
+
+.PlochaDesktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #9da4ab, #2f5275);
+    border: 0.2vw solid #f77343;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5); 
+    padding: 2rem;
+    margin-top: -42rem;
+    margin-left: 22rem;
+    width: 68vw;
+    height: 48vh;
+    border-radius: 0.7vw;
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FooterPart {
+    margin-top: -16vh;
+}

@@ -1,0 +1,15 @@
+{
+    "snyk.advanced.autoSelectOrganization": true,
+    "workbench.editor.autoLockGroups": {
+        "editor.excalidraw": true
+    },
+
+
+  "deno.enable": true,
+  "deno.enablePaths": ["supabase/functions"],
+  "deno.lint": true,
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  }
+}

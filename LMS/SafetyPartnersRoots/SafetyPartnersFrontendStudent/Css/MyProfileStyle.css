@@ -1,0 +1,939 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/*TODO: Dashboard vizual structure ============================================================= */
+
+.dashboardHeader {
+    padding-bottom: 20vh;
+    margin-top: -20vh;
+}
+
+
+.DashboardStructure {
+    border: 0.2vw solid #f77343;
+    background: linear-gradient(to top, #9da4ab, #2f5275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68vw;
+    height: 61vh;
+    border-radius: 0.7vw;
+    margin-left: 25vw;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.55);
+
+
+
+}
+
+.DashboardStructureGlass {
+    border-inline-end-color: 0.2vw solid #686663;
+    background: linear-gradient(to bottom, #9da4ab, #528dc9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 67.5vw;
+    height: 60.5vh;
+    border-radius: 0.7vw;
+    margin-top: -0vh;
+    margin-left: 0vw;
+    backdrop-filter: blur(20vw) saturate(300%);
+    backdrop-filter: blur(40vh) saturate(100%);
+
+
+
+}
+
+/* FRONTEND : Avatar kruh – iniciály nebo DiceBear SVG */
+
+.profileAvatar {
+  position: relative;
+  margin-left: 0vw;
+  margin-bottom: 36.5vh;
+
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: hsl(var(--avatar-hue), 55%, 45%);
+  overflow: hidden;
+  border: 0.15rem solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.profileAvatar.hasDicebearAvatar {
+  background: #ffffff; /* DiceBear ilustrace mívají vlastní pozadí, ne barvu z hue */
+}
+
+.profileAvatarInitials {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.profileAvatarInitials svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* TODO: Edit tlačítko uvnitř kruhu, dole vpravo */
+.profileAvatarEditButton {
+  position: absolute;
+  bottom: -0.1rem;
+  right: -0.1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: #2f5275;
+  border: 0.12rem solid #ffffff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.editIconPng {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+/* TODO: Grid nabídky avatarů v dialogu */
+.avatarGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.avatarOption {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.15rem solid transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  background: #eeeeee;
+  transition: border-color 0.2s ease;
+}
+
+.avatarOption:hover,
+.avatarOption:focus-visible {
+  border-color: #2f5275;
+}
+
+.avatarOptionInitials {
+  background: hsl(var(--avatar-hue), 55%, 45%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.avatarOption svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* TODO: Styl samotného <dialog> okna s výběrem avatarů */
+#avatarPickerModal {
+  border: 0.14vw solid #FF6600; /* stejný akcentní border jako u tlačítka */
+  border-radius: 1.2vw; /* zaoblené rohy, konzistentní s ostatními kartami */
+  background: linear-gradient(to bottom, #003d80, #5f89bc); /* stejný modrý gradient jako tlačítko */
+  color: #ffffff;
+  padding: 2vw;
+  width: 32vw;
+  margin-left: 35vw;
+  margin-top: 20vh;
+
+  box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 15px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* COMMENT: ::backdrop je pseudo-element, který <dialog> vykresluje ZA sebou,
+   když je otevřený přes showModal() — funguje jen u <dialog>, ne u běžného divu */
+#avatarPickerModal::backdrop {
+  background: rgba(0, 20, 40, 0.6);
+  backdrop-filter: blur(0.3vw);
+}
+
+/* TODO: Nadpis a popisek uvnitř modalu */
+.ChooseAvatar {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4vw;
+  margin-bottom: 0.5vw;
+}
+
+.ChooseAvatarP {
+  color: #d6e4f0;
+  font-size: 0.9vw;
+  margin-bottom: 1vw;
+}
+
+/* TODO: Sdílený vizuální styl tlačítek – gradient/border/shadow, BEZ pozičních vlastností */
+
+.dialogButton {
+  padding: 0.6rem 1.8rem;
+  background: linear-gradient(to right, #d9aa8a, #b27660);
+  border-radius: 0.7rem;
+  border: white solid 0.12rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s ease;
+  margin-left: 11vw;
+  margin-top: 1vh;
+
+
+}
+
+.dialogButton:hover {
+  opacity: 0.9;
+}
+
+
+/*FRONTEND: Editační část profilu + modalová okna */
+
+
+
+.MyProfileEdit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40vw;
+    margin-bottom: 2vh;
+    gap: 0.3vw;
+    font-size: 0.9vw;
+    padding-left: 4vw;
+
+
+
+
+
+
+}
+
+
+
+
+
+/* COMMENT: Dialogové okno pro modal editace profilu
+============================================================================================================== */
+/* ==============================================================================================================================
+============================================================================= */
+
+
+
+
+/* COMMENT: Interaktivní feedback pro trigger úpravy profilu (text + ikona) */
+
+.editProfileText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1.5rem;
+    margin-top: -0.3vh;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    transition: background-color 0.18s ease, transform 0.12s ease, color 0.18s ease;
+}
+
+/* Hover -- najetí myší (desktop)
+.editProfileText:hover {
+    background-color: rgba(255, 102, 0, 0.15);
+    color: #FF6600;
+}
+
+/* Active -- v okamžiku samotného kliknutí (myš stisknutá)
+.editProfileText:active {
+    transform: scale(0.96);
+    background-color: rgba(255, 102, 0, 0.3);
+}
+
+/* Focus-visible -- klávesnicová navigace (Tab), NE myš
+.editProfileText:focus-visible {
+    outline: 0.14vw solid #FF6600;
+    outline-offset: 0.2vw;
+}
+*/
+
+
+
+
+.editProfileModal {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.98);
+    transition: opacity 0.25s ease, transform 0.25s ease, overlay 0.25s allow-discrete, display 0.25s allow-discrete;
+    border: 0.14vw solid #FF6600; /* stejný akcentní border jako u tlačítka */
+    border-radius: 1.2vw; /* zaoblené rohy, konzistentní s ostatními kartami */
+    background: linear-gradient(to bottom, #003d80, #5f89bc); /* stejný modrý gradient jako tlačítko */
+    color: #ffffff;
+    padding: 2vw;
+    width: 33vw;
+    height: 65vh;
+    margin-left: 36vw;
+    margin-top: 11vh;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 15px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+}
+
+
+
+
+
+
+
+.eIProfile {
+    width: 0.95vw;
+    height: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    transform: translate(-1vw, -2.6vw);
+}
+
+.editProfileModal[open] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Stav TĚSNĚ PŘED otevřením -- odsud animace "startuje" */
+@starting-style {
+    .editProfileModal[open] {
+        opacity: 0;
+        transform: translateY(-16px) scale(0.98);
+    }
+}
+
+.editProfileModal::backdrop {
+    background: rgba(8, 15, 30, 0);
+    transition: background 0.25s ease, overlay 0.25s allow-discrete, display 0.25s allow-discrete;
+}
+
+.editProfileModal[open]::backdrop {
+    background: rgba(8, 15, 30, 0.65);
+}
+
+@starting-style {
+    .editProfileModal[open]::backdrop {
+        background: rgba(8, 15, 30, 0);
+    }
+}
+
+
+
+/* COMMENT: Dialogové okno pro modal editace hesla */
+/* ==============================================================================================================================
+============================================================================= */
+
+
+
+
+
+.editPasswordText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: -2.5vw;
+    padding: 1.5rem;
+    margin-top: -0.3vh;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    transition: background-color 0.18s ease, transform 0.12s ease, color 0.18s ease;
+}
+
+/* Hover -- najetí myší (desktop)
+.editPasswordText:hover {
+    background-color: rgba(255, 102, 0, 0.15);
+    color: #FF6600;
+}
+
+/* Active -- v okamžiku samotného kliknutí (myš stisknutá)
+.editPasswordText:active {
+    transform: scale(0.96);
+    background-color: rgba(255, 102, 0, 0.3);
+}
+
+/* Focus-visible -- klávesnicová navigace (Tab), NE myš
+.editPasswordText:focus-visible {
+    outline: 0.14vw solid #FF6600;
+    outline-offset: 0.2vw;
+}
+*/
+
+
+.editPasswordModal {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.98);
+    transition: opacity 0.25s ease, transform 0.25s ease, overlay 0.25s allow-discrete, display 0.25s allow-discrete;
+    border: 0.14vw solid #FF6600; /* stejný akcentní border jako u tlačítka */
+    border-radius: 1.2vw; /* zaoblené rohy, konzistentní s ostatními kartami */
+    background: linear-gradient(to bottom, #003d80, #5f89bc); /* stejný modrý gradient jako tlačítko */
+    color: #ffffff;
+    padding: 2vw;
+    width: 32vw;
+    height: 50vh;
+    margin-left: 36vw;
+    margin-top: 11vh;
+    box-shadow:
+    0 2px 0 0 #8eb2d4,
+    0 3px 15px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.EditProfileText {
+    margin-left: 4vw;
+}
+
+/*COMMENT: PASSWORD =============================================================================================================
+======================================================================================================
+========================================================================================================
+=============================================================================== */
+
+.eIPassword {
+    width: 0.95vw;
+    height: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vw;
+    margin-top: -3.5vh;
+    transform: translate(-0.8vw, -0.9vw);
+
+}
+
+.editPasswordModal[open] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Stav TĚSNĚ PŘED otevřením -- odsud animace "startuje" */
+@starting-style {
+    .editPasswordModal[open] {
+        opacity: 0;
+        transform: translateY(-16px) scale(0.98);
+    }
+}
+
+.editPasswordModal::backdrop {
+    background: rgba(8, 15, 30, 0);
+    transition: background 0.25s ease, overlay 0.25s allow-discrete, display 0.25s allow-discrete;
+}
+
+.editPasswordModal[open]::backdrop {
+    background: rgba(8, 15, 30, 0.65);
+}
+
+@starting-style {
+    .editPasswordModal[open]::backdrop {
+        background: rgba(8, 15, 30, 0);
+    }
+}
+
+/*COMMENT: VisitSelector pro oslovení =====================================================
+============================================================================================
+=====================================================================================*/
+
+
+
+
+
+.GenderSelector {
+
+    width: 10vw;
+    height: 3vh;
+    border-radius: 0.5vw;
+    padding: 0.2vw;
+    gap: 1vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    border: rgb(42, 41, 41) solid 0.12vw;
+    background: linear-gradient(to right, #d8d0ca, #f5dad0);
+    border-color: #b27660 solid 0.15vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 0.8vw;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+}
+
+
+
+/*COMMENT: Formulář ============================================================================
+================================================================================================
+====================================================================================== */
+
+
+
+
+
+
+.FormulářEdit {
+    margin-left: 9vw;
+    gap: 0.3vh;
+
+
+}
+
+
+
+
+.labelName {
+    padding: 0.9vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+}
+
+.Name {
+    display: flex;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.8vw;
+
+}
+
+.labelSurName {
+    padding: 0.8vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+}
+
+.SurName {
+    display: flex;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 0.5vw;
+    padding: 0.8vw;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.7vw;
+
+}
+
+.labelEmail {
+    padding: 0.8vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+}
+
+.Email {
+    display: flex;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 0.5vw;
+    padding: 0.8vw;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.7vw;
+
+}
+
+
+.labelPhone {
+    padding: 0.9vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+}
+
+.Phone{
+    display: flex;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 0.5vw;
+    padding: 0.8vw;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.7vw;
+
+}
+
+.labelWorkplace {
+    padding: 0.8vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+}
+
+.WorkPlace {
+    display: flex;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 0.5vw;
+    padding: 0.8vw;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.7vw;
+
+}
+
+.ConfirmButton {
+    padding: 0.6rem 1.8rem;
+  background: linear-gradient(to right, #d9aa8a, #b27660);
+  border-radius: 0.7rem;
+  border: white solid 0.12rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s ease;
+  margin-left: 1.6vw;
+  margin-top: 3vh;
+
+
+
+}
+
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*COMMENT: PASSWORD FORM ===================================================================================
+============================================================================================================
+=======================================================================================================
+================================================================================================= */
+
+
+.PasswordDiv {
+    margin-top: 4vh;
+}
+
+.EditProfilePassword {
+    margin-left: 9vw;
+    gap: 2vh;
+    margin-top: 5vh;
+
+}
+
+
+.ChangePasswordLabel {
+    padding: 0.5vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+}
+
+.ChangePassword {
+    display: flex;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.7vw;
+}
+
+
+.ChangePasswordLabelConfirm {
+    padding: 0.5vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+}
+
+.ChangePasswordConfirm {
+    display: flex;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.7vw;
+}
+
+
+/* COMMENT: Komponenta pro zadávání a generování hesla ============================= */
+
+.PasswordFieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vh;
+}
+
+.PasswordInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.PasswordInputChange {
+    width: 10vw;
+    height: 4vh;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    padding-right: 2.2vw; /* místo pro ikonu oka */
+    background-color: white;
+}
+
+.TogglePasswordVisibility {
+    position: absolute;
+    right: 0.4vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.2vw;
+    display: flex;
+    align-items: center;
+}
+
+.EyeIcon {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 6vw;
+    opacity: 0.6;
+    transition: opacity 0.15s ease;
+
+
+}
+
+.TogglePasswordVisibility:hover .EyeIcon {
+    opacity: 1;
+}
+
+
+.GeneratePasswordBtn {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: #FF6600;
+    font-size: 0.8vw;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0.2vw 0;
+    transition: color 0.15s ease;
+}
+
+.GeneratePasswordBtn:hover {
+    color: #ffa366;
+}
+
+.GeneratePasswordBtn:focus-visible {
+    outline: 0.1vw solid #FF6600;
+    outline-offset: 0.2vw;
+}
+
+/* COMMENT: Indikátor síly hesla — barva/šířka řízená JS přes CSS custom property */
+.PasswordStrengthMeter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vh;
+    margin-top: 0.2vh;
+}
+
+.StrengthBarTrack {
+    width: 10vw;
+    height: 0.5vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.StrengthBarFill {
+    height: 100%;
+    width: calc(var(--strength-percent, 0) * 1%);
+    background-color: var(--strength-color, #999);
+    border-radius: 1vw;
+    transition: width 0.25s ease, background-color 0.25s ease;
+}
+
+.StrengthLabel {
+    font-size: 0.75vw;
+    color: var(--strength-color, #ccc);
+    transition: color 0.25s ease;
+
+}
+
+.PasswordConfirmButton {
+  padding: 0.6rem 1.8rem;
+  background: linear-gradient(to right, #d9aa8a, #b27660);
+  border-radius: 0.7rem;
+  width: 12vw;
+  height: 4vh;
+  border: white solid 0.12rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s ease;
+  margin-left: -0.9vw;
+  margin-top: 3vh;
+  align-items: center;
+  display: flex;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FooterMyProfile {
+    margin-top: -35vh;
+
+}

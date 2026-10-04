@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Safety Partners - E-learning managment system">
+<meta property="og:title" content="Absolvujte kurz, Kompletujte test, Certifikát platný">
+<meta property="og:description" content="Certifikáty Generované AI v PDF">
+<meta property="og:image" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:url" content=""><!--TODO: Doplnit adresu webu-->
+<meta property="og:type" content="website">
+<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="/SPL.png">
+<link rel="stylesheet" href="../ViewsCss/Dashboard.css">
+<link rel="stylesheet" href="../ViewsCss/StyleCMS.css">
+<link rel="stylesheet" href="../ViewsCss/ModalCMS.css">
+<link rel="stylesheet" href="../ViewsCss/ChatBotStyleCMS.css">
+<link rel="stylesheet" href="../ViewsCss/Analytics.css">
+<link rel="stylesheet" href="../ViewsCss/DashboardView.css">
+<title>AETHERIUM CORE - STARTER -  Dashboard</title>
+</head>
+<body>
+<div class="Main_menu">
+  <h2>AETHERIUM CORE - STARTER</h2>
+  <div class="Logo-Row">
+  <img src="../../../AetheriumIcon.svg" alt="Logo" class="Logo">
+  <h4>Editorial Dashboard</h4>
+  </div><!--TODO: Vertikální menu-->
+  <ul class="Vertical_Menu">
+    <li><a href="../Views/CMS.html">
+      <img src="../Kurzy.png" alt="Kurzy" class="Menu-Icon">Redakční systém</a></li>
+    <li><a href="../Views/UživateléAOprávnění.html">
+      <img src="../Uživatel.png" alt="Uživatel" class="Menu-Icon">Uživatelé</a></li>
+    <li><a href="../Views/Analytika.html">
+      <img src="../Reporty.png" alt="Reporty" class="Menu-Icon">Analytika</a></li>
+    <li><a href="../Views/CertifkátyCMS.html">
+      <img src="../Dokumentace.png" alt="Dokumentace" class="Menu-Icon">Certifikáty</a></li>
+    <li><a href="../Views/NastaveníCMS.html">
+      <img src="../Nastavení.png" alt="Nastavení" class="Menu-Icon">Nastavení</a></li>
+  </ul>
+  </div>
+
+<!--TODO: CHATBOT FORMULÁŘE............................................................................................-->
+
+<!--TODO: ChatBot Button-->
+<div class="ButtonChatBot">
+  <img src="../Button.png" alt="Button" class="Button" id="ChatBotOpen">
+</div>
+
+<!--TODO: ChatBotModal-->
+<div id="ChatBotModal" class="chatbot-modal">
+  <div class="chatbot-modal-content">
+    <span class="chatbot-close">&times;</span>
+<h3 class="h3ChatBot">Chatbot</h3>
+
+<!--TODO: Historie chatu -->
+<div class="chatbot-history" id="chathistory">
+<p><em>"Jak se zapsat do kurzu", "Kdy mohu udělat test?", "Kde najdu certifikát?", "Kdy musím dělat znovu test?"</em></p>
+</div>
+<!--TODO: Tělo Chatbota-->
+<div class="chatbot-body">
+  <p>Zde se zeptejte ChatBota</p>
+  <textarea id="userInput" placeholder="Napiš svůj dotaz..."></textarea>
+  <button id="SendMessage" type="button">Odeslat</button>
+  </div>
+ </div>
+</div>
+
+
+
+
+<!--TODO: Horní menu-->
+  <div class="Container1">
+      <div class="Content">
+<div class="Up_Menu">
+  <ul class="TopMenu">
+<li><a href="../Views/Dashboard.html">Dashboard</a></li>
+<li><a href="../Views/Notifikace.html">Notifikace</a></li>
+<li><a href="../Views/Legislativa.html">Legislativa</a></li>
+<li><a href="../Views/Audit_Log.html">Audit Log</a></li>
+</ul>
+<!--TODO: Divy k UpMenu-->
+</div>
+</div>
+</div>
+
+<!--TODO: Dashboard space // Analytics dashboard
+
+
+<!--TODO: Elementž pro výslednouz hodnotu měření behaviorální biometrie!-->
+
+<!--BUG: COMMENT: DODĚLAT MÍSTO OUTPUTU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<article class="heroBiometry">
+  <span class="biometryTitle" id="biometryTitleId">Behaviorální <br>biometrie</span>
+
+  <output class="biometryValue" aria-labelledby="biometryTitleId">96%</output>
+
+  <meter class="biometryMeter"
+         min="0" max="100"
+         low="50" high="80" optimum="100"
+         value="96"
+         aria-labelledby="biometryTitleId">
+    96%
+  </meter>
+</article> -->
+
+<main class="plocha">
+<section class="backgroundDashboard">
+  <div class="SpaceDiv">
+
+  <!--TODO: AKTUÁLNÍ NÁVŠTĚVNOST  ================================================================================================-->
+  <article class="herocurrentAttendance telemetryCard" data-dialog-id="currentAttendanceDialog">
+    <span class="currentAttendanceTitle">Aktuálně v <br>systému</span>
+    <output class="currentAttendanceValue">12</output>
+
+<!--FRONTEND Progresivní průběh operace -->
+<dialog class="detailModal" id="currentAttendanceDialog">
+  <button class="modalClose" data-close-modal>&times;</button>
+  <h2 class="TelemetryFont">Aktuální návštěvnost - telemetrie</h2>
+  <!--FIXME: Telemetrie Aktuální návštěvnost =============================================-->
+  <div class="telemetryGrid">
+    <canvas id="attendanceTimeLineChart"></canvas>
+    <canvas id="attendanceRoleChart"></canvas>
+    <canvas id="attendanceDeviceChart"></canvas>
+    <div class="telemetryStat">
+        <span class="telemetryStatLabel">Průměrná délka session</span>
+        <span class="telemetryStatValue" id="avgSessionValue">–</span>
+    </div>
+</div>
+</dialog>
+  </article>
+  <!--TODO: POČET AKTIVNÍCH KURZŮ ========================================================================================================= -->
+  <article class="heroActiveCourses telemetryCard" data-dialog-id="activeCoursesDialog">
+    <span class="activeCoursesTitle">Aktivní kurzy</span>
+        <output class="activeCoursesValue">20</output>
+
+<!--FRONTEND Progresivní průběh operace -->
+<dialog class="detailModal" id="activeCoursesDialog">
+  <button class="modalClose" data-close-modal>&times;</button>
+  <h2 class="TelemetryFont">Aktivní kurzy - telemetrie</h2>
+<!--FIXME: Telemetrie Aktivní kurzy ========================================-->
+<div class="telemetryGrid">
+    <canvas id="coursesTopChart"></canvas>
+    <canvas id="coursesCompletionChart"></canvas>
+    <canvas id="coursesEnrollmentChart"></canvas>
+    <div class="telemetryStat">
+        <span class="telemetryStatLabel"></span>
+        <span class="telemetryStatValue" id="avgCompletionValue">–</span>
+    </div>
+</div>
+</dialog>
+      </article>
+  <!--TODO: OBSAHOVÁ DATABGÁZE ====================================================================================================================-->
+  <article class="heroContentDatabase telemetryCard" data-dialog-id="contentDatabaseDialog">
+    <span class="contentDatabaseTitle">Obsahová <br>Databáze</span>
+        <output class="contentDatabaseValue">234</output>
+
+<!--FRONTEND Progresivní průběh operace -->
+<dialog class="detailModal" id="contentDatabaseDialog">
+  <button class="modalClose" data-close-modal>&times;</button>
+  <h2 class="TelemetryFont">Aktuální obsah - telemetrie</h2>
+  <!--FIXME: Telemetrie Obsahové databáze =========================================================-->
+  <div class="telemetryGrid">
+    <canvas id="contentTypeChart"></canvas>
+    <canvas id="contentStorageChart"></canvas>
+    <canvas id="contentGrowthChart"></canvas>
+    <ul class="telemetryList" id="contentRecentList">
+        <!--BUG: Naplnění obsahu telemetrickými údaji.....-->
+    </ul>
+  </div>
+</dialog>
+
+      </article>
+  <!--TODO: BEHAVIORÁLNÍ BIOMETRIE ==================================================================================================================-->
+  <article class="heroBiometry telemetryCard" data-dialog-id="biometryDialog">
+    <span class="biometryTitle">Behaviorální <br>biometrie</span>
+        <output class="contentDatabaseValue">96%</output>
+
+<!--FRONTEND Progresivní průběh operace -->
+<dialog class="detailModal"  id="biometryDialog">
+  <button class="modalClose" data-close-modal>&times;</button>
+  <h2 class="TelemetryFont">Behaviorální biometrie</h2>
+  <!--FIXME: Telemetrie Behaviorální biometrie =========================================-->
+  <div class="telemetryGrid">
+    <canvas id="biometryScoreGrid"></canvas>
+    <canvas id="biometryEventsChart"></canvas>
+    <canvas id="biometryRhythmChart"></canvas>
+    <ul class="telemetryList" id="biometryFlaggedList">
+        <!--BUG: Naplnění obsahu telemetrických údajů-->
+    </ul>
+  </div>
+</dialog>
+
+  </article>
+  </div>
+
+  </section>
+<!--TODO: Analyzační dashboard spodní část ---------------------------- -->
+
+<!--IMPORTANT: SPODNÍ ČÁST ANALYTICKÉHO DASHBOARDU PROSTŘEDÍ ADMIN =====================-->
+
+<section class="dataAnalysisDashboard">
+  <!--TODO: Biometrie křivky -->
+<article class="dataAnalysisContent">
+  <canvas id="progressGraph" width="600" height="200"></canvas>
+<!--PWD_NOTES:Obsahová struktura <canva class="" // Vykreslování -->
+</article>
+  <!--TODO: Biometrie - aktivní okno -->
+  <article class="activeDashboard">
+<!--TODO:: Obsahová struktura aktivního okna / Prostor realizace 3 aktivních signalizačních hodnot-->
+<!--IMPORTANT: SELEKTIVNÍ ČÁST INDIKAČNÍHO ZOBRAZENÍ =========================================================================================== -->
+<progress id="raw_progress" min="0" max="1" class="ActiveSignal" value="#"
+                        style="opacity: 0; pointer-events: none; width: 1px;"></progress>
+                    <div class="diodeLed" id="activeDiode" aria-live="polite" aria-label="stav-systému">
+
+
+            <section class="Obsahové-pole"> <!--   <article class="refresh-okno-events">-->
+                    <data value="#" class="event-log" aria-label="přehled-událostí">
+                        <!--TODO: Tag REVERSED udržuje nejnovější eventy nahoře... -->
+                        <ol id="event-list" reversed>
+                            <!--TODO: Zde se přidají nové <li události pomocí JS ================= -->
+                            <li class="eventActive" id="event-placeholder">
+                                <p class="eventActivePart">Aktivita systému Admin</p>
+                            </li>
+                        </ol>
+                    </data><!--</article> -->
+            </section>
+            </div>
+        </article>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--TODO: Patička-->
+  <div class="ContainerDash">
+    <h3 class="PatičkaDash">Aetherium Core 2026 by PWD Resolution</h3>
+    </div>
+
+
+
+<!--TODO: SKRIPTY......................................................................................................-->
+<script type="module" src="../Components/Dashboard.js"></script>
+<script type="module" src="/utils/security.client.js"></script>
+<script type="module" src="../Services/Chatbotmanager.js"></script>
+<script type="module" src="../Components/Admin_Dashboard_Logika/asideLogicAdmin.js"></script>
+<script type="module" src="../Components/Admin_Dashboard_Logika/TelemetryModal.js"></script>
+<script type="module" src="../Components/Admin_Dashboard_Logika/TelemetryLogic.js"></script>
+
+
+
+</body>
+</html>

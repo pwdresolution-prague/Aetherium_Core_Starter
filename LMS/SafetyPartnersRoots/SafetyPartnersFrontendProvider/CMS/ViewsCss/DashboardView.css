@@ -1,0 +1,118 @@
+.detailModal {
+  position: fixed;
+  inset: 0;
+  margin: auto;      /* ← nahrazuje margin-left/margin-top */
+  border: none;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 80vw;
+  height: 80vh;
+  background: #2f5275;
+  color: #fff;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.6);
+
+}
+
+.detailModal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.detailModal[open] {
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.modalClose {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #FF6700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+/* Výchozí (společné) vlastnosti má už .detailModal výše */
+
+#currentAttendanceDialog {
+  border: 4px solid #ffe1cc;
+}
+
+#activeCoursesDialog {
+  border: 4px solid #fff3eb;
+}
+
+#contentDatabaseDialog {
+  border: 4px solid #ffe1cc;
+}
+
+#biometryDialog {
+  border: 4px solid #fff3eb;
+}
+
+.TelemetryFont {
+    letter-spacing: 0.15rem;
+    font-family: 'Lekton', 'Courier New', monospace;
+    color: white;
+    display: flex;
+  flex-direction: column;
+  align-items: center;     /* horizontální střed */
+  text-align: center;
+}
+
+
+/*TODO: Behaviorální metrie CSS ================================================================ */
+/*COMMENT:
+
+
+*/
+
+
+.telemetryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.telemetryGrid canvas {
+  max-height: 220px;
+}
+
+.telemetryStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.telemetryStatLabel {
+  color: #ffe1cc;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.telemetryStatValue {
+  color: #FF6700;
+  font-size: 2.5rem;
+  font-family: 'Koulen', sans-serif;
+}
+
+.telemetryList {
+  list-style: none;
+  font-family: 'Lekton', 'Courier New', monospace;
+  color: white;
+  font-size: 0.85rem;
+  overflow-y: auto;
+  max-height: 220px;
+}
