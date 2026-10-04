@@ -43,3 +43,8 @@ Vývoj_Metodologie/
 Aetherium_WebDesigne/
 *.docx
 *.pdf
+node_modules/
+.env
+.env.*
+*.bak
+.DS_Store

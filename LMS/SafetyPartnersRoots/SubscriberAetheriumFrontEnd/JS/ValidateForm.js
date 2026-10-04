@@ -19,7 +19,9 @@ export const FIELD_RULES = {
 
 export function validateField(id, rawValue) {
     const sanitizeRule = FIELD_RULES[id]
-    const sanitizeValue = sanitizeText(rawValue)
+    // Surová hodnota. Escapuje se až při výpisu do HTML. Heslo se neořezává (mezery jsou jeho součást).
+    const isSecret = id === 'hesloId' || id === 'potvrzení-hesla'
+    const sanitizeValue = isSecret ? String(rawValue ?? '') : String(rawValue ?? '').trim()
 
     if (!sanitizeRule) return { valid: true, value: sanitizeValue, error: null }
 

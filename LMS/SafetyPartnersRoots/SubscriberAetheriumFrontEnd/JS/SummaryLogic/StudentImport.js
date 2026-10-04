@@ -15,7 +15,7 @@
 
 import Papa from 'papaparse'
 import { extractFeatures } from './ColumnFeatures.js'
-import { setImport } from '../AetheriumClientStore.js'
+import { setImport, getImport } from '../Shared/AetheriumClientStore.js'
 
 const MAX_SIZE = 5 * 1024 * 1024 // 5 MB
 const MAX_ROWS = 5000
@@ -261,10 +261,16 @@ async function processRows(rows) {
 }
 
 //TODO: ============================== Náhled ==================================
-function renderResult({ valid, invalid, duplicates }) {
+function renderResult({ valid, invalid, duplicates, fileName }) {
     const box = document.getElementById('importResultId')
     box.hidden = false
     box.replaceChildren()
+
+    if (fileName) {
+        const f = document.createElement('p')
+        f.textContent = `Soubor: ${fileName}`
+        box.append(f)
+    }
 
     const stats = document.createElement('p')
     stats.textContent = `Platných: ${valid.length} · Chybných: ${invalid.length} · Duplicit: ${duplicates}`
@@ -303,7 +309,7 @@ async function handleFile(file) {
             duplicates: result.duplicates,
         })
 
-        renderResult(result)
+        renderResult({ ...result, fileName: file.name })
     } catch (err) {
         showError(err.message)
     }
@@ -332,3 +338,8 @@ export function initStudentImport() {
 }
 
 initStudentImport()
+
+// LOGIKA: po reloadu (F5) je import uložený ve store, ale panel byl prázdný —
+// výsledek posledního importu se teď vrátí zpět do panelu
+const savedImport = getImport()
+if (savedImport) renderResult(savedImport)

@@ -1,15 +1,20 @@
 // ProviderAetherium.js
-import supabase from '../Connect/SupabaseConnect.js'                              // ← PŘIDÁNO
-import { onOtpVerifiedChange, isOtpVerified } from './Mfa_Otp.js'                // ← PŘIDÁNO
+import supabase from '../Connect/SupabaseConnect.js'                              // ← PŘIDÁNO               // ← PŘIDÁNO
 import { initAresLookup } from '../Connect/AresLookUpProvider.js'
-import { sanitizeText, isValidIco, isValidDic } from './SanitizeFormProvider.js'
 import { validateForm } from '../JS/ValidateForm.js'
-import { saveForPayment } from '../BackEnd/FormToPay.js'                          // ← PŘIDÁNO až bude soubor hotový
+import { saveForPayment } from './SummaryLogic/FormToPaySubscriber.js'   // místo ../BackEnd/FormToPay.js
+import { onOtpVerifiedChange, isOtpVerified, getVerifiedPhone } from './Mfa_Otp.js'
+import { sanitizeText, isValidIco, isValidDic, formatPhoneStrict } from './SanitizeFormProvider.js'                     // ← PŘIDÁNO až bude soubor hotový
 
 // ============================================================
 // Formulář — datové uložiště
 // ============================================================
 const AetheriumSubscriberForm = document.getElementById('AetheriumSubscriberForm')
+
+// Rozepsaný formulář: nikdy nepersistovat tajemství
+const NEVER_SAVE = new Set(['hesloId', 'potvrzení-hesla', 'mfa-otp', 'gdprCheckbox'])
+;['hesloId', 'potvrzení-hesla', 'mfa-otp'].forEach((k) => sessionStorage.removeItem(k))  // úklid po starých pokusech
+
 
 const ico             = document.getElementById('ičoId')
 const dic             = document.getElementById('dicId')
@@ -27,9 +32,14 @@ const email           = document.getElementById('emailId')
 const heslo           = document.getElementById('hesloId')
 const potvrzeniHesla  = document.getElementById('potvrzení-hesla')
 
+
+
 // ============================================================
 // Supabase — uložení Subscribera
 // ============================================================
+
+
+
 async function ulozFirmu(data) {
     if (!isValidIco(data.ico)) {
         console.error('Neplatné IČO:', data.ico)
@@ -79,59 +89,102 @@ document.getElementById('closeTerms').addEventListener('click', () => {
 // LOGIKA: Mfa_Otp.js zavolá callback pokaždé, když se změní stav ověření.
 // Tady si ho uložíme a použijeme při submit validaci.
 // ============================================================
-let phoneVerified = false
-
 onOtpVerifiedChange((verified) => {
-    phoneVerified = verified
     console.log('[Subscriber] OTP stav:', verified ? '✓ ověřen' : '✗ neověřen')
 })
 
 // ============================================================
 // Ukládání formuláře do sessionStorage
 // ============================================================
-const formInputs = document.querySelectorAll('#AetheriumSubscriberForm input')
 
-formInputs.forEach(input => {
-    const saved = sessionStorage.getItem(input.id)
-    if (saved) input.value = saved
-})
+// Ukládání formuláře do sessionStorage
+// LOGIKA: Po F5 / hard refreshi (navigation type 'reload' nebo 'back_forward')
+// se rozepsaný formulář smaže úplně celý. Při běžném příchodu na stránku
+// (např. tlačítko "Upravit údaje" ze Shrnutí) se hodnoty dál obnovují.
+// Chceš mazat VŽDY? Dej: const WIPE = true
+// ============================================================
+const navType = performance.getEntriesByType('navigation')[0]?.type
+const WIPE = navType === 'reload' || navType === 'back_forward'
 
-formInputs.forEach(input => {
+const formInputs = [...document.querySelectorAll('#AetheriumSubscriberForm input')]
+    .filter((i) => i.id && !NEVER_SAVE.has(i.id))
+
+if (WIPE) {
+    formInputs.forEach((i) => sessionStorage.removeItem(i.id))
+    AetheriumSubscriberForm.reset()   // inputy, select, textarea i checkboxy zpět na výchozí
+    submitBtn.disabled = true         // GDPR odškrtnuto → odeslání zablokované
+    submitBtn.classList.remove('active')
+} else {
+    formInputs.forEach((input) => {
+        const saved = sessionStorage.getItem(input.id)
+        if (saved) input.value = saved
+    })
+}
+
+formInputs.forEach((input) => {
     input.addEventListener('input', () => {
         sessionStorage.setItem(input.id, input.value)
     })
 })
 
+// Návrat tlačítkem Zpět může stránku vzít z bfcache bez znovunačtení skriptů —
+// v tom případě ji načteme znovu, a tím se spustí mazání výše.
+window.addEventListener('pageshow', (e) => { if (e.persisted) location.reload() })
+
 // ============================================================
 // Submit handler
 // ============================================================
+// Viditelná zpráva pod tlačítkem — dřív všechny chyby končily jen v konzoli
+const submitStatus = document.createElement('p')
+submitStatus.id = 'submit-status'
+submitStatus.setAttribute('role', 'alert')
+submitBtn.insertAdjacentElement('afterend', submitStatus)
+const say = (msg) => { submitStatus.textContent = msg; console.warn('[Submit]', msg) }
+
+let submitting = false
+
 AetheriumSubscriberForm.addEventListener('submit', async (e) => {
     e.preventDefault()
+    if (submitting) return
+    say('')
 
-    //LOGIKA: Telefon musí být ověřen přes OTP před odesláním formuláře
-    if (!phoneVerified) {
-        console.warn('[Subscriber] Telefon není ověřen přes OTP')
-        // TODO: zobrazit vizuální chybu u OTP pole
+    // Krok 1 — telefon musí být ověřen a shodovat se s polem
+    if (!isOtpVerified() || getVerifiedPhone() !== formatPhoneStrict(telefonniCislo.value.trim())) {
+        say('Nejdřív ověřte telefonní číslo kódem.')
         return
     }
 
+    // Krok 2 — validace polí
     const { isValid, errors, sanitizedValues } = validateForm(AetheriumSubscriberForm)
-
     if (!isValid) {
-        console.warn('Formulář obsahuje chyby:', errors)
-        // TODO: zobrazit chyby vizuálně u konkrétních polí
+        console.warn('[Submit] chyby polí:', errors)
+        say('Opravte pole: ' + Object.keys(errors).join(', '))
         return
     }
 
-    const saved = await ulozFirmu({
-        ico:       sanitizedValues['ičoId'],
-        dic:       sanitizedValues['dicId'],
-        nazevFirmy: sanitizedValues['název-firmyId'],
-    })
+    submitting = true
+    submitBtn.disabled = true
+    try {
+        // Krok 3 — heslo jde přímo do Supabase Auth a nikam se neukládá
+        const { error } = await supabase.auth.updateUser({ password: heslo.value })
+        if (error) {
+            console.error('[Submit] updateUser:', error.code, error.message)
+            say(error.code === 'same_password'
+                ? 'Toto heslo už je u tohoto čísla nastavené — zadejte jiné (při testech).'
+                : 'Heslo se nepodařilo nastavit: ' + error.message)
+            return
+        }
 
-    if (!saved) return
-
-    saveForPayment(sanitizedValues)
+        // Krok 4 — uložit do store a přejít na shrnutí
+        saveForPayment(sanitizedValues)   // whitelist ve store heslo a OTP stejně nepustí
+    } catch (err) {
+        console.error('[Submit] neočekávaná chyba:', err)
+        say('Neočekávaná chyba: ' + (err?.message ?? err))
+    } finally {
+        submitting = false
+        submitBtn.disabled = !gdprCheckbox.checked
+    }
 })
+
 
 initAresLookup()

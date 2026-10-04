@@ -1,0 +1,276 @@
+/* ============================================================
+   Css/FormTheme.css — blue theme formuláře (stejný jazyk jako Summary.css)
+   Načítá se AŽ PO SubForm.css a přepisuje jen vzhled formuláře.
+   Hlavička, patička a Summary.html zůstávají nedotčené.
+   Paleta: #001428 → #003d80 (panel) · #FF6600 / #f77343 (akcent) ·
+           #22c55e (ok) · #f59e0b (čeká) · #ef4444 (chyba)
+   ============================================================ */
+
+/* ---------- Úvodní text (zůstává na bílém podkladu → tmavě modrý) ---------- */
+.Nadpis    { color: #001428; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: .06rem; }
+.Podnadpis { color: #1f3556; font-family: 'Lekton', monospace; }
+
+/* ---------- Hlavní panel ---------- */
+.FormulářSubscriber {
+    width: min(60rem, 92vw);
+    min-width: 0;
+    height: auto;
+    gap: 0;
+    padding: clamp(1.2rem, 3vw, 2.6rem);
+    background: linear-gradient(160deg, #001428 0%, #5f89bc 30%, #003d80 60%, #5f89bc 80%, #001428 100%);
+    border: 2px solid #f77343;
+    border-radius: 1rem;
+    box-shadow: 0 2vw 6vw rgba(0, 0, 0, .8);
+}
+
+.SubscriberFormulářNadpis {
+    width: 100%;
+    justify-content: flex-start;
+    color: #fff;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
+    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+    letter-spacing: .05rem;
+    padding-bottom: .9rem;
+    border-bottom: 1px solid rgba(255, 102, 0, .4);
+    margin-bottom: .5rem;
+}
+
+.AetheriumCore-FormSubscriber { display: none; }   /* prázdná sekce bez obsahu */
+.AetheriumCoreSubscriber-Form { width: 100%; }
+
+/* ---------- Sekce formuláře ---------- */
+.SubscriberForm-FirstSection,
+.SubscriberForm-SecondSection,
+.SubscriberForm-ThirdSection {
+    display: block;
+    padding: clamp(1.2rem, 2vw, 2rem);
+    margin-top: 1.5rem;
+    background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
+    border: 1px solid rgba(0, 140, 255, .18);
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .4);
+}
+
+.SubscriberSectionOne,
+.SubscriberSectionTwo,
+.SubscriberSectionThree {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .35rem;
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.SubscriberSectionOne::before,
+.SubscriberSectionTwo::before,
+.SubscriberSectionThree::before {
+    font-family: 'Oswald', sans-serif; font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: .05rem;
+    color: #fff;
+    padding-bottom: .5rem;
+    margin-bottom: .4rem;
+    border-bottom: 1px solid rgba(255, 102, 0, .4);
+}
+.SubscriberSectionOne::before   { content: 'Firemní údaje'; }
+.SubscriberSectionTwo::before   { content: 'Kontakt a zabezpečení'; }
+.SubscriberSectionThree::before { content: 'Využití platformy'; }
+
+/* ---------- Popisky ---------- */
+.SubscriberSectionOne label,
+.SubscriberSectionTwo label,
+.SubscriberSectionThree label {
+    display: block;
+    margin: .8rem 0 0;
+    justify-content: flex-start;
+    text-align: left;
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Lekton', monospace;
+    font-size: .9rem;
+}
+.CompanyDescription:empty { display: none; }
+
+/* ---------- Pole ---------- */
+#AetheriumSubscriberForm :is(input:not([type="checkbox"]), select, textarea) {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 2.9rem;
+    padding: .7rem 1rem;
+    background: rgba(255, 255, 255, .07);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 1.1rem;                 /* původní kulatost formuláře */
+    color-scheme: dark;
+    font-family: 'Lekton', monospace;
+    font-size: 1rem !important;            /* přebíjí inline font-size: 0.9vw */
+    transition: border-color .2s, box-shadow .2s, background .2s;
+}
+#AetheriumSubscriberForm ::placeholder { color: rgba(255, 255, 255, .4); }
+#AetheriumSubscriberForm select option { background: #001428; color: #fff; }
+#AetheriumSubscriberForm textarea { resize: none; line-height: 1.5; }
+
+#AetheriumSubscriberForm :is(input, select, textarea):hover { border-color: #f77343; }
+#AetheriumSubscriberForm :is(input, select, textarea):focus {
+    outline: none;
+    border-color: #FF6600;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 0 3px rgba(255, 102, 0, .25);
+}
+
+/* Stavy z ARES a OTP (třídy nastavují Ares/Mfa skripty) */
+#AetheriumSubscriberForm .ares-filled,
+#AetheriumSubscriberForm .ares-success { border: 2px solid #22c55e; }
+#AetheriumSubscriberForm .ares-error   { border: 2px solid #ef4444; }
+#AetheriumSubscriberForm .ares-loading { opacity: .6; }
+#AetheriumSubscriberForm :disabled     { opacity: .7; cursor: not-allowed; }
+
+/* ---------- Stavové zprávy (ARES, OTP, heslo) ---------- */
+.ares-status, .otp-status, .pw-status {
+    display: block;
+    margin-top: .3rem;
+    text-align: left;
+    font-family: 'Lekton', monospace;
+    font-size: .85rem;
+}
+.pw-status:empty, .otp-status:empty { display: none; }
+.ares-status--success, .otp-status--success, .pw-status--success { color: #4ade80; }
+.ares-status--error,   .otp-status--error,   .pw-status--error   { color: #ff8a8a; }
+.otp-status--loading,  .pw-status--pending                       { color: #fbbf24; }
+
+/* ---------- Tlačítka ---------- */
+#sendOtpBtn,
+.SubmitButtonSubs {
+    height: auto;
+    width: auto;
+    margin: 1rem 0 0;
+    padding: .85rem 2rem;
+    background: linear-gradient(to right, #FF6600, #f77343);
+    color: #fff;
+    border: none;
+    border-radius: 1.1rem;
+    font-family: 'Lekton', monospace;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .4);
+    transition: filter .2s, transform .1s;
+}
+#sendOtpBtn { align-self: flex-start; }
+#sendOtpBtn:hover, .SubmitButtonSubs.active:hover { filter: brightness(1.1); }
+#sendOtpBtn:active, .SubmitButtonSubs.active:active { transform: translateY(2px); }
+
+.SubmitButtonSubs { display: block; margin: 2rem auto 0; padding: 1rem 3rem; }
+.SubmitButtonSubs:disabled {
+    background: rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, .4);
+    border: 1px solid rgba(255, 255, 255, .15);
+    box-shadow: none;
+    opacity: 1;
+    cursor: not-allowed;
+}
+.SubmitButtonSubs.active { background: linear-gradient(to right, #FF6600, #f77343); }
+
+#submit-status {
+    margin-top: 1rem;
+    text-align: center;
+    color: #fbbf24;
+    font-family: 'Lekton', monospace;
+    font-size: .9rem;
+}
+#submit-status:empty { display: none; }
+
+.TermsButton {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    margin: 1.8rem auto 0;
+    padding: .8rem 1.6rem;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 1.1rem;
+    font-family: 'Lekton', monospace;
+    font-size: .95rem;
+    box-shadow: none;
+    cursor: pointer;
+    text-shadow: none;
+}
+.TermsButton:hover { color: #fff; border-color: #FF6600; text-shadow: none; }
+
+/* ---------- Doplňková pole ---------- */
+.CharCounter { margin: 0; align-self: flex-end; font-family: 'Lekton', monospace; font-size: .8rem; color: rgba(255, 255, 255, .6); }
+.CharCounter--warning { color: #f59e0b; }
+.početŠkoleníCheckbox { margin: .5rem 0 0; align-self: flex-start; accent-color: #FF6600; }
+
+/* ---------- Modal GDPR ---------- */
+.modalSubscriberGdpr {
+    position: fixed;
+    inset: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    background: rgba(0, 10, 25, .8);
+    backdrop-filter: blur(4px);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    z-index: 1000;
+}
+.modalSubscriberGdpr.open { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; }
+
+.Margin { margin: 0; }
+.NadpisGdpr { margin: 0; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1.6rem; letter-spacing: .05rem; white-space: normal; text-align: center; }
+
+.modal-content {
+    width: min(44rem, 92vw);
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 1.8rem;
+    background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
+    border: 1px solid #f77343;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .6);
+}
+.Gdpr-modal-content { width: 100%; }
+.close-button { margin: 0; color: rgba(255, 255, 255, .7); font-size: 1.8rem; line-height: 1; }
+.close-button:hover { color: #fff; }
+
+.Obsah { margin: 0; color: rgba(255, 255, 255, .8); text-align: left; font-family: 'Lekton', monospace; font-size: .95rem; line-height: 1.6; }
+.datovýObsah { margin: 1.2rem 0 .5rem; color: #fff; font-family: 'Lekton', monospace; text-align: left; }
+.MarginGdpr { display: flex; flex-direction: column; gap: .6rem; text-align: left; }
+.GdprPodmínky { color: #7fb8ff; font-family: 'Lekton', monospace; text-align: left; }
+.GdprPodmínky:hover { color: #fff; }
+
+.Rulles {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 1.5rem 0 0;
+    padding: .8rem 1.2rem;
+    gap: .8rem;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: .8rem;
+    box-shadow: none;
+    font-size: 1rem;
+}
+#gdprCheckbox { margin: 0; width: 1.2rem; height: 1.2rem; accent-color: #FF6600; flex-shrink: 0; }
+.Podmínka { margin: 0; text-align: left; color: #fff; font-family: 'Lekton', monospace; font-size: .95rem; cursor: pointer; }
+
+/* ---------- Přístupnost a mobil ---------- */
+.SubmitButtonSubs:focus-visible, #sendOtpBtn:focus-visible, .TermsButton:focus-visible, #gdprCheckbox:focus-visible {
+    outline: 2px solid #fff; outline-offset: 3px;
+}
+@media (max-width: 700px) {
+    .FormulářSubscriber { padding: 1.2rem; }
+    #sendOtpBtn { align-self: stretch; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

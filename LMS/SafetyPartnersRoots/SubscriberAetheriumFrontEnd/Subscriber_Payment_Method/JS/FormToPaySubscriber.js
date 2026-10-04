@@ -20,9 +20,8 @@
 // Teď obě jdou přes AetheriumClientStore.js.
 // ============================================================
 
-
-import { calculateOrder, formatMoney } from '../Shared/PricingRules.js'
 import { setRegistration, getRegistration, getImport, STORE_CHANGED } from '../Shared/AetheriumClientStore.js'
+import { calculateOrder, formatMoney } from '../Shared/PricingRules.js'
 
 // Mapa technických ID na čitelné popisky pro uživatele
 const FIELD_LABELS = {
@@ -42,6 +41,26 @@ const FIELD_LABELS = {
     'početŠkoleníSubscriber': 'Predikovaný počet školení',
     'CompanyDescriptionName': 'Popis firmy',
     'účel':                   'Účel využití',
+
+    // OPRAVENO: store (AetheriumClientStore.js) ukládá pod klíči datového modelu, ne pod id polí
+    // formuláře — bez těchto řádků tabulka ukazovala syrové 'ico', 'companyName', 'seat'...
+    'ico':             'IČO',
+    'dic':             'DIČ',
+    'companyName':     'Název firmy',
+    'legalForm':       'Právní forma',
+    'seat':            'Sídlo společnosti',
+    'foundedAt':       'Datum založení',
+    'entityStatus':    'Stav subjektu',
+    'fileNumber':      'Spisová značka',
+    'dataBox':         'Datová schránka',
+    'phone':           'Telefonní číslo',
+    'email':           'E-mail',
+    'address':         'Adresa provozovny',
+    'businessField':   'Obor podnikání',
+    'sector':          'Segment',
+    'expectedCourses': 'Predikovaný počet školení',
+    'description':     'Popis firmy',
+    'purpose':         'Účel využití',
 }
 
 // Tohle pole se ukládat smí, jen se nemá zobrazovat v tabulce shrnutí
@@ -166,7 +185,7 @@ function renderImportAndPricingStatus(registration) {
     const imported = getImport()
     if (!imported) {
         return `
-            <div class="SummarySection">
+            <div class="SummarySection" id="summaryImportCard">
                 <h3 class="SummarySectionTitle">📥 Import studentů</h3>
                 <p class="SummaryError">Zatím nenahráno. Nahrajte CSV/XLSX v panelu vpravo →</p>
             </div>`
@@ -195,7 +214,7 @@ function renderImportAndPricingStatus(registration) {
         : ''
 
     return `
-        <div class="SummarySection">
+        <div class="SummarySection" id="summaryImportCard">
             <h3 class="SummarySectionTitle">📥 Import studentů</h3>
             <table class="SummaryTable">
                 <tbody>
@@ -221,8 +240,28 @@ function renderImportAndPricingStatus(registration) {
         </div>`
 }
 
+// ------------------------------------------------------------
+// 3) Automatická aktualizace shrnutí
+// ------------------------------------------------------------
 renderSummary()
 
-// Po každém zápisu do store (např. dokončený import studentů) se shrnutí
-// překreslí se samo, bez ručního F5.
-window.addEventListener(STORE_CHANGED, renderSummary)
+// a) Cokoli se zapíše do store (např. dokončený import studentů) → shrnutí, cena
+//    a tlačítko „Pokračovat k platbě“ se hned přepočítají
+window.addEventListener(STORE_CHANGED, (e) => {
+    renderSummary()
+
+    // Po dokončeném importu karta s počtem studentů a částkou na chvíli zazáří
+    // a doscrolluje se na ni — je hned vidět, že se přepočítala
+    if (e.detail?.key === 'aetherium.import') {
+        const card = document.getElementById('summaryImportCard')
+        if (!card) return
+        card.classList.add('SummaryFlash')
+        card.addEventListener('animationend', () => card.classList.remove('SummaryFlash'), { once: true })
+        if (window.lenis) window.lenis.scrollTo(card, { offset: -120 })
+        else card.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+})
+
+// b) Návrat tlačítkem „Zpět“ z platby/formuláře: prohlížeč může stránku obnovit
+//    z paměti (bfcache) se starým obsahem — při takovém návratu načteme data znovu
+window.addEventListener('pageshow', (e) => { if (e.persisted) renderSummary() })

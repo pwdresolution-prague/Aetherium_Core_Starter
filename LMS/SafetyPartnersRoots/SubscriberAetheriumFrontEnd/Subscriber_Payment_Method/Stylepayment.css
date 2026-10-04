@@ -18,7 +18,7 @@ h2{
     transform: translate(1vw, 0.8vw);
     margin-left: 1.5vw;
     padding: 0 auto;
-    font-family: 'Koulen', sans-serif;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
     letter-spacing: 0.09rem;
 
 }
@@ -135,7 +135,7 @@ h4 {
 }
 
 .PaymentSectionTitle {
-    font-family: 'Koulen', sans-serif;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
     letter-spacing: 0.05rem;
     color: #001428;
     margin-bottom: 1vw;
@@ -179,7 +179,7 @@ h4 {
     border-radius: 0.4vw;
     background: #003d80;
     color: #fff;
-    font-family: 'Koulen', sans-serif;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
     letter-spacing: 0.05rem;
     font-size: 1.1vw;
     cursor: pointer;

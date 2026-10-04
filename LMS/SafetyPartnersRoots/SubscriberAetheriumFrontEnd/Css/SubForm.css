@@ -18,7 +18,7 @@ h2{
     transform: translate(1vw, 0.8vw);
     margin-left: 1.5vw;
     padding: 0 auto;
-    font-family: 'Koulen', sans-serif;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
     letter-spacing: 0.09rem;
 
 }
@@ -145,7 +145,7 @@ h4 {
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   border: 2px solid rgba(0, 140, 255, 0.18);
     width: 60vw;
-    height: 300vh;
+    height: 320vh;
     border-radius: 1vw;
     display: flex;
     flex-direction: column;
@@ -347,6 +347,15 @@ h4 {
 .otp-status--loading { color: #f59e0b; }
 .otp-status--success { color: #22c55e; }
 .otp-status--error   { color: #ef4444; }
+
+/* Stav hesla — stejné barvy jako u ověření telefonu */
+.pw-status {
+    font-size: 0.85vw;
+    text-align: center;
+}
+.pw-status--pending { color: #f59e0b; }   /* oranžová = neověřeno */
+.pw-status--success { color: #22c55e; }   /* zelená   = ověřeno   */
+.pw-status--error   { color: #ef4444; }   /* červená  = chyba     */
 
 #sendOtpBtn {
     width: 10vw;
@@ -846,6 +855,9 @@ margin-inline: auto;
     cursor: pointer;
     background: linear-gradient(to right, #d9aa8a, #b27660);
 }
+
+
+
 
 
 

@@ -33,8 +33,16 @@ function read(key) {
         return null
     }
 }
-const write = (key, data) =>
+// LOGIKA: každý zápis rozešle událost 'aetherium:store-changed'. Stránka (Shrnutí)
+// na ni poslouchá a překreslí se sama — bez ručního F5. 'storage' událost tu nestačí,
+// protože se v rámci stejné záložky nespouští.
+export const STORE_CHANGED = 'aetherium:store-changed'
+const write = (key, data) => {
     sessionStorage.setItem(key, JSON.stringify({ v: SCHEMA_VERSION, t: Date.now(), data }))
+    if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent(STORE_CHANGED, { detail: { key } }))
+    }
+}
 
 // values = výstup validateForm() (id pole → hodnota). Uloží se jen to, co je ve FIELD_MAP.
 export function setRegistration(values) {

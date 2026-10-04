@@ -8,8 +8,11 @@
 // bodě se z "podržených" surových dat (registrace + platní studenti z
 // importu) poprvé počítá  objektivní hodnoty — konkrétní částka k úhradě.
 
-import { getRegistration, getImport, setPendingOrder } from '../JS/Aetheriumclientstore .js'
-import  { calculateOrder, formatMoney } from '../JS/PricingRules.js'
+import { buildCheckoutSnapshot } from '../../JS/Shared/CheckoutModel.js'
+import { formatMoney } from '../../JS/Shared/PricingRules.js'
+import { getImport, getOrderId, setPendingOrder } from '../../JS/Shared/AetheriumClientStore.js'
+import { el, kvRows } from '../../JS/Shared/Dom.js'
+import { registrationApi } from './RegistrationApi.js'
 
 //LOGIKA: Veškeré chyby vždy vedou zpět ke shrnutí čili Summary.html
 
@@ -25,35 +28,21 @@ document.getElementById('pricingBreakdownId').replaceChildren()
 
 
 }
-function renderCompanySummary(company) {
+function renderCompanySummary(c) {
     const box = document.getElementById('paymentSummaryId')
-    box.innerHTML = `
-    <h3 class="PaymentSectionTitle">Odběratel</h3>
-    <table class="PaymentTable">
-        <tbody>
-            <tr class="PaymentRow">
-                <td class="PaymentLabel">Firma</td>
-                <td class="PaymentValue">${company['název-firmyId'] ?? '-'}</td>
-            </tr>
-                <tr class="PaymentRow">
-                    <td class="PaymentLabel">IČO</td>
-                    <td class="PaymentValue">${company['ičoId'] ?? '-'}</td>
-                </tr>
-                    <td class="PaymentLabel">DIČ</td>
-                    <td class="PaymentValue">${company['dicId'] || '— (neplátce DPH)'}</td>}
-            </tr>
-                <tr class="PaymentRow">
-                    <td class="PaymentLabel">E-mail</td>
-                    <td class="PaymentValue">${company['emailId'] ?? '-'}</td>
-                </tr>
-            <tbody>
-        </table>
-
-
-
-    `
+    const tbody = el('tbody')
+    kvRows(tbody, [
+        ['Firma',  c.companyName ?? '—'],
+        ['IČO',    c.ico ?? '—'],
+        ['DIČ',    c.dic || '— (neplátce DPH)'],
+        ['Sídlo',  c.seat ?? '—'],
+        ['E-mail', c.email ?? '—'],
+        ['Telefon', c.phone ?? '—'],
+    ])
+    const table = el('table', 'PaymentTable')
+    table.append(tbody)
+    box.replaceChildren(el('h3', 'PaymentSectionTitle', 'Odběratel'), table)
 }
-
 
 function renderPricingBreakdown(order) {
     const box = document.getElementById('pricingBreakdownId')
@@ -90,56 +79,39 @@ function renderPricingBreakdown(order) {
 
 
 
-function bindPayButton(order, company) {
-    document.getElementById('payButtonId')?.addEventListener('click', () => {
-        //TODO: Tady vzniká objednávka v AetheriumClientStore
-        //COMMENT: SKutečné vytvoření platby (GoPay/COmgate/Stripe) samostatný modul
-        //Platby s idempotency_key.
-        const pendingOrder = {
-            ...order,
-            company:  {
-                ico: company['ičoId'] ?? null,
-                dic: company['dicId'] ?? null,
-                companyName:  company['název-firmyId'] ?? null,
-                email: company['emailId'] ?? null,
+function bindPayButton(order) {
+    const btn = document.getElementById('payButtonId')
+    btn?.addEventListener('click', async () => {
+        btn.disabled = true                         // ochrana proti dvojkliku
+        try {
+            const students = getImport()?.valid ?? []
+            const res = await registrationApi.confirmOrder(getOrderId(), students)
 
-            },
-            createdAt: new Date().toISOString(),
-
+            // Server je zdroj pravdy: pokud se liší od zobrazené částky, platbu nepouštíme
+            if (res.total_minor !== order.total) {
+                throw new Error('Částka se po přepočtu na serveru liší. Zkontrolujte shrnutí.')
+            }
+            setPendingOrder({ ...order, createdAt: new Date().toISOString() })
+            window.location.assign(res.payment_url)
+        } catch (e) {
+            btn.disabled = false
+            alert(e.message)   // později nahradit hláškou v UI
         }
-        setPendingOrder(pendingOrder)
-
-        console.info('[Payment] Objednávka připravena k platbě', pendingOrder)
-        //TODO: až vznikne platební brána  - window.location.href = '<gateway-redirect>'
-        alert('Platební brána zatím není napojena. Objednávka je připravena ke kontrole')
-
     })
 }
 
 
 
 function init() {
-    const company =  getRegistration()
-    if (!company) {
-        showBlockingError('Nebyla nalezena žádná registrace')
+    const snap = buildCheckoutSnapshot()
+    if (!snap.ok) {
+        showBlockingError(snap.reason === 'NO_REGISTRATION'
+            ? 'Nebyla nalezena žádná registrace'
+            : 'Nebyl nalezen žádný platný import studentů')
         return
     }
-
-    //LOGIKA: K fakturaci se počítají jen Platné řádky (import.valid - chybné)
-    // duplicitní studenty systém podržel a neplatí se za ně...
-    const studentCount = getImport()?.valid?.length ?? 0
-    if (studentCount === 0) {
-        showBlockingError('Nebyl nalezený žádný platný import studentů')
-        return
-
-    }
-
-    const order = calculateOrder(company, studentCount)
-
-    renderCompanySummary(company)
-    renderPricingBreakdown(order)
-    bindPayButton(order, company)
+    renderCompanySummary(snap.company)
+    renderPricingBreakdown(snap.order)
+    bindPayButton(snap.order)       // bindPayButton z minula beze změny
 }
-
-
 init()

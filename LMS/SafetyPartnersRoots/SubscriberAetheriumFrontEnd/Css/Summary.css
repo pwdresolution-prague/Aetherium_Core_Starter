@@ -1,9 +1,23 @@
 /* Summary.css — styly pro Summary.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
 
 .SummaryMain {
     display: flex;
-    gap: 3vw;
-    padding: 3vw 5vw;
+    gap: 2.5vw;
+    padding: 3vw 2vw;
     min-height: 70vh;
     align-items: flex-start;
     grid-template-columns: 1fr, 1fr, 1fr;
@@ -16,7 +30,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 14vw;
+    min-width: 17vw;
+    flex-shrink: 0;
     padding: 2vw 1vw;
     background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
     border-radius: 1vw;
@@ -96,12 +111,13 @@
     padding: 2vw;
     margin-bottom: 2vw;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    width: 47vw;
 
 }
 
 .SummarySectionTitle {
     color: white;
-    font-family: 'Koulen', sans-serif;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
     font-size: 1.2vw;
     margin-bottom: 1.5vw;
     letter-spacing: 0.05rem;
@@ -219,7 +235,7 @@
 
 /*TODO: Midside Aside =============================================================== */
 
-.SummarySection {
+.SummaryPanel {
     background: linear-gradient(
     160deg,
     #001428 0%,      /* Téměř černá modrá — nejhlubší stín */
@@ -230,8 +246,13 @@
   );
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   border: 2px solid rgba(0, 140, 255, 0.18);
-    width: 50vw;
-    height: 150vh;
+    flex: 1 1 0;          /* vyplní zbytek řádku mezi levým a pravým panelem */
+    width: auto;
+    max-width: 58vw;
+    margin-left: 2vw;     /* posun panelu maličko doprava */
+    min-width: 0;
+    height: auto;
+    min-height: 70vh;
     border-radius: 1vw;
     display: flex;
     flex-direction: column;
@@ -244,13 +265,20 @@
 }
 
 
+/* Vnitřní obsah panelu musí zabrat celou šířku panelu, ne se smrštit na střed */
+.SummaryPanel .SummaryContent,
+.SummaryPanel #summaryContent {
+    width: 100%;
+}
+
 /*TODO: Rightside Aside ===================================================================== */
 
 .importPanel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20vw;
+    width: 23vw;
+    flex-shrink: 0;
     height: 80vh;
     padding: 2vw 1vw;
     background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
@@ -396,4 +424,15 @@ COMMENT: Sekce akceptování obsahu
     z-index: 1000;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
     font-size: 0.85vw;
+}
+
+
+/* Krátké zvýraznění karty importu/ceny po nahrání souboru se studenty */
+@keyframes summaryFlash {
+    0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.9); border-color: #22c55e; }
+    70%  { box-shadow: 0 0 0 1.2vw rgba(34, 197, 94, 0); border-color: #22c55e; }
+    100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+}
+.SummaryFlash {
+    animation: summaryFlash 1.4s ease-out 1;
 }

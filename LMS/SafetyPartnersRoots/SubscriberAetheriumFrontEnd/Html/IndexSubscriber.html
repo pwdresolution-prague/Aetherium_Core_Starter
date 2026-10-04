@@ -13,12 +13,13 @@
 <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
 
 
 <link rel="icon" type="image/x-icon" href="/SPL.png">
 <link rel="stylesheet" href="../Css/SubForm.css">
+<link rel="stylesheet" href="../Css/FormTheme.css">
 <title>Aetherium core Subscriber - AetheriumCore - Starter</title>
 </head>
 <body>
@@ -51,7 +52,7 @@
             </section>
 
            <!--TODO: Formulář první část-->
-            <form class="AetheriumCoreSubscriber-Form" id="AetheriumSubscriberForm">
+            <form class="AetheriumCoreSubscriber-Form" id="AetheriumSubscriberForm" autocomplete="off">
             <section class="SubscriberForm-FirstSection">
                 <article class="SubscriberSectionOne">
                     <label>IČO</label>
@@ -90,9 +91,9 @@
                     <label>Adresa provozovny</label>
                         <input type="text" class="adresa" placeholder="Zde napište svou adresu" name="adresa"  id="adresa" style="font-size: 0.9vw;">
                     <label>Heslo</label>
-                        <input type="password" class="heslo" placeholder="Zde napište své heslo" name="heslo" required id="hesloId" autocomplete="on" style="font-size: 0.9vw;">
+                        <input type="password" class="heslo" placeholder="Zde napište své heslo" name="heslo" required id="hesloId" autocomplete="new-password" style="font-size: 0.9vw;">
                     <label>Potvrzení hesla</label>
-                        <input type="password" class="potvrzení-hesla" placeholder="Zde potvrďte své heslo" name="potvrzení-hesla" required id="potvrzení-hesla" autocomplete="on" style="font-size: 0.9vw;">
+                        <input type="password" class="potvrzení-hesla" placeholder="Zde potvrďte své heslo" name="potvrzení-hesla" required id="potvrzení-hesla" autocomplete="new-password" style="font-size: 0.9vw;">
                     </article>
                 </section>
                 <!--TODO: Formulář třetí část -->
@@ -161,7 +162,7 @@
                                     </div>
                                   <div class="modal-content">
                                         <div class="Gdpr-modal-content">
-                                            <button  class="close-button" id="closeTerms">&times;</button>
+                                            <button  type="button" class="close-button" id="closeTerms">&times;</button>
                                         <p class="Obsah">Zde budou zobrazeny obchodní podmínky a zásady ochrany osobních údajů (GDPR). Uživatelé musí souhlasit s těmito podmínkami, aby mohli pokračovat v registraci a využívání služeb Aetherium Core Enterprise.
                                         Obchodní podmínky zahrnují informace o tom, jak budou osobní údaje zpracovávány, jaká jsou práva uživatelů ohledně svých údajů, a další důležité informace týkající se používání služby.
                                         Uživatelé by měli pečlivě přečíst tyto podmínky a ujistit se, že s nimi souhlasí, než budou pokračovat v registraci.</p>
@@ -211,6 +212,8 @@
 <script type="module" src="../JS/SmoothScrollForm.js"></script>
 <!--TODO: MFA/OTP -->
 <script type="module" src="../JS/Mfa_Otp.js"></script>
+<!--TODO: Password Status -->
+<script type="module" src="../JS/PasswordStatus.js"></script>
 
 
 

@@ -1,6 +1,5 @@
 //FRONTEND: Sdílená sekce mezi Subscriber a Payment
 
-import { PRICING_CONFIG } from "../../JS/Empty";
 
 // Jediné místo, kde se počítá cena a DPH. Shrnutí ho použije pro orientační
 // odhad ("kolik to asi bude stát"), Platba ho použije pro finální částku.
