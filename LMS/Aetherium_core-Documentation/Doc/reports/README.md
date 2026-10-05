@@ -84,5 +84,8 @@ grep -rniE "service_role|secret|password\s*=|sk_live|sk_test|api[_-]?key" \
 
 printf "node_modules/\n.env\n.env.*\n*.bak\n.DS_Store\n" >> .gitignore
 
-git commit -m "feat: Aetherium subscriber frontend, student import, pricing and summary auto-refresh"
+cd ~/Documents/Projekty_Podnikání/LMS
+git add -A
+git status
+git commit -m "style: new blue-theme form design, Oswald headings with Czech diacritics, hidden password hints"
 git push origin main

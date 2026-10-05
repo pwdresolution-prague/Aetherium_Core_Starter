@@ -22,7 +22,7 @@
 
 
 import { calculateOrder, formatMoney } from '../Shared/PricingRules.js'
-import { setRegistration, getRegistration, getImport, STORE_CHANGED } from '../Shared/AetheriumClientStore.js'
+import { setRegistration, getRegistration, getImport, STORE_CHANGED, clearImport } from '../Shared/AetheriumClientStore.js'
 
 // Mapa technických ID na čitelné popisky pro uživatele
 const FIELD_LABELS = {
@@ -221,7 +221,15 @@ function renderImportAndPricingStatus(registration) {
         </div>`
 }
 
+// F5 / hard refresh na Shrnutí = import studentů se smaže a nahrává se znovu.
+// Běží jen na Summary.html (tam existuje #summaryContent) a jen při 'reload',
+// takže návrat z platby nebo ze formuláře import nesmaže.
+const navType = performance.getEntriesByType('navigation')[0]?.type
+if (document.getElementById('summaryContent') && navType === 'reload') clearImport()
+
 renderSummary()
+window.addEventListener(STORE_CHANGED, renderSummary)
+
 
 // Po každém zápisu do store (např. dokončený import studentů) se shrnutí
 // překreslí se samo, bez ručního F5.

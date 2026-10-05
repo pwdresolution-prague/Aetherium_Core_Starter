@@ -58,6 +58,7 @@ export const getRegistration = () => read(KEYS.registration)
 export const setImport = (payload) => write(KEYS.import, payload)
 export const getImport = () => read(KEYS.import)
 export const getBillableStudentCount = () => getImport()?.valid?.length ?? 0
+export const clearImport = () => sessionStorage.removeItem(KEYS.import)
 
 export const setPendingOrder = (order) => write(KEYS.order, order)
 export const getPendingOrder = () => read(KEYS.order)

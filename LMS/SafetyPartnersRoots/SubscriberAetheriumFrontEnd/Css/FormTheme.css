@@ -12,11 +12,11 @@
 
 /* ---------- Hlavní panel ---------- */
 .FormulářSubscriber {
-    width: min(60rem, 92vw);
+    width: min(92vw, max(32rem, 47vw));   /* stejná šířka jako karta na Summary */
     min-width: 0;
     height: auto;
     gap: 0;
-    padding: clamp(1.2rem, 3vw, 2.6rem);
+    padding: clamp(1rem, 2vw, 2rem);
     background: linear-gradient(160deg, #001428 0%, #5f89bc 30%, #003d80 60%, #5f89bc 80%, #001428 100%);
     border: 2px solid #f77343;
     border-radius: 1rem;
@@ -27,8 +27,9 @@
     width: 100%;
     justify-content: flex-start;
     color: #fff;
-    font-family: 'Oswald', sans-serif; font-weight: 600;
-    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.05rem, 1.4vw, 1.4rem);
     letter-spacing: .05rem;
     padding-bottom: .9rem;
     border-bottom: 1px solid rgba(255, 102, 0, .4);
@@ -43,8 +44,8 @@
 .SubscriberForm-SecondSection,
 .SubscriberForm-ThirdSection {
     display: block;
-    padding: clamp(1.2rem, 2vw, 2rem);
-    margin-top: 1.5rem;
+    padding: clamp(1rem, 1.6vw, 1.6rem);
+    margin-top: 1.2rem;
     background: linear-gradient(160deg, #001428 0%, #003d80 60%, #001428 100%);
     border: 1px solid rgba(0, 140, 255, .18);
     border-radius: 1rem;
@@ -59,7 +60,7 @@
     align-items: stretch;
     gap: .35rem;
     width: 100%;
-    max-width: 36rem;
+    max-width: none;
     margin: 0 auto;
     color: #fff;
 }
@@ -67,8 +68,9 @@
 .SubscriberSectionOne::before,
 .SubscriberSectionTwo::before,
 .SubscriberSectionThree::before {
-    font-family: 'Oswald', sans-serif; font-weight: 600;
-    font-size: 1.25rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
     letter-spacing: .05rem;
     color: #fff;
     padding-bottom: .5rem;
@@ -89,7 +91,7 @@
     text-align: left;
     color: rgba(255, 255, 255, .7);
     font-family: 'Lekton', monospace;
-    font-size: .9rem;
+    font-size: clamp(.75rem, .85vw, .9rem);
 }
 .CompanyDescription:empty { display: none; }
 
@@ -98,15 +100,15 @@
     display: block;
     width: 100%;
     height: auto;
-    min-height: 2.9rem;
-    padding: .7rem 1rem;
+    min-height: 2.5rem;
+    padding: .55rem .9rem;
     background: rgba(255, 255, 255, .07);
     color: #fff;
     border: 1px solid rgba(255, 255, 255, .22);
     border-radius: 1.1rem;                 /* původní kulatost formuláře */
     color-scheme: dark;
     font-family: 'Lekton', monospace;
-    font-size: 1rem !important;            /* přebíjí inline font-size: 0.9vw */
+    font-size: clamp(.8rem, .9vw, 1rem) !important;            /* přebíjí inline font-size: 0.9vw */
     transition: border-color .2s, box-shadow .2s, background .2s;
 }
 #AetheriumSubscriberForm ::placeholder { color: rgba(255, 255, 255, .4); }
@@ -134,7 +136,7 @@
     margin-top: .3rem;
     text-align: left;
     font-family: 'Lekton', monospace;
-    font-size: .85rem;
+    font-size: clamp(.75rem, .8vw, .85rem);
 }
 .pw-status:empty, .otp-status:empty { display: none; }
 .ares-status--success, .otp-status--success, .pw-status--success { color: #4ade80; }
@@ -147,13 +149,13 @@
     height: auto;
     width: auto;
     margin: 1rem 0 0;
-    padding: .85rem 2rem;
+    padding: .7rem 1.6rem;
     background: linear-gradient(to right, #FF6600, #f77343);
     color: #fff;
     border: none;
     border-radius: 1.1rem;
     font-family: 'Lekton', monospace;
-    font-size: 1rem;
+    font-size: clamp(.85rem, .9vw, 1rem);
     letter-spacing: .05rem;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .4);
@@ -163,7 +165,7 @@
 #sendOtpBtn:hover, .SubmitButtonSubs.active:hover { filter: brightness(1.1); }
 #sendOtpBtn:active, .SubmitButtonSubs.active:active { transform: translateY(2px); }
 
-.SubmitButtonSubs { display: block; margin: 2rem auto 0; padding: 1rem 3rem; }
+.SubmitButtonSubs { display: block; margin: 1.6rem auto 0; padding: .85rem 2.4rem; }
 .SubmitButtonSubs:disabled {
     background: rgba(255, 255, 255, .1);
     color: rgba(255, 255, 255, .4);
@@ -224,7 +226,8 @@
 .modalSubscriberGdpr.open { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; }
 
 .Margin { margin: 0; }
-.NadpisGdpr { margin: 0; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1.6rem; letter-spacing: .05rem; white-space: normal; text-align: center; }
+.NadpisGdpr { margin: 0; color: #fff; font-family: 'Oswald', sans-serif;
+    font-weight: 600; font-size: 1.6rem; letter-spacing: .05rem; white-space: normal; text-align: center; }
 
 .modal-content {
     width: min(44rem, 92vw);
