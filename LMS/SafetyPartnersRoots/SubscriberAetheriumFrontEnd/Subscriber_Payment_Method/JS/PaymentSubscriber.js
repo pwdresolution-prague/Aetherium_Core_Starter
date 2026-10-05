@@ -12,24 +12,28 @@ import { buildCheckoutSnapshot } from '../../JS/Shared/CheckoutModel.js'
 import { formatMoney } from '../../JS/Shared/PricingRules.js'
 import { getImport, getOrderId, setPendingOrder } from '../../JS/Shared/AetheriumClientStore.js'
 import { el, kvRows } from '../../JS/Shared/Dom.js'
-import { registrationApi } from './RegistrationApi.js'
 
 //LOGIKA: Veškeré chyby vždy vedou zpět ke shrnutí čili Summary.html
 
+// LOGIKA: Jediné místo, které hledá kontejnery. Když chybí (překlep v HTML), nespadne to
+// tiše na "null.replaceChildren" — v konzoli bude přesně napsáno, které ID chybí.
+function mustGet(id) {
+    const node = document.getElementById(id)
+    if (!node) throw new Error(`Chybí prvek #${id} v PaymentIndex.html`)
+    return node
+}
+
 function showBlockingError(message) {
-    const box = document.getElementById('paymentSummaryId')
-    if (!box) return
-    box.innerHTML = `
-    <p class="PaymentError">
-    ${message}<br>
-    <a href="../Html/Summary.html" class="PaymentBackLink">- Zpět na shrnutí</a>
-    </p>`
-document.getElementById('pricingBreakdownId').replaceChildren()
-
-
+    const box = mustGet('paymentSummaryId')
+    const p = el('p', 'PaymentError', message)
+    const a = el('a', 'PaymentBackLink', '← Zpět na shrnutí')
+    a.href = '../Html/Summary.html'
+    p.append(document.createElement('br'), a)
+    box.replaceChildren(p)
+    mustGet('pricingBreakdownId').replaceChildren()
 }
 function renderCompanySummary(c) {
-    const box = document.getElementById('paymentSummaryId')
+    const box = mustGet('paymentSummaryId')
     const tbody = el('tbody')
     kvRows(tbody, [
         ['Firma',  c.companyName ?? '—'],
@@ -45,7 +49,7 @@ function renderCompanySummary(c) {
 }
 
 function renderPricingBreakdown(order) {
-    const box = document.getElementById('pricingBreakdownId')
+    const box = mustGet('pricingBreakdownId')
     box.innerHTML = `
         <h3 class="PaymentSectionTitle">💳 Kalkulace platby</h3>
         <table class="PaymentTable">
@@ -85,6 +89,7 @@ function bindPayButton(order) {
         btn.disabled = true                         // ochrana proti dvojkliku
         try {
             const students = getImport()?.valid ?? []
+            const { registrationApi } = await import('./RegistrationApi.js')
             const res = await registrationApi.confirmOrder(getOrderId(), students)
 
             // Server je zdroj pravdy: pokud se liší od zobrazené částky, platbu nepouštíme

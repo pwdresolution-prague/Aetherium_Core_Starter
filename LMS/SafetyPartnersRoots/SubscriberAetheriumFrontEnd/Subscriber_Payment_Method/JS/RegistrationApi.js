@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_SUPABASE_URL + 'function/v1/registration-order'
+const BASE = import.meta.env.VITE_SUPABASE_URL.replace(/\/$/, '') + '/functions/v1/registration-order'
 const ANON = import.meta.env.VITE_SUPABASE_ANON_KEY
 
 async function call(action, body) {

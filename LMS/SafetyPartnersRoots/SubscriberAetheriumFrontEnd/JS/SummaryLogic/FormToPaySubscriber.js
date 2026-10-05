@@ -26,23 +26,27 @@ import { setRegistration, getRegistration, getImport, STORE_CHANGED, clearImport
 
 // Mapa technických ID na čitelné popisky pro uživatele
 const FIELD_LABELS = {
-    'ičoId':                  'IČO',
-    'dicId':                  'DIČ',
-    'název-firmyId':          'Název firmy',
-    'právní-formaId':         'Právní forma',
-    'sídlo-společnostiId':    'Sídlo společnosti',
-    'datum-založeníId':       'Datum založení',
-    'stav-subjektuId':        'Stav subjektu',
-    'spisová-značkaId':       'Spisová značka',
-    'datová-schránkaId':      'Datová schránka',
-    'telefonní-číslo':        'Telefonní číslo',
-    'emailId':                'E-mail',
-    'adresa':                 'Adresa provozovny',
-    'Obor-podnikání':         'Obor podnikání',
-    'početŠkoleníSubscriber': 'Predikovaný počet školení',
-    'CompanyDescriptionName': 'Popis firmy',
-    'účel':                   'Účel využití',
+    ico:             'IČO',
+    dic:             'DIČ',
+    companyName:     'Název firmy',
+    legalForm:       'Právní forma',
+    seat:            'Sídlo společnosti',
+    foundedAt:       'Datum založení',
+    entityStatus:    'Stav subjektu',
+    fileNumber:      'Spisová značka',
+    dataBox:         'Datová schránka',
+    phone:           'Telefonní číslo',
+    email:           'E-mail',
+    address:         'Adresa provozovny',
+    businessField:   'Obor podnikání',
+    sector:          'Odvětví',
+    expectedCourses: 'Predikovaný počet školení',
+    description:     'Popis firmy',
+    purpose:         'Účel využití',
 }
+
+// Hodnoty z ARES / formuláře se vkládají do innerHTML — vždy je escapujeme
+const esc = (v) => String(v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]))
 
 // Tohle pole se ukládat smí, jen se nemá zobrazovat v tabulce shrnutí
 // (heslo a OTP jsou vyfiltrované už uvnitř setRegistration, sem se vůbec nedostanou)
@@ -103,7 +107,7 @@ export function renderSummary() {
         .filter(([id, value]) => !SKIP_IN_TABLE.has(id) && value !== '' && value != null)
         .map(([id, value]) => {
             const label = FIELD_LABELS[id] ?? id
-            const displayValue = SELECT_LABELS[value] ?? value
+            const displayValue = esc(SELECT_LABELS[value] ?? value)
             return `
                 <tr class="SummaryRow">
                     <td class="SummaryLabel">${label}</td>
@@ -228,9 +232,6 @@ const navType = performance.getEntriesByType('navigation')[0]?.type
 if (document.getElementById('summaryContent') && navType === 'reload') clearImport()
 
 renderSummary()
-window.addEventListener(STORE_CHANGED, renderSummary)
-
-
 // Po každém zápisu do store (např. dokončený import studentů) se shrnutí
-// překreslí se samo, bez ručního F5.
+// překreslí samo, bez ručního F5. (Posluchač je jen jednou — dřív byl zdvojený.)
 window.addEventListener(STORE_CHANGED, renderSummary)
